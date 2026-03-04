@@ -47,6 +47,12 @@ ifeq ($(ROOTLESS), 1)
 	USER_ARGS =
 endif
 
+.PHONY: venv
+venv: 
+	@python3 -m venv myenv
+	@source myenv/bin/activate
+	@python3 -m pip install PyYAML
+
 # export OPENLANE_ROOT?=$(PWD)/dependencies/openlane_src  # We are not using OpenLane1
 
 # export OPENLANE2_ROOT?=${HOME}/STARS2024/openlane2-2.0.7  # for nanoHUB
