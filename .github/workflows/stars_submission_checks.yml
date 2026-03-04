@@ -1,0 +1,174 @@
+name: Run STARS Submission Checks
+
+# Change Log:
+# Miguel Isrrael Teran, 06/19/2025, Added support for blocked files AND folders
+
+on: [push, pull_request]  # Trigger on push and PRs
+# on: [pull_request]  # Trigger on PRs
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetch the full history
+
+    - name: Confirm only changes in allowed files
+      continue-on-error: true
+      run: |
+        
+        # When merging teams' files together, common editing of files causes issues.
+
+        # Commit with most up to date common files. Do not change unless you are working on the post-program integration team or have explicit permission from someone who is.
+        BASE_COMMIT="ffe82426ed8674cf1a4af24d27eacb00cea23203" # 09/11/2025
+
+        # Get list of changed files between the base commit and current commit
+        git diff --name-only $BASE_COMMIT > changed_files.txt
+
+        # List of files teams shouldn't change
+        BLOCKED_FILES=(".github/scripts/requirements.txt" \
+                        "template_files/" \
+                        "scripts/" \
+                        "lvs/" \
+                        "Makefile" \
+                        "integration_gitignore" \
+                        "fpga_support/" \
+
+                        "docs/team_00/" \
+
+                        "verilog/rtl/ffram/" \
+                        "verilog/rtl/gpio_control/" \
+                        "verilog/rtl/la_control/" \
+                        "verilog/rtl/sram/" \
+                        "verilog/rtl/wishbone_interconnect/" \
+                        "verilog/rtl/wishbone_manager/" \
+                        "verilog/rtl/team_projects/team_00/" \
+                        "verilog/rtl/Makefile" \
+                        "verilog/rtl/defines.v" \
+                        "verilog/rtl/uprj_netlists.v" \
+                        "verilog/rtl/user_defines.v" \
+                        "verilog/rtl/user_project_wrapper.v" \
+                        "verilog/rtl/wb_interconnect.sv" \
+                        "verilog/rtl/wb_wrapper.vh" \
+                        "verilog/dv/cocotb/" \
+                        "verilog/dv/make/" \
+                        "verilog/dv/team_00/" \
+                        "verilog/dv/Makefile" \
+                        "verilog/dv/README.md" \
+                        "verilog/dv/local-install.md" \
+                        "verilog/dv/setup-cocotb.py" \
+                        "verilog/dv/tb_macros.vh" \
+                        "verilog/dv/wb_tasks.vh" \
+                        "verilog/includes/" \
+
+                        "openlane/user_project_wrapper/fixed_dont_change/" \
+                        "openlane/user_project_wrapper/vsrc/" \
+                        "openlane/user_project_wrapper/base_user_project_wrapper.sdc" \
+                        "openlane/user_project_wrapper/config.json" \
+                        "openlane/user_project_wrapper/pin_order.cfg" \
+                        "def/user_project_wrapper.def" \
+                        "gds/user_project_wrapper*" \
+                        "lef/user_project_wrapper.lef" \
+                        "lib/user_project_wrapper.lib" \
+                        "mag/user_project_wrapper*" \
+                        "sdc/user_project_wrapper.sdc" \
+                        "spef/user_project_wrapper.spef" \
+                        "spef/multicorner/user_project_wrapper*" \
+                        "spi/user_project_wrapper.spi" \
+                        "signoff/user_project_wrapper/" \
+
+                        "openlane/ffram/" \
+                        "def/ffram.def" \
+                        "gds/ffram*" \
+                        "lef/ffram.lef" \
+                        "lib/ffram.lib" \
+                        "mag/ffram*" \
+                        "sdc/ffram.sdc" \
+                        "spef/ffram.spef" \
+                        "spef/multicorner/ffram*" \
+                        "spi/ffram.spi" \
+                        "signoff/ffram/" \
+
+                        "openlane/team_00/" \
+                        "def/team_00.def" \
+                        "gds/team_00*" \
+                        "lef/team_00.lef" \
+                        "lib/team_00.lib" \
+                        "mag/team_00*" \
+                        "sdc/team_00.sdc" \
+                        "spef/team_00.spef" \
+                        "spef/multicorner/team_00*" \
+                        "spi/team_00.spi" \
+                        "signoff/team_00/" \
+
+                        "gds/sky130_sram_4kbyte_1r1w_32x1024_8*" \
+                        "lef/sky130_sram_4kbyte_1r1w_32x1024_8.lef" \
+                        "lib/sky130_sram_4kbyte_1r1w_32x1024_8_TT_1p8V_25C.lib" \
+
+                        "gds/sky130_sram_8kbyte_1r1w_32x2048_8*" \
+                        "lef/sky130_sram_8kbyte_1r1w_32x2048_8.lef" \
+                        "lib/sky130_sram_8kbyte_1r1w_32x2048_8_TT_1p8V_25C.lib" \
+                        )
+
+        # Initialize a flag to detect if any disallowed files were changed
+        DISALLOWED_FILE_CHANGE_FOUND=false
+
+        echo "Checking for blocked files..."
+
+        # Check each file and list problems
+        while IFS= read -r CHANGED_FILE; do
+            for BLOCKED in "${BLOCKED_FILES[@]}"; do
+                # Folder match (trailing slash)
+                if [[ "$BLOCKED" == */ && "$CHANGED_FILE" == "$BLOCKED"* ]]; then
+                    echo "ERROR: Commit includes changes inside blocked folder: $CHANGED_FILE (matched folder: $BLOCKED)"
+                    DISALLOWED_FILE_CHANGE_FOUND=true
+
+                # Wildcard or exact match
+                elif [[ "$CHANGED_FILE" == $BLOCKED ]]; then
+                    echo "ERROR: Commit includes changes to blocked file: $CHANGED_FILE (matched pattern: $BLOCKED)"
+                    DISALLOWED_FILE_CHANGE_FOUND=true
+                fi
+            done
+        done < changed_files.txt
+
+
+        if [ "$DISALLOWED_FILE_CHANGE_FOUND" = true ]; then
+            echo "Push includes blocked files. Failing the workflow."
+            echo "ANY_FAILED=1" >> $GITHUB_ENV
+            exit 1
+        else
+            echo "No blocked files were changed."
+        fi
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        pip install -r .github/scripts/requirements.txt
+
+    - name: Confirm Python Environment
+      run: python ./.github/scripts/test_environment.py
+
+    - name: Check New Files
+      continue-on-error: true
+      run: python ./.github/scripts/check_new_files.py || echo "ANY_FAILED=1" >> $GITHUB_ENV
+
+    - name: Module Naming Check
+      continue-on-error: true
+      run: python ./.github/scripts/module_naming_test.py || echo "ANY_FAILED=1" >> $GITHUB_ENV
+
+    - name: Final check for any failure
+      run: |
+        if [ "$ANY_FAILED" -eq "1" ]; then
+          echo "❌ One or more checks failed."
+          exit 1
+        else
+          echo "✅ All checks succeeded."
+        fi
