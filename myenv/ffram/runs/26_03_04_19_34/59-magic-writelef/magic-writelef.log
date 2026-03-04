@@ -1,0 +1,1428 @@
+
+Magic 8.3 revision 489 - Compiled on Thu Aug 22 13:45:15 UTC 2024.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+> lef read /home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+Reading LEF data from file /home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 82 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 83 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 116 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 118 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 119 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 125 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 126 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 127 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 160 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 172 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 173 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 214 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 215 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 255 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 256 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 257 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 295 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 801 lines.
+> gds read /home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: sky130_fd_sc_hd
+Reading "sky130_fd_sc_hd__or4bb_4".
+Reading "sky130_fd_sc_hd__probe_p_8".
+Reading "sky130_fd_sc_hd__probec_p_8".
+Reading "sky130_fd_sc_hd__sdfbbn_1".
+Reading "sky130_fd_sc_hd__sdfbbn_2".
+Reading "sky130_fd_sc_hd__sdfbbp_1".
+Reading "sky130_fd_sc_hd__sdfrbp_1".
+Reading "sky130_fd_sc_hd__sdfrbp_2".
+Reading "sky130_fd_sc_hd__sdfrtn_1".
+Reading "sky130_fd_sc_hd__sdfrtp_1".
+Reading "sky130_fd_sc_hd__sdfrtp_2".
+Reading "sky130_fd_sc_hd__sdfrtp_4".
+Reading "sky130_fd_sc_hd__sdfsbp_1".
+Reading "sky130_fd_sc_hd__sdfsbp_2".
+Reading "sky130_fd_sc_hd__sdfstp_1".
+Reading "sky130_fd_sc_hd__sdfstp_2".
+Reading "sky130_fd_sc_hd__sdfstp_4".
+Reading "sky130_fd_sc_hd__sdfxbp_1".
+Reading "sky130_fd_sc_hd__sdfxbp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_1".
+Reading "sky130_fd_sc_hd__sdfxtp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_4".
+Reading "sky130_fd_sc_hd__sdlclkp_1".
+Reading "sky130_fd_sc_hd__sdlclkp_2".
+Reading "sky130_fd_sc_hd__sdlclkp_4".
+Reading "sky130_fd_sc_hd__sedfxbp_1".
+Reading "sky130_fd_sc_hd__sedfxbp_2".
+Reading "sky130_fd_sc_hd__xnor2_2".
+Reading "sky130_fd_sc_hd__xnor2_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd2_1".
+Reading "sky130_fd_sc_hd__tap_2".
+Reading "sky130_fd_sc_hd__tap_1".
+Reading "sky130_fd_sc_hd__sedfxtp_4".
+Reading "sky130_fd_sc_hd__sedfxtp_2".
+Reading "sky130_fd_sc_hd__sedfxtp_1".
+Reading "sky130_fd_sc_hd__xnor2_4".
+Reading "sky130_fd_sc_hd__xnor3_1".
+Reading "sky130_fd_sc_hd__xnor3_2".
+Reading "sky130_fd_sc_hd__xnor3_4".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__xor2_2".
+Reading "sky130_fd_sc_hd__xor2_4".
+Reading "sky130_fd_sc_hd__xor3_1".
+Reading "sky130_fd_sc_hd__xor3_2".
+Reading "sky130_fd_sc_hd__xor3_4".
+Reading "sky130_fd_sc_hd__o41a_2".
+Reading "sky130_fd_sc_hd__o41a_4".
+Reading "sky130_fd_sc_hd__o41ai_1".
+Reading "sky130_fd_sc_hd__o41ai_2".
+Reading "sky130_fd_sc_hd__o41ai_4".
+Reading "sky130_fd_sc_hd__o211a_1".
+Reading "sky130_fd_sc_hd__o211a_2".
+Reading "sky130_fd_sc_hd__o211a_4".
+Reading "sky130_fd_sc_hd__o211ai_1".
+Reading "sky130_fd_sc_hd__o211ai_2".
+Reading "sky130_fd_sc_hd__o211ai_4".
+Reading "sky130_fd_sc_hd__o221a_1".
+Reading "sky130_fd_sc_hd__o221a_2".
+Reading "sky130_fd_sc_hd__o221a_4".
+Reading "sky130_fd_sc_hd__o221ai_1".
+Reading "sky130_fd_sc_hd__o221ai_2".
+Reading "sky130_fd_sc_hd__o311a_1".
+Reading "sky130_fd_sc_hd__o311a_2".
+Reading "sky130_fd_sc_hd__o311a_4".
+Reading "sky130_fd_sc_hd__o311ai_0".
+Reading "sky130_fd_sc_hd__o311ai_1".
+Reading "sky130_fd_sc_hd__o221ai_4".
+Reading "sky130_fd_sc_hd__o311ai_2".
+Reading "sky130_fd_sc_hd__o311ai_4".
+Reading "sky130_fd_sc_hd__o2111a_1".
+Reading "sky130_fd_sc_hd__o2111a_2".
+Reading "sky130_fd_sc_hd__o2111a_4".
+Reading "sky130_fd_sc_hd__o2111ai_1".
+Reading "sky130_fd_sc_hd__o2111ai_2".
+Reading "sky130_fd_sc_hd__o2111ai_4".
+Reading "sky130_fd_sc_hd__or2_0".
+Reading "sky130_fd_sc_hd__or2_1".
+Reading "sky130_fd_sc_hd__or2_2".
+Reading "sky130_fd_sc_hd__or2_4".
+Reading "sky130_fd_sc_hd__or2b_1".
+Reading "sky130_fd_sc_hd__or2b_2".
+Reading "sky130_fd_sc_hd__or2b_4".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__or3_2".
+Reading "sky130_fd_sc_hd__or3_4".
+Reading "sky130_fd_sc_hd__or3b_4".
+Reading "sky130_fd_sc_hd__or3b_2".
+Reading "sky130_fd_sc_hd__or3b_1".
+Reading "sky130_fd_sc_hd__or4_4".
+Reading "sky130_fd_sc_hd__or4_2".
+Reading "sky130_fd_sc_hd__or4_1".
+Reading "sky130_fd_sc_hd__or4b_4".
+Reading "sky130_fd_sc_hd__or4b_2".
+Reading "sky130_fd_sc_hd__or4b_1".
+Reading "sky130_fd_sc_hd__or4bb_1".
+Reading "sky130_fd_sc_hd__or4bb_2".
+Reading "sky130_fd_sc_hd__nor3_4".
+Reading "sky130_fd_sc_hd__nor3b_1".
+Reading "sky130_fd_sc_hd__nor3b_2".
+Reading "sky130_fd_sc_hd__nor3b_4".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__nor4_2".
+Reading "sky130_fd_sc_hd__nor4_4".
+Reading "sky130_fd_sc_hd__nor4b_1".
+Reading "sky130_fd_sc_hd__nor4b_2".
+Reading "sky130_fd_sc_hd__nor4b_4".
+Reading "sky130_fd_sc_hd__nor4bb_1".
+Reading "sky130_fd_sc_hd__nor4bb_2".
+Reading "sky130_fd_sc_hd__nor4bb_4".
+Moving label "k" from mvpsubdiff to ndiff in cell sky130_fd_sc_hd__nor4bb_4.
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Reading "sky130_fd_sc_hd__o2bb2a_2".
+Reading "sky130_fd_sc_hd__o2bb2a_4".
+Reading "sky130_fd_sc_hd__o21ai_4".
+Reading "sky130_fd_sc_hd__o21ai_2".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__o21ai_0".
+Reading "sky130_fd_sc_hd__o21a_4".
+Reading "sky130_fd_sc_hd__o21a_2".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__o2bb2ai_4".
+Reading "sky130_fd_sc_hd__o2bb2ai_2".
+Reading "sky130_fd_sc_hd__o2bb2ai_1".
+Reading "sky130_fd_sc_hd__o21ba_1".
+Reading "sky130_fd_sc_hd__o21ba_2".
+Reading "sky130_fd_sc_hd__o21ba_4".
+Reading "sky130_fd_sc_hd__o21bai_1".
+Reading "sky130_fd_sc_hd__o21bai_2".
+Reading "sky130_fd_sc_hd__o21bai_4".
+Reading "sky130_fd_sc_hd__o22a_1".
+Reading "sky130_fd_sc_hd__o22a_2".
+Reading "sky130_fd_sc_hd__o22a_4".
+Reading "sky130_fd_sc_hd__o22ai_1".
+Reading "sky130_fd_sc_hd__o22ai_2".
+Reading "sky130_fd_sc_hd__o22ai_4".
+Reading "sky130_fd_sc_hd__o31a_1".
+Reading "sky130_fd_sc_hd__o31a_2".
+Reading "sky130_fd_sc_hd__o31a_4".
+Reading "sky130_fd_sc_hd__o31ai_1".
+Reading "sky130_fd_sc_hd__o31ai_2".
+Reading "sky130_fd_sc_hd__o31ai_4".
+Reading "sky130_fd_sc_hd__o32a_1".
+Reading "sky130_fd_sc_hd__o32a_2".
+Reading "sky130_fd_sc_hd__o32a_4".
+Reading "sky130_fd_sc_hd__o32ai_1".
+Reading "sky130_fd_sc_hd__o32ai_2".
+Reading "sky130_fd_sc_hd__o32ai_4".
+Reading "sky130_fd_sc_hd__o41a_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_16".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrckapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4".
+Reading "sky130_fd_sc_hd__nor2_2".
+Reading "sky130_fd_sc_hd__nand2_2".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__conb_1".
+Reading "sky130_fd_sc_hd__macro_sparecell".
+Reading "sky130_fd_sc_hd__maj3_1".
+Reading "sky130_fd_sc_hd__maj3_2".
+Reading "sky130_fd_sc_hd__maj3_4".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__mux2_2".
+Reading "sky130_fd_sc_hd__mux2_4".
+Reading "sky130_fd_sc_hd__mux2i_1".
+Reading "sky130_fd_sc_hd__mux2i_2".
+Reading "sky130_fd_sc_hd__mux2_8".
+Reading "sky130_fd_sc_hd__mux2i_4".
+Reading "sky130_fd_sc_hd__mux4_1".
+Reading "sky130_fd_sc_hd__mux4_2".
+Reading "sky130_fd_sc_hd__mux4_4".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__nand2_4".
+Reading "sky130_fd_sc_hd__nand2_8".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__nand2b_2".
+Reading "sky130_fd_sc_hd__nand2b_4".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__nand3_2".
+Reading "sky130_fd_sc_hd__nand3_4".
+Reading "sky130_fd_sc_hd__nand3b_1".
+Reading "sky130_fd_sc_hd__nand3b_2".
+Reading "sky130_fd_sc_hd__nand3b_4".
+Reading "sky130_fd_sc_hd__nand4_1".
+Reading "sky130_fd_sc_hd__nand4_2".
+Reading "sky130_fd_sc_hd__nand4_4".
+Reading "sky130_fd_sc_hd__nand4b_1".
+Reading "sky130_fd_sc_hd__nand4b_2".
+Reading "sky130_fd_sc_hd__nand4bb_1".
+Reading "sky130_fd_sc_hd__nand4bb_2".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__nor2_4".
+Reading "sky130_fd_sc_hd__nor2_8".
+Reading "sky130_fd_sc_hd__nor2b_1".
+Reading "sky130_fd_sc_hd__nor2b_2".
+Reading "sky130_fd_sc_hd__nor2b_4".
+Reading "sky130_fd_sc_hd__nand4b_4".
+Reading "sky130_fd_sc_hd__nand4bb_4".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__nor3_2".
+Reading "sky130_fd_sc_hd__einvn_2".
+Reading "sky130_fd_sc_hd__einvn_4".
+Reading "sky130_fd_sc_hd__einvn_8".
+Reading "sky130_fd_sc_hd__einvp_1".
+Reading "sky130_fd_sc_hd__einvp_2".
+Reading "sky130_fd_sc_hd__einvp_4".
+Reading "sky130_fd_sc_hd__einvp_8".
+Reading "sky130_fd_sc_hd__fa_1".
+Reading "sky130_fd_sc_hd__fa_2".
+Reading "sky130_fd_sc_hd__fa_4".
+Reading "sky130_fd_sc_hd__fah_1".
+Reading "sky130_fd_sc_hd__fahcin_1".
+Reading "sky130_fd_sc_hd__fahcon_1".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__fill_4".
+Reading "sky130_fd_sc_hd__inv_16".
+Reading "sky130_fd_sc_hd__inv_12".
+Reading "sky130_fd_sc_hd__inv_8".
+Reading "sky130_fd_sc_hd__inv_6".
+Reading "sky130_fd_sc_hd__inv_4".
+Reading "sky130_fd_sc_hd__inv_1".
+Reading "sky130_fd_sc_hd__ha_4".
+Reading "sky130_fd_sc_hd__ha_2".
+Reading "sky130_fd_sc_hd__ha_1".
+Reading "sky130_fd_sc_hd__fill_8".
+Reading "sky130_fd_sc_hd__lpflow_bleeder_1".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1n_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0p_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0n_1".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_12".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_6".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_3".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1p_1".
+Reading "sky130_fd_sc_hd__lpflow_inputisolatch_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_2".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_4".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_8".
+Reading "sky130_fd_sc_hd__dfrbp_2".
+Reading "sky130_fd_sc_hd__dfrtn_1".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Reading "sky130_fd_sc_hd__dfsbp_1".
+Reading "sky130_fd_sc_hd__dfsbp_2".
+Reading "sky130_fd_sc_hd__dfstp_1".
+Reading "sky130_fd_sc_hd__dfstp_2".
+Reading "sky130_fd_sc_hd__dfstp_4".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__dfxtp_2".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__dlclkp_1".
+Reading "sky130_fd_sc_hd__dlclkp_2".
+Reading "sky130_fd_sc_hd__dlclkp_4".
+Reading "sky130_fd_sc_hd__dlrbn_1".
+Reading "sky130_fd_sc_hd__dfxbp_1".
+Reading "sky130_fd_sc_hd__dfxbp_2".
+Reading "sky130_fd_sc_hd__dfxtp_4".
+Reading "sky130_fd_sc_hd__dlrbn_2".
+Reading "sky130_fd_sc_hd__dlrbp_1".
+Reading "sky130_fd_sc_hd__dlrbp_2".
+Reading "sky130_fd_sc_hd__dlrtn_1".
+Reading "sky130_fd_sc_hd__dlrtn_2".
+Reading "sky130_fd_sc_hd__dlrtn_4".
+Reading "sky130_fd_sc_hd__dlrtp_1".
+Reading "sky130_fd_sc_hd__dlrtp_2".
+Reading "sky130_fd_sc_hd__dlrtp_4".
+Reading "sky130_fd_sc_hd__dlxbn_1".
+Reading "sky130_fd_sc_hd__dlxbn_2".
+Reading "sky130_fd_sc_hd__dlxbp_1".
+Reading "sky130_fd_sc_hd__dlxtn_1".
+Reading "sky130_fd_sc_hd__dlxtn_2".
+Reading "sky130_fd_sc_hd__dlxtn_4".
+Reading "sky130_fd_sc_hd__dlxtp_1".
+Reading "sky130_fd_sc_hd__dlygate4sd1_1".
+Reading "sky130_fd_sc_hd__dlygate4sd2_1".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s4s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s6s_1".
+Reading "sky130_fd_sc_hd__ebufn_1".
+Reading "sky130_fd_sc_hd__ebufn_2".
+Reading "sky130_fd_sc_hd__ebufn_4".
+Reading "sky130_fd_sc_hd__ebufn_8".
+Reading "sky130_fd_sc_hd__edfxbp_1".
+Reading "sky130_fd_sc_hd__edfxtp_1".
+Reading "sky130_fd_sc_hd__einvn_0".
+Reading "sky130_fd_sc_hd__einvn_1".
+Reading "sky130_fd_sc_hd__and3b_2".
+Reading "sky130_fd_sc_hd__and3b_4".
+Reading "sky130_fd_sc_hd__and4_1".
+Reading "sky130_fd_sc_hd__and4_2".
+Reading "sky130_fd_sc_hd__and4_4".
+Reading "sky130_fd_sc_hd__and4b_1".
+Reading "sky130_fd_sc_hd__and4b_2".
+Reading "sky130_fd_sc_hd__and4b_4".
+Reading "sky130_fd_sc_hd__and4bb_1".
+Reading "sky130_fd_sc_hd__and4bb_2".
+Reading "sky130_fd_sc_hd__and4bb_4".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__buf_6".
+Reading "sky130_fd_sc_hd__buf_8".
+Reading "sky130_fd_sc_hd__buf_12".
+Reading "sky130_fd_sc_hd__bufbuf_8".
+Reading "sky130_fd_sc_hd__bufinv_8".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__buf_16".
+Reading "sky130_fd_sc_hd__bufbuf_16".
+Reading "sky130_fd_sc_hd__bufinv_16".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_2".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__clkinvlp_4".
+Reading "sky130_fd_sc_hd__clkinvlp_2".
+Reading "sky130_fd_sc_hd__clkinv_16".
+Reading "sky130_fd_sc_hd__clkinv_8".
+Reading "sky130_fd_sc_hd__clkinv_4".
+Reading "sky130_fd_sc_hd__clkinv_2".
+Reading "sky130_fd_sc_hd__clkinv_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_1".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__dfbbn_1".
+Reading "sky130_fd_sc_hd__dfbbn_2".
+Reading "sky130_fd_sc_hd__dfbbp_1".
+Reading "sky130_fd_sc_hd__dfrbp_1".
+Reading "sky130_fd_sc_hd__a31oi_2".
+Reading "sky130_fd_sc_hd__a31oi_4".
+Reading "sky130_fd_sc_hd__a32o_1".
+Reading "sky130_fd_sc_hd__a32o_2".
+Reading "sky130_fd_sc_hd__a32o_4".
+Reading "sky130_fd_sc_hd__a32oi_1".
+Reading "sky130_fd_sc_hd__a32oi_2".
+Reading "sky130_fd_sc_hd__a32oi_4".
+Reading "sky130_fd_sc_hd__a41o_1".
+Reading "sky130_fd_sc_hd__a211oi_2".
+Reading "sky130_fd_sc_hd__a211oi_1".
+Reading "sky130_fd_sc_hd__a211o_4".
+Reading "sky130_fd_sc_hd__a211o_2".
+Reading "sky130_fd_sc_hd__a211o_1".
+Reading "sky130_fd_sc_hd__a41oi_4".
+Reading "sky130_fd_sc_hd__a41oi_2".
+Reading "sky130_fd_sc_hd__a41oi_1".
+Reading "sky130_fd_sc_hd__a41o_4".
+Reading "sky130_fd_sc_hd__a41o_2".
+Reading "sky130_fd_sc_hd__a211oi_4".
+Reading "sky130_fd_sc_hd__a221o_1".
+Reading "sky130_fd_sc_hd__a221o_2".
+Reading "sky130_fd_sc_hd__a221o_4".
+Reading "sky130_fd_sc_hd__a221oi_1".
+Reading "sky130_fd_sc_hd__a221oi_2".
+Reading "sky130_fd_sc_hd__a221oi_4".
+Reading "sky130_fd_sc_hd__a222oi_1".
+Reading "sky130_fd_sc_hd__a311o_1".
+Reading "sky130_fd_sc_hd__a311o_2".
+Reading "sky130_fd_sc_hd__a311o_4".
+Reading "sky130_fd_sc_hd__a311oi_1".
+Reading "sky130_fd_sc_hd__a311oi_2".
+Reading "sky130_fd_sc_hd__a311oi_4".
+Reading "sky130_fd_sc_hd__a2111o_1".
+Reading "sky130_fd_sc_hd__a2111o_2".
+Reading "sky130_fd_sc_hd__a2111o_4".
+Reading "sky130_fd_sc_hd__a2111oi_0".
+Reading "sky130_fd_sc_hd__a2111oi_1".
+CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
+Reading "sky130_fd_sc_hd__a2111oi_2".
+Reading "sky130_fd_sc_hd__and2_0".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__and2_2".
+Reading "sky130_fd_sc_hd__and2_4".
+Reading "sky130_fd_sc_hd__and2b_1".
+Reading "sky130_fd_sc_hd__and2b_2".
+Reading "sky130_fd_sc_hd__and2b_4".
+Reading "sky130_fd_sc_hd__a2111oi_4".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__and3_2".
+Reading "sky130_fd_sc_hd__and3_4".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_ef_sc_hd__fill_4".
+Reading "sky130_ef_sc_hd__fill_2".
+Reading "sky130_ef_sc_hd__decap_80_12".
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Reading "sky130_ef_sc_hd__fill_12".
+Reading "sky130_ef_sc_hd__fill_8".
+Reading "sky130_ef_sc_hd__decap_60_12".
+Reading "sky130_ef_sc_hd__decap_40_12".
+Reading "sky130_ef_sc_hd__decap_20_12".
+Reading "sky130_ef_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__a2bb2o_2".
+Reading "sky130_fd_sc_hd__a2bb2o_4".
+Reading "sky130_fd_sc_hd__a2bb2oi_1".
+Reading "sky130_fd_sc_hd__a2bb2oi_2".
+Reading "sky130_fd_sc_hd__a2bb2oi_4".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__a21bo_2".
+Reading "sky130_fd_sc_hd__a21bo_4".
+Reading "sky130_fd_sc_hd__a21boi_0".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__a21boi_4".
+Reading "sky130_fd_sc_hd__a21oi_2".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__a21o_4".
+Reading "sky130_fd_sc_hd__a21o_2".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__a21oi_4".
+Reading "sky130_fd_sc_hd__a21boi_2".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "sky130_fd_sc_hd__a22o_2".
+Reading "sky130_fd_sc_hd__a22o_4".
+Reading "sky130_fd_sc_hd__a22oi_1".
+Reading "sky130_fd_sc_hd__a22oi_2".
+Reading "sky130_fd_sc_hd__a22oi_4".
+Reading "sky130_fd_sc_hd__a31o_1".
+Reading "sky130_fd_sc_hd__a31o_2".
+Reading "sky130_fd_sc_hd__a31o_4".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Cell (REFRESHLAYOUT?) couldn't be read
+No such file or directory
+Creating new cell
+> def read /home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_19_34/53-odb-cellfrequencytables/ffram.def -noblockage -labels
+Reading DEF data from file /home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_19_34/53-odb-cellfrequencytables/ffram.def.
+This action cannot be undone.
+  Processed 3 vias total.
+  Processed 80393 subcell instances total.
+  Processed 109 pins total.
+  Processed 2 special nets total.
+  Processed 22083 nets total.
+DEF read: Processed 584890 lines.
+Moving label "_00000_" from metal1 to via1 in cell ffram.
+Moving label "_00002_" from metal1 to via1 in cell ffram.
+Moving label "_00009_" from metal1 to via1 in cell ffram.
+Moving label "_00013_" from metal1 to via1 in cell ffram.
+Moving label "_00018_" from metal1 to via1 in cell ffram.
+Moving label "_00078_" from metal1 to via1 in cell ffram.
+Moving label "_00082_" from metal1 to via1 in cell ffram.
+Moving label "_00102_" from metal1 to viali in cell ffram.
+Moving label "_00107_" from metal1 to via1 in cell ffram.
+Moving label "_00130_" from metal1 to via1 in cell ffram.
+Moving label "_00131_" from metal1 to via1 in cell ffram.
+Moving label "_00148_" from metal1 to via1 in cell ffram.
+Moving label "_00163_" from metal1 to via1 in cell ffram.
+Moving label "_00171_" from metal1 to via1 in cell ffram.
+Moving label "_00248_" from metal1 to via1 in cell ffram.
+Moving label "_00249_" from metal1 to via1 in cell ffram.
+Moving label "_00283_" from metal1 to via1 in cell ffram.
+Moving label "_00294_" from metal1 to via1 in cell ffram.
+Moving label "_00296_" from metal1 to via1 in cell ffram.
+Moving label "_00300_" from metal1 to via1 in cell ffram.
+Moving label "_00328_" from metal1 to via1 in cell ffram.
+Moving label "_00329_" from metal1 to via1 in cell ffram.
+Moving label "_00332_" from metal1 to via1 in cell ffram.
+Moving label "_00345_" from metal1 to via1 in cell ffram.
+Moving label "_00393_" from metal1 to via1 in cell ffram.
+Moving label "_00442_" from metal1 to via1 in cell ffram.
+Moving label "_00443_" from metal1 to via1 in cell ffram.
+Moving label "_00466_" from metal1 to via1 in cell ffram.
+Moving label "_00490_" from metal1 to via1 in cell ffram.
+Moving label "_00495_" from metal1 to viali in cell ffram.
+Moving label "_00503_" from metal1 to via1 in cell ffram.
+Moving label "_00513_" from metal1 to via1 in cell ffram.
+Moving label "_00525_" from metal1 to via1 in cell ffram.
+Moving label "_00526_" from metal1 to via1 in cell ffram.
+Moving label "_00529_" from metal1 to via1 in cell ffram.
+Moving label "_00533_" from metal1 to via1 in cell ffram.
+Moving label "_00559_" from metal1 to via1 in cell ffram.
+Moving label "_00582_" from metal1 to via1 in cell ffram.
+Moving label "_00634_" from metal2 to via1 in cell ffram.
+Moving label "_00635_" from metal1 to via1 in cell ffram.
+Moving label "_00638_" from metal1 to via1 in cell ffram.
+Moving label "_00647_" from metal1 to via1 in cell ffram.
+Moving label "_00674_" from metal1 to via1 in cell ffram.
+Moving label "_00676_" from metal1 to via1 in cell ffram.
+Moving label "_00684_" from metal1 to via1 in cell ffram.
+Moving label "_00690_" from metal1 to via1 in cell ffram.
+Moving label "_00705_" from metal1 to via1 in cell ffram.
+Moving label "_00717_" from metal1 to via1 in cell ffram.
+Moving label "_00718_" from metal1 to via1 in cell ffram.
+Moving label "_00728_" from metal1 to via1 in cell ffram.
+Moving label "_00743_" from metal1 to via1 in cell ffram.
+Moving label "_00749_" from metal1 to via1 in cell ffram.
+Moving label "_00750_" from metal1 to via1 in cell ffram.
+Moving label "_00752_" from metal1 to viali in cell ffram.
+Moving label "_00790_" from metal1 to via1 in cell ffram.
+Moving label "_00794_" from metal1 to via1 in cell ffram.
+Moving label "_00795_" from metal1 to via1 in cell ffram.
+Moving label "_00800_" from metal1 to via1 in cell ffram.
+Moving label "_00806_" from metal1 to via1 in cell ffram.
+Moving label "_00835_" from metal1 to via1 in cell ffram.
+Moving label "_00840_" from metal1 to via1 in cell ffram.
+Moving label "_00863_" from metal1 to viali in cell ffram.
+Moving label "_00877_" from metal1 to via1 in cell ffram.
+Moving label "_00914_" from metal1 to via1 in cell ffram.
+Moving label "_00915_" from metal1 to via1 in cell ffram.
+Moving label "_00923_" from metal1 to via1 in cell ffram.
+Moving label "_00941_" from metal1 to via1 in cell ffram.
+Moving label "_00942_" from metal1 to via1 in cell ffram.
+Moving label "_00950_" from metal1 to via1 in cell ffram.
+Moving label "_00951_" from metal1 to via1 in cell ffram.
+Moving label "_00952_" from metal1 to via1 in cell ffram.
+Moving label "_00981_" from metal1 to via1 in cell ffram.
+Moving label "_01056_" from metal1 to via1 in cell ffram.
+Moving label "_01111_" from metal1 to via1 in cell ffram.
+Moving label "_01127_" from metal1 to via1 in cell ffram.
+Moving label "_01145_" from metal1 to via1 in cell ffram.
+Moving label "_01160_" from metal1 to via1 in cell ffram.
+Moving label "_01207_" from metal1 to via1 in cell ffram.
+Moving label "_01224_" from metal1 to via1 in cell ffram.
+Moving label "_01227_" from metal1 to via1 in cell ffram.
+Moving label "_01229_" from metal1 to via1 in cell ffram.
+Moving label "_01238_" from metal1 to via1 in cell ffram.
+Moving label "_01255_" from metal1 to via1 in cell ffram.
+Moving label "_01259_" from metal1 to via1 in cell ffram.
+Moving label "_01260_" from metal1 to via1 in cell ffram.
+Moving label "_01262_" from metal1 to via1 in cell ffram.
+Moving label "_01263_" from metal1 to via1 in cell ffram.
+Moving label "_01282_" from metal1 to via1 in cell ffram.
+Moving label "_01285_" from metal1 to via1 in cell ffram.
+Moving label "_01291_" from metal1 to via1 in cell ffram.
+Moving label "_01295_" from metal1 to via1 in cell ffram.
+Moving label "_01299_" from metal1 to via1 in cell ffram.
+Moving label "_01303_" from metal1 to viali in cell ffram.
+Moving label "_01311_" from metal1 to via1 in cell ffram.
+Moving label "_01328_" from metal1 to via1 in cell ffram.
+Moving label "_01335_" from metal1 to via1 in cell ffram.
+Moving label "_01338_" from metal1 to viali in cell ffram.
+Moving label "_01348_" from metal1 to via1 in cell ffram.
+Moving label "_01354_" from metal1 to via1 in cell ffram.
+Moving label "_01359_" from metal1 to via1 in cell ffram.
+Moving label "_01362_" from metal1 to via1 in cell ffram.
+Moving label "_01365_" from metal1 to via1 in cell ffram.
+Moving label "_01367_" from metal1 to via1 in cell ffram.
+Moving label "_01395_" from metal1 to via1 in cell ffram.
+Moving label "_01427_" from metal1 to via1 in cell ffram.
+Moving label "_01437_" from metal1 to via1 in cell ffram.
+Moving label "_01462_" from metal1 to via1 in cell ffram.
+Moving label "_01499_" from metal1 to via1 in cell ffram.
+Moving label "_01503_" from metal1 to via1 in cell ffram.
+Moving label "_01526_" from metal1 to via1 in cell ffram.
+Moving label "_01537_" from metal1 to via1 in cell ffram.
+Moving label "_01543_" from metal1 to via1 in cell ffram.
+Moving label "_01554_" from metal1 to via1 in cell ffram.
+Moving label "_01576_" from metal1 to via1 in cell ffram.
+Moving label "_01592_" from metal1 to via1 in cell ffram.
+Moving label "_01602_" from metal1 to via1 in cell ffram.
+Moving label "_01638_" from metal1 to via1 in cell ffram.
+Moving label "_01641_" from metal1 to via1 in cell ffram.
+Moving label "_01642_" from metal1 to via1 in cell ffram.
+Moving label "_01644_" from metal1 to via1 in cell ffram.
+Moving label "_01646_" from metal1 to via1 in cell ffram.
+Moving label "_01649_" from metal1 to via1 in cell ffram.
+Moving label "_01653_" from metal1 to via1 in cell ffram.
+Moving label "_01654_" from metal1 to via1 in cell ffram.
+Moving label "_01655_" from metal1 to via1 in cell ffram.
+Moving label "_01661_" from metal1 to via1 in cell ffram.
+Moving label "_01665_" from metal1 to via1 in cell ffram.
+Moving label "_01670_" from metal1 to via1 in cell ffram.
+Moving label "_01690_" from metal1 to viali in cell ffram.
+Moving label "_01692_" from metal1 to via1 in cell ffram.
+Moving label "_01693_" from metal1 to via1 in cell ffram.
+Moving label "_01694_" from metal1 to via1 in cell ffram.
+Moving label "_01718_" from metal1 to via1 in cell ffram.
+Moving label "_01722_" from metal1 to via1 in cell ffram.
+Moving label "_01729_" from metal1 to via1 in cell ffram.
+Moving label "_01744_" from metal1 to via1 in cell ffram.
+Moving label "_01746_" from metal1 to via1 in cell ffram.
+Moving label "_01749_" from metal1 to via1 in cell ffram.
+Moving label "_01751_" from metal1 to via1 in cell ffram.
+Moving label "_01772_" from metal1 to via1 in cell ffram.
+Moving label "_01791_" from metal1 to via1 in cell ffram.
+Moving label "_01804_" from metal1 to via1 in cell ffram.
+Moving label "_01815_" from metal1 to via1 in cell ffram.
+Moving label "_01834_" from metal1 to via1 in cell ffram.
+Moving label "_01841_" from metal1 to via1 in cell ffram.
+Moving label "_01882_" from metal1 to via1 in cell ffram.
+Moving label "_01883_" from metal1 to via1 in cell ffram.
+Moving label "_01893_" from metal1 to via1 in cell ffram.
+Moving label "_01914_" from metal1 to via1 in cell ffram.
+Moving label "_01944_" from metal1 to via1 in cell ffram.
+Moving label "_01964_" from metal1 to via1 in cell ffram.
+Moving label "_01968_" from metal1 to via1 in cell ffram.
+Moving label "_01972_" from metal1 to via1 in cell ffram.
+Moving label "_01980_" from metal1 to via1 in cell ffram.
+Moving label "_01999_" from metal1 to via1 in cell ffram.
+Moving label "_02001_" from metal1 to via1 in cell ffram.
+Moving label "_02005_" from metal1 to via1 in cell ffram.
+Moving label "_02018_" from metal1 to via1 in cell ffram.
+Moving label "_02020_" from metal1 to via1 in cell ffram.
+Moving label "_02032_" from metal1 to via1 in cell ffram.
+Moving label "_02037_" from metal1 to via1 in cell ffram.
+Moving label "_02043_" from metal1 to via1 in cell ffram.
+Moving label "_02068_" from metal1 to via1 in cell ffram.
+Moving label "_02070_" from metal2 to via1 in cell ffram.
+Moving label "_02072_" from metal1 to via1 in cell ffram.
+Moving label "_02080_" from metal1 to via1 in cell ffram.
+Moving label "_02086_" from metal1 to via1 in cell ffram.
+Moving label "_02089_" from metal1 to via1 in cell ffram.
+Moving label "_02093_" from metal1 to via1 in cell ffram.
+Moving label "_02102_" from metal1 to via1 in cell ffram.
+Moving label "_02107_" from metal1 to via1 in cell ffram.
+Moving label "_02149_" from metal1 to via1 in cell ffram.
+Moving label "_02153_" from metal1 to via1 in cell ffram.
+Moving label "_02160_" from metal1 to via1 in cell ffram.
+Moving label "_02161_" from metal1 to via1 in cell ffram.
+Moving label "_02163_" from metal1 to via1 in cell ffram.
+Moving label "_02179_" from metal1 to via1 in cell ffram.
+Moving label "_02187_" from metal1 to via1 in cell ffram.
+Moving label "_02198_" from metal1 to via1 in cell ffram.
+Moving label "_02203_" from metal1 to via1 in cell ffram.
+Moving label "_02213_" from metal1 to via1 in cell ffram.
+Moving label "_02224_" from metal1 to via1 in cell ffram.
+Moving label "_02228_" from metal1 to via1 in cell ffram.
+Moving label "_02231_" from metal1 to via1 in cell ffram.
+Moving label "_02260_" from metal1 to via1 in cell ffram.
+Moving label "_02289_" from metal1 to via1 in cell ffram.
+Moving label "_02294_" from metal1 to via1 in cell ffram.
+Moving label "_02298_" from metal1 to via1 in cell ffram.
+Moving label "_02299_" from metal1 to via1 in cell ffram.
+Moving label "_02303_" from metal1 to via1 in cell ffram.
+Moving label "_02324_" from metal1 to viali in cell ffram.
+Moving label "_02337_" from metal1 to via1 in cell ffram.
+Moving label "_02358_" from metal1 to via1 in cell ffram.
+Moving label "_02374_" from metal1 to via1 in cell ffram.
+Moving label "_02407_" from metal1 to via1 in cell ffram.
+Moving label "_02415_" from metal1 to via1 in cell ffram.
+Moving label "_02423_" from metal1 to via1 in cell ffram.
+Moving label "_02470_" from metal1 to via1 in cell ffram.
+Moving label "_02476_" from metal1 to via1 in cell ffram.
+Moving label "_02478_" from metal1 to via1 in cell ffram.
+Moving label "_02495_" from metal1 to via1 in cell ffram.
+Moving label "_02502_" from metal1 to via1 in cell ffram.
+Moving label "_02504_" from metal1 to via1 in cell ffram.
+Moving label "_02507_" from metal1 to via1 in cell ffram.
+Moving label "_02528_" from metal1 to via1 in cell ffram.
+Moving label "_02531_" from metal1 to via1 in cell ffram.
+Moving label "_02533_" from metal1 to via1 in cell ffram.
+Moving label "_02535_" from metal1 to via1 in cell ffram.
+Moving label "_02549_" from metal1 to via1 in cell ffram.
+Moving label "_02553_" from metal1 to via1 in cell ffram.
+Moving label "_02558_" from metal1 to via1 in cell ffram.
+Moving label "_02566_" from metal1 to via1 in cell ffram.
+Moving label "_02580_" from metal1 to via1 in cell ffram.
+Moving label "_02589_" from metal1 to via1 in cell ffram.
+Moving label "_02600_" from metal1 to via1 in cell ffram.
+Moving label "_02612_" from metal1 to via1 in cell ffram.
+Moving label "_02613_" from metal1 to via1 in cell ffram.
+Moving label "_02644_" from metal1 to via1 in cell ffram.
+Moving label "_02663_" from metal1 to via1 in cell ffram.
+Moving label "_02695_" from metal1 to via1 in cell ffram.
+Moving label "_02700_" from metal1 to via1 in cell ffram.
+Moving label "_02702_" from metal1 to via1 in cell ffram.
+Moving label "_02718_" from metal1 to via1 in cell ffram.
+Moving label "_02720_" from metal1 to viali in cell ffram.
+Moving label "_02732_" from metal1 to via1 in cell ffram.
+Moving label "_02736_" from metal1 to via1 in cell ffram.
+Moving label "_02756_" from metal1 to via1 in cell ffram.
+Moving label "_02758_" from metal1 to via1 in cell ffram.
+Moving label "_02810_" from metal1 to via1 in cell ffram.
+Moving label "_02813_" from metal1 to via1 in cell ffram.
+Moving label "_02821_" from metal1 to via1 in cell ffram.
+Moving label "_02824_" from metal1 to via1 in cell ffram.
+Moving label "_02827_" from metal1 to via1 in cell ffram.
+Moving label "_02839_" from metal1 to viali in cell ffram.
+Moving label "_02853_" from metal1 to via1 in cell ffram.
+Moving label "_02866_" from metal1 to via1 in cell ffram.
+Moving label "_02867_" from metal1 to via1 in cell ffram.
+Moving label "_02873_" from metal1 to via1 in cell ffram.
+Moving label "_02877_" from metal1 to via1 in cell ffram.
+Moving label "_02878_" from metal1 to via1 in cell ffram.
+Moving label "_02904_" from metal1 to via1 in cell ffram.
+Moving label "_02918_" from metal1 to via1 in cell ffram.
+Moving label "_02927_" from metal1 to via1 in cell ffram.
+Moving label "_02931_" from metal1 to via1 in cell ffram.
+Moving label "_02940_" from metal1 to via1 in cell ffram.
+Moving label "_02966_" from metal1 to via1 in cell ffram.
+Moving label "_02974_" from metal1 to via1 in cell ffram.
+Moving label "_02979_" from metal1 to via1 in cell ffram.
+Moving label "_02984_" from metal1 to via1 in cell ffram.
+Moving label "_03019_" from metal1 to via1 in cell ffram.
+Moving label "_03024_" from metal1 to via1 in cell ffram.
+Moving label "_03039_" from metal1 to via1 in cell ffram.
+Moving label "_03072_" from metal1 to via1 in cell ffram.
+Moving label "_03079_" from metal1 to via1 in cell ffram.
+Moving label "_03088_" from metal1 to via1 in cell ffram.
+Moving label "_03106_" from metal1 to via1 in cell ffram.
+Moving label "_03115_" from metal1 to via1 in cell ffram.
+Moving label "_03122_" from metal1 to via1 in cell ffram.
+Moving label "_03131_" from metal1 to via1 in cell ffram.
+Moving label "_03137_" from metal1 to via1 in cell ffram.
+Moving label "_03145_" from metal1 to via1 in cell ffram.
+Moving label "_03147_" from metal1 to via1 in cell ffram.
+Moving label "_03153_" from metal1 to via1 in cell ffram.
+Moving label "_03161_" from metal1 to via1 in cell ffram.
+Moving label "_03167_" from metal1 to viali in cell ffram.
+Moving label "_03170_" from metal1 to via1 in cell ffram.
+Moving label "_03171_" from metal1 to via1 in cell ffram.
+Moving label "_03184_" from metal1 to via1 in cell ffram.
+Moving label "_03189_" from metal1 to via1 in cell ffram.
+Moving label "_03192_" from metal1 to via1 in cell ffram.
+Moving label "_03194_" from metal1 to via1 in cell ffram.
+Moving label "_03206_" from metal1 to via1 in cell ffram.
+Moving label "_03223_" from metal1 to via1 in cell ffram.
+Moving label "_03247_" from metal1 to via1 in cell ffram.
+Moving label "_03248_" from metal1 to via1 in cell ffram.
+Moving label "_03249_" from metal1 to via1 in cell ffram.
+Moving label "_03251_" from metal1 to via1 in cell ffram.
+Moving label "_03277_" from metal1 to via1 in cell ffram.
+Moving label "_03290_" from metal1 to via1 in cell ffram.
+Moving label "_03296_" from metal1 to viali in cell ffram.
+Moving label "_03299_" from metal1 to via1 in cell ffram.
+Moving label "_03324_" from metal1 to via1 in cell ffram.
+Moving label "_03328_" from metal1 to via1 in cell ffram.
+Moving label "_03337_" from metal1 to via1 in cell ffram.
+Moving label "_03339_" from metal1 to via1 in cell ffram.
+Moving label "_03344_" from metal1 to via1 in cell ffram.
+Moving label "_03354_" from metal1 to via1 in cell ffram.
+Moving label "_03356_" from metal1 to via1 in cell ffram.
+Moving label "_03358_" from metal1 to via1 in cell ffram.
+Moving label "_03364_" from metal1 to via1 in cell ffram.
+Moving label "_03366_" from metal1 to via1 in cell ffram.
+Moving label "_03367_" from metal1 to via1 in cell ffram.
+Moving label "_03370_" from metal1 to via1 in cell ffram.
+Moving label "_03384_" from metal1 to viali in cell ffram.
+Moving label "_03397_" from metal1 to via1 in cell ffram.
+Moving label "_03401_" from metal1 to via1 in cell ffram.
+Moving label "_03404_" from metal1 to via1 in cell ffram.
+Moving label "_03424_" from metal1 to via1 in cell ffram.
+Moving label "_03441_" from metal1 to via1 in cell ffram.
+Moving label "_03470_" from metal1 to via1 in cell ffram.
+Moving label "_03473_" from metal1 to via1 in cell ffram.
+Moving label "_03477_" from metal1 to via1 in cell ffram.
+Moving label "_03478_" from metal1 to via1 in cell ffram.
+Moving label "_03486_" from metal1 to via1 in cell ffram.
+Moving label "_03490_" from metal1 to via1 in cell ffram.
+Moving label "_03492_" from metal1 to via1 in cell ffram.
+Moving label "_03497_" from metal1 to via1 in cell ffram.
+Moving label "_03503_" from metal1 to via1 in cell ffram.
+Moving label "_03514_" from metal1 to via1 in cell ffram.
+Moving label "_03518_" from metal1 to via1 in cell ffram.
+Moving label "_03522_" from metal1 to via1 in cell ffram.
+Moving label "_03528_" from metal1 to via1 in cell ffram.
+Moving label "_03570_" from metal1 to via1 in cell ffram.
+Moving label "_03571_" from metal1 to via1 in cell ffram.
+Moving label "_03580_" from metal1 to viali in cell ffram.
+Moving label "_03589_" from metal1 to via1 in cell ffram.
+Moving label "_03617_" from metal1 to via1 in cell ffram.
+Moving label "_03624_" from metal1 to via1 in cell ffram.
+Moving label "_03630_" from metal1 to via1 in cell ffram.
+Moving label "_03637_" from metal1 to via1 in cell ffram.
+Moving label "_03645_" from metal1 to via1 in cell ffram.
+Moving label "_03648_" from metal1 to via1 in cell ffram.
+Moving label "_03675_" from metal1 to via1 in cell ffram.
+Moving label "_03711_" from metal1 to via1 in cell ffram.
+Moving label "_03718_" from metal1 to via1 in cell ffram.
+Moving label "_03720_" from metal1 to via1 in cell ffram.
+Moving label "_03751_" from metal1 to via1 in cell ffram.
+Moving label "_03758_" from metal1 to via1 in cell ffram.
+Moving label "_03762_" from metal1 to via1 in cell ffram.
+Moving label "_03763_" from metal1 to via1 in cell ffram.
+Moving label "_03769_" from metal1 to via1 in cell ffram.
+Moving label "_03771_" from metal1 to via1 in cell ffram.
+Moving label "_03784_" from metal1 to via1 in cell ffram.
+Moving label "_03803_" from metal1 to viali in cell ffram.
+Moving label "_03808_" from metal1 to via1 in cell ffram.
+Moving label "_03824_" from metal1 to via1 in cell ffram.
+Moving label "_03825_" from metal1 to via1 in cell ffram.
+Moving label "_03837_" from metal1 to via1 in cell ffram.
+Moving label "_03844_" from metal1 to via1 in cell ffram.
+Moving label "_03867_" from metal1 to via1 in cell ffram.
+Moving label "_03915_" from metal2 to via2 in cell ffram.
+Moving label "_03917_" from metal1 to via1 in cell ffram.
+Moving label "_03924_" from metal1 to via1 in cell ffram.
+Moving label "_03932_" from metal1 to via1 in cell ffram.
+Moving label "_03972_" from metal1 to via1 in cell ffram.
+Moving label "_03974_" from metal1 to via1 in cell ffram.
+Moving label "_03981_" from metal1 to via1 in cell ffram.
+Moving label "_04003_" from metal1 to via1 in cell ffram.
+Moving label "_04008_" from metal1 to via1 in cell ffram.
+Moving label "_04018_" from metal1 to via1 in cell ffram.
+Moving label "_04025_" from metal1 to via1 in cell ffram.
+Moving label "_04026_" from metal1 to via1 in cell ffram.
+Moving label "_04035_" from metal1 to via1 in cell ffram.
+Moving label "_04043_" from metal1 to via1 in cell ffram.
+Moving label "_04071_" from metal1 to via1 in cell ffram.
+Moving label "_04076_" from metal1 to via1 in cell ffram.
+Moving label "_04089_" from metal1 to via1 in cell ffram.
+Moving label "_04095_" from metal1 to via1 in cell ffram.
+Moving label "_04141_" from metal1 to viali in cell ffram.
+Moving label "_04163_" from metal1 to viali in cell ffram.
+Moving label "_04171_" from metal1 to viali in cell ffram.
+Moving label "_04204_" from metal2 to via2 in cell ffram.
+Moving label "_04220_" from metal2 to via2 in cell ffram.
+Moving label "_04228_" from metal2 to via2 in cell ffram.
+Moving label "_04229_" from metal2 to via2 in cell ffram.
+Moving label "_04272_" from metal2 to via2 in cell ffram.
+Moving label "_04314_" from metal2 to via2 in cell ffram.
+Moving label "_04448_" from metal2 to via2 in cell ffram.
+Moving label "_04511_" from metal1 to via1 in cell ffram.
+Moving label "_04531_" from metal2 to via2 in cell ffram.
+Moving label "_04544_" from metal2 to via2 in cell ffram.
+Moving label "_04660_" from metal2 to via2 in cell ffram.
+Moving label "_04693_" from metal1 to viali in cell ffram.
+Moving label "_04781_" from metal1 to viali in cell ffram.
+Moving label "_04795_" from metal1 to via1 in cell ffram.
+Moving label "_04804_" from metal2 to via2 in cell ffram.
+Moving label "_04829_" from metal2 to via2 in cell ffram.
+Moving label "_04830_" from metal2 to via2 in cell ffram.
+Moving label "_04853_" from metal1 to via1 in cell ffram.
+Moving label "_04879_" from metal2 to via2 in cell ffram.
+Moving label "_04888_" from metal2 to via2 in cell ffram.
+Moving label "_04931_" from metal2 to via2 in cell ffram.
+Moving label "_04945_" from metal2 to via2 in cell ffram.
+Moving label "_04955_" from metal2 to via2 in cell ffram.
+Moving label "_04963_" from metal2 to via2 in cell ffram.
+Moving label "_05015_" from metal2 to via2 in cell ffram.
+Moving label "_05033_" from metal2 to via2 in cell ffram.
+Moving label "_05057_" from metal2 to via2 in cell ffram.
+Moving label "_05173_" from metal1 to via1 in cell ffram.
+Moving label "_05198_" from metal2 to via2 in cell ffram.
+Moving label "_05213_" from metal2 to via2 in cell ffram.
+Moving label "_05216_" from metal2 to via2 in cell ffram.
+Moving label "_05229_" from metal2 to via2 in cell ffram.
+Moving label "_05252_" from metal2 to via2 in cell ffram.
+Moving label "_05261_" from metal2 to via2 in cell ffram.
+Moving label "_05278_" from metal1 to via1 in cell ffram.
+Moving label "_05290_" from metal1 to viali in cell ffram.
+Moving label "_05374_" from metal1 to viali in cell ffram.
+Moving label "_05387_" from metal1 to viali in cell ffram.
+Moving label "_05404_" from metal2 to via1 in cell ffram.
+Moving label "_05411_" from metal1 to viali in cell ffram.
+Moving label "_05429_" from metal1 to viali in cell ffram.
+Moving label "_05541_" from metal2 to via1 in cell ffram.
+Moving label "_05554_" from metal1 to via1 in cell ffram.
+Moving label "_05600_" from metal1 to viali in cell ffram.
+Moving label "_05705_" from metal1 to viali in cell ffram.
+Moving label "_05706_" from metal1 to viali in cell ffram.
+Moving label "_05740_" from metal1 to viali in cell ffram.
+Moving label "_05805_" from metal1 to viali in cell ffram.
+Moving label "_05839_" from metal2 to via2 in cell ffram.
+Moving label "_05856_" from metal1 to viali in cell ffram.
+Moving label "_05889_" from metal2 to via2 in cell ffram.
+Moving label "_05898_" from metal1 to viali in cell ffram.
+Moving label "_05904_" from metal1 to viali in cell ffram.
+Moving label "_05908_" from metal2 to via2 in cell ffram.
+Moving label "_05915_" from metal1 to viali in cell ffram.
+Moving label "_05953_" from metal1 to via1 in cell ffram.
+Moving label "_06004_" from metal1 to viali in cell ffram.
+Moving label "_06006_" from metal2 to via1 in cell ffram.
+Moving label "_06032_" from metal1 to viali in cell ffram.
+Moving label "_06147_" from metal2 to via2 in cell ffram.
+Moving label "_06173_" from metal2 to via2 in cell ffram.
+Moving label "_06273_" from metal1 to viali in cell ffram.
+Moving label "_06359_" from metal1 to viali in cell ffram.
+Moving label "_06376_" from metal1 to via1 in cell ffram.
+Moving label "_06500_" from metal1 to via1 in cell ffram.
+Moving label "_06532_" from metal1 to viali in cell ffram.
+Moving label "_06643_" from metal1 to viali in cell ffram.
+Moving label "_06668_" from metal3 to via3 in cell ffram.
+Moving label "_06698_" from metal1 to viali in cell ffram.
+Moving label "_06836_" from metal1 to via1 in cell ffram.
+Moving label "_06873_" from metal2 to via2 in cell ffram.
+Moving label "_06957_" from metal2 to via2 in cell ffram.
+Moving label "_06987_" from metal1 to viali in cell ffram.
+Moving label "_07053_" from metal1 to viali in cell ffram.
+Moving label "_07077_" from metal1 to viali in cell ffram.
+Moving label "_07114_" from metal2 to via2 in cell ffram.
+Moving label "_07116_" from metal1 to viali in cell ffram.
+Moving label "_07182_" from metal1 to via1 in cell ffram.
+Moving label "_07253_" from metal1 to via1 in cell ffram.
+Moving label "_07320_" from metal1 to viali in cell ffram.
+Moving label "_07359_" from metal2 to via2 in cell ffram.
+Moving label "_07450_" from metal1 to viali in cell ffram.
+Moving label "_07494_" from metal2 to via2 in cell ffram.
+Moving label "_07557_" from metal1 to viali in cell ffram.
+Moving label "_07663_" from metal1 to viali in cell ffram.
+Moving label "_07674_" from metal2 to via2 in cell ffram.
+Moving label "_07694_" from metal1 to viali in cell ffram.
+Moving label "_07732_" from metal1 to viali in cell ffram.
+Moving label "_07791_" from metal1 to viali in cell ffram.
+Moving label "_07825_" from metal1 to viali in cell ffram.
+Moving label "_07899_" from metal1 to viali in cell ffram.
+Moving label "_07934_" from metal1 to viali in cell ffram.
+Moving label "_07951_" from metal1 to viali in cell ffram.
+Moving label "_08037_" from metal1 to viali in cell ffram.
+Moving label "_08060_" from metal1 to via1 in cell ffram.
+Moving label "_08098_" from metal2 to via2 in cell ffram.
+Moving label "_08130_" from metal1 to viali in cell ffram.
+Moving label "_08145_" from metal2 to via2 in cell ffram.
+Moving label "_08311_" from metal2 to via2 in cell ffram.
+Moving label "_08321_" from metal1 to via1 in cell ffram.
+Moving label "_08386_" from metal2 to via2 in cell ffram.
+Moving label "_08436_" from metal1 to viali in cell ffram.
+Moving label "_08452_" from metal1 to viali in cell ffram.
+Moving label "_08482_" from metal1 to viali in cell ffram.
+Moving label "_08494_" from metal1 to via1 in cell ffram.
+Moving label "_08519_" from metal1 to viali in cell ffram.
+Moving label "_08529_" from metal1 to viali in cell ffram.
+Moving label "_08625_" from metal1 to viali in cell ffram.
+Moving label "_08802_" from metal2 to via2 in cell ffram.
+Moving label "_08833_" from metal1 to viali in cell ffram.
+Moving label "_08911_" from metal1 to viali in cell ffram.
+Moving label "_09010_" from metal1 to viali in cell ffram.
+Moving label "_09012_" from metal1 to viali in cell ffram.
+Moving label "_09030_" from metal1 to via1 in cell ffram.
+Moving label "_09079_" from metal1 to viali in cell ffram.
+Moving label "_09103_" from metal1 to via1 in cell ffram.
+Moving label "_09133_" from metal2 to via1 in cell ffram.
+Moving label "_09179_" from metal1 to viali in cell ffram.
+Moving label "_09183_" from metal2 to via1 in cell ffram.
+Moving label "_09198_" from metal1 to viali in cell ffram.
+Moving label "_09252_" from metal2 to via2 in cell ffram.
+Moving label "_09281_" from metal2 to via2 in cell ffram.
+Moving label "_09316_" from metal1 to viali in cell ffram.
+Moving label "_09404_" from metal1 to viali in cell ffram.
+Moving label "_09449_" from metal1 to viali in cell ffram.
+Moving label "_09457_" from metal2 to via2 in cell ffram.
+Moving label "_09459_" from metal2 to via1 in cell ffram.
+Moving label "_09461_" from metal1 to viali in cell ffram.
+Moving label "_09602_" from metal2 to via2 in cell ffram.
+Moving label "_09641_" from metal2 to via2 in cell ffram.
+Moving label "_09665_" from metal3 to via3 in cell ffram.
+Moving label "_09674_" from metal1 to viali in cell ffram.
+Moving label "_09694_" from metal2 to via2 in cell ffram.
+Moving label "_09700_" from metal2 to via2 in cell ffram.
+Moving label "_09717_" from metal3 to via3 in cell ffram.
+Moving label "_09744_" from metal2 to via2 in cell ffram.
+Moving label "_09747_" from metal2 to via2 in cell ffram.
+Moving label "_09756_" from metal2 to via2 in cell ffram.
+Moving label "_09769_" from metal1 to viali in cell ffram.
+Moving label "_09783_" from metal2 to via2 in cell ffram.
+Moving label "_09788_" from metal1 to viali in cell ffram.
+Moving label "_09789_" from metal2 to via2 in cell ffram.
+Moving label "_09796_" from metal2 to via2 in cell ffram.
+Moving label "_09817_" from metal2 to via2 in cell ffram.
+Moving label "_09841_" from metal2 to via2 in cell ffram.
+Moving label "_09858_" from metal2 to via2 in cell ffram.
+Moving label "_09859_" from metal2 to via2 in cell ffram.
+Moving label "_09876_" from metal2 to via2 in cell ffram.
+Moving label "_09940_" from metal1 to via1 in cell ffram.
+Moving label "_09975_" from metal2 to via2 in cell ffram.
+Moving label "_10016_" from metal1 to viali in cell ffram.
+Moving label "_10071_" from metal1 to viali in cell ffram.
+Moving label "_10085_" from metal2 to via2 in cell ffram.
+Moving label "_10093_" from metal2 to via2 in cell ffram.
+Moving label "_10095_" from metal2 to via1 in cell ffram.
+Moving label "_10102_" from metal2 to via2 in cell ffram.
+Moving label "_10108_" from metal1 to via1 in cell ffram.
+Moving label "_10128_" from metal2 to via2 in cell ffram.
+Moving label "_10174_" from metal2 to via2 in cell ffram.
+Moving label "_10227_" from metal2 to via2 in cell ffram.
+Moving label "_10228_" from metal1 to viali in cell ffram.
+Moving label "_10248_" from metal2 to via2 in cell ffram.
+Moving label "_10330_" from metal2 to via2 in cell ffram.
+Moving label "_10344_" from metal1 to viali in cell ffram.
+Moving label "_10351_" from metal2 to via2 in cell ffram.
+Moving label "_10406_" from metal2 to via2 in cell ffram.
+Moving label "_10430_" from metal2 to via2 in cell ffram.
+Moving label "_10439_" from metal1 to via1 in cell ffram.
+Moving label "_10483_" from metal2 to via2 in cell ffram.
+Moving label "_10489_" from metal2 to via2 in cell ffram.
+Moving label "_10496_" from metal2 to via2 in cell ffram.
+Moving label "_10509_" from metal2 to via1 in cell ffram.
+Moving label "_10569_" from metal1 to via1 in cell ffram.
+Moving label "_10572_" from metal2 to via2 in cell ffram.
+Moving label "_10600_" from metal2 to via2 in cell ffram.
+Moving label "_10607_" from metal2 to via2 in cell ffram.
+Moving label "_10613_" from metal2 to via1 in cell ffram.
+Moving label "_10645_" from metal1 to via1 in cell ffram.
+Moving label "_10762_" from metal2 to via2 in cell ffram.
+Moving label "_10791_" from metal2 to via2 in cell ffram.
+Moving label "_10814_" from metal3 to via3 in cell ffram.
+Moving label "_10824_" from metal1 to via1 in cell ffram.
+Moving label "_10827_" from metal2 to via2 in cell ffram.
+Moving label "_10845_" from metal2 to via2 in cell ffram.
+Moving label "_10878_" from metal2 to via2 in cell ffram.
+Moving label "_10893_" from metal2 to via2 in cell ffram.
+Moving label "_10925_" from metal2 to via2 in cell ffram.
+Moving label "_10929_" from metal1 to viali in cell ffram.
+Moving label "_10935_" from metal2 to via2 in cell ffram.
+Moving label "_10949_" from metal2 to via2 in cell ffram.
+Moving label "_10982_" from metal1 to via1 in cell ffram.
+Moving label "_11050_" from metal2 to via2 in cell ffram.
+Moving label "_11073_" from metal2 to via2 in cell ffram.
+Moving label "_11091_" from metal2 to via2 in cell ffram.
+Moving label "_11103_" from metal2 to via2 in cell ffram.
+Moving label "_11121_" from metal2 to via2 in cell ffram.
+Moving label "_11135_" from metal2 to via2 in cell ffram.
+Moving label "_11145_" from metal2 to via2 in cell ffram.
+Moving label "_11213_" from metal1 to via1 in cell ffram.
+Moving label "_11222_" from metal2 to via2 in cell ffram.
+Moving label "bit_en[20]" from metal2 to via2 in cell ffram.
+Moving label "bit_en[21]" from metal2 to via2 in cell ffram.
+Moving label "bit_en[25]" from metal2 to via2 in cell ffram.
+Moving label "clknet_0_clk" from metal2 to via2 in cell ffram.
+Moving label "clknet_2_1_0_clk" from metal2 to via2 in cell ffram.
+Moving label "clknet_leaf_16_clk" from metal2 to via1 in cell ffram.
+Moving label "clknet_leaf_176_clk" from metal2 to via1 in cell ffram.
+Moving label "clknet_leaf_222_clk" from metal2 to via1 in cell ffram.
+Moving label "clknet_leaf_242_clk" from metal1 to via1 in cell ffram.
+Moving label "clknet_leaf_252_clk" from metal2 to via2 in cell ffram.
+Moving label "d_in[19]" from metal2 to via2 in cell ffram.
+Moving label "d_in[23]" from metal2 to via2 in cell ffram.
+Moving label "mstate\[100\]\[27\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[101\]\[13\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[101\]\[30\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[102\]\[14\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[103\]\[21\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[103\]\[24\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[103\]\[29\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[103\]\[2\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[103\]\[4\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[103\]\[9\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[104\]\[5\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[107\]\[23\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[107\]\[24\]" from metal2 to via2 in cell ffram.
+Moving label "mstate\[108\]\[14\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[109\]\[26\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[111\]\[19\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[112\]\[22\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[116\]\[5\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[117\]\[25\]" from metal2 to via2 in cell ffram.
+Moving label "mstate\[118\]\[17\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[121\]\[10\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[122\]\[18\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[127\]\[24\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[13\]\[10\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[13\]\[11\]" from metal2 to via1 in cell ffram.
+Moving label "mstate\[13\]\[12\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[14\]\[11\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[14\]\[14\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[15\]\[19\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[15\]\[25\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[18\]\[7\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[22\]\[30\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[22\]\[7\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[25\]\[19\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[25\]\[31\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[26\]\[10\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[26\]\[17\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[27\]\[6\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[29\]\[24\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[2\]\[29\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[2\]\[7\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[34\]\[13\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[36\]\[26\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[36\]\[30\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[37\]\[25\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[37\]\[28\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[37\]\[7\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[38\]\[30\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[42\]\[28\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[45\]\[14\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[48\]\[1\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[50\]\[19\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[50\]\[21\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[50\]\[26\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[50\]\[8\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[52\]\[16\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[52\]\[19\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[53\]\[23\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[57\]\[21\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[57\]\[24\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[57\]\[2\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[57\]\[31\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[59\]\[1\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[60\]\[10\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[60\]\[2\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[62\]\[30\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[64\]\[12\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[64\]\[29\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[64\]\[3\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[65\]\[0\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[66\]\[22\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[67\]\[0\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[71\]\[8\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[73\]\[13\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[73\]\[8\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[78\]\[31\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[7\]\[18\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[80\]\[27\]" from metal2 to via1 in cell ffram.
+Moving label "mstate\[82\]\[3\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[84\]\[14\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[85\]\[7\]" from metal2 to via2 in cell ffram.
+Moving label "mstate\[86\]\[17\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[87\]\[18\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[87\]\[27\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[88\]\[27\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[97\]\[29\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[97\]\[5\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[98\]\[16\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[98\]\[17\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[98\]\[21\]" from metal2 to via1 in cell ffram.
+Moving label "mstate\[98\]\[22\]" from metal2 to via1 in cell ffram.
+Moving label "mstate\[98\]\[2\]" from metal1 to via1 in cell ffram.
+Moving label "mstate\[9\]\[10\]" from metal1 to viali in cell ffram.
+Moving label "mstate\[9\]\[3\]" from metal1 to via1 in cell ffram.
+Moving label "net1002" from metal2 to via2 in cell ffram.
+Moving label "net1015" from metal2 to via2 in cell ffram.
+Moving label "net1018" from metal2 to via2 in cell ffram.
+Moving label "net1038" from metal2 to via2 in cell ffram.
+Moving label "net1040" from metal2 to via2 in cell ffram.
+Moving label "net1043" from metal2 to via2 in cell ffram.
+Moving label "net105" from metal2 to via2 in cell ffram.
+Moving label "net1083" from metal2 to via2 in cell ffram.
+Moving label "net1095" from metal2 to via2 in cell ffram.
+Moving label "net111" from metal2 to via2 in cell ffram.
+Moving label "net1158" from metal2 to via2 in cell ffram.
+Moving label "net1167" from metal2 to via2 in cell ffram.
+Moving label "net1171" from metal2 to via2 in cell ffram.
+Moving label "net1181" from metal2 to via2 in cell ffram.
+Moving label "net1186" from metal1 to viali in cell ffram.
+Moving label "net1187" from metal2 to via2 in cell ffram.
+Moving label "net1199" from metal2 to via2 in cell ffram.
+Moving label "net1203" from metal2 to via2 in cell ffram.
+Moving label "net121" from metal2 to via2 in cell ffram.
+Moving label "net1233" from metal2 to via2 in cell ffram.
+Moving label "net1243" from metal3 to via2 in cell ffram.
+Moving label "net1250" from metal2 to via2 in cell ffram.
+Moving label "net1260" from metal2 to via2 in cell ffram.
+Moving label "net1277" from metal2 to via2 in cell ffram.
+Moving label "net128" from metal2 to via2 in cell ffram.
+Moving label "net129" from metal2 to via2 in cell ffram.
+Moving label "net1295" from metal2 to via2 in cell ffram.
+Moving label "net131" from metal2 to via1 in cell ffram.
+Moving label "net1313" from metal2 to via2 in cell ffram.
+Moving label "net1345" from metal2 to via2 in cell ffram.
+Moving label "net1348" from metal2 to via2 in cell ffram.
+Moving label "net1350" from metal1 to viali in cell ffram.
+Moving label "net1351" from metal3 to via3 in cell ffram.
+Moving label "net1355" from metal1 to via1 in cell ffram.
+Moving label "net1392" from metal1 to via1 in cell ffram.
+Moving label "net1398" from metal3 to via3 in cell ffram.
+Moving label "net1403" from metal1 to via1 in cell ffram.
+Moving label "net1405" from metal3 to via3 in cell ffram.
+Moving label "net1411" from metal3 to via3 in cell ffram.
+Moving label "net1412" from metal1 to via1 in cell ffram.
+Moving label "net1416" from metal2 to via2 in cell ffram.
+Moving label "net1417" from metal2 to via2 in cell ffram.
+Moving label "net1426" from metal2 to via2 in cell ffram.
+Moving label "net1431" from metal2 to via2 in cell ffram.
+Moving label "net1434" from metal3 to via3 in cell ffram.
+Moving label "net1449" from metal1 to via1 in cell ffram.
+Moving label "net1454" from metal2 to via2 in cell ffram.
+Moving label "net1456" from metal2 to via2 in cell ffram.
+Moving label "net1466" from metal2 to via2 in cell ffram.
+Moving label "net1474" from metal2 to via2 in cell ffram.
+Moving label "net1481" from metal1 to viali in cell ffram.
+Moving label "net1484" from metal2 to via2 in cell ffram.
+Moving label "net1501" from metal1 to via1 in cell ffram.
+Moving label "net1502" from metal1 to via1 in cell ffram.
+Moving label "net1534" from metal2 to via1 in cell ffram.
+Moving label "net1546" from metal1 to viali in cell ffram.
+Moving label "net1555" from metal1 to via1 in cell ffram.
+Moving label "net156" from metal2 to via2 in cell ffram.
+Moving label "net1565" from metal1 to viali in cell ffram.
+Moving label "net1589" from metal1 to via1 in cell ffram.
+Moving label "net1605" from metal2 to via2 in cell ffram.
+Moving label "net1619" from metal1 to via1 in cell ffram.
+Moving label "net162" from metal2 to via2 in cell ffram.
+Moving label "net1661" from metal1 to via1 in cell ffram.
+Moving label "net1666" from metal2 to via2 in cell ffram.
+Moving label "net1667" from metal2 to via2 in cell ffram.
+Moving label "net1669" from metal2 to via2 in cell ffram.
+Moving label "net1675" from metal1 to via1 in cell ffram.
+Moving label "net172" from metal2 to via2 in cell ffram.
+Moving label "net1775" from metal2 to via1 in cell ffram.
+Moving label "net1781" from metal2 to via1 in cell ffram.
+Moving label "net1786" from metal1 to viali in cell ffram.
+Moving label "net1804" from metal2 to via1 in cell ffram.
+Moving label "net1849" from metal2 to via2 in cell ffram.
+Moving label "net1858" from metal2 to via2 in cell ffram.
+Moving label "net1888" from metal2 to via2 in cell ffram.
+Moving label "net1889" from metal2 to via2 in cell ffram.
+Moving label "net1900" from metal2 to via2 in cell ffram.
+Moving label "net1967" from metal2 to via2 in cell ffram.
+Moving label "net2039" from metal2 to via1 in cell ffram.
+Moving label "net2045" from metal2 to via2 in cell ffram.
+Moving label "net2071" from metal2 to via2 in cell ffram.
+Moving label "net214" from metal2 to via2 in cell ffram.
+Moving label "net2179" from metal1 to via1 in cell ffram.
+Moving label "net2206" from metal2 to via2 in cell ffram.
+Moving label "net2212" from metal1 to viali in cell ffram.
+Moving label "net2228" from metal2 to via2 in cell ffram.
+Moving label "net2236" from metal2 to via2 in cell ffram.
+Moving label "net2242" from metal1 to via1 in cell ffram.
+Moving label "net226" from metal2 to via2 in cell ffram.
+Moving label "net2303" from metal2 to via2 in cell ffram.
+Moving label "net235" from metal2 to via2 in cell ffram.
+Moving label "net2353" from metal2 to via2 in cell ffram.
+Moving label "net238" from metal2 to via2 in cell ffram.
+Moving label "net25" from metal2 to via2 in cell ffram.
+Moving label "net250" from metal3 to via3 in cell ffram.
+Moving label "net2551" from metal2 to via2 in cell ffram.
+Moving label "net2616" from metal1 to via1 in cell ffram.
+Moving label "net2695" from metal2 to via2 in cell ffram.
+Moving label "net2738" from metal2 to via1 in cell ffram.
+Moving label "net2765" from metal1 to viali in cell ffram.
+Moving label "net2766" from metal2 to via2 in cell ffram.
+Moving label "net2818" from metal3 to via3 in cell ffram.
+Moving label "net2828" from metal2 to via1 in cell ffram.
+Moving label "net2846" from metal2 to via2 in cell ffram.
+Moving label "net2921" from metal1 to viali in cell ffram.
+Moving label "net2930" from metal1 to viali in cell ffram.
+Moving label "net2942" from metal1 to viali in cell ffram.
+Moving label "net305" from metal2 to via2 in cell ffram.
+Moving label "net3083" from metal1 to viali in cell ffram.
+Moving label "net3116" from metal1 to viali in cell ffram.
+Moving label "net3143" from metal2 to via1 in cell ffram.
+Moving label "net3148" from metal1 to viali in cell ffram.
+Moving label "net3157" from metal1 to viali in cell ffram.
+Moving label "net3199" from metal1 to via1 in cell ffram.
+Moving label "net3231" from metal1 to viali in cell ffram.
+Moving label "net324" from metal2 to via2 in cell ffram.
+Moving label "net3305" from metal1 to viali in cell ffram.
+Moving label "net3351" from metal1 to viali in cell ffram.
+Moving label "net3366" from metal2 to via2 in cell ffram.
+Moving label "net3415" from metal1 to viali in cell ffram.
+Moving label "net3509" from metal1 to viali in cell ffram.
+Moving label "net3558" from metal1 to via1 in cell ffram.
+Moving label "net356" from metal2 to via2 in cell ffram.
+Moving label "net3584" from metal1 to viali in cell ffram.
+Moving label "net3592" from metal1 to viali in cell ffram.
+Moving label "net3606" from metal1 to viali in cell ffram.
+Moving label "net362" from metal2 to via2 in cell ffram.
+Moving label "net3634" from metal1 to via1 in cell ffram.
+Moving label "net3639" from metal1 to via1 in cell ffram.
+Moving label "net3659" from metal1 to viali in cell ffram.
+Moving label "net366" from metal2 to via2 in cell ffram.
+Moving label "net3703" from metal1 to via1 in cell ffram.
+Moving label "net3724" from metal1 to via1 in cell ffram.
+Moving label "net3744" from metal1 to via1 in cell ffram.
+Moving label "net376" from metal2 to via2 in cell ffram.
+Moving label "net3765" from metal1 to via1 in cell ffram.
+Moving label "net38" from metal2 to via2 in cell ffram.
+Moving label "net3869" from metal1 to viali in cell ffram.
+Moving label "net3899" from metal1 to viali in cell ffram.
+Moving label "net3911" from metal1 to viali in cell ffram.
+Moving label "net3937" from metal1 to via1 in cell ffram.
+Moving label "net3969" from metal1 to viali in cell ffram.
+Moving label "net4009" from metal1 to viali in cell ffram.
+Moving label "net407" from metal1 to viali in cell ffram.
+Moving label "net4120" from metal1 to viali in cell ffram.
+Moving label "net4188" from metal1 to viali in cell ffram.
+Moving label "net4205" from metal1 to via1 in cell ffram.
+Moving label "net4234" from metal1 to viali in cell ffram.
+Moving label "net4277" from metal1 to viali in cell ffram.
+Moving label "net4305" from metal1 to viali in cell ffram.
+Moving label "net4319" from metal1 to viali in cell ffram.
+Moving label "net4353" from metal1 to viali in cell ffram.
+Moving label "net4380" from metal1 to viali in cell ffram.
+Moving label "net4397" from metal2 to via2 in cell ffram.
+Moving label "net4412" from metal1 to viali in cell ffram.
+Moving label "net4462" from metal1 to via1 in cell ffram.
+Moving label "net4480" from metal1 to viali in cell ffram.
+Moving label "net4486" from metal2 to via2 in cell ffram.
+Moving label "net4503" from metal1 to viali in cell ffram.
+Moving label "net4505" from metal1 to viali in cell ffram.
+Moving label "net4514" from metal1 to viali in cell ffram.
+Moving label "net4558" from metal2 to via2 in cell ffram.
+Moving label "net4561" from metal1 to viali in cell ffram.
+Moving label "net4576" from metal1 to viali in cell ffram.
+Moving label "net4581" from metal1 to viali in cell ffram.
+Moving label "net4592" from metal1 to viali in cell ffram.
+Moving label "net4595" from metal1 to viali in cell ffram.
+Moving label "net4621" from metal1 to viali in cell ffram.
+Moving label "net4623" from metal1 to viali in cell ffram.
+Moving label "net463" from metal2 to via2 in cell ffram.
+Moving label "net464" from metal1 to viali in cell ffram.
+Moving label "net4682" from metal1 to viali in cell ffram.
+Moving label "net4683" from metal1 to viali in cell ffram.
+Moving label "net4698" from metal1 to viali in cell ffram.
+Moving label "net4709" from metal1 to viali in cell ffram.
+Moving label "net4719" from metal1 to via1 in cell ffram.
+Moving label "net4774" from metal1 to viali in cell ffram.
+Moving label "net4794" from metal1 to via1 in cell ffram.
+Moving label "net4821" from metal1 to viali in cell ffram.
+Moving label "net486" from metal2 to via2 in cell ffram.
+Moving label "net4914" from metal1 to viali in cell ffram.
+Moving label "net4958" from metal1 to via1 in cell ffram.
+Moving label "net4966" from metal1 to viali in cell ffram.
+Moving label "net4971" from metal1 to viali in cell ffram.
+Moving label "net5006" from metal1 to viali in cell ffram.
+Moving label "net5008" from metal1 to viali in cell ffram.
+Moving label "net503" from metal3 to via3 in cell ffram.
+Moving label "net5030" from metal1 to viali in cell ffram.
+Moving label "net5096" from metal1 to viali in cell ffram.
+Moving label "net5118" from metal1 to via1 in cell ffram.
+Moving label "net5163" from metal1 to viali in cell ffram.
+Moving label "net5178" from metal1 to viali in cell ffram.
+Moving label "net5257" from metal1 to viali in cell ffram.
+Moving label "net526" from metal2 to via2 in cell ffram.
+Moving label "net5308" from metal1 to viali in cell ffram.
+Moving label "net5309" from metal1 to viali in cell ffram.
+Moving label "net5328" from metal1 to viali in cell ffram.
+Moving label "net5365" from metal1 to viali in cell ffram.
+Moving label "net5434" from metal2 to via2 in cell ffram.
+Moving label "net5497" from metal1 to viali in cell ffram.
+Moving label "net552" from metal2 to via2 in cell ffram.
+Moving label "net5540" from metal1 to viali in cell ffram.
+Moving label "net5564" from metal1 to viali in cell ffram.
+Moving label "net5581" from metal1 to viali in cell ffram.
+Moving label "net5583" from metal1 to viali in cell ffram.
+Moving label "net563" from metal2 to via2 in cell ffram.
+Moving label "net564" from metal2 to via2 in cell ffram.
+Moving label "net5643" from metal1 to viali in cell ffram.
+Moving label "net5663" from metal1 to via1 in cell ffram.
+Moving label "net57" from metal2 to via2 in cell ffram.
+Moving label "net5706" from metal1 to via1 in cell ffram.
+Moving label "net573" from metal2 to via2 in cell ffram.
+Moving label "net5735" from metal2 to via1 in cell ffram.
+Moving label "net5771" from metal1 to via1 in cell ffram.
+Moving label "net5774" from metal1 to viali in cell ffram.
+Moving label "net5816" from metal1 to via1 in cell ffram.
+Moving label "net582" from metal2 to via2 in cell ffram.
+Moving label "net5825" from metal1 to viali in cell ffram.
+Moving label "net5876" from metal1 to viali in cell ffram.
+Moving label "net5904" from metal1 to viali in cell ffram.
+Moving label "net5907" from metal1 to viali in cell ffram.
+Moving label "net5920" from metal1 to viali in cell ffram.
+Moving label "net5987" from metal1 to via1 in cell ffram.
+Moving label "net607" from metal2 to via2 in cell ffram.
+Moving label "net6095" from metal1 to viali in cell ffram.
+Moving label "net611" from metal2 to via2 in cell ffram.
+Moving label "net620" from metal2 to via2 in cell ffram.
+Moving label "net675" from metal2 to via2 in cell ffram.
+Moving label "net677" from metal2 to via2 in cell ffram.
+Moving label "net697" from metal2 to via2 in cell ffram.
+Moving label "net700" from metal2 to via2 in cell ffram.
+Moving label "net763" from metal2 to via2 in cell ffram.
+Moving label "net781" from metal1 to viali in cell ffram.
+Moving label "net811" from metal2 to via2 in cell ffram.
+Moving label "net830" from metal1 to viali in cell ffram.
+Moving label "net857" from metal2 to via1 in cell ffram.
+Moving label "net867" from metal3 to via3 in cell ffram.
+Moving label "net913" from metal2 to via2 in cell ffram.
+Moving label "net92" from metal2 to via2 in cell ffram.
+Moving label "net929" from metal2 to via2 in cell ffram.
+Moving label "net961" from metal2 to via2 in cell ffram.
+Moving label "net965" from metal2 to via2 in cell ffram.
+Moving label "net991" from metal1 to viali in cell ffram.
+[INFO] Ignoring 'vccd1 vssd1'
+[INFO] Writing abstract LEF…
+[INFO] Not specifiying -pinonly (nets connected to pins on the same layer are declared as part of the pin)…
+Generating LEF output /home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_19_34/59-magic-writelef/ffram.lef for cell ffram:
+Diagnostic:  Write LEF header for cell ffram
+Diagnostic:  Writing LEF output for cell ffram
+Diagnostic:  Scale value is 0.005000
+[INFO] LEF Write Complete.

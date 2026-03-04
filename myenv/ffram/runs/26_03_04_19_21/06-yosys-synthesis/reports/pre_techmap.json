@@ -1,0 +1,53 @@
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_19_21/tmp/986a4a9e0f0a46ba9b646db04a0114ac.lib ",
+   "modules": {
+      "\\ffram": {
+         "num_wires":         9775,
+         "num_wire_bits":     13873,
+         "num_pub_wires":     136,
+         "num_pub_wire_bits": 4203,
+         "num_ports":         8,
+         "num_port_bits":     107,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         13798,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 4396,
+            "$_AND_": 33,
+            "$_MUX_": 32,
+            "$_NAND_": 178,
+            "$_NOR_": 33,
+            "$_NOT_": 4,
+            "$_ORNOT_": 74,
+            "$_OR_": 4952,
+            "$_SDFFE_PP0P_": 4096
+         }
+      }
+   },
+      "design": {
+         "num_wires":         9775,
+         "num_wire_bits":     13873,
+         "num_pub_wires":     136,
+         "num_pub_wire_bits": 4203,
+         "num_ports":         8,
+         "num_port_bits":     107,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         13798,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 4396,
+            "$_AND_": 33,
+            "$_MUX_": 32,
+            "$_NAND_": 178,
+            "$_NOR_": 33,
+            "$_NOT_": 4,
+            "$_ORNOT_": 74,
+            "$_OR_": 4952,
+            "$_SDFFE_PP0P_": 4096
+         }
+      }
+}
+

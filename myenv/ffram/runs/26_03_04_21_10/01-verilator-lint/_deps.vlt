@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_21_10/tmp/636d1eb94e054386bdcd0dabe363541e.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_21_10/tmp/636d1eb94e054386bdcd0dabe363541e.bb.v"

@@ -1,0 +1,1693 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+1. Executing Verilog-2005 frontend: /home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_21_14/tmp/7b9209bf5a3844fe9f6bab23bd8789b1.bb.v
+Parsing SystemVerilog input from `/home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_21_14/tmp/7b9209bf5a3844fe9f6bab23bd8789b1.bb.v' to AST representation.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_20_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_40_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_60_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_80_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_4'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a222oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufbuf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufbuf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufinv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufinv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s15_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s15_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s18_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s18_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s25_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s25_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s50_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s50_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinvlp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinvlp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__conb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfsbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfsbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__diode_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd1_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s4s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s6s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__edfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__edfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fah_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fahcin_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fahcon_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_bleeder_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso0n_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso0p_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso1n_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso1p_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputisolatch_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrckapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__macro_sparecell'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__probe_p_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__probec_p_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfsbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfsbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvgnd2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_4'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv
+Parsing SystemVerilog input from `/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv' to AST representation.
+Storing AST representation for module `$abstract\ffram'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+4. Executing AST frontend in derive mode using pre-parsed AST for module `\ffram'.
+Generating RTLIL representation for module `\ffram'.
+Warning: Replacing memory \mstate with list of registers. See /home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:38
+Warning: Replacing memory \mstate_n with list of registers. See /home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:47
+
+4.1. Analyzing design hierarchy..
+Top module:  \ffram
+
+4.2. Analyzing design hierarchy..
+Top module:  \ffram
+Removing unused module `$abstract\ffram'.
+Removed 1 unused modules.
+Renaming module ffram to ffram.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed 2 dead cases from process $proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5 in module ffram.
+Marked 133 switch rules as full_case in process $proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5 in module ffram.
+Removed a total of 2 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 263 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~133 debug messages>
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$149'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$148'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$147'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$146'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$145'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$144'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$143'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$142'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$141'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$140'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$139'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$138'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$137'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$136'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$135'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$134'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$133'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$132'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$131'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$130'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$129'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$128'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$127'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$126'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$125'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$124'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$123'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$122'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$121'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$120'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$119'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$118'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$117'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$116'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$115'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$114'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$113'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$112'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$111'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$110'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$109'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$108'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$107'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$106'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$105'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$104'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$103'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$102'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$101'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$100'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$99'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$98'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$97'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$96'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$95'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$94'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$93'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$92'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$91'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$90'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$89'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$88'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$87'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$86'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$85'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$84'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$83'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$82'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$81'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$80'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$79'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$78'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$77'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$76'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$75'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$74'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$73'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$72'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$71'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$70'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$69'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$68'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$67'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$66'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$65'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$64'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$63'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$62'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$61'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$60'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$59'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$58'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$57'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$56'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$55'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$54'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$53'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$52'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$51'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$50'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$49'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$48'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$47'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$46'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$45'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$44'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$43'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$42'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$41'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$40'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$39'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$38'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$37'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$36'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$35'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$34'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$33'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$32'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$31'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$30'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$29'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$28'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$27'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$26'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$25'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$24'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$23'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$22'.
+Creating decoders for process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+     1/524: $3\d_out[31:0]
+     2/524: $4\mstate_n[127][31:0]
+     3/524: $4\mstate_n[126][31:0]
+     4/524: $4\mstate_n[125][31:0]
+     5/524: $4\mstate_n[124][31:0]
+     6/524: $4\mstate_n[123][31:0]
+     7/524: $4\mstate_n[122][31:0]
+     8/524: $4\mstate_n[121][31:0]
+     9/524: $4\mstate_n[120][31:0]
+    10/524: $4\mstate_n[119][31:0]
+    11/524: $4\mstate_n[118][31:0]
+    12/524: $4\mstate_n[117][31:0]
+    13/524: $4\mstate_n[116][31:0]
+    14/524: $4\mstate_n[115][31:0]
+    15/524: $4\mstate_n[114][31:0]
+    16/524: $4\mstate_n[113][31:0]
+    17/524: $4\mstate_n[112][31:0]
+    18/524: $4\mstate_n[111][31:0]
+    19/524: $4\mstate_n[110][31:0]
+    20/524: $4\mstate_n[109][31:0]
+    21/524: $4\mstate_n[108][31:0]
+    22/524: $4\mstate_n[107][31:0]
+    23/524: $4\mstate_n[106][31:0]
+    24/524: $4\mstate_n[105][31:0]
+    25/524: $4\mstate_n[104][31:0]
+    26/524: $4\mstate_n[103][31:0]
+    27/524: $4\mstate_n[102][31:0]
+    28/524: $4\mstate_n[101][31:0]
+    29/524: $4\mstate_n[100][31:0]
+    30/524: $4\mstate_n[99][31:0]
+    31/524: $4\mstate_n[98][31:0]
+    32/524: $4\mstate_n[97][31:0]
+    33/524: $4\mstate_n[96][31:0]
+    34/524: $4\mstate_n[95][31:0]
+    35/524: $4\mstate_n[94][31:0]
+    36/524: $4\mstate_n[93][31:0]
+    37/524: $4\mstate_n[92][31:0]
+    38/524: $4\mstate_n[91][31:0]
+    39/524: $4\mstate_n[90][31:0]
+    40/524: $4\mstate_n[89][31:0]
+    41/524: $4\mstate_n[88][31:0]
+    42/524: $4\mstate_n[87][31:0]
+    43/524: $4\mstate_n[86][31:0]
+    44/524: $4\mstate_n[85][31:0]
+    45/524: $4\mstate_n[84][31:0]
+    46/524: $4\mstate_n[83][31:0]
+    47/524: $4\mstate_n[82][31:0]
+    48/524: $4\mstate_n[81][31:0]
+    49/524: $4\mstate_n[80][31:0]
+    50/524: $4\mstate_n[79][31:0]
+    51/524: $4\mstate_n[78][31:0]
+    52/524: $4\mstate_n[77][31:0]
+    53/524: $4\mstate_n[76][31:0]
+    54/524: $4\mstate_n[75][31:0]
+    55/524: $4\mstate_n[74][31:0]
+    56/524: $4\mstate_n[73][31:0]
+    57/524: $4\mstate_n[72][31:0]
+    58/524: $4\mstate_n[71][31:0]
+    59/524: $4\mstate_n[70][31:0]
+    60/524: $4\mstate_n[69][31:0]
+    61/524: $4\mstate_n[68][31:0]
+    62/524: $4\mstate_n[67][31:0]
+    63/524: $4\mstate_n[66][31:0]
+    64/524: $4\mstate_n[65][31:0]
+    65/524: $4\mstate_n[64][31:0]
+    66/524: $4\mstate_n[63][31:0]
+    67/524: $4\mstate_n[62][31:0]
+    68/524: $4\mstate_n[61][31:0]
+    69/524: $4\mstate_n[60][31:0]
+    70/524: $4\mstate_n[59][31:0]
+    71/524: $4\mstate_n[58][31:0]
+    72/524: $4\mstate_n[57][31:0]
+    73/524: $4\mstate_n[56][31:0]
+    74/524: $4\mstate_n[55][31:0]
+    75/524: $4\mstate_n[54][31:0]
+    76/524: $4\mstate_n[53][31:0]
+    77/524: $4\mstate_n[52][31:0]
+    78/524: $4\mstate_n[51][31:0]
+    79/524: $4\mstate_n[50][31:0]
+    80/524: $4\mstate_n[49][31:0]
+    81/524: $4\mstate_n[48][31:0]
+    82/524: $4\mstate_n[47][31:0]
+    83/524: $4\mstate_n[46][31:0]
+    84/524: $4\mstate_n[45][31:0]
+    85/524: $4\mstate_n[44][31:0]
+    86/524: $4\mstate_n[43][31:0]
+    87/524: $4\mstate_n[42][31:0]
+    88/524: $4\mstate_n[41][31:0]
+    89/524: $4\mstate_n[40][31:0]
+    90/524: $4\mstate_n[39][31:0]
+    91/524: $4\mstate_n[38][31:0]
+    92/524: $4\mstate_n[37][31:0]
+    93/524: $4\mstate_n[36][31:0]
+    94/524: $4\mstate_n[35][31:0]
+    95/524: $4\mstate_n[34][31:0]
+    96/524: $4\mstate_n[33][31:0]
+    97/524: $4\mstate_n[32][31:0]
+    98/524: $4\mstate_n[31][31:0]
+    99/524: $4\mstate_n[30][31:0]
+   100/524: $4\mstate_n[29][31:0]
+   101/524: $4\mstate_n[28][31:0]
+   102/524: $4\mstate_n[27][31:0]
+   103/524: $4\mstate_n[26][31:0]
+   104/524: $4\mstate_n[25][31:0]
+   105/524: $4\mstate_n[24][31:0]
+   106/524: $4\mstate_n[23][31:0]
+   107/524: $4\mstate_n[22][31:0]
+   108/524: $4\mstate_n[21][31:0]
+   109/524: $4\mstate_n[20][31:0]
+   110/524: $4\mstate_n[19][31:0]
+   111/524: $4\mstate_n[18][31:0]
+   112/524: $4\mstate_n[17][31:0]
+   113/524: $4\mstate_n[16][31:0]
+   114/524: $4\mstate_n[15][31:0]
+   115/524: $4\mstate_n[14][31:0]
+   116/524: $4\mstate_n[13][31:0]
+   117/524: $4\mstate_n[12][31:0]
+   118/524: $4\mstate_n[11][31:0]
+   119/524: $4\mstate_n[10][31:0]
+   120/524: $4\mstate_n[9][31:0]
+   121/524: $4\mstate_n[8][31:0]
+   122/524: $4\mstate_n[7][31:0]
+   123/524: $4\mstate_n[6][31:0]
+   124/524: $4\mstate_n[5][31:0]
+   125/524: $4\mstate_n[4][31:0]
+   126/524: $4\mstate_n[3][31:0]
+   127/524: $4\mstate_n[2][31:0]
+   128/524: $4\mstate_n[1][31:0]
+   129/524: $4\mstate_n[0][31:0]
+   130/524: $3$mem2reg_rd$\mstate$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:55$4_DATA[31:0]$20
+   131/524: $3\mstate_n[0][31:0]
+   132/524: $3\mstate_n[127][31:0]
+   133/524: $3\mstate_n[126][31:0]
+   134/524: $3\mstate_n[125][31:0]
+   135/524: $3\mstate_n[124][31:0]
+   136/524: $3\mstate_n[123][31:0]
+   137/524: $3\mstate_n[122][31:0]
+   138/524: $3\mstate_n[121][31:0]
+   139/524: $3\mstate_n[120][31:0]
+   140/524: $3\mstate_n[119][31:0]
+   141/524: $3\mstate_n[118][31:0]
+   142/524: $3\mstate_n[117][31:0]
+   143/524: $3\mstate_n[116][31:0]
+   144/524: $3\mstate_n[115][31:0]
+   145/524: $3\mstate_n[114][31:0]
+   146/524: $3\mstate_n[113][31:0]
+   147/524: $3\mstate_n[112][31:0]
+   148/524: $3\mstate_n[111][31:0]
+   149/524: $3\mstate_n[110][31:0]
+   150/524: $3\mstate_n[109][31:0]
+   151/524: $3\mstate_n[108][31:0]
+   152/524: $3\mstate_n[107][31:0]
+   153/524: $3\mstate_n[106][31:0]
+   154/524: $3\mstate_n[105][31:0]
+   155/524: $3\mstate_n[104][31:0]
+   156/524: $3\mstate_n[103][31:0]
+   157/524: $3\mstate_n[102][31:0]
+   158/524: $3\mstate_n[101][31:0]
+   159/524: $3\mstate_n[100][31:0]
+   160/524: $3\mstate_n[99][31:0]
+   161/524: $3\mstate_n[98][31:0]
+   162/524: $3\mstate_n[97][31:0]
+   163/524: $3\mstate_n[96][31:0]
+   164/524: $3\mstate_n[95][31:0]
+   165/524: $3\mstate_n[94][31:0]
+   166/524: $3\mstate_n[93][31:0]
+   167/524: $3\mstate_n[92][31:0]
+   168/524: $3\mstate_n[91][31:0]
+   169/524: $3\mstate_n[90][31:0]
+   170/524: $3\mstate_n[89][31:0]
+   171/524: $3\mstate_n[88][31:0]
+   172/524: $3\mstate_n[87][31:0]
+   173/524: $3\mstate_n[86][31:0]
+   174/524: $3\mstate_n[85][31:0]
+   175/524: $3\mstate_n[84][31:0]
+   176/524: $3\mstate_n[83][31:0]
+   177/524: $3\mstate_n[82][31:0]
+   178/524: $3\mstate_n[81][31:0]
+   179/524: $3\mstate_n[80][31:0]
+   180/524: $3\mstate_n[79][31:0]
+   181/524: $3\mstate_n[78][31:0]
+   182/524: $3\mstate_n[77][31:0]
+   183/524: $3\mstate_n[76][31:0]
+   184/524: $3\mstate_n[75][31:0]
+   185/524: $3\mstate_n[74][31:0]
+   186/524: $3\mstate_n[73][31:0]
+   187/524: $3\mstate_n[72][31:0]
+   188/524: $3\mstate_n[71][31:0]
+   189/524: $3\mstate_n[70][31:0]
+   190/524: $3\mstate_n[69][31:0]
+   191/524: $3\mstate_n[68][31:0]
+   192/524: $3\mstate_n[67][31:0]
+   193/524: $3\mstate_n[66][31:0]
+   194/524: $3\mstate_n[65][31:0]
+   195/524: $3\mstate_n[64][31:0]
+   196/524: $3\mstate_n[63][31:0]
+   197/524: $3\mstate_n[62][31:0]
+   198/524: $3\mstate_n[61][31:0]
+   199/524: $3\mstate_n[60][31:0]
+   200/524: $3\mstate_n[59][31:0]
+   201/524: $3\mstate_n[58][31:0]
+   202/524: $3\mstate_n[57][31:0]
+   203/524: $3\mstate_n[56][31:0]
+   204/524: $3\mstate_n[55][31:0]
+   205/524: $3\mstate_n[54][31:0]
+   206/524: $3\mstate_n[53][31:0]
+   207/524: $3\mstate_n[52][31:0]
+   208/524: $3\mstate_n[51][31:0]
+   209/524: $3\mstate_n[50][31:0]
+   210/524: $3\mstate_n[49][31:0]
+   211/524: $3\mstate_n[48][31:0]
+   212/524: $3\mstate_n[47][31:0]
+   213/524: $3\mstate_n[46][31:0]
+   214/524: $3\mstate_n[45][31:0]
+   215/524: $3\mstate_n[44][31:0]
+   216/524: $3\mstate_n[43][31:0]
+   217/524: $3\mstate_n[42][31:0]
+   218/524: $3\mstate_n[41][31:0]
+   219/524: $3\mstate_n[40][31:0]
+   220/524: $3\mstate_n[39][31:0]
+   221/524: $3\mstate_n[38][31:0]
+   222/524: $3\mstate_n[37][31:0]
+   223/524: $3\mstate_n[36][31:0]
+   224/524: $3\mstate_n[35][31:0]
+   225/524: $3\mstate_n[34][31:0]
+   226/524: $3\mstate_n[33][31:0]
+   227/524: $3\mstate_n[32][31:0]
+   228/524: $3\mstate_n[31][31:0]
+   229/524: $3\mstate_n[30][31:0]
+   230/524: $3\mstate_n[29][31:0]
+   231/524: $3\mstate_n[28][31:0]
+   232/524: $3\mstate_n[27][31:0]
+   233/524: $3\mstate_n[26][31:0]
+   234/524: $3\mstate_n[25][31:0]
+   235/524: $3\mstate_n[24][31:0]
+   236/524: $3\mstate_n[23][31:0]
+   237/524: $3\mstate_n[22][31:0]
+   238/524: $3\mstate_n[21][31:0]
+   239/524: $3\mstate_n[20][31:0]
+   240/524: $3\mstate_n[19][31:0]
+   241/524: $3\mstate_n[18][31:0]
+   242/524: $3\mstate_n[17][31:0]
+   243/524: $3\mstate_n[16][31:0]
+   244/524: $3\mstate_n[15][31:0]
+   245/524: $3\mstate_n[14][31:0]
+   246/524: $3\mstate_n[13][31:0]
+   247/524: $3\mstate_n[12][31:0]
+   248/524: $3\mstate_n[11][31:0]
+   249/524: $3\mstate_n[10][31:0]
+   250/524: $3\mstate_n[9][31:0]
+   251/524: $3\mstate_n[8][31:0]
+   252/524: $3\mstate_n[7][31:0]
+   253/524: $3\mstate_n[6][31:0]
+   254/524: $3\mstate_n[5][31:0]
+   255/524: $3\mstate_n[4][31:0]
+   256/524: $3\mstate_n[3][31:0]
+   257/524: $3\mstate_n[2][31:0]
+   258/524: $3\mstate_n[1][31:0]
+   259/524: $2\mstate_n[127][31:0]
+   260/524: $2\mstate_n[126][31:0]
+   261/524: $2\mstate_n[125][31:0]
+   262/524: $2\mstate_n[124][31:0]
+   263/524: $2\mstate_n[123][31:0]
+   264/524: $2\mstate_n[122][31:0]
+   265/524: $2\mstate_n[121][31:0]
+   266/524: $2\mstate_n[120][31:0]
+   267/524: $2\mstate_n[119][31:0]
+   268/524: $2\mstate_n[118][31:0]
+   269/524: $2\mstate_n[117][31:0]
+   270/524: $2\mstate_n[116][31:0]
+   271/524: $2\mstate_n[115][31:0]
+   272/524: $2\mstate_n[114][31:0]
+   273/524: $2\mstate_n[113][31:0]
+   274/524: $2\mstate_n[112][31:0]
+   275/524: $2\mstate_n[111][31:0]
+   276/524: $2\mstate_n[110][31:0]
+   277/524: $2\mstate_n[109][31:0]
+   278/524: $2\mstate_n[108][31:0]
+   279/524: $2\mstate_n[107][31:0]
+   280/524: $2\mstate_n[106][31:0]
+   281/524: $2\mstate_n[105][31:0]
+   282/524: $2\mstate_n[104][31:0]
+   283/524: $2\mstate_n[103][31:0]
+   284/524: $2\mstate_n[102][31:0]
+   285/524: $2\mstate_n[101][31:0]
+   286/524: $2\mstate_n[100][31:0]
+   287/524: $2\mstate_n[99][31:0]
+   288/524: $2\mstate_n[98][31:0]
+   289/524: $2\mstate_n[97][31:0]
+   290/524: $2\mstate_n[96][31:0]
+   291/524: $2\mstate_n[95][31:0]
+   292/524: $2\mstate_n[94][31:0]
+   293/524: $2\mstate_n[93][31:0]
+   294/524: $2\mstate_n[92][31:0]
+   295/524: $2\mstate_n[91][31:0]
+   296/524: $2\mstate_n[90][31:0]
+   297/524: $2\mstate_n[89][31:0]
+   298/524: $2\mstate_n[88][31:0]
+   299/524: $2\mstate_n[87][31:0]
+   300/524: $2\mstate_n[86][31:0]
+   301/524: $2\mstate_n[85][31:0]
+   302/524: $2\mstate_n[84][31:0]
+   303/524: $2\mstate_n[83][31:0]
+   304/524: $2\mstate_n[82][31:0]
+   305/524: $2\mstate_n[81][31:0]
+   306/524: $2\mstate_n[80][31:0]
+   307/524: $2\mstate_n[79][31:0]
+   308/524: $2\mstate_n[78][31:0]
+   309/524: $2\mstate_n[77][31:0]
+   310/524: $2\mstate_n[76][31:0]
+   311/524: $2\mstate_n[75][31:0]
+   312/524: $2\mstate_n[74][31:0]
+   313/524: $2\mstate_n[73][31:0]
+   314/524: $2\mstate_n[72][31:0]
+   315/524: $2\mstate_n[71][31:0]
+   316/524: $2\mstate_n[70][31:0]
+   317/524: $2\mstate_n[69][31:0]
+   318/524: $2\mstate_n[68][31:0]
+   319/524: $2\mstate_n[67][31:0]
+   320/524: $2\mstate_n[66][31:0]
+   321/524: $2\mstate_n[65][31:0]
+   322/524: $2\mstate_n[64][31:0]
+   323/524: $2\mstate_n[63][31:0]
+   324/524: $2\mstate_n[62][31:0]
+   325/524: $2\mstate_n[61][31:0]
+   326/524: $2\mstate_n[60][31:0]
+   327/524: $2\mstate_n[59][31:0]
+   328/524: $2\mstate_n[58][31:0]
+   329/524: $2\mstate_n[57][31:0]
+   330/524: $2\mstate_n[56][31:0]
+   331/524: $2\mstate_n[55][31:0]
+   332/524: $2\mstate_n[54][31:0]
+   333/524: $2\mstate_n[53][31:0]
+   334/524: $2\mstate_n[52][31:0]
+   335/524: $2\mstate_n[51][31:0]
+   336/524: $2\mstate_n[50][31:0]
+   337/524: $2\mstate_n[49][31:0]
+   338/524: $2\mstate_n[48][31:0]
+   339/524: $2\mstate_n[47][31:0]
+   340/524: $2\mstate_n[46][31:0]
+   341/524: $2\mstate_n[45][31:0]
+   342/524: $2\mstate_n[44][31:0]
+   343/524: $2\mstate_n[43][31:0]
+   344/524: $2\mstate_n[42][31:0]
+   345/524: $2\mstate_n[41][31:0]
+   346/524: $2\mstate_n[40][31:0]
+   347/524: $2\mstate_n[39][31:0]
+   348/524: $2\mstate_n[38][31:0]
+   349/524: $2\mstate_n[37][31:0]
+   350/524: $2\mstate_n[36][31:0]
+   351/524: $2\mstate_n[35][31:0]
+   352/524: $2\mstate_n[34][31:0]
+   353/524: $2\mstate_n[33][31:0]
+   354/524: $2\mstate_n[32][31:0]
+   355/524: $2\mstate_n[31][31:0]
+   356/524: $2\mstate_n[30][31:0]
+   357/524: $2\mstate_n[29][31:0]
+   358/524: $2\mstate_n[28][31:0]
+   359/524: $2\mstate_n[27][31:0]
+   360/524: $2\mstate_n[26][31:0]
+   361/524: $2\mstate_n[25][31:0]
+   362/524: $2\mstate_n[24][31:0]
+   363/524: $2\mstate_n[23][31:0]
+   364/524: $2\mstate_n[22][31:0]
+   365/524: $2\mstate_n[21][31:0]
+   366/524: $2\mstate_n[20][31:0]
+   367/524: $2\mstate_n[19][31:0]
+   368/524: $2\mstate_n[18][31:0]
+   369/524: $2\mstate_n[17][31:0]
+   370/524: $2\mstate_n[16][31:0]
+   371/524: $2\mstate_n[15][31:0]
+   372/524: $2\mstate_n[14][31:0]
+   373/524: $2\mstate_n[13][31:0]
+   374/524: $2\mstate_n[12][31:0]
+   375/524: $2\mstate_n[11][31:0]
+   376/524: $2\mstate_n[10][31:0]
+   377/524: $2\mstate_n[9][31:0]
+   378/524: $2\mstate_n[8][31:0]
+   379/524: $2\mstate_n[7][31:0]
+   380/524: $2\mstate_n[6][31:0]
+   381/524: $2\mstate_n[5][31:0]
+   382/524: $2\mstate_n[4][31:0]
+   383/524: $2\mstate_n[3][31:0]
+   384/524: $2\mstate_n[2][31:0]
+   385/524: $2\mstate_n[1][31:0]
+   386/524: $2\mstate_n[0][31:0]
+   387/524: $2$mem2reg_wr$\mstate_n$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:53$3_ADDR[6:0]$15
+   388/524: $2$mem2reg_wr$\mstate_n$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:53$3_DATA[31:0]$16
+   389/524: $2$mem2reg_rd$\mstate$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:55$4_DATA[31:0]$18
+   390/524: $2$mem2reg_rd$\mstate$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:55$4_ADDR[6:0]$17
+   391/524: $2\d_out[31:0]
+   392/524: $1$mem2reg_rd$\mstate$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:55$4_DATA[31:0]$13
+   393/524: $1$mem2reg_rd$\mstate$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:55$4_ADDR[6:0]$12
+   394/524: $1$mem2reg_wr$\mstate_n$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:53$3_DATA[31:0]$11
+   395/524: $1$mem2reg_wr$\mstate_n$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:53$3_ADDR[6:0]$10
+   396/524: $1\mstate_n[127][31:0]
+   397/524: $1\mstate_n[126][31:0]
+   398/524: $1\mstate_n[125][31:0]
+   399/524: $1\mstate_n[124][31:0]
+   400/524: $1\mstate_n[123][31:0]
+   401/524: $1\mstate_n[122][31:0]
+   402/524: $1\mstate_n[121][31:0]
+   403/524: $1\mstate_n[120][31:0]
+   404/524: $1\mstate_n[119][31:0]
+   405/524: $1\mstate_n[118][31:0]
+   406/524: $1\mstate_n[117][31:0]
+   407/524: $1\mstate_n[116][31:0]
+   408/524: $1\mstate_n[115][31:0]
+   409/524: $1\mstate_n[114][31:0]
+   410/524: $1\mstate_n[113][31:0]
+   411/524: $1\mstate_n[112][31:0]
+   412/524: $1\mstate_n[111][31:0]
+   413/524: $1\mstate_n[110][31:0]
+   414/524: $1\mstate_n[109][31:0]
+   415/524: $1\mstate_n[108][31:0]
+   416/524: $1\mstate_n[107][31:0]
+   417/524: $1\mstate_n[106][31:0]
+   418/524: $1\mstate_n[105][31:0]
+   419/524: $1\mstate_n[104][31:0]
+   420/524: $1\mstate_n[103][31:0]
+   421/524: $1\mstate_n[102][31:0]
+   422/524: $1\mstate_n[101][31:0]
+   423/524: $1\mstate_n[100][31:0]
+   424/524: $1\mstate_n[99][31:0]
+   425/524: $1\mstate_n[98][31:0]
+   426/524: $1\mstate_n[97][31:0]
+   427/524: $1\mstate_n[96][31:0]
+   428/524: $1\mstate_n[95][31:0]
+   429/524: $1\mstate_n[94][31:0]
+   430/524: $1\mstate_n[93][31:0]
+   431/524: $1\mstate_n[92][31:0]
+   432/524: $1\mstate_n[91][31:0]
+   433/524: $1\mstate_n[90][31:0]
+   434/524: $1\mstate_n[89][31:0]
+   435/524: $1\mstate_n[88][31:0]
+   436/524: $1\mstate_n[87][31:0]
+   437/524: $1\mstate_n[86][31:0]
+   438/524: $1\mstate_n[85][31:0]
+   439/524: $1\mstate_n[84][31:0]
+   440/524: $1\mstate_n[83][31:0]
+   441/524: $1\mstate_n[82][31:0]
+   442/524: $1\mstate_n[81][31:0]
+   443/524: $1\mstate_n[80][31:0]
+   444/524: $1\mstate_n[79][31:0]
+   445/524: $1\mstate_n[78][31:0]
+   446/524: $1\mstate_n[77][31:0]
+   447/524: $1\mstate_n[76][31:0]
+   448/524: $1\mstate_n[75][31:0]
+   449/524: $1\mstate_n[74][31:0]
+   450/524: $1\mstate_n[73][31:0]
+   451/524: $1\mstate_n[72][31:0]
+   452/524: $1\mstate_n[71][31:0]
+   453/524: $1\mstate_n[70][31:0]
+   454/524: $1\mstate_n[69][31:0]
+   455/524: $1\mstate_n[68][31:0]
+   456/524: $1\mstate_n[67][31:0]
+   457/524: $1\mstate_n[66][31:0]
+   458/524: $1\mstate_n[65][31:0]
+   459/524: $1\mstate_n[64][31:0]
+   460/524: $1\mstate_n[63][31:0]
+   461/524: $1\mstate_n[62][31:0]
+   462/524: $1\mstate_n[61][31:0]
+   463/524: $1\mstate_n[60][31:0]
+   464/524: $1\mstate_n[59][31:0]
+   465/524: $1\mstate_n[58][31:0]
+   466/524: $1\mstate_n[57][31:0]
+   467/524: $1\mstate_n[56][31:0]
+   468/524: $1\mstate_n[55][31:0]
+   469/524: $1\mstate_n[54][31:0]
+   470/524: $1\mstate_n[53][31:0]
+   471/524: $1\mstate_n[52][31:0]
+   472/524: $1\mstate_n[51][31:0]
+   473/524: $1\mstate_n[50][31:0]
+   474/524: $1\mstate_n[49][31:0]
+   475/524: $1\mstate_n[48][31:0]
+   476/524: $1\mstate_n[47][31:0]
+   477/524: $1\mstate_n[46][31:0]
+   478/524: $1\mstate_n[45][31:0]
+   479/524: $1\mstate_n[44][31:0]
+   480/524: $1\mstate_n[43][31:0]
+   481/524: $1\mstate_n[42][31:0]
+   482/524: $1\mstate_n[41][31:0]
+   483/524: $1\mstate_n[40][31:0]
+   484/524: $1\mstate_n[39][31:0]
+   485/524: $1\mstate_n[38][31:0]
+   486/524: $1\mstate_n[37][31:0]
+   487/524: $1\mstate_n[36][31:0]
+   488/524: $1\mstate_n[35][31:0]
+   489/524: $1\mstate_n[34][31:0]
+   490/524: $1\mstate_n[33][31:0]
+   491/524: $1\mstate_n[32][31:0]
+   492/524: $1\mstate_n[31][31:0]
+   493/524: $1\mstate_n[30][31:0]
+   494/524: $1\mstate_n[29][31:0]
+   495/524: $1\mstate_n[28][31:0]
+   496/524: $1\mstate_n[27][31:0]
+   497/524: $1\mstate_n[26][31:0]
+   498/524: $1\mstate_n[25][31:0]
+   499/524: $1\mstate_n[24][31:0]
+   500/524: $1\mstate_n[23][31:0]
+   501/524: $1\mstate_n[22][31:0]
+   502/524: $1\mstate_n[21][31:0]
+   503/524: $1\mstate_n[20][31:0]
+   504/524: $1\mstate_n[19][31:0]
+   505/524: $1\mstate_n[18][31:0]
+   506/524: $1\mstate_n[17][31:0]
+   507/524: $1\mstate_n[16][31:0]
+   508/524: $1\mstate_n[15][31:0]
+   509/524: $1\mstate_n[14][31:0]
+   510/524: $1\mstate_n[13][31:0]
+   511/524: $1\mstate_n[12][31:0]
+   512/524: $1\mstate_n[11][31:0]
+   513/524: $1\mstate_n[10][31:0]
+   514/524: $1\mstate_n[9][31:0]
+   515/524: $1\mstate_n[8][31:0]
+   516/524: $1\mstate_n[7][31:0]
+   517/524: $1\mstate_n[6][31:0]
+   518/524: $1\mstate_n[5][31:0]
+   519/524: $1\mstate_n[4][31:0]
+   520/524: $1\mstate_n[3][31:0]
+   521/524: $1\mstate_n[2][31:0]
+   522/524: $1\mstate_n[1][31:0]
+   523/524: $1\mstate_n[0][31:0]
+   524/524: $1\d_out[31:0]
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\ffram.\d_out' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\i2' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\i3' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[0]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[1]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[2]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[3]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[4]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[5]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[6]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[7]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[8]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[9]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[10]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[11]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[12]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[13]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[14]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[15]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[16]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[17]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[18]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[19]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[20]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[21]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[22]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[23]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[24]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[25]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[26]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[27]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[28]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[29]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[30]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[31]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[32]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[33]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[34]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[35]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[36]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[37]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[38]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[39]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[40]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[41]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[42]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[43]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[44]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[45]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[46]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[47]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[48]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[49]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[50]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[51]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[52]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[53]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[54]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[55]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[56]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[57]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[58]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[59]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[60]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[61]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[62]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[63]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[64]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[65]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[66]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[67]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[68]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[69]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[70]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[71]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[72]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[73]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[74]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[75]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[76]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[77]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[78]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[79]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[80]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[81]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[82]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[83]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[84]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[85]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[86]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[87]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[88]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[89]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[90]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[91]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[92]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[93]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[94]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[95]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[96]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[97]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[98]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[99]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[100]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[101]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[102]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[103]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[104]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[105]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[106]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[107]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[108]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[109]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[110]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[111]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[112]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[113]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[114]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[115]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[116]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[117]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[118]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[119]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[120]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[121]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[122]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[123]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[124]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[125]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[126]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.\mstate_n[127]' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.$mem2reg_wr$\mstate_n$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:53$3_ADDR' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.$mem2reg_wr$\mstate_n$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:53$3_DATA' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.$mem2reg_rd$\mstate$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:55$4_ADDR' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+No latch inferred for signal `\ffram.$mem2reg_rd$\mstate$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:55$4_DATA' from process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\ffram.\mstate[127]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$149'.
+  created $dff cell `$procdff$19149' with positive edge clock.
+Creating register for signal `\ffram.\mstate[126]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$148'.
+  created $dff cell `$procdff$19150' with positive edge clock.
+Creating register for signal `\ffram.\mstate[125]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$147'.
+  created $dff cell `$procdff$19151' with positive edge clock.
+Creating register for signal `\ffram.\mstate[124]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$146'.
+  created $dff cell `$procdff$19152' with positive edge clock.
+Creating register for signal `\ffram.\mstate[123]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$145'.
+  created $dff cell `$procdff$19153' with positive edge clock.
+Creating register for signal `\ffram.\mstate[122]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$144'.
+  created $dff cell `$procdff$19154' with positive edge clock.
+Creating register for signal `\ffram.\mstate[121]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$143'.
+  created $dff cell `$procdff$19155' with positive edge clock.
+Creating register for signal `\ffram.\mstate[120]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$142'.
+  created $dff cell `$procdff$19156' with positive edge clock.
+Creating register for signal `\ffram.\mstate[119]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$141'.
+  created $dff cell `$procdff$19157' with positive edge clock.
+Creating register for signal `\ffram.\mstate[118]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$140'.
+  created $dff cell `$procdff$19158' with positive edge clock.
+Creating register for signal `\ffram.\mstate[117]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$139'.
+  created $dff cell `$procdff$19159' with positive edge clock.
+Creating register for signal `\ffram.\mstate[116]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$138'.
+  created $dff cell `$procdff$19160' with positive edge clock.
+Creating register for signal `\ffram.\mstate[115]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$137'.
+  created $dff cell `$procdff$19161' with positive edge clock.
+Creating register for signal `\ffram.\mstate[114]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$136'.
+  created $dff cell `$procdff$19162' with positive edge clock.
+Creating register for signal `\ffram.\mstate[113]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$135'.
+  created $dff cell `$procdff$19163' with positive edge clock.
+Creating register for signal `\ffram.\mstate[112]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$134'.
+  created $dff cell `$procdff$19164' with positive edge clock.
+Creating register for signal `\ffram.\mstate[111]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$133'.
+  created $dff cell `$procdff$19165' with positive edge clock.
+Creating register for signal `\ffram.\mstate[110]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$132'.
+  created $dff cell `$procdff$19166' with positive edge clock.
+Creating register for signal `\ffram.\mstate[109]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$131'.
+  created $dff cell `$procdff$19167' with positive edge clock.
+Creating register for signal `\ffram.\mstate[108]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$130'.
+  created $dff cell `$procdff$19168' with positive edge clock.
+Creating register for signal `\ffram.\mstate[107]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$129'.
+  created $dff cell `$procdff$19169' with positive edge clock.
+Creating register for signal `\ffram.\mstate[106]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$128'.
+  created $dff cell `$procdff$19170' with positive edge clock.
+Creating register for signal `\ffram.\mstate[105]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$127'.
+  created $dff cell `$procdff$19171' with positive edge clock.
+Creating register for signal `\ffram.\mstate[104]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$126'.
+  created $dff cell `$procdff$19172' with positive edge clock.
+Creating register for signal `\ffram.\mstate[103]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$125'.
+  created $dff cell `$procdff$19173' with positive edge clock.
+Creating register for signal `\ffram.\mstate[102]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$124'.
+  created $dff cell `$procdff$19174' with positive edge clock.
+Creating register for signal `\ffram.\mstate[101]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$123'.
+  created $dff cell `$procdff$19175' with positive edge clock.
+Creating register for signal `\ffram.\mstate[100]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$122'.
+  created $dff cell `$procdff$19176' with positive edge clock.
+Creating register for signal `\ffram.\mstate[99]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$121'.
+  created $dff cell `$procdff$19177' with positive edge clock.
+Creating register for signal `\ffram.\mstate[98]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$120'.
+  created $dff cell `$procdff$19178' with positive edge clock.
+Creating register for signal `\ffram.\mstate[97]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$119'.
+  created $dff cell `$procdff$19179' with positive edge clock.
+Creating register for signal `\ffram.\mstate[96]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$118'.
+  created $dff cell `$procdff$19180' with positive edge clock.
+Creating register for signal `\ffram.\mstate[95]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$117'.
+  created $dff cell `$procdff$19181' with positive edge clock.
+Creating register for signal `\ffram.\mstate[94]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$116'.
+  created $dff cell `$procdff$19182' with positive edge clock.
+Creating register for signal `\ffram.\mstate[93]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$115'.
+  created $dff cell `$procdff$19183' with positive edge clock.
+Creating register for signal `\ffram.\mstate[92]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$114'.
+  created $dff cell `$procdff$19184' with positive edge clock.
+Creating register for signal `\ffram.\mstate[91]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$113'.
+  created $dff cell `$procdff$19185' with positive edge clock.
+Creating register for signal `\ffram.\mstate[90]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$112'.
+  created $dff cell `$procdff$19186' with positive edge clock.
+Creating register for signal `\ffram.\mstate[89]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$111'.
+  created $dff cell `$procdff$19187' with positive edge clock.
+Creating register for signal `\ffram.\mstate[88]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$110'.
+  created $dff cell `$procdff$19188' with positive edge clock.
+Creating register for signal `\ffram.\mstate[87]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$109'.
+  created $dff cell `$procdff$19189' with positive edge clock.
+Creating register for signal `\ffram.\mstate[86]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$108'.
+  created $dff cell `$procdff$19190' with positive edge clock.
+Creating register for signal `\ffram.\mstate[85]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$107'.
+  created $dff cell `$procdff$19191' with positive edge clock.
+Creating register for signal `\ffram.\mstate[84]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$106'.
+  created $dff cell `$procdff$19192' with positive edge clock.
+Creating register for signal `\ffram.\mstate[83]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$105'.
+  created $dff cell `$procdff$19193' with positive edge clock.
+Creating register for signal `\ffram.\mstate[82]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$104'.
+  created $dff cell `$procdff$19194' with positive edge clock.
+Creating register for signal `\ffram.\mstate[81]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$103'.
+  created $dff cell `$procdff$19195' with positive edge clock.
+Creating register for signal `\ffram.\mstate[80]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$102'.
+  created $dff cell `$procdff$19196' with positive edge clock.
+Creating register for signal `\ffram.\mstate[79]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$101'.
+  created $dff cell `$procdff$19197' with positive edge clock.
+Creating register for signal `\ffram.\mstate[78]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$100'.
+  created $dff cell `$procdff$19198' with positive edge clock.
+Creating register for signal `\ffram.\mstate[77]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$99'.
+  created $dff cell `$procdff$19199' with positive edge clock.
+Creating register for signal `\ffram.\mstate[76]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$98'.
+  created $dff cell `$procdff$19200' with positive edge clock.
+Creating register for signal `\ffram.\mstate[75]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$97'.
+  created $dff cell `$procdff$19201' with positive edge clock.
+Creating register for signal `\ffram.\mstate[74]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$96'.
+  created $dff cell `$procdff$19202' with positive edge clock.
+Creating register for signal `\ffram.\mstate[73]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$95'.
+  created $dff cell `$procdff$19203' with positive edge clock.
+Creating register for signal `\ffram.\mstate[72]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$94'.
+  created $dff cell `$procdff$19204' with positive edge clock.
+Creating register for signal `\ffram.\mstate[71]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$93'.
+  created $dff cell `$procdff$19205' with positive edge clock.
+Creating register for signal `\ffram.\mstate[70]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$92'.
+  created $dff cell `$procdff$19206' with positive edge clock.
+Creating register for signal `\ffram.\mstate[69]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$91'.
+  created $dff cell `$procdff$19207' with positive edge clock.
+Creating register for signal `\ffram.\mstate[68]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$90'.
+  created $dff cell `$procdff$19208' with positive edge clock.
+Creating register for signal `\ffram.\mstate[67]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$89'.
+  created $dff cell `$procdff$19209' with positive edge clock.
+Creating register for signal `\ffram.\mstate[66]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$88'.
+  created $dff cell `$procdff$19210' with positive edge clock.
+Creating register for signal `\ffram.\mstate[65]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$87'.
+  created $dff cell `$procdff$19211' with positive edge clock.
+Creating register for signal `\ffram.\mstate[64]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$86'.
+  created $dff cell `$procdff$19212' with positive edge clock.
+Creating register for signal `\ffram.\mstate[63]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$85'.
+  created $dff cell `$procdff$19213' with positive edge clock.
+Creating register for signal `\ffram.\mstate[62]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$84'.
+  created $dff cell `$procdff$19214' with positive edge clock.
+Creating register for signal `\ffram.\mstate[61]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$83'.
+  created $dff cell `$procdff$19215' with positive edge clock.
+Creating register for signal `\ffram.\mstate[60]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$82'.
+  created $dff cell `$procdff$19216' with positive edge clock.
+Creating register for signal `\ffram.\mstate[59]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$81'.
+  created $dff cell `$procdff$19217' with positive edge clock.
+Creating register for signal `\ffram.\mstate[58]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$80'.
+  created $dff cell `$procdff$19218' with positive edge clock.
+Creating register for signal `\ffram.\mstate[57]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$79'.
+  created $dff cell `$procdff$19219' with positive edge clock.
+Creating register for signal `\ffram.\mstate[56]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$78'.
+  created $dff cell `$procdff$19220' with positive edge clock.
+Creating register for signal `\ffram.\mstate[55]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$77'.
+  created $dff cell `$procdff$19221' with positive edge clock.
+Creating register for signal `\ffram.\mstate[54]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$76'.
+  created $dff cell `$procdff$19222' with positive edge clock.
+Creating register for signal `\ffram.\mstate[53]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$75'.
+  created $dff cell `$procdff$19223' with positive edge clock.
+Creating register for signal `\ffram.\mstate[52]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$74'.
+  created $dff cell `$procdff$19224' with positive edge clock.
+Creating register for signal `\ffram.\mstate[51]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$73'.
+  created $dff cell `$procdff$19225' with positive edge clock.
+Creating register for signal `\ffram.\mstate[50]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$72'.
+  created $dff cell `$procdff$19226' with positive edge clock.
+Creating register for signal `\ffram.\mstate[49]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$71'.
+  created $dff cell `$procdff$19227' with positive edge clock.
+Creating register for signal `\ffram.\mstate[48]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$70'.
+  created $dff cell `$procdff$19228' with positive edge clock.
+Creating register for signal `\ffram.\mstate[47]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$69'.
+  created $dff cell `$procdff$19229' with positive edge clock.
+Creating register for signal `\ffram.\mstate[46]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$68'.
+  created $dff cell `$procdff$19230' with positive edge clock.
+Creating register for signal `\ffram.\mstate[45]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$67'.
+  created $dff cell `$procdff$19231' with positive edge clock.
+Creating register for signal `\ffram.\mstate[44]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$66'.
+  created $dff cell `$procdff$19232' with positive edge clock.
+Creating register for signal `\ffram.\mstate[43]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$65'.
+  created $dff cell `$procdff$19233' with positive edge clock.
+Creating register for signal `\ffram.\mstate[42]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$64'.
+  created $dff cell `$procdff$19234' with positive edge clock.
+Creating register for signal `\ffram.\mstate[41]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$63'.
+  created $dff cell `$procdff$19235' with positive edge clock.
+Creating register for signal `\ffram.\mstate[40]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$62'.
+  created $dff cell `$procdff$19236' with positive edge clock.
+Creating register for signal `\ffram.\mstate[39]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$61'.
+  created $dff cell `$procdff$19237' with positive edge clock.
+Creating register for signal `\ffram.\mstate[38]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$60'.
+  created $dff cell `$procdff$19238' with positive edge clock.
+Creating register for signal `\ffram.\mstate[37]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$59'.
+  created $dff cell `$procdff$19239' with positive edge clock.
+Creating register for signal `\ffram.\mstate[36]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$58'.
+  created $dff cell `$procdff$19240' with positive edge clock.
+Creating register for signal `\ffram.\mstate[35]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$57'.
+  created $dff cell `$procdff$19241' with positive edge clock.
+Creating register for signal `\ffram.\mstate[34]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$56'.
+  created $dff cell `$procdff$19242' with positive edge clock.
+Creating register for signal `\ffram.\mstate[33]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$55'.
+  created $dff cell `$procdff$19243' with positive edge clock.
+Creating register for signal `\ffram.\mstate[32]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$54'.
+  created $dff cell `$procdff$19244' with positive edge clock.
+Creating register for signal `\ffram.\mstate[31]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$53'.
+  created $dff cell `$procdff$19245' with positive edge clock.
+Creating register for signal `\ffram.\mstate[30]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$52'.
+  created $dff cell `$procdff$19246' with positive edge clock.
+Creating register for signal `\ffram.\mstate[29]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$51'.
+  created $dff cell `$procdff$19247' with positive edge clock.
+Creating register for signal `\ffram.\mstate[28]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$50'.
+  created $dff cell `$procdff$19248' with positive edge clock.
+Creating register for signal `\ffram.\mstate[27]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$49'.
+  created $dff cell `$procdff$19249' with positive edge clock.
+Creating register for signal `\ffram.\mstate[26]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$48'.
+  created $dff cell `$procdff$19250' with positive edge clock.
+Creating register for signal `\ffram.\mstate[25]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$47'.
+  created $dff cell `$procdff$19251' with positive edge clock.
+Creating register for signal `\ffram.\mstate[24]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$46'.
+  created $dff cell `$procdff$19252' with positive edge clock.
+Creating register for signal `\ffram.\mstate[23]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$45'.
+  created $dff cell `$procdff$19253' with positive edge clock.
+Creating register for signal `\ffram.\mstate[22]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$44'.
+  created $dff cell `$procdff$19254' with positive edge clock.
+Creating register for signal `\ffram.\mstate[21]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$43'.
+  created $dff cell `$procdff$19255' with positive edge clock.
+Creating register for signal `\ffram.\mstate[20]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$42'.
+  created $dff cell `$procdff$19256' with positive edge clock.
+Creating register for signal `\ffram.\mstate[19]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$41'.
+  created $dff cell `$procdff$19257' with positive edge clock.
+Creating register for signal `\ffram.\mstate[18]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$40'.
+  created $dff cell `$procdff$19258' with positive edge clock.
+Creating register for signal `\ffram.\mstate[17]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$39'.
+  created $dff cell `$procdff$19259' with positive edge clock.
+Creating register for signal `\ffram.\mstate[16]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$38'.
+  created $dff cell `$procdff$19260' with positive edge clock.
+Creating register for signal `\ffram.\mstate[15]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$37'.
+  created $dff cell `$procdff$19261' with positive edge clock.
+Creating register for signal `\ffram.\mstate[14]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$36'.
+  created $dff cell `$procdff$19262' with positive edge clock.
+Creating register for signal `\ffram.\mstate[13]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$35'.
+  created $dff cell `$procdff$19263' with positive edge clock.
+Creating register for signal `\ffram.\mstate[12]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$34'.
+  created $dff cell `$procdff$19264' with positive edge clock.
+Creating register for signal `\ffram.\mstate[11]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$33'.
+  created $dff cell `$procdff$19265' with positive edge clock.
+Creating register for signal `\ffram.\mstate[10]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$32'.
+  created $dff cell `$procdff$19266' with positive edge clock.
+Creating register for signal `\ffram.\mstate[9]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$31'.
+  created $dff cell `$procdff$19267' with positive edge clock.
+Creating register for signal `\ffram.\mstate[8]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$30'.
+  created $dff cell `$procdff$19268' with positive edge clock.
+Creating register for signal `\ffram.\mstate[7]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$29'.
+  created $dff cell `$procdff$19269' with positive edge clock.
+Creating register for signal `\ffram.\mstate[6]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$28'.
+  created $dff cell `$procdff$19270' with positive edge clock.
+Creating register for signal `\ffram.\mstate[5]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$27'.
+  created $dff cell `$procdff$19271' with positive edge clock.
+Creating register for signal `\ffram.\mstate[4]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$26'.
+  created $dff cell `$procdff$19272' with positive edge clock.
+Creating register for signal `\ffram.\mstate[3]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$25'.
+  created $dff cell `$procdff$19273' with positive edge clock.
+Creating register for signal `\ffram.\mstate[2]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$24'.
+  created $dff cell `$procdff$19274' with positive edge clock.
+Creating register for signal `\ffram.\mstate[1]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$23'.
+  created $dff cell `$procdff$19275' with positive edge clock.
+Creating register for signal `\ffram.\mstate[0]' using process `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$22'.
+  created $dff cell `$procdff$19276' with positive edge clock.
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$149'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$148'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$147'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$146'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$145'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$144'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$143'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$142'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$141'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$140'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$139'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$138'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$137'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$136'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$135'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$134'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$133'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$132'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$131'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$130'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$129'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$128'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$127'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$126'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$125'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$124'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$123'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$122'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$121'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$120'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$119'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$118'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$117'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$116'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$115'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$114'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$113'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$112'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$111'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$110'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$109'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$108'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$107'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$106'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$105'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$104'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$103'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$102'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$101'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$100'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$99'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$98'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$97'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$96'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$95'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$94'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$93'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$92'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$91'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$90'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$89'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$88'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$87'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$86'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$85'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$84'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$83'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$82'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$81'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$80'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$79'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$78'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$77'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$76'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$75'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$74'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$73'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$72'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$71'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$70'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$69'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$68'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$67'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$66'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$65'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$64'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$63'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$62'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$61'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$60'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$59'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$58'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$57'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$56'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$55'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$54'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$53'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$52'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$51'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$50'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$49'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$48'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$47'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$46'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$45'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$44'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$43'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$42'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$41'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$40'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$39'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$38'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$37'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$36'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$35'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$34'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$33'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$32'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$31'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$30'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$29'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$28'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$27'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$26'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$25'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$24'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$23'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:37$22'.
+Found and cleaned up 133 empty switches in `\ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+Removing empty process `ffram.$proc$/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/ffram/ffram.sv:0$5'.
+Cleaned up 133 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module ffram.
+<suppressed ~391 debug messages>
+
+6. Executing FLATTEN pass (flatten design).
+
+7. Executing OPT_CLEAN pass (remove unused cells and wires).

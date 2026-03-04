@@ -1,0 +1,1 @@
+magic -dnull -noconsole -rcfile /home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.tech/magic/sky130A.magicrc /nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/magic/wrapper.tcl

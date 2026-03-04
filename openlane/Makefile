@@ -13,6 +13,12 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
+# UPRJ_ROOT?=$(PWD)
+
+# OPEN_PDKS_COMMIT_LVS?=6d4d11780c40b20ee63cc98e645307a9bf2b2ab8
+# OPEN_PDKS_COMMIT?=3e0e31dcce8519a7dbb82590346db16d91b7244f
+# MPW_TAG ?= CC2509
+
 MAKEFLAGS+=--warn-undefined-variables
 
 export OPENLANE_RUN_TAG = $(shell date '+%y_%m_%d_%H_%M')
@@ -158,7 +164,7 @@ $(designs) : % : ./%/config.json enable-openlane-pdk
 	ln -s $$(realpath ./$*/runs/$(OPENLANE_RUN_TAG)) ./$*/runs/$*
 # $(openlane_cmd)
 	nix-shell --run $(openlane_cmd) --pure $(OPENLANE2_ROOT)/shell.nix
-#If not in nanoHUB, run this instead: nix-shell --run $(openlane_cmd) --pure $(OPENLANE2_ROOT)/shell.nix
+# If not in nanoHUB, run this instead: nix-shell --run $(openlane_cmd) --pure $(OPENLANE2_ROOT)/shell.nix
 #https://github.com/efabless/caravel_user_project_ol2/blob/main/openlane/Makefile
 	@mkdir -p $(PROJECT_ROOT)/signoff/$*/
 	@cp $(PROJECT_ROOT)/openlane/$*/runs/$*/final/*.csv $(PROJECT_ROOT)/signoff/$*/

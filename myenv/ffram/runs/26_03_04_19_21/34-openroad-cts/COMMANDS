@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_19_21/34-openroad-cts/or_metrics_out.json /nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/openroad/cts.tcl

@@ -1,0 +1,36 @@
+114. Printing statistics.
+
+=== ffram ===
+
+   Number of wires:              17967
+   Number of wire bits:          22065
+   Number of public wires:         136
+   Number of public wire bits:    4203
+   Number of ports:                  8
+   Number of port bits:            107
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              21990
+     $_ANDNOT_                    4396
+     $_AND_                         33
+     $_MUX_                       8224
+     $_NAND_                       178
+     $_NOR_                         33
+     $_NOT_                          4
+     $_ORNOT_                       74
+     $_OR_                        4952
+     sky130_fd_sc_hd__dfxtp_2     4096
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\ffram': 87123.558400
+     of which used for sequential elements: 87123.558400 (100.00%)
+

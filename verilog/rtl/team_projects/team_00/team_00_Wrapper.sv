@@ -89,7 +89,7 @@ module team_00_Wrapper (
     
     assign gpio_oeb[4:1] = 4'b1111;//Set all to inputs
     assign gpio_out[4:1] = 4'b0;//Doesn't matter since inputs
-    assign la_data_out = 32'b0;
+//     assign la_data_out = 32'b0;
 
     //Unused connection to nebula wishbone arbitrator
     assign ADR_O = 32'b0;
@@ -118,9 +118,9 @@ module team_00_Wrapper (
         .ack_o(wbs_ack_o),
         .we_i(wbs_we_i),
         .IRQ(),//1 bit
-//     .la_data_in(la_data_in),
-//     .la_data_out(la_data_out),
-//     .la_oenb(la_oenb),
+    .la_data_in(la_data_in),
+    .la_data_out(la_data_out),
+    .la_oenb(la_oenb),
         // Add master ports
 //     .ADR_O(ADR_O),
 //     .DAT_O(DAT_O),
