@@ -59,7 +59,7 @@ library (ffram) {
   }
 
   cell ("ffram") {
-    area : 344058.188 
+    area : 291153.875 
     is_macro_cell : true;
     pin("clk") {
       direction : input;

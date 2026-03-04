@@ -47,12 +47,6 @@ ifeq ($(ROOTLESS), 1)
 	USER_ARGS =
 endif
 
-.PHONY: venv
-venv: 
-	@python3 -m venv myenv
-	@source myenv/bin/activate
-	@python3 -m pip install PyYAML
-
 # export OPENLANE_ROOT?=$(PWD)/dependencies/openlane_src  # We are not using OpenLane1
 
 # export OPENLANE2_ROOT?=${HOME}/STARS2024/openlane2-2.0.7  # for nanoHUB
@@ -135,43 +129,6 @@ simenv-cocotb:
 .PHONY: setup
 setup: check_dependencies install check-env install_mcw openlane pdk-with-ciel setup-timing-scripts setup-cocotb precheck
 
-# Format a new design
-.PHONY: setup_%
-setup_%:
-	@if echo "$(designs)" | grep -qw "$*"; then \
-		echo "Design already exists!"; \
-	else \
-		mkdir -p "$(PROJECT_ROOT)/openlane/$*"; \
-		touch "$(PROJECT_ROOT)/openlane/$*/config.json"; \
-		cp "$(PROJECT_ROOT)/support/template/config.json" "$(PROJECT_ROOT)/openlane/$*/config.json"; \
-		sed -i "s/sample_proj/$*/g" "$(PROJECT_ROOT)/openlane/$*/config.json"; \
-		mkdir -p "$(PROJECT_ROOT)/verilog/rtl/$*"; \
-		touch "$(PROJECT_ROOT)/verilog/rtl/$*/src1.sv"; \
-		cp "$(PROJECT_ROOT)/support/template/example.sv" "$(PROJECT_ROOT)/verilog/rtl/$*/src1.sv"; \
-		touch "$(PROJECT_ROOT)/verilog/rtl/$*/top.sv"; \
-		cp "$(PROJECT_ROOT)/support/template/top.sv" "$(PROJECT_ROOT)/verilog/rtl/$*/top.sv"; \
-		touch "$(PROJECT_ROOT)/verilog/rtl/$*/project.v"; \
-		cp "$(PROJECT_ROOT)/support/template/project.v" "$(PROJECT_ROOT)/verilog/rtl/$*/project.v"; \
-		sed -i "s/wrapper/$*/g" "$(PROJECT_ROOT)/verilog/rtl/$*/project.v"; \
-		mkdir -p "$(PROJECT_ROOT)/support/waves/$*"; \
-		mkdir -p "$(PROJECT_ROOT)/verilog/dv/$*"; \
-		touch "$(PROJECT_ROOT)/verilog/dv/$*/src1_tb.sv"; \
-		cp "$(PROJECT_ROOT)/support/template/src1_tb.sv" "$(PROJECT_ROOT)/verilog/dv/$*/src1_tb.sv"; \
-		sed -i "s/<project>/$*/g" "$(PROJECT_ROOT)/verilog/dv/$*/src1_tb.sv"; \
-		touch "$(PROJECT_ROOT)/verilog/dv/$*/top_tb.sv"; \
-		cp "$(PROJECT_ROOT)/support/template/top_tb.sv" "$(PROJECT_ROOT)/verilog/dv/$*/top_tb.sv"; \
-		sed -i "s/<project>/$*/g" "$(PROJECT_ROOT)/verilog/dv/$*/top_tb.sv"; \
-		touch "$(PROJECT_ROOT)/verilog/dv/$*/fpga_top_tb.sv"; \
-		cp "$(PROJECT_ROOT)/support/template/fpga_top_tb.sv" "$(PROJECT_ROOT)/verilog/dv/$*/fpga_top_tb.sv"; \
-		sed -i "s/<project>/$*/g" "$(PROJECT_ROOT)/verilog/dv/$*/fpga_top_tb.sv"; \
-		mkdir -p "$(PROJECT_ROOT)/fpga/$*"; \
-		touch "$(PROJECT_ROOT)/fpga/$*/fpga_top.sv"; \
-		cp "$(PROJECT_ROOT)/support/template/fpga_top.sv" "$(PROJECT_ROOT)/fpga/$*/fpga_top.sv"; \
-		mkdir -p "$(PROJECT_ROOT)/docs/$*"; \
-		touch "$(PROJECT_ROOT)/docs/$*/info.md"; \
-		cp "$(PROJECT_ROOT)/support/template/info.md" "$(PROJECT_ROOT)/docs/$*/info.md"; \
-		echo "Project setup successfully!"; \
-	fi
 
 .PHONY: purdue-setup
 purdue-setup: check_dependencies install check-env install_mcw pdk-with-ciel bus-wrap-setup
@@ -552,6 +509,12 @@ $(DRC_BLOCKS): drc-% : gds/%.gds check-pdk check-precheck
 #***************************************************************************
 # Purdue-Only Targets Below
 #***************************************************************************
+
+.PHONY: venv
+venv: 
+	@python3 -m venv myenv
+	@source myenv/bin/activate
+	@python3 -m pip install PyYAML
 
 .PHONY: zicsr-fix
 zicsr-fix:

@@ -1095,7 +1095,7 @@ MACRO ffram
   END wb_en
   OBS
       LAYER nwell ;
-        RECT 5.330 10.795 694.330 688.350 ;
+        RECT 5.330 10.760 694.330 688.350 ;
       LAYER li1 ;
         RECT 5.520 10.795 694.140 688.245 ;
       LAYER met1 ;

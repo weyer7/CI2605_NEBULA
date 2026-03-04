@@ -17,27 +17,6 @@
         "dir::../../verilog/rtl/nebula.v",
         "dir::../../verilog/rtl/wb_interconnect.sv",
       
-        "dir::../../verilog/rtl/team_projects/team_04/team_04_WB.v",
-        "dir::../../verilog/rtl/team_projects/team_04/team_04_Wrapper.sv",  
-      
-        "dir::../../verilog/rtl/team_projects/team_03/team_03_WB.v",
-        "dir::../../verilog/rtl/team_projects/team_03/team_03_Wrapper.sv",  
-      
-        "dir::../../verilog/rtl/team_projects/team_01/team_01_WB.v",
-        "dir::../../verilog/rtl/team_projects/team_01/team_01_Wrapper.sv",  
-      
-        "dir::../../verilog/rtl/team_projects/team_08/team_08_WB.v",
-        "dir::../../verilog/rtl/team_projects/team_08/team_08_Wrapper.sv",  
-      
-        "dir::../../verilog/rtl/team_projects/team_07/team_07_WB.v",
-        "dir::../../verilog/rtl/team_projects/team_07/team_07_Wrapper.sv",  
-      
-        "dir::../../verilog/rtl/team_projects/team_02/team_02_WB.v",
-        "dir::../../verilog/rtl/team_projects/team_02/team_02_Wrapper.sv",  
-      
-        "dir::../../verilog/rtl/team_projects/team_05/team_05_WB.v",
-        "dir::../../verilog/rtl/team_projects/team_05/team_05_Wrapper.sv",  
-      
         "dir::../../verilog/rtl/team_projects/team_00/team_00_WB.v",
         "dir::../../verilog/rtl/team_projects/team_00/team_00_Wrapper.sv",  
                 
@@ -50,20 +29,6 @@
     "ERROR_ON_KLAYOUT_DRC": false,
     "FP_PDN_MACRO_HOOKS": [
       
-        "mprj.team_04_Wrapper.team_04_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
-        "mprj.team_03_Wrapper.team_03_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
-        "mprj.team_01_Wrapper.team_01_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
-        "mprj.team_08_Wrapper.team_08_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
-        "mprj.team_07_Wrapper.team_07_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
-        "mprj.team_02_Wrapper.team_02_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
-        "mprj.team_05_Wrapper.team_05_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
         "mprj.team_00_Wrapper.team_00_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
                 
         "mprj.sram.sram_inst vccd1 vssd1 vccd1 vssd1"
@@ -72,39 +37,11 @@
     "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
       
-        "dir::../../verilog/gl/team_04.v",
-      
-        "dir::../../verilog/gl/team_03.v",
-      
-        "dir::../../verilog/gl/team_01.v",
-      
-        "dir::../../verilog/gl/team_08.v",
-      
-        "dir::../../verilog/gl/team_07.v",
-      
-        "dir::../../verilog/gl/team_02.v",
-      
-        "dir::../../verilog/gl/team_05.v",
-      
         "dir::../../verilog/gl/team_00.v",
                 
         "dir::../../verilog/rtl/sram/sky130_sram_8kbyte_1r1w_32x2048_8.v"
     ],
     "EXTRA_LEFS": [
-      
-        "dir::../../lef/team_04.lef",
-      
-        "dir::../../lef/team_03.lef",
-      
-        "dir::../../lef/team_01.lef",
-      
-        "dir::../../lef/team_08.lef",
-      
-        "dir::../../lef/team_07.lef",
-      
-        "dir::../../lef/team_02.lef",
-      
-        "dir::../../lef/team_05.lef",
       
         "dir::../../lef/team_00.lef",
                 
@@ -112,80 +49,17 @@
     ],
     "EXTRA_GDS_FILES": [
       
-        "dir::../../gds/team_04.gds",
-      
-        "dir::../../gds/team_03.gds",
-      
-        "dir::../../gds/team_01.gds",
-      
-        "dir::../../gds/team_08.gds",
-      
-        "dir::../../gds/team_07.gds",
-      
-        "dir::../../gds/team_02.gds",
-      
-        "dir::../../gds/team_05.gds",
-      
         "dir::../../gds/team_00.gds",
                 
         "dir::../../gds/sky130_sram_8kbyte_1r1w_32x2048_8.gds"
     ],
     "EXTRA_LIBS": [
       
-        "dir::../../lib/team_04.lib",
-      
-        "dir::../../lib/team_03.lib",
-      
-        "dir::../../lib/team_01.lib",
-      
-        "dir::../../lib/team_08.lib",
-      
-        "dir::../../lib/team_07.lib",
-      
-        "dir::../../lib/team_02.lib",
-      
-        "dir::../../lib/team_05.lib",
-      
         "dir::../../lib/team_00.lib",
      
         "dir::../../lib/sky130_sram_8kbyte_1r1w_32x2048_8_TT_1p8V_25C.lib"
     ],
     "EXTRA_SPEFS": [
-      
-        "team_04", 
-        "dir::../../spef/multicorner/team_04.min.spef", 
-        "dir::../../spef/multicorner/team_04.nom.spef", 
-        "dir::../../spef/multicorner/team_04.max.spef",
-      
-        "team_03", 
-        "dir::../../spef/multicorner/team_03.min.spef", 
-        "dir::../../spef/multicorner/team_03.nom.spef", 
-        "dir::../../spef/multicorner/team_03.max.spef",
-      
-        "team_01", 
-        "dir::../../spef/multicorner/team_01.min.spef", 
-        "dir::../../spef/multicorner/team_01.nom.spef", 
-        "dir::../../spef/multicorner/team_01.max.spef",
-      
-        "team_08", 
-        "dir::../../spef/multicorner/team_08.min.spef", 
-        "dir::../../spef/multicorner/team_08.nom.spef", 
-        "dir::../../spef/multicorner/team_08.max.spef",
-      
-        "team_07", 
-        "dir::../../spef/multicorner/team_07.min.spef", 
-        "dir::../../spef/multicorner/team_07.nom.spef", 
-        "dir::../../spef/multicorner/team_07.max.spef",
-      
-        "team_02", 
-        "dir::../../spef/multicorner/team_02.min.spef", 
-        "dir::../../spef/multicorner/team_02.nom.spef", 
-        "dir::../../spef/multicorner/team_02.max.spef",
-      
-        "team_05", 
-        "dir::../../spef/multicorner/team_05.min.spef", 
-        "dir::../../spef/multicorner/team_05.nom.spef", 
-        "dir::../../spef/multicorner/team_05.max.spef",
       
         "team_00", 
         "dir::../../spef/multicorner/team_00.min.spef", 

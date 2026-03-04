@@ -2,15 +2,20 @@ Netgen 1.5.278 compiled on Sun Sep 29 13:29:03 UTC 2024
 Warning: netgen command 'format' use fully-qualified name '::netgen::format'
 Warning: netgen command 'global' use fully-qualified name '::netgen::global'
 Warning:  A case-insensitive file has been read and so the	verilog file must be treated case-insensitive to match.
-Reading SPICE netlist file '/home/misrrael2003/nebula-iii/dependencies/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice'...
 Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__nfet_01v8
 Creating placeholder cell definition.
-Reading SPICE netlist file '/home/misrrael2003/nebula-iii/dependencies/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_12.spice'...
-Reading SPICE netlist file '/home/misrrael2003/nebula-iii/dependencies/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_4.spice'...
-Reading SPICE netlist file '/home/misrrael2003/nebula-iii/dependencies/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_8.spice'...
-Reading SPICE netlist file '/home/misrrael2003/nebula-iii/dependencies/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_20_12.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_40_12.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_60_12.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_80_12.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_12.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_2.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_4.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_8.spice'...
+Reading SPICE netlist file '/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice'...
 Call to undefined subcircuit sky130_fd_pr__res_generic_po
 Creating placeholder cell definition.
 Call to undefined subcircuit sky130_fd_pr__special_nfet_01v8
@@ -463,7 +468,7 @@ Note:  Implicit pin Y in instance clkload435 of sky130_fd_sc_hd__clkinv_4 in cel
 Treating empty subcircuits as black-box cells
 Generating JSON file result
 
-Reading setup file /nix/store/y3agrma01b85fdjgji9z5kdh8873ignj-python3-3.11.9-env/lib/python3.11/site-packages/openlane/scripts/netgen/setup.tcl
+Reading setup file /nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/netgen/setup.tcl
 
 Model sky130_fd_pr__res_generic_po pin 1 == 2
 No property value found for device sky130_fd_pr__res_generic_po
@@ -522,19 +527,19 @@ No property perim found for device sky130_fd_pr__special_pfet_01v8_hvt
 No property topography found for device sky130_fd_pr__special_pfet_01v8_hvt
 No property value found for device sky130_fd_pr__diode_pw2nd_05v5
 No property mult found for device sky130_fd_pr__diode_pw2nd_05v5
-Comparison output logged to file /home/misrrael2003/nebula-iii/openlane/ffram/runs/25_06_19_11_35/69-netgen-lvs/reports/lvs.netgen.rpt
-Logging to file "/home/misrrael2003/nebula-iii/openlane/ffram/runs/25_06_19_11_35/69-netgen-lvs/reports/lvs.netgen.rpt" enabled
+Comparison output logged to file /home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_19_34/69-netgen-lvs/reports/lvs.netgen.rpt
+Logging to file "/home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_19_34/69-netgen-lvs/reports/lvs.netgen.rpt" enabled
 
-Contents of circuit 1:  Circuit: 'sky130_ef_sc_hd__decap_12'
-Circuit sky130_ef_sc_hd__decap_12 contains 0 device instances.
+Contents of circuit 1:  Circuit: 'sky130_ef_sc_hd__decap_40_12'
+Circuit sky130_ef_sc_hd__decap_40_12 contains 0 device instances.
 Circuit contains 0 nets, and 4 disconnected pins.
-Contents of circuit 2:  Circuit: 'sky130_ef_sc_hd__decap_12'
-Circuit sky130_ef_sc_hd__decap_12 contains 2 device instances.
+Contents of circuit 2:  Circuit: 'sky130_ef_sc_hd__decap_40_12'
+Circuit sky130_ef_sc_hd__decap_40_12 contains 2 device instances.
   Class: sky130_fd_pr__nfet_01v8 instances:   1
   Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
 Circuit contains 4 nets.
 
-Circuit sky130_ef_sc_hd__decap_12 contains no devices.
+Circuit sky130_ef_sc_hd__decap_40_12 contains no devices.
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__fill_1'
 Circuit sky130_fd_sc_hd__fill_1 contains 0 device instances.
@@ -545,16 +550,14 @@ Circuit contains 0 nets, and 4 disconnected pins.
 
 Circuit sky130_fd_sc_hd__fill_1 contains no devices.
 
-Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__decap_6'
-Circuit sky130_fd_sc_hd__decap_6 contains 0 device instances.
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__fill_4'
+Circuit sky130_fd_sc_hd__fill_4 contains 0 device instances.
 Circuit contains 0 nets, and 4 disconnected pins.
-Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__decap_6'
-Circuit sky130_fd_sc_hd__decap_6 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   1
-  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
-Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__fill_4'
+Circuit sky130_fd_sc_hd__fill_4 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
 
-Circuit sky130_fd_sc_hd__decap_6 contains no devices.
+Circuit sky130_fd_sc_hd__fill_4 contains no devices.
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__diode_2'
 Circuit sky130_fd_sc_hd__diode_2 contains 0 device instances.
@@ -596,17 +599,6 @@ Circuit sky130_fd_sc_hd__and2_1 contains 6 device instances.
 Circuit contains 9 nets.
 
 Circuit sky130_fd_sc_hd__and2_1 contains no devices.
-
-Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__decap_4'
-Circuit sky130_fd_sc_hd__decap_4 contains 0 device instances.
-Circuit contains 0 nets, and 4 disconnected pins.
-Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__decap_4'
-Circuit sky130_fd_sc_hd__decap_4 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   1
-  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
-Circuit contains 4 nets.
-
-Circuit sky130_fd_sc_hd__decap_4 contains no devices.
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__mux2_1'
 Circuit sky130_fd_sc_hd__mux2_1 contains 0 device instances.
@@ -662,16 +654,14 @@ Circuit contains 11 nets.
 
 Circuit sky130_fd_sc_hd__or3_1 contains no devices.
 
-Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__decap_8'
-Circuit sky130_fd_sc_hd__decap_8 contains 0 device instances.
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__fill_8'
+Circuit sky130_fd_sc_hd__fill_8 contains 0 device instances.
 Circuit contains 0 nets, and 4 disconnected pins.
-Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__decap_8'
-Circuit sky130_fd_sc_hd__decap_8 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   1
-  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
-Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__fill_8'
+Circuit sky130_fd_sc_hd__fill_8 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
 
-Circuit sky130_fd_sc_hd__decap_8 contains no devices.
+Circuit sky130_fd_sc_hd__fill_8 contains no devices.
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__dlygate4sd3_1'
 Circuit sky130_fd_sc_hd__dlygate4sd3_1 contains 0 device instances.
@@ -816,17 +806,6 @@ Circuit contains 13 nets.
 
 Circuit sky130_fd_sc_hd__or4_1 contains no devices.
 
-Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__decap_3'
-Circuit sky130_fd_sc_hd__decap_3 contains 0 device instances.
-Circuit contains 0 nets, and 4 disconnected pins.
-Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__decap_3'
-Circuit sky130_fd_sc_hd__decap_3 contains 2 device instances.
-  Class: sky130_fd_pr__nfet_01v8 instances:   1
-  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
-Circuit contains 4 nets.
-
-Circuit sky130_fd_sc_hd__decap_3 contains no devices.
-
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__or4_4'
 Circuit sky130_fd_sc_hd__or4_4 contains 0 device instances.
 Circuit contains 0 nets, and 9 disconnected pins.
@@ -925,6 +904,17 @@ Circuit sky130_fd_sc_hd__o21ba_1 contains 10 device instances.
 Circuit contains 12 nets.
 
 Circuit sky130_fd_sc_hd__o21ba_1 contains no devices.
+
+Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__decap_3'
+Circuit sky130_fd_sc_hd__decap_3 contains 0 device instances.
+Circuit contains 0 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_sc_hd__decap_3'
+Circuit sky130_fd_sc_hd__decap_3 contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+  Class: sky130_fd_pr__pfet_01v8_hvt instances:   1
+Circuit contains 4 nets.
+
+Circuit sky130_fd_sc_hd__decap_3 contains no devices.
 
 Contents of circuit 1:  Circuit: 'sky130_fd_sc_hd__nor2_4'
 Circuit sky130_fd_sc_hd__nor2_4 contains 0 device instances.
@@ -1840,7 +1830,7 @@ Circuit contains 13 nets.
 Circuit sky130_fd_sc_hd__a31o_2 contains no devices.
 
 Contents of circuit 1:  Circuit: 'ffram'
-Circuit ffram contains 76250 device instances.
+Circuit ffram contains 80393 device instances.
   Class: sky130_fd_sc_hd__bufinv_16 instances:  66
   Class: sky130_fd_sc_hd__a41o_1 instances:   6
   Class: sky130_fd_sc_hd__a31o_1 instances: 100
@@ -1861,7 +1851,6 @@ Circuit ffram contains 76250 device instances.
   Class: sky130_fd_sc_hd__buf_8 instances:  65
   Class: sky130_fd_sc_hd__and3b_1 instances:   9
   Class: sky130_fd_sc_hd__and3b_2 instances:   3
-  Class: sky130_ef_sc_hd__decap_12 instances: 6480
   Class: sky130_fd_sc_hd__and4_1 instances:  23
   Class: sky130_fd_sc_hd__and4_2 instances:   6
   Class: sky130_fd_sc_hd__and4_4 instances:   9
@@ -1890,10 +1879,7 @@ Circuit ffram contains 76250 device instances.
   Class: sky130_fd_sc_hd__and3_4 instances:  19
   Class: sky130_fd_sc_hd__a2111o_1 instances:  13
   Class: sky130_fd_sc_hd__a2111o_2 instances:   3
-  Class: sky130_fd_sc_hd__decap_3 instances: 2302
-  Class: sky130_fd_sc_hd__decap_4 instances: 2211
-  Class: sky130_fd_sc_hd__decap_6 instances: 2339
-  Class: sky130_fd_sc_hd__decap_8 instances: 1749
+  Class: sky130_fd_sc_hd__decap_3 instances: 498
   Class: sky130_fd_sc_hd__dlygate4sd3_1 instances: 3265
   Class: sky130_fd_sc_hd__or2_1 instances: 120
   Class: sky130_fd_sc_hd__or2_2 instances:   7
@@ -1952,8 +1938,11 @@ Circuit ffram contains 76250 device instances.
   Class: sky130_fd_sc_hd__a21oi_1 instances:   5
   Class: sky130_fd_sc_hd__a21oi_2 instances:   1
   Class: sky130_fd_sc_hd__a21oi_4 instances:   1
-  Class: sky130_fd_sc_hd__fill_1 instances: 9177
-  Class: sky130_fd_sc_hd__fill_2 instances: 2069
+  Class: sky130_fd_sc_hd__fill_1 instances: 10981
+  Class: sky130_fd_sc_hd__fill_2 instances: 6212
+  Class: sky130_fd_sc_hd__fill_4 instances: 4550
+  Class: sky130_fd_sc_hd__fill_8 instances: 1749
+  Class: sky130_ef_sc_hd__decap_40_12 instances: 6480
   Class: sky130_fd_sc_hd__and4bb_1 instances:  14
   Class: sky130_fd_sc_hd__and4bb_2 instances:   1
   Class: sky130_fd_sc_hd__and4bb_4 instances:   5
@@ -1963,7 +1952,7 @@ Circuit ffram contains 76250 device instances.
   Class: sky130_fd_sc_hd__nor2_8 instances:  16
 Circuit contains 22521 nets.
 Contents of circuit 2:  Circuit: 'ffram'
-Circuit ffram contains 76250 device instances.
+Circuit ffram contains 80393 device instances.
   Class: sky130_fd_sc_hd__bufinv_16 instances:  66
   Class: sky130_fd_sc_hd__a41o_1 instances:   6
   Class: sky130_fd_sc_hd__a31o_1 instances: 100
@@ -1984,7 +1973,6 @@ Circuit ffram contains 76250 device instances.
   Class: sky130_fd_sc_hd__buf_8 instances:  65
   Class: sky130_fd_sc_hd__and3b_1 instances:   9
   Class: sky130_fd_sc_hd__and3b_2 instances:   3
-  Class: sky130_ef_sc_hd__decap_12 instances: 6480
   Class: sky130_fd_sc_hd__and4_1 instances:  23
   Class: sky130_fd_sc_hd__and4_2 instances:   6
   Class: sky130_fd_sc_hd__and4_4 instances:   9
@@ -2013,10 +2001,7 @@ Circuit ffram contains 76250 device instances.
   Class: sky130_fd_sc_hd__and3_4 instances:  19
   Class: sky130_fd_sc_hd__a2111o_1 instances:  13
   Class: sky130_fd_sc_hd__a2111o_2 instances:   3
-  Class: sky130_fd_sc_hd__decap_3 instances: 2302
-  Class: sky130_fd_sc_hd__decap_4 instances: 2211
-  Class: sky130_fd_sc_hd__decap_6 instances: 2339
-  Class: sky130_fd_sc_hd__decap_8 instances: 1749
+  Class: sky130_fd_sc_hd__decap_3 instances: 498
   Class: sky130_fd_sc_hd__dlygate4sd3_1 instances: 3265
   Class: sky130_fd_sc_hd__or2_1 instances: 120
   Class: sky130_fd_sc_hd__or2_2 instances:   7
@@ -2075,8 +2060,11 @@ Circuit ffram contains 76250 device instances.
   Class: sky130_fd_sc_hd__a21oi_1 instances:   5
   Class: sky130_fd_sc_hd__a21oi_2 instances:   1
   Class: sky130_fd_sc_hd__a21oi_4 instances:   1
-  Class: sky130_fd_sc_hd__fill_1 instances: 9177
-  Class: sky130_fd_sc_hd__fill_2 instances: 2069
+  Class: sky130_fd_sc_hd__fill_1 instances: 10981
+  Class: sky130_fd_sc_hd__fill_2 instances: 6212
+  Class: sky130_fd_sc_hd__fill_4 instances: 4550
+  Class: sky130_fd_sc_hd__fill_8 instances: 1749
+  Class: sky130_ef_sc_hd__decap_40_12 instances: 6480
   Class: sky130_fd_sc_hd__and4bb_1 instances:  14
   Class: sky130_fd_sc_hd__and4bb_2 instances:   1
   Class: sky130_fd_sc_hd__and4bb_4 instances:   5
@@ -2090,7 +2078,7 @@ Circuit was modified by parallel/series device merging.
 New circuit summary:
 
 Contents of circuit 1:  Circuit: 'ffram'
-Circuit ffram contains 25053 device instances.
+Circuit ffram contains 25052 device instances.
   Class: sky130_fd_sc_hd__bufinv_16 instances:  66
   Class: sky130_fd_sc_hd__a41o_1 instances:   6
   Class: sky130_fd_sc_hd__a31o_1 instances: 100
@@ -2111,7 +2099,6 @@ Circuit ffram contains 25053 device instances.
   Class: sky130_fd_sc_hd__buf_8 instances:  65
   Class: sky130_fd_sc_hd__and3b_1 instances:   9
   Class: sky130_fd_sc_hd__and3b_2 instances:   3
-  Class: sky130_ef_sc_hd__decap_12 instances:   1
   Class: sky130_fd_sc_hd__and4_1 instances:  23
   Class: sky130_fd_sc_hd__and4_2 instances:   6
   Class: sky130_fd_sc_hd__and4_4 instances:   9
@@ -2141,9 +2128,6 @@ Circuit ffram contains 25053 device instances.
   Class: sky130_fd_sc_hd__a2111o_1 instances:  13
   Class: sky130_fd_sc_hd__a2111o_2 instances:   3
   Class: sky130_fd_sc_hd__decap_3 instances:   1
-  Class: sky130_fd_sc_hd__decap_4 instances:   1
-  Class: sky130_fd_sc_hd__decap_6 instances:   1
-  Class: sky130_fd_sc_hd__decap_8 instances:   1
   Class: sky130_fd_sc_hd__dlygate4sd3_1 instances: 3265
   Class: sky130_fd_sc_hd__or2_1 instances: 120
   Class: sky130_fd_sc_hd__or2_2 instances:   7
@@ -2204,6 +2188,9 @@ Circuit ffram contains 25053 device instances.
   Class: sky130_fd_sc_hd__a21oi_4 instances:   1
   Class: sky130_fd_sc_hd__fill_1 instances:   1
   Class: sky130_fd_sc_hd__fill_2 instances:   1
+  Class: sky130_fd_sc_hd__fill_4 instances:   1
+  Class: sky130_fd_sc_hd__fill_8 instances:   1
+  Class: sky130_ef_sc_hd__decap_40_12 instances:   1
   Class: sky130_fd_sc_hd__and4bb_1 instances:  14
   Class: sky130_fd_sc_hd__and4bb_2 instances:   1
   Class: sky130_fd_sc_hd__and4bb_4 instances:   5
@@ -2213,7 +2200,7 @@ Circuit ffram contains 25053 device instances.
   Class: sky130_fd_sc_hd__nor2_8 instances:  16
 Circuit contains 22521 nets.
 Contents of circuit 2:  Circuit: 'ffram'
-Circuit ffram contains 25053 device instances.
+Circuit ffram contains 25052 device instances.
   Class: sky130_fd_sc_hd__bufinv_16 instances:  66
   Class: sky130_fd_sc_hd__a41o_1 instances:   6
   Class: sky130_fd_sc_hd__a31o_1 instances: 100
@@ -2234,7 +2221,6 @@ Circuit ffram contains 25053 device instances.
   Class: sky130_fd_sc_hd__buf_8 instances:  65
   Class: sky130_fd_sc_hd__and3b_1 instances:   9
   Class: sky130_fd_sc_hd__and3b_2 instances:   3
-  Class: sky130_ef_sc_hd__decap_12 instances:   1
   Class: sky130_fd_sc_hd__and4_1 instances:  23
   Class: sky130_fd_sc_hd__and4_2 instances:   6
   Class: sky130_fd_sc_hd__and4_4 instances:   9
@@ -2264,9 +2250,6 @@ Circuit ffram contains 25053 device instances.
   Class: sky130_fd_sc_hd__a2111o_1 instances:  13
   Class: sky130_fd_sc_hd__a2111o_2 instances:   3
   Class: sky130_fd_sc_hd__decap_3 instances:   1
-  Class: sky130_fd_sc_hd__decap_4 instances:   1
-  Class: sky130_fd_sc_hd__decap_6 instances:   1
-  Class: sky130_fd_sc_hd__decap_8 instances:   1
   Class: sky130_fd_sc_hd__dlygate4sd3_1 instances: 3265
   Class: sky130_fd_sc_hd__or2_1 instances: 120
   Class: sky130_fd_sc_hd__or2_2 instances:   7
@@ -2327,6 +2310,9 @@ Circuit ffram contains 25053 device instances.
   Class: sky130_fd_sc_hd__a21oi_4 instances:   1
   Class: sky130_fd_sc_hd__fill_1 instances:   1
   Class: sky130_fd_sc_hd__fill_2 instances:   1
+  Class: sky130_fd_sc_hd__fill_4 instances:   1
+  Class: sky130_fd_sc_hd__fill_8 instances:   1
+  Class: sky130_ef_sc_hd__decap_40_12 instances:   1
   Class: sky130_fd_sc_hd__and4bb_1 instances:  14
   Class: sky130_fd_sc_hd__and4bb_2 instances:   1
   Class: sky130_fd_sc_hd__and4bb_4 instances:   5
@@ -2336,12 +2322,12 @@ Circuit ffram contains 25053 device instances.
   Class: sky130_fd_sc_hd__nor2_8 instances:  16
 Circuit contains 22521 nets.
 
-Circuit 1 contains 25053 devices, Circuit 2 contains 25053 devices.
+Circuit 1 contains 25052 devices, Circuit 2 contains 25052 devices.
 Circuit 1 contains 22521 nets,    Circuit 2 contains 22521 nets.
 
 
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "/home/misrrael2003/nebula-iii/openlane/ffram/runs/25_06_19_11_35/69-netgen-lvs/reports/lvs.netgen.rpt" disabled
+Logging to file "/home/ajwey/CI2605_stuff/nebula-iii/openlane/ffram/runs/26_03_04_19_34/69-netgen-lvs/reports/lvs.netgen.rpt" disabled
 LVS Done.
