@@ -2,7 +2,7 @@
 <report-database>
  <description>SKY130 DRC runset</description>
  <original-file/>
- <generator>drc: script='/home/misrrael2003/nebula-iii/dependencies/pdks/sky130A/libs.tech/klayout/drc/sky130A_mr.drc'</generator>
+ <generator>drc: script='/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.tech/klayout/drc/sky130A_mr.drc'</generator>
  <top-cell>team_01</top-cell>
  <tags>
  </tags>

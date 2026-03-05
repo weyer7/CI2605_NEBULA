@@ -698,7 +698,7 @@ init_team_%:
 	fi; \
 	# If pristine is set and the directory exists, delete it \
 	if [ $$pristine -eq 1 ] && [ -d "./openlane/team_$$team_number" ]; then \
-		echo "Deleting existing directory ./openlane/team_$$team_number"; \info:
+		echo "Deleting existing directory ./openlane/team_$$team_number"; \
 		rm -rf ./openlane/team_$$team_number; \
 	fi; \
 	# If the directory doesn't exist, create it and copy files \

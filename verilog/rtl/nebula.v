@@ -36,7 +36,7 @@ module nebula (
 );
 
     // Number of teams
-    localparam NUM_TEAMS = 0;
+    localparam NUM_TEAMS = 1;
 
 
     //Synchronous rst for all the teams
@@ -137,6 +137,46 @@ module nebula (
         .WE_O  (arbitrator_we_i[0]),
         .STB_O(arbitrator_stb_i[0]),
         .CYC_O(arbitrator_cyc_i[0])
+    ); 
+        
+      
+    // team_01 Project Instance
+    team_01_Wrapper team_01_Wrapper (
+    `ifdef USE_POWER_PINS
+            .vccd1(vccd1),	// User area 1 1.8V power
+            .vssd1(vssd1),	// User area 1 digital ground
+    `endif
+        .nrst(teams_nrst),
+        //Wishbone Slave and user clk, rst
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+        .wbs_stb_i(wbs_stb_o_projects[1]),
+        .wbs_cyc_i(wbs_cyc_o_projects[1]),
+        .wbs_we_i(wbs_we_o_projects[1]),
+        .wbs_sel_i(wbs_sel_o_projects[1]),
+        .wbs_dat_i(wbs_dat_o_projects[1]),
+        .wbs_adr_i(wbs_adr_o_projects[1]),
+        .wbs_ack_o(wbs_ack_i_projects[1]),
+        .wbs_dat_o(wbs_dat_i_projects[1]),
+
+        // Logic Analyzer
+        .la_data_in(la_data_in[31:0]),
+        .la_data_out(designs_la_data_out[1]),
+        .la_oenb(la_oenb[31:0]),
+
+        // GPIOs
+        .gpio_in(io_in), // Breakout Board Pins
+        .gpio_out(designs_gpio_out[1]), // Breakout Board Pins
+        .gpio_oeb(designs_gpio_oeb[1]), // Active Low Output Enable
+
+        .DAT_I(arbitrator_dat_o[1]),
+        .ACK_I(arbitrator_ack_o[1]),
+        .ADR_O(arbitrator_adr_i[1]),
+        .DAT_O(arbitrator_dat_i[1]),
+        .SEL_O(arbitrator_sel_i[1]),
+        .WE_O  (arbitrator_we_i[1]),
+        .STB_O(arbitrator_stb_i[1]),
+        .CYC_O(arbitrator_cyc_i[1])
     ); 
         
 
