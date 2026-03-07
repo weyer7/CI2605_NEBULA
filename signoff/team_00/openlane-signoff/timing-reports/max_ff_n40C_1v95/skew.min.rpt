@@ -5,10 +5,10 @@ Clock Skew (Hold)
 ======================= max_ff_n40C_1v95 Corner ===================================
 
 Clock clk
-0.314778 source latency _1294_/CLK ^
--0.335099 target latency _1305_/CLK ^
+0.277354 source latency _1295_/CLK ^
+-0.283815 target latency _1287_/CLK ^
 -0.250000 clock uncertainty
 0.000000 CRPR
 --------------
--0.270321 hold skew
+-0.256461 hold skew
 

@@ -142,8 +142,8 @@
     "DIE_AREA": [
         0,
         0,
-        300,
-        300
+        185,
+        185
     ],
     "EXTRA_EXCLUDED_CELLS": null,
     "MACROS": null,

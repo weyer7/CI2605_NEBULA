@@ -36,7 +36,7 @@ module nebula (
 );
 
     // Number of teams
-    localparam NUM_TEAMS = 1;
+    localparam NUM_TEAMS = 15;
 
 
     //Synchronous rst for all the teams
@@ -100,6 +100,126 @@ module nebula (
     reg [3:0]          wbs_sel_o_projects [NUM_TEAMS:0];
     wire [3:0]          wbs_sel_o_gpio, wbs_sel_o_la, wbs_sel_o_ram;
       
+    // team_05 Project Instance
+    team_05_Wrapper team_05_Wrapper (
+    `ifdef USE_POWER_PINS
+            .vccd1(vccd1),	// User area 1 1.8V power
+            .vssd1(vssd1),	// User area 1 digital ground
+    `endif
+        .nrst(teams_nrst),
+        //Wishbone Slave and user clk, rst
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+        .wbs_stb_i(wbs_stb_o_projects[5]),
+        .wbs_cyc_i(wbs_cyc_o_projects[5]),
+        .wbs_we_i(wbs_we_o_projects[5]),
+        .wbs_sel_i(wbs_sel_o_projects[5]),
+        .wbs_dat_i(wbs_dat_o_projects[5]),
+        .wbs_adr_i(wbs_adr_o_projects[5]),
+        .wbs_ack_o(wbs_ack_i_projects[5]),
+        .wbs_dat_o(wbs_dat_i_projects[5]),
+
+        // Logic Analyzer
+        .la_data_in(la_data_in[31:0]),
+        .la_data_out(designs_la_data_out[5]),
+        .la_oenb(la_oenb[31:0]),
+
+        // GPIOs
+        .gpio_in(io_in), // Breakout Board Pins
+        .gpio_out(designs_gpio_out[5]), // Breakout Board Pins
+        .gpio_oeb(designs_gpio_oeb[5]), // Active Low Output Enable
+
+        .DAT_I(arbitrator_dat_o[5]),
+        .ACK_I(arbitrator_ack_o[5]),
+        .ADR_O(arbitrator_adr_i[5]),
+        .DAT_O(arbitrator_dat_i[5]),
+        .SEL_O(arbitrator_sel_i[5]),
+        .WE_O  (arbitrator_we_i[5]),
+        .STB_O(arbitrator_stb_i[5]),
+        .CYC_O(arbitrator_cyc_i[5])
+    ); 
+        
+      
+    // team_07 Project Instance
+    team_07_Wrapper team_07_Wrapper (
+    `ifdef USE_POWER_PINS
+            .vccd1(vccd1),	// User area 1 1.8V power
+            .vssd1(vssd1),	// User area 1 digital ground
+    `endif
+        .nrst(teams_nrst),
+        //Wishbone Slave and user clk, rst
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+        .wbs_stb_i(wbs_stb_o_projects[7]),
+        .wbs_cyc_i(wbs_cyc_o_projects[7]),
+        .wbs_we_i(wbs_we_o_projects[7]),
+        .wbs_sel_i(wbs_sel_o_projects[7]),
+        .wbs_dat_i(wbs_dat_o_projects[7]),
+        .wbs_adr_i(wbs_adr_o_projects[7]),
+        .wbs_ack_o(wbs_ack_i_projects[7]),
+        .wbs_dat_o(wbs_dat_i_projects[7]),
+
+        // Logic Analyzer
+        .la_data_in(la_data_in[31:0]),
+        .la_data_out(designs_la_data_out[7]),
+        .la_oenb(la_oenb[31:0]),
+
+        // GPIOs
+        .gpio_in(io_in), // Breakout Board Pins
+        .gpio_out(designs_gpio_out[7]), // Breakout Board Pins
+        .gpio_oeb(designs_gpio_oeb[7]), // Active Low Output Enable
+
+        .DAT_I(arbitrator_dat_o[7]),
+        .ACK_I(arbitrator_ack_o[7]),
+        .ADR_O(arbitrator_adr_i[7]),
+        .DAT_O(arbitrator_dat_i[7]),
+        .SEL_O(arbitrator_sel_i[7]),
+        .WE_O  (arbitrator_we_i[7]),
+        .STB_O(arbitrator_stb_i[7]),
+        .CYC_O(arbitrator_cyc_i[7])
+    ); 
+        
+      
+    // team_02 Project Instance
+    team_02_Wrapper team_02_Wrapper (
+    `ifdef USE_POWER_PINS
+            .vccd1(vccd1),	// User area 1 1.8V power
+            .vssd1(vssd1),	// User area 1 digital ground
+    `endif
+        .nrst(teams_nrst),
+        //Wishbone Slave and user clk, rst
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+        .wbs_stb_i(wbs_stb_o_projects[2]),
+        .wbs_cyc_i(wbs_cyc_o_projects[2]),
+        .wbs_we_i(wbs_we_o_projects[2]),
+        .wbs_sel_i(wbs_sel_o_projects[2]),
+        .wbs_dat_i(wbs_dat_o_projects[2]),
+        .wbs_adr_i(wbs_adr_o_projects[2]),
+        .wbs_ack_o(wbs_ack_i_projects[2]),
+        .wbs_dat_o(wbs_dat_i_projects[2]),
+
+        // Logic Analyzer
+        .la_data_in(la_data_in[31:0]),
+        .la_data_out(designs_la_data_out[2]),
+        .la_oenb(la_oenb[31:0]),
+
+        // GPIOs
+        .gpio_in(io_in), // Breakout Board Pins
+        .gpio_out(designs_gpio_out[2]), // Breakout Board Pins
+        .gpio_oeb(designs_gpio_oeb[2]), // Active Low Output Enable
+
+        .DAT_I(arbitrator_dat_o[2]),
+        .ACK_I(arbitrator_ack_o[2]),
+        .ADR_O(arbitrator_adr_i[2]),
+        .DAT_O(arbitrator_dat_i[2]),
+        .SEL_O(arbitrator_sel_i[2]),
+        .WE_O  (arbitrator_we_i[2]),
+        .STB_O(arbitrator_stb_i[2]),
+        .CYC_O(arbitrator_cyc_i[2])
+    ); 
+        
+      
     // team_00 Project Instance
     team_00_Wrapper team_00_Wrapper (
     `ifdef USE_POWER_PINS
@@ -140,6 +260,86 @@ module nebula (
     ); 
         
       
+    // team_06 Project Instance
+    team_06_Wrapper team_06_Wrapper (
+    `ifdef USE_POWER_PINS
+            .vccd1(vccd1),	// User area 1 1.8V power
+            .vssd1(vssd1),	// User area 1 digital ground
+    `endif
+        .nrst(teams_nrst),
+        //Wishbone Slave and user clk, rst
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+        .wbs_stb_i(wbs_stb_o_projects[6]),
+        .wbs_cyc_i(wbs_cyc_o_projects[6]),
+        .wbs_we_i(wbs_we_o_projects[6]),
+        .wbs_sel_i(wbs_sel_o_projects[6]),
+        .wbs_dat_i(wbs_dat_o_projects[6]),
+        .wbs_adr_i(wbs_adr_o_projects[6]),
+        .wbs_ack_o(wbs_ack_i_projects[6]),
+        .wbs_dat_o(wbs_dat_i_projects[6]),
+
+        // Logic Analyzer
+        .la_data_in(la_data_in[31:0]),
+        .la_data_out(designs_la_data_out[6]),
+        .la_oenb(la_oenb[31:0]),
+
+        // GPIOs
+        .gpio_in(io_in), // Breakout Board Pins
+        .gpio_out(designs_gpio_out[6]), // Breakout Board Pins
+        .gpio_oeb(designs_gpio_oeb[6]), // Active Low Output Enable
+
+        .DAT_I(arbitrator_dat_o[6]),
+        .ACK_I(arbitrator_ack_o[6]),
+        .ADR_O(arbitrator_adr_i[6]),
+        .DAT_O(arbitrator_dat_i[6]),
+        .SEL_O(arbitrator_sel_i[6]),
+        .WE_O  (arbitrator_we_i[6]),
+        .STB_O(arbitrator_stb_i[6]),
+        .CYC_O(arbitrator_cyc_i[6])
+    ); 
+        
+      
+    // team_15 Project Instance
+    team_15_Wrapper team_15_Wrapper (
+    `ifdef USE_POWER_PINS
+            .vccd1(vccd1),	// User area 1 1.8V power
+            .vssd1(vssd1),	// User area 1 digital ground
+    `endif
+        .nrst(teams_nrst),
+        //Wishbone Slave and user clk, rst
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+        .wbs_stb_i(wbs_stb_o_projects[15]),
+        .wbs_cyc_i(wbs_cyc_o_projects[15]),
+        .wbs_we_i(wbs_we_o_projects[15]),
+        .wbs_sel_i(wbs_sel_o_projects[15]),
+        .wbs_dat_i(wbs_dat_o_projects[15]),
+        .wbs_adr_i(wbs_adr_o_projects[15]),
+        .wbs_ack_o(wbs_ack_i_projects[15]),
+        .wbs_dat_o(wbs_dat_i_projects[15]),
+
+        // Logic Analyzer
+        .la_data_in(la_data_in[31:0]),
+        .la_data_out(designs_la_data_out[15]),
+        .la_oenb(la_oenb[31:0]),
+
+        // GPIOs
+        .gpio_in(io_in), // Breakout Board Pins
+        .gpio_out(designs_gpio_out[15]), // Breakout Board Pins
+        .gpio_oeb(designs_gpio_oeb[15]), // Active Low Output Enable
+
+        .DAT_I(arbitrator_dat_o[15]),
+        .ACK_I(arbitrator_ack_o[15]),
+        .ADR_O(arbitrator_adr_i[15]),
+        .DAT_O(arbitrator_dat_i[15]),
+        .SEL_O(arbitrator_sel_i[15]),
+        .WE_O  (arbitrator_we_i[15]),
+        .STB_O(arbitrator_stb_i[15]),
+        .CYC_O(arbitrator_cyc_i[15])
+    ); 
+        
+      
     // team_01 Project Instance
     team_01_Wrapper team_01_Wrapper (
     `ifdef USE_POWER_PINS
@@ -177,6 +377,46 @@ module nebula (
         .WE_O  (arbitrator_we_i[1]),
         .STB_O(arbitrator_stb_i[1]),
         .CYC_O(arbitrator_cyc_i[1])
+    ); 
+        
+      
+    // team_04 Project Instance
+    team_04_Wrapper team_04_Wrapper (
+    `ifdef USE_POWER_PINS
+            .vccd1(vccd1),	// User area 1 1.8V power
+            .vssd1(vssd1),	// User area 1 digital ground
+    `endif
+        .nrst(teams_nrst),
+        //Wishbone Slave and user clk, rst
+        .wb_clk_i(wb_clk_i),
+        .wb_rst_i(wb_rst_i),
+        .wbs_stb_i(wbs_stb_o_projects[4]),
+        .wbs_cyc_i(wbs_cyc_o_projects[4]),
+        .wbs_we_i(wbs_we_o_projects[4]),
+        .wbs_sel_i(wbs_sel_o_projects[4]),
+        .wbs_dat_i(wbs_dat_o_projects[4]),
+        .wbs_adr_i(wbs_adr_o_projects[4]),
+        .wbs_ack_o(wbs_ack_i_projects[4]),
+        .wbs_dat_o(wbs_dat_i_projects[4]),
+
+        // Logic Analyzer
+        .la_data_in(la_data_in[31:0]),
+        .la_data_out(designs_la_data_out[4]),
+        .la_oenb(la_oenb[31:0]),
+
+        // GPIOs
+        .gpio_in(io_in), // Breakout Board Pins
+        .gpio_out(designs_gpio_out[4]), // Breakout Board Pins
+        .gpio_oeb(designs_gpio_oeb[4]), // Active Low Output Enable
+
+        .DAT_I(arbitrator_dat_o[4]),
+        .ACK_I(arbitrator_ack_o[4]),
+        .ADR_O(arbitrator_adr_i[4]),
+        .DAT_O(arbitrator_dat_i[4]),
+        .SEL_O(arbitrator_sel_i[4]),
+        .WE_O  (arbitrator_we_i[4]),
+        .STB_O(arbitrator_stb_i[4]),
+        .CYC_O(arbitrator_cyc_i[4])
     ); 
         
 

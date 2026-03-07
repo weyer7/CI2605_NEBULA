@@ -1,14 +1,15 @@
 # NEBULA III - Project Documentation
 
-## Team 03 - Azerbaijan Technologies
-* **Peer Mentor:** Adrian Buczkowski
-* Peter Kaya Gretchikha
-* Genci Duraku
-* Amogh Havanagi
-* Raunak Dani
+## Team 03 - [Team Name]
+* **Peer Mentor:** [Name]
+* [Name]
+* [Name]
+* [Name]
+* [Name]
+* [Add more names, if needed]
 
 ## Project Overview
-Our final project goal is to make the popular 1988 game, Street Fighter. Our game uses an NES Controller Input to control two different characters on a VGA output. Then using functionalities such as punching and blocking, the 2 characters will be responsible for fighting until there is 1 declared winner.
+Describe what your project is in 2-3 sentences. Do NOT mention functionality details, you will add those in the *Functionality Description and Testing* section.
 
 ## Pin Layout
 Note that on the final chip, there are 38 GPIO pins of which you have access to 34.
@@ -19,27 +20,45 @@ The first number represents the GPIO on the physical chip, while the second numb
 * **Pin 02 [--]** - NOT ALLOWED
 * **Pin 03 [--]** - NOT ALLOWED
 * **Pin 04 [--]** - NOT ALLOWED
-* **Pin 05 [01]** - Output - VGA Hsync
-* **Pin 06 [02]** - Output - VGA Vsync 
-* **Pin 07 [03]** - Output - Red Channel 2
-* **Pin 08 [04]** - Output - Red Channel 1 
-* **Pin 09 [05]** - Output - Red Channel 0
-* **Pin 10 [06]** - Output - Green Channel 2
-* **Pin 11 [07]** - Output - Green Channel 1
-* **Pin 12 [08]** - Output - Green Channel 0
-* **Pin 13 [09]** - Output - Blue Channel 1
-* **Pin 14 [10]** - Output - Blue Channel 0
-* **Pin 15 [11]** - Output - Pulse signal for NES Controllers 
-* **Pin 16 [12]** - Output - Latch signal for NES Controllers
-* **Pin 17 [13]** - Input - NES Player 1 Input
-* **Pin 18 [14]** - Input - NES Player 2 Input
-
+* **Pin 05 [01]** - Input or Output? - Pin Function?
+* **Pin 06 [02]** - Input or Output? - Pin Function? 
+* **Pin 07 [03]** - Input or Output? - Pin Function? 
+* **Pin 08 [04]** - Input or Output? - Pin Function? 
+* **Pin 09 [05]** - Input or Output? - Pin Function? 
+* **Pin 10 [06]** - Input or Output? - Pin Function?
+* **Pin 11 [07]** - Input or Output? - Pin Function?
+* **Pin 12 [08]** - Input or Output? - Pin Function?
+* **Pin 13 [09]** - Input or Output? - Pin Function? 
+* **Pin 14 [10]** - Input or Output? - Pin Function? 
+* **Pin 15 [11]** - Input or Output? - Pin Function? 
+* **Pin 16 [12]** - Input or Output? - Pin Function? 
+* **Pin 17 [13]** - Input or Output? - Pin Function? 
+* **Pin 18 [14]** - Input or Output? - Pin Function? 
+* **Pin 19 [15]** - Input or Output? - Pin Function? 
+* **Pin 20 [16]** - Input or Output? - Pin Function? 
+* **Pin 21 [17]** - Input or Output? - Pin Function? 
+* **Pin 22 [18]** - Input or Output? - Pin Function? 
+* **Pin 23 [19]** - Input or Output? - Pin Function? 
+* **Pin 24 [20]** - Input or Output? - Pin Function? 
+* **Pin 25 [21]** - Input or Output? - Pin Function? 
+* **Pin 26 [22]** - Input or Output? - Pin Function? 
+* **Pin 27 [23]** - Input or Output? - Pin Function? 
+* **Pin 28 [24]** - Input or Output? - Pin Function? 
+* **Pin 29 [25]** - Input or Output? - Pin Function?
+* **Pin 30 [26]** - Input or Output? - Pin Function?
+* **Pin 31 [27]** - Input or Output? - Pin Function?
+* **Pin 32 [28]** - Input or Output? - Pin Function?
+* **Pin 33 [29]** - Input or Output? - Pin Function?
+* **Pin 34 [30]** - Input or Output? - Pin Function?
+* **Pin 35 [31]** - Input or Output? - Pin Function?
+* **Pin 36 [32]** - Input or Output? - Pin Function?
+* **Pin 37 [33]** - Input or Output? - Pin Function?
 
 ## External Hardware
-The external hardware components include 2 NES Controllers and a VGA Breakout Board which helps connect the output of the Digital to Analog Converter (DAC) to VGA. The schematic of the breadboard DAC to interface the GPIO is located in doc/team_03 as "Street Fighters Breadboard".
+List all the required external hardware components and upload a breadboard with the equipment set up (recommend using Tinkercad circuits if possible).
 
 ## Functionality Description and Testing
-To test the project, first use the "Street Fighters Breadboard" located in doc/team_03 to make a DAC. Then, using the GPIO labeled above, connect GPIO7-14 to the DAC, and use GPIO 5-6 to connect to the VGA Breakout Board. Furthermore, use jumper wires to help connect GPIO 15-18 to the 2 NES Controllers, which will be powered by 5V using an AD2. All information pertinent to the NES controllers and corresponding wires is labeled in the NES_controllers.png within doc/team_03.
+Describe in detail how your project works and how to test it.
 
 ## RTL Diagrams
-All RTL Diagrams and pertinent information is located in docs/team_03.
+Include more than just block diagrams, including sub-block diagrams, state-transition diagrams, flowcharts, and timing diagrams. Please include any images or documents of these inside this folder (docs/team_03).

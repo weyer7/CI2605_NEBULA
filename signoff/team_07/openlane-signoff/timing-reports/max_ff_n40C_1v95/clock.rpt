@@ -3,14 +3,14 @@ Sources: clk
 Generated: no
 Virtual: yes
 Propagated: no
-Period: 100.000000
+Period: 25.000000
 
 ===========================================================================
 report_clock_properties
 ============================================================================
 Clock                   Period          Waveform
 ----------------------------------------------------
-clk                 100.000000    0.000000 50.000000
+clk                  25.000000    0.000000 12.500000
 
 ===========================================================================
 report_clock_latency
@@ -19,42 +19,24 @@ Clock clk
 rise -> rise
     min     max
 0.000000 0.000000 source latency
-0.721138         network latency _12555_/CLK
-        0.929071 network latency _12623_/CLK
+0.324988         network latency _0974_/CLK
+        0.340634 network latency _0952_/CLK
 ---------------
-0.721138 0.929071 latency
-        0.207933 skew
-
-rise -> fall
-    min     max
-0.000000 0.000000 source latency
-0.879226         network latency _12433_/CLK
-        1.084202 network latency _12029_/CLK
----------------
-0.879226 1.084202 latency
-        0.204976 skew
-
-fall -> rise
-    min     max
-0.000000 0.000000 source latency
-0.719101         network latency _12433_/CLK
-        0.905210 network latency _12029_/CLK
----------------
-0.719101 0.905210 latency
-        0.186109 skew
+0.324988 0.340634 latency
+        0.015647 skew
 
 fall -> fall
     min     max
 0.000000 0.000000 source latency
-0.547384         network latency _12555_/CLK
-        0.744684 network latency _12623_/CLK
+0.281784         network latency _0974_/CLK
+        0.294544 network latency _0952_/CLK
 ---------------
-0.547384 0.744684 latency
-        0.197300 skew
+0.281784 0.294544 latency
+        0.012760 skew
 
 
 
 ===========================================================================
 report_clock_min_period
 ============================================================================
-clk period_min = 10.72 fmax = 93.29
+clk period_min = 2.34 fmax = 427.08

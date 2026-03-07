@@ -1,0 +1,63 @@
+// $Id: $
+// File name:   team_06.sv
+// Created:     
+// Author:      
+// Description: 
+
+`default_nettype none
+
+module team_06 (
+    `ifdef USE_POWER_PINS
+        inout vccd1,	// User area 1 1.8V supply
+        inout vssd1,	// User area 1 digital ground
+    `endif
+    // HW
+    input logic clk, nrst,
+    
+    input logic en, //This signal is an enable signal for your chip. Your design should disable if this is low.
+    
+    // Logic Analyzer - Grant access to all 128 LA
+    // input logic [31:0] la_data_in,
+    // output logic [31:0] la_data_out,
+    // input logic [31:0] la_oenb,
+
+
+    // Wishbone master interface
+    // output wire [31:0] ADR_O,
+    // output wire [31:0] DAT_O,
+    // output wire [3:0]  SEL_O,
+    // output wire        WE_O,
+    // output wire        STB_O,
+    // output wire        CYC_O,
+    // input wire [31:0]  DAT_I,
+    // input wire         ACK_I,
+
+    // 34 out of 38 GPIOs (Note: if you need up to 38 GPIO, discuss with a TA)
+    input  logic [33:0] gpio_in, // Breakout Board Pins
+    output logic [33:0] gpio_out, // Breakout Board Pins
+    output logic [33:0] gpio_oeb // Active Low Output Enable
+    
+    /*
+    * Add other I/O ports that you wish to interface with the
+    * Wishbone bus to the management core. For examples you can 
+    * add registers that can be written to with the Wishbone bus
+    */
+
+    // You can also have input registers controlled by the Caravel Harness's on chip processor
+);
+
+    calculator_top CALC_INST (
+        .clk(clk),
+        .nRST(nrst),
+        .RowIn(gpio_in[3:0]),  // from keypad rows
+        .ColOut(gpio_out[7:4]),  // to keypad columns
+        .display_output(gpio_out[23:8]),  // final calculation output
+        .input_state_FPGA(gpio_out[26:24]),
+        .key_pressed(gpio_out[27]),
+        .complete(gpio_out[28])
+    );
+
+    assign {gpio_out[3:0], gpio_out[33:29]} = '0;
+    assign gpio_oeb = 32'h1FFFFFF0;
+
+endmodule
