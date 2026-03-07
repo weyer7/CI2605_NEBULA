@@ -37,3 +37,4 @@
 -v $(USER_PROJECT_VERILOG)/gl/team_15.v
 -v $(USER_PROJECT_VERILOG)/gl/team_01.v
 -v $(USER_PROJECT_VERILOG)/gl/team_04.v
+-v $(USER_PROJECT_VERILOG)/gl/team_03.v

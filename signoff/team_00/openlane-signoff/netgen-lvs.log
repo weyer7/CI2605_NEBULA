@@ -126,8 +126,8 @@ No property perim found for device sky130_fd_pr__special_pfet_01v8_hvt
 No property topography found for device sky130_fd_pr__special_pfet_01v8_hvt
 No property value found for device sky130_fd_pr__diode_pw2nd_05v5
 No property mult found for device sky130_fd_pr__diode_pw2nd_05v5
-Comparison output logged to file /home/ajwey/CI2605_stuff/nebula-iii/openlane/team_00/runs/26_03_05_22_11/69-netgen-lvs/reports/lvs.netgen.rpt
-Logging to file "/home/ajwey/CI2605_stuff/nebula-iii/openlane/team_00/runs/26_03_05_22_11/69-netgen-lvs/reports/lvs.netgen.rpt" enabled
+Comparison output logged to file /home/ajwey/CI2605_stuff/nebula-iii/openlane/team_00/runs/26_03_07_20_13/69-netgen-lvs/reports/lvs.netgen.rpt
+Logging to file "/home/ajwey/CI2605_stuff/nebula-iii/openlane/team_00/runs/26_03_07_20_13/69-netgen-lvs/reports/lvs.netgen.rpt" enabled
 
 Contents of circuit 1:  Circuit: 'sky130_ef_sc_hd__decap_40_12'
 Circuit sky130_ef_sc_hd__decap_40_12 contains 0 device instances.
@@ -1704,5 +1704,5 @@ Circuit 1 contains 965 nets,    Circuit 2 contains 965 nets.
 Final result: 
 Circuits match uniquely.
 .
-Logging to file "/home/ajwey/CI2605_stuff/nebula-iii/openlane/team_00/runs/26_03_05_22_11/69-netgen-lvs/reports/lvs.netgen.rpt" disabled
+Logging to file "/home/ajwey/CI2605_stuff/nebula-iii/openlane/team_00/runs/26_03_07_20_13/69-netgen-lvs/reports/lvs.netgen.rpt" disabled
 LVS Done.

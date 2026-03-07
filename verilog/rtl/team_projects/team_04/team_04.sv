@@ -58,6 +58,6 @@ module team_04 (
     );
 
     assign {gpio_out[3:0], gpio_out[33:16]} = '0;
-    assign gpio_oeb = 32'h0000FFF0;
+    assign gpio_oeb = 34'h0000FFF0;
 
 endmodule

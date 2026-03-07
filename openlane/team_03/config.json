@@ -1,0 +1,57 @@
+{
+    "DESIGN_NAME": "team_03",
+    "DESIGN_IS_CORE": 0,
+    "VERILOG_FILES": [
+        "dir::../../verilog/rtl/wb_wrapper.vh",
+        "dir::../../verilog/rtl/team_projects/team_03/team_03.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/add_reg.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/dadda.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/digit2Display.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/example_counter.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/fa.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/ha.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/k1_reg.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/k2_reg.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/k3_reg.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/multi_reg.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/pid_state_machine.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/pid_top.sv",
+        "dir::../../verilog/rtl/team_projects/team_03/src/top_digit.sv"
+    ],
+    "CLOCK_PERIOD": 25,
+    "CLOCK_PORT": "clk",
+    "PL_TARGET_DENSITY": 0.7,
+    "RUN_HEURISTIC_DIODE_INSERTION": true,
+    "VDD_NETS": "vccd1",
+    "GND_NETS": "vssd1",
+    "FP_PDN_CORE_RING": 0,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 275 275",
+    "pdk::sky130*": {
+        "FP_CORE_UTIL": 20,
+        "RT_MAX_LAYER": "met4",
+        "scl::sky130_fd_sc_hd": {
+            "CLOCK_PERIOD": 25
+        },
+        "scl::sky130_fd_sc_hdll": {
+            "CLOCK_PERIOD": 10
+        },
+        "scl::sky130_fd_sc_hs": {
+            "CLOCK_PERIOD": 8
+        },
+        "scl::sky130_fd_sc_ls": {
+            "CLOCK_PERIOD": 10,
+            "SYNTH_MAX_FANOUT": 5
+        },
+        "scl::sky130_fd_sc_ms": {
+            "CLOCK_PERIOD": 10
+        }
+    },
+    "pdk::gf180mcu*": {
+        "CLOCK_PERIOD": 24.0,
+        "FP_CORE_UTIL": 30,
+        "RT_MAX_LAYER": "Metal4",
+        "SYNTH_MAX_FANOUT": 4,
+        "PL_TARGET_DENSITY": 0.5
+    }
+}

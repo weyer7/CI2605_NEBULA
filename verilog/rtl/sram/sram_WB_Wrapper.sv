@@ -74,23 +74,26 @@ module sram_WB_Wrapper #(
             wbs_ack_o <= 1'b0;
     end
 
-	// SRAM Instance
-	sky130_sram_8kbyte_1r1w_32x2048_8 sram_inst (
-        `ifdef USE_POWER_PINS
-            .vccd1(vccd1),	// User area 1 1.8V power
-            .vssd1(vssd1),	// User area 1 digital ground
-        `endif
-        // Write Ports
-        .clk0(clk0),
-        .csb0(csb0),
-        .wmask0(wmask0),
-        .addr0(addr0),
-        .din0(din0),
-        // Read Ports
-        .clk1(clk1),
-        .csb1(csb1),
-        .addr1(addr1),
-        .dout1(dout1)
-	);
+	// // SRAM Instance
+	// sky130_sram_8kbyte_1r1w_32x2048_8 sram_inst (
+    //     `ifdef USE_POWER_PINS
+    //         .vccd1(vccd1),	// User area 1 1.8V power
+    //         .vssd1(vssd1),	// User area 1 digital ground
+    //     `endif
+    //     // Write Ports
+    //     .clk0(clk0),
+    //     .csb0(csb0),
+    //     .wmask0(wmask0),
+    //     .addr0(addr0),
+    //     .din0(din0),
+    //     // Read Ports
+    //     .clk1(clk1),
+    //     .csb1(csb1),
+    //     .addr1(addr1),
+    //     .dout1(dout1)
+	// );
+
+    //tie off (no SRAM)
+    assign dout1 = 32'hBAD1BAD1;
 
 endmodule

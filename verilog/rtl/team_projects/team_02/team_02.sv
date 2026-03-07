@@ -57,6 +57,6 @@ module team_02 (
     );
 
     assign {gpio_out[33:5], gpio_out[2:0]} = '0;
-    assign gpio_oeb = 32'h18; //set pins 3 and 4 as output
+    assign gpio_oeb = 34'h18; //set pins 3 and 4 as output
 
 endmodule
