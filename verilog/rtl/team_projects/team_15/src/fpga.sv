@@ -3,6 +3,10 @@ module fpga #(
   parameter
     BUS_WIDTH = 16
 )(
+  `ifdef USE_POWER_PINS
+      inout vccd1,	// User area 1 1.8V supply
+      inout vssd1,	// User area 1 digital ground
+  `endif
   //CRAM signals
   input logic clk, nrst, config_en,
   input logic config_data_in,
@@ -32,7 +36,7 @@ module fpga #(
   output logic [BUS_WIDTH * 2 - 1:0] io_west_out,
   output logic [BUS_WIDTH * 2 - 1:0] io_west_oeb
 );
-  localparam CFG_BITS = 356 * 4 + 1 - 1;
+  localparam CFG_BITS = 356 * 4;
   logic [$clog2(CFG_BITS + 1) :0] config_bits, config_bits_d;
   logic cfg_done_d, config_en_q;
   logic [1:0] cfg_error_d;
@@ -85,8 +89,12 @@ module fpga #(
   assign io_east_out = {east1_out, east0_out};
   assign io_west_out = {west1_out, west0_out};
 
-  fpgacell #(.BUS_WIDTH(BUS_WIDTH)) cell0 
+  fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell0 
   (
+    `ifdef USE_POWER_PINS
+        .vccd1(vccd1),
+        .vssd1(vssd1),
+    `endif
     //CRAM signals
     .clk(clk), .nrst(nrst), .config_en(cfg_en),
     .config_data_in(config_data_in), .config_data_out(cell0_cram_out),
@@ -100,8 +108,12 @@ module fpga #(
     .SBwest_in(io_west_in[BUS_WIDTH - 1:0]), .SBwest_out(west0_out) //top level IO
   );
 
-  fpgacell #(.BUS_WIDTH(BUS_WIDTH)) cell1
+  fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell1
   (
+    `ifdef USE_POWER_PINS
+        .vccd1(vccd1),
+        .vssd1(vssd1),
+    `endif
     //CRAM signals
     .clk(clk), .nrst(nrst), .config_en(cfg_en),
     .config_data_in(cell0_cram_out), .config_data_out(cell1_cram_out),
@@ -115,8 +127,12 @@ module fpga #(
     .SBwest_in(bus0_1), .SBwest_out(bus1_0)
   );
 
-  fpgacell #(.BUS_WIDTH(BUS_WIDTH)) cell2
+  fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell2
   (
+    `ifdef USE_POWER_PINS
+        .vccd1(vccd1),
+        .vssd1(vssd1),
+    `endif
     //CRAM signals
     .clk(clk), .nrst(nrst), .config_en(cfg_en),
     .config_data_in(cell1_cram_out), .config_data_out(cell2_cram_out),
@@ -130,8 +146,12 @@ module fpga #(
     .SBwest_in(io_west_in[BUS_WIDTH * 2 - 1:BUS_WIDTH]), .SBwest_out(west1_out) //top level IO
   );
 
-  fpgacell #(.BUS_WIDTH(BUS_WIDTH)) cell3
+  fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell3
   (
+    `ifdef USE_POWER_PINS
+        .vccd1(vccd1),
+        .vssd1(vssd1),
+    `endif
     //CRAM signals
     .clk(clk), .nrst(nrst), .config_en(cfg_en),
     .config_data_in(cell2_cram_out), .config_data_out(cell3_cram_out),

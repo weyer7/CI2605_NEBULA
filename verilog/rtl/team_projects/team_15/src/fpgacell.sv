@@ -6,6 +6,11 @@ module fpgacell #(
     LE_OUTPUTS = 1,
     LE_LUT_SIZE = 16
 )(
+  `ifdef USE_POWER_PINS
+      inout vccd1,	// User area 1 1.8V supply
+      inout vssd1,	// User area 1 digital ground
+  `endif
+
   //CRAM signals
   input logic clk, nrst,
   input logic config_data_in, config_en,

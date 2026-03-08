@@ -49,6 +49,10 @@ module team_15 (
     fpga #(
         .BUS_WIDTH(16)
     ) FPGA_INST (
+    `ifdef USE_POWER_PINS
+        .vccd1(vccd1),
+        .vssd1(vssd1),
+    `endif
         //CRAM signals
         .clk(gpio_in[0]), .nrst(nrst), .config_en(gpio_in[1]),
         .config_data_in(gpio_in[2]),

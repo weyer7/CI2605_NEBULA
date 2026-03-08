@@ -159,10 +159,10 @@
         "/home/ajwey/CI2605_stuff/nebula-iii/lef/team_02.lef",
         "/home/ajwey/CI2605_stuff/nebula-iii/lef/team_00.lef",
         "/home/ajwey/CI2605_stuff/nebula-iii/lef/team_06.lef",
-        "/home/ajwey/CI2605_stuff/nebula-iii/lef/team_15.lef",
         "/home/ajwey/CI2605_stuff/nebula-iii/lef/team_01.lef",
         "/home/ajwey/CI2605_stuff/nebula-iii/lef/team_04.lef",
-        "/home/ajwey/CI2605_stuff/nebula-iii/lef/team_03.lef"
+        "/home/ajwey/CI2605_stuff/nebula-iii/lef/team_03.lef",
+        "/home/ajwey/CI2605_stuff/nebula-iii/lef/fpgacell.lef"
     ],
     "EXTRA_VERILOG_MODELS": [
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/team_05.v",
@@ -170,10 +170,10 @@
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/team_02.v",
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/team_00.v",
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/team_06.v",
-        "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/team_15.v",
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/team_01.v",
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/team_04.v",
-        "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/team_03.v"
+        "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/team_03.v",
+        "/home/ajwey/CI2605_stuff/nebula-iii/verilog/gl/fpgacell.v"
     ],
     "EXTRA_SPICE_MODELS": null,
     "EXTRA_LIBS": [
@@ -182,10 +182,10 @@
         "/home/ajwey/CI2605_stuff/nebula-iii/lib/team_02.lib",
         "/home/ajwey/CI2605_stuff/nebula-iii/lib/team_00.lib",
         "/home/ajwey/CI2605_stuff/nebula-iii/lib/team_06.lib",
-        "/home/ajwey/CI2605_stuff/nebula-iii/lib/team_15.lib",
         "/home/ajwey/CI2605_stuff/nebula-iii/lib/team_01.lib",
         "/home/ajwey/CI2605_stuff/nebula-iii/lib/team_04.lib",
-        "/home/ajwey/CI2605_stuff/nebula-iii/lib/team_03.lib"
+        "/home/ajwey/CI2605_stuff/nebula-iii/lib/team_03.lib",
+        "/home/ajwey/CI2605_stuff/nebula-iii/lib/fpgacell.lib"
     ],
     "EXTRA_GDS_FILES": [
         "/home/ajwey/CI2605_stuff/nebula-iii/gds/team_05.gds",
@@ -193,10 +193,10 @@
         "/home/ajwey/CI2605_stuff/nebula-iii/gds/team_02.gds",
         "/home/ajwey/CI2605_stuff/nebula-iii/gds/team_00.gds",
         "/home/ajwey/CI2605_stuff/nebula-iii/gds/team_06.gds",
-        "/home/ajwey/CI2605_stuff/nebula-iii/gds/team_15.gds",
         "/home/ajwey/CI2605_stuff/nebula-iii/gds/team_01.gds",
         "/home/ajwey/CI2605_stuff/nebula-iii/gds/team_04.gds",
-        "/home/ajwey/CI2605_stuff/nebula-iii/gds/team_03.gds"
+        "/home/ajwey/CI2605_stuff/nebula-iii/gds/team_03.gds",
+        "/home/ajwey/CI2605_stuff/nebula-iii/gds/fpgacell.gds"
     ],
     "FALLBACK_SDC_FILE": "/home/ajwey/CI2605_stuff/nebula-iii/openlane/user_project_wrapper/base_user_project_wrapper.sdc",
     "RUN_TAP_ENDCAP_INSERTION": true,
@@ -248,6 +248,8 @@
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/team_projects/team_06/team_06_Wrapper.sv",
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/team_projects/team_15/team_15_WB.v",
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/team_projects/team_15/team_15_Wrapper.sv",
+        "/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/team_projects/team_15/team_15.sv",
+        "/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/team_projects/team_15/src/fpga.sv",
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/team_projects/team_01/team_01_WB.v",
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/team_projects/team_01/team_01_Wrapper.sv",
         "/home/ajwey/CI2605_stuff/nebula-iii/verilog/rtl/team_projects/team_04/team_04_WB.v",
@@ -312,10 +314,13 @@
         "mprj.team_02_Wrapper.team_02_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
         "mprj.team_00_Wrapper.team_00_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
         "mprj.team_06_Wrapper.team_06_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
         "mprj.team_01_Wrapper.team_01_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
         "mprj.team_04_Wrapper.team_04_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_03_Wrapper.team_03_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1"
+        "mprj.team_03_Wrapper.team_03_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3 vccd1 vssd1 vccd1 vssd1"
     ],
     "PDN_ENABLE_GLOBAL_CONNECTIONS": true,
     "FP_DEF_TEMPLATE": "/home/ajwey/CI2605_stuff/nebula-iii/openlane/user_project_wrapper/fixed_dont_change/user_project_wrapper.def",
@@ -342,10 +347,6 @@
         "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_06.min.spef",
         "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_06.nom.spef",
         "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_06.max.spef",
-        "team_15",
-        "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_15.min.spef",
-        "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_15.nom.spef",
-        "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_15.max.spef",
         "team_01",
         "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_01.min.spef",
         "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_01.nom.spef",
@@ -357,7 +358,11 @@
         "team_03",
         "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_03.min.spef",
         "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_03.nom.spef",
-        "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_03.max.spef"
+        "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/team_03.max.spef",
+        "fpgacell",
+        "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/fpgacell.min.spef",
+        "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/fpgacell.nom.spef",
+        "/home/ajwey/CI2605_stuff/nebula-iii/spef/multicorner/fpgacell.max.spef"
     ],
     "STA_THREADS": null,
     "FP_SIZING": "absolute",
@@ -510,7 +515,7 @@
         "max_*": "/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.calibre"
     },
     "VSRC_LOC_FILES": null,
-    "MAGIC_DEF_LABELS": false,
+    "MAGIC_DEF_LABELS": true,
     "MAGIC_GDS_POLYGON_SUBCELLS": false,
     "MAGIC_DEF_NO_BLOCKAGES": true,
     "MAGIC_INCLUDE_GDS_POINTERS": false,
@@ -1249,7 +1254,7 @@
     },
     "KLAYOUT_DRC_THREADS": null,
     "ERROR_ON_MAGIC_DRC": false,
-    "ERROR_ON_KLAYOUT_DRC": false,
+    "ERROR_ON_KLAYOUT_DRC": true,
     "MAGIC_EXT_USE_GDS": false,
     "MAGIC_EXT_ABSTRACT_CELLS": null,
     "MAGIC_NO_EXT_UNIQUE": false,

@@ -1,4 +1,3 @@
-
 {
     "DESIGN_NAME": "user_project_wrapper",
     "VERILOG_FILES": [
@@ -16,195 +15,103 @@
         "dir::../../verilog/rtl/defines.v",
         "dir::../../verilog/rtl/nebula.v",
         "dir::../../verilog/rtl/wb_interconnect.sv",
-      
         "dir::../../verilog/rtl/team_projects/team_05/team_05_WB.v",
         "dir::../../verilog/rtl/team_projects/team_05/team_05_Wrapper.sv",  
-      
         "dir::../../verilog/rtl/team_projects/team_07/team_07_WB.v",
         "dir::../../verilog/rtl/team_projects/team_07/team_07_Wrapper.sv",  
-      
         "dir::../../verilog/rtl/team_projects/team_02/team_02_WB.v",
         "dir::../../verilog/rtl/team_projects/team_02/team_02_Wrapper.sv",  
-      
         "dir::../../verilog/rtl/team_projects/team_00/team_00_WB.v",
         "dir::../../verilog/rtl/team_projects/team_00/team_00_Wrapper.sv",  
-      
         "dir::../../verilog/rtl/team_projects/team_06/team_06_WB.v",
-        "dir::../../verilog/rtl/team_projects/team_06/team_06_Wrapper.sv",  
-      
+        "dir::../../verilog/rtl/team_projects/team_06/team_06_Wrapper.sv",
+          
         "dir::../../verilog/rtl/team_projects/team_15/team_15_WB.v",
-        "dir::../../verilog/rtl/team_projects/team_15/team_15_Wrapper.sv",  
-      
+        "dir::../../verilog/rtl/team_projects/team_15/team_15_Wrapper.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/team_15.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/fpga.sv",
+
         "dir::../../verilog/rtl/team_projects/team_01/team_01_WB.v",
         "dir::../../verilog/rtl/team_projects/team_01/team_01_Wrapper.sv",  
-      
         "dir::../../verilog/rtl/team_projects/team_04/team_04_WB.v",
         "dir::../../verilog/rtl/team_projects/team_04/team_04_Wrapper.sv",  
-      
         "dir::../../verilog/rtl/team_projects/team_03/team_03_WB.v",
         "dir::../../verilog/rtl/team_projects/team_03/team_03_Wrapper.sv",  
-                
         "dir::../../verilog/rtl/user_project_wrapper.v"
     ],
     "ROUTING_CORES": 6,
     "CLOCK_PERIOD": 100,
     "CLOCK_PORT": "wb_clk_i",
     "CLOCK_NET": "wb_clk_i",
-    "ERROR_ON_KLAYOUT_DRC": false,
     "FP_PDN_MACRO_HOOKS": [
-      
         "mprj.team_05_Wrapper.team_05_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
         "mprj.team_07_Wrapper.team_07_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
         "mprj.team_02_Wrapper.team_02_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
         "mprj.team_00_Wrapper.team_00_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
         "mprj.team_06_Wrapper.team_06_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
         "mprj.team_01_Wrapper.team_01_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
         "mprj.team_04_Wrapper.team_04_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-      
-        "mprj.team_03_Wrapper.team_03_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1"
-                
+        "mprj.team_03_Wrapper.team_03_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3 vccd1 vssd1 vccd1 vssd1"
     ],
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
-    "MAGIC_DEF_LABELS": 0,
     "VERILOG_FILES_BLACKBOX": [
-      
         "dir::../../verilog/gl/team_05.v",
-      
         "dir::../../verilog/gl/team_07.v",
-      
         "dir::../../verilog/gl/team_02.v",
-      
         "dir::../../verilog/gl/team_00.v",
-      
         "dir::../../verilog/gl/team_06.v",
-      
-        "dir::../../verilog/gl/team_15.v",
-      
         "dir::../../verilog/gl/team_01.v",
-      
         "dir::../../verilog/gl/team_04.v",
-      
-        "dir::../../verilog/gl/team_03.v"
-                
+        "dir::../../verilog/gl/team_03.v",
+        "dir::../../verilog/gl/fpgacell.v"
     ],
     "EXTRA_LEFS": [
-      
         "dir::../../lef/team_05.lef",
-      
         "dir::../../lef/team_07.lef",
-      
         "dir::../../lef/team_02.lef",
-      
         "dir::../../lef/team_00.lef",
-      
         "dir::../../lef/team_06.lef",
-      
-        "dir::../../lef/team_15.lef",
-      
         "dir::../../lef/team_01.lef",
-      
         "dir::../../lef/team_04.lef",
-      
-        "dir::../../lef/team_03.lef"
-                
+        "dir::../../lef/team_03.lef",
+        "dir::../../lef/fpgacell.lef"
     ],
     "EXTRA_GDS_FILES": [
-      
         "dir::../../gds/team_05.gds",
-      
         "dir::../../gds/team_07.gds",
-      
         "dir::../../gds/team_02.gds",
-      
         "dir::../../gds/team_00.gds",
-      
         "dir::../../gds/team_06.gds",
-      
-        "dir::../../gds/team_15.gds",
-      
         "dir::../../gds/team_01.gds",
-      
         "dir::../../gds/team_04.gds",
-      
-        "dir::../../gds/team_03.gds"
-                
+        "dir::../../gds/team_03.gds",
+        "dir::../../gds/fpgacell.gds"
     ],
     "EXTRA_LIBS": [
-      
         "dir::../../lib/team_05.lib",
-      
         "dir::../../lib/team_07.lib",
-      
         "dir::../../lib/team_02.lib",
-      
         "dir::../../lib/team_00.lib",
-      
         "dir::../../lib/team_06.lib",
-      
-        "dir::../../lib/team_15.lib",
-      
         "dir::../../lib/team_01.lib",
-      
         "dir::../../lib/team_04.lib",
-      
-        "dir::../../lib/team_03.lib"
-     
+        "dir::../../lib/team_03.lib",
+        "dir::../../lib/fpgacell.lib"
     ],
     "EXTRA_SPEFS": [
-      
-        "team_05", 
-        "dir::../../spef/multicorner/team_05.min.spef", 
-        "dir::../../spef/multicorner/team_05.nom.spef", 
-        "dir::../../spef/multicorner/team_05.max.spef",
-      
-        "team_07", 
-        "dir::../../spef/multicorner/team_07.min.spef", 
-        "dir::../../spef/multicorner/team_07.nom.spef", 
-        "dir::../../spef/multicorner/team_07.max.spef",
-      
-        "team_02", 
-        "dir::../../spef/multicorner/team_02.min.spef", 
-        "dir::../../spef/multicorner/team_02.nom.spef", 
-        "dir::../../spef/multicorner/team_02.max.spef",
-      
-        "team_00", 
-        "dir::../../spef/multicorner/team_00.min.spef", 
-        "dir::../../spef/multicorner/team_00.nom.spef", 
-        "dir::../../spef/multicorner/team_00.max.spef",
-      
-        "team_06", 
-        "dir::../../spef/multicorner/team_06.min.spef", 
-        "dir::../../spef/multicorner/team_06.nom.spef", 
-        "dir::../../spef/multicorner/team_06.max.spef",
-      
-        "team_15", 
-        "dir::../../spef/multicorner/team_15.min.spef", 
-        "dir::../../spef/multicorner/team_15.nom.spef", 
-        "dir::../../spef/multicorner/team_15.max.spef",
-      
-        "team_01", 
-        "dir::../../spef/multicorner/team_01.min.spef", 
-        "dir::../../spef/multicorner/team_01.nom.spef", 
-        "dir::../../spef/multicorner/team_01.max.spef",
-      
-        "team_04", 
-        "dir::../../spef/multicorner/team_04.min.spef", 
-        "dir::../../spef/multicorner/team_04.nom.spef", 
-        "dir::../../spef/multicorner/team_04.max.spef",
-      
-        "team_03", 
-        "dir::../../spef/multicorner/team_03.min.spef", 
-        "dir::../../spef/multicorner/team_03.nom.spef", 
-        "dir::../../spef/multicorner/team_03.max.spef"
-                
+        "team_05", "dir::../../spef/multicorner/team_05.min.spef", "dir::../../spef/multicorner/team_05.nom.spef", "dir::../../spef/multicorner/team_05.max.spef",
+        "team_07", "dir::../../spef/multicorner/team_07.min.spef", "dir::../../spef/multicorner/team_07.nom.spef", "dir::../../spef/multicorner/team_07.max.spef",
+        "team_02", "dir::../../spef/multicorner/team_02.min.spef", "dir::../../spef/multicorner/team_02.nom.spef", "dir::../../spef/multicorner/team_02.max.spef",
+        "team_00", "dir::../../spef/multicorner/team_00.min.spef", "dir::../../spef/multicorner/team_00.nom.spef", "dir::../../spef/multicorner/team_00.max.spef",
+        "team_06", "dir::../../spef/multicorner/team_06.min.spef", "dir::../../spef/multicorner/team_06.nom.spef", "dir::../../spef/multicorner/team_06.max.spef",
+        "team_01", "dir::../../spef/multicorner/team_01.min.spef", "dir::../../spef/multicorner/team_01.nom.spef", "dir::../../spef/multicorner/team_01.max.spef",
+        "team_04", "dir::../../spef/multicorner/team_04.min.spef", "dir::../../spef/multicorner/team_04.nom.spef", "dir::../../spef/multicorner/team_04.max.spef",
+        "team_03", "dir::../../spef/multicorner/team_03.min.spef", "dir::../../spef/multicorner/team_03.nom.spef", "dir::../../spef/multicorner/team_03.max.spef",
+        "fpgacell", "dir::../../spef/multicorner/fpgacell.min.spef", "dir::../../spef/multicorner/fpgacell.nom.spef", "dir::../../spef/multicorner/fpgacell.max.spef"
     ],
     "BASE_SDC_FILE": "dir::base_user_project_wrapper.sdc",
     "IO_SYNC": 0,
@@ -212,12 +119,9 @@
     "RUN_LINTER": 0,
     "QUIT_ON_SYNTH_CHECKS": 0,
     "FP_PDN_CHECK_NODES": 1,
-
-    "//": "Added to skip Magic DRC, because of SRAM (will remove later)",
     "RUN_MAGIC_DRC": 0,
     "MAGIC_DRC_USE_GDS": 0,
     "QUIT_ON_MAGIC_DRC": 0,
-
     "SYNTH_ELABORATE_ONLY": 0,
     "SYNTH_CLOCK_UNCERTAINTY": 0.2,
     "PL_RESIZER_HOLD_SLACK_MARGIN": 1.0,
@@ -265,18 +169,8 @@
     "FP_PDN_VSPACING": "expr::(5 * $FP_PDN_CORE_RING_VWIDTH)",
     "FP_PDN_HSPACING": "expr::(5 * $FP_PDN_CORE_RING_HWIDTH)",
     "ERROR_ON_MAGIC_DRC": 0,
-    "VDD_NETS": [
-        "vccd1",
-        "vccd2",
-        "vdda1",
-        "vdda2"
-    ],
-    "GND_NETS": [
-        "vssd1",
-        "vssd2",
-        "vssa1",
-        "vssa2"
-    ],
+    "VDD_NETS": [ "vccd1", "vccd2", "vdda1", "vdda2" ],
+    "GND_NETS": [ "vssd1", "vssd2", "vssa1", "vssa2" ],
     "SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
     "pdk::sky130*": {
         "PL_TARGET_DENSITY": 0.25,
@@ -285,4 +179,3 @@
         "FP_DEF_TEMPLATE": "dir::fixed_dont_change/user_project_wrapper.def"
     }
 }
-
