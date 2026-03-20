@@ -45,7 +45,7 @@
     "FP_IO_HLAYER": "met3",
     "FP_IO_VLAYER": "met2",
     "RT_MIN_LAYER": "met1",
-    "RT_MAX_LAYER": "met4",
+    "RT_MAX_LAYER": "met3",
     "SCL_GROUND_PINS": [
         "VGND",
         "VNB"
@@ -298,7 +298,7 @@
         0,
         0
     ],
-    "PL_TARGET_DENSITY_PCT": 82.65,
+    "PL_TARGET_DENSITY_PCT": 78.2,
     "PL_SKIP_INITIAL_PLACEMENT": false,
     "PL_WIRE_LENGTH_COEF": 0.25,
     "PL_MIN_PHI_COEFFICIENT": null,
