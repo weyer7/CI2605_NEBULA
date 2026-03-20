@@ -195,14 +195,14 @@
         "fpgacell", "dir::../../spef/multicorner/fpgacell.min.spef", "dir::../../spef/multicorner/fpgacell.nom.spef", "dir::../../spef/multicorner/fpgacell.max.spef"
     ],
     "//": "set to false only when debugging",
-    "PDN_CHECK_NODES": false,
+    "PDN_CHECK_NODES": true,
     "ERROR_ON_PDN_VIOLATIONS": true,
 
     "//": "Classic flow modifications",
     "meta": {
         "flow": "Classic",
         "substituting_steps": {
-        "OpenROAD.IRDropReport": null
+            "Netgen.LVS": null
         }
     },
     

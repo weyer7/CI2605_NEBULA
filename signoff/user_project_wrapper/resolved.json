@@ -502,7 +502,7 @@
     "PL_TIME_DRIVEN": true,
     "PL_ROUTABILITY_DRIVEN": true,
     "PL_ROUTABILITY_OVERFLOW_THRESHOLD": null,
-    "ERROR_ON_PDN_VIOLATIONS": false,
+    "ERROR_ON_PDN_VIOLATIONS": true,
     "DIODE_PADDING": null,
     "GRT_ALLOW_CONGESTION": false,
     "GRT_ANTENNA_ITERS": 150,
@@ -576,6 +576,7 @@
         "min_*": "/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.tech/openlane/rules.openrcx.sky130A.min.calibre",
         "max_*": "/home/ajwey/CI2605_stuff/nebula-iii/dependencies/pdks/sky130A/libs.tech/openlane/rules.openrcx.sky130A.max.calibre"
     },
+    "VSRC_LOC_FILES": null,
     "MAGIC_DEF_LABELS": true,
     "MAGIC_GDS_POLYGON_SUBCELLS": false,
     "MAGIC_DEF_NO_BLOCKAGES": true,
@@ -1341,7 +1342,6 @@
         "version": 1,
         "flow": "Classic",
         "substituting_steps": {
-            "OpenROAD.IRDropReport": null,
             "Netgen.LVS": null
         },
         "step": null,

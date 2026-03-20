@@ -47,7 +47,7 @@ module team_15 (
 );
     logic [31:0] io_in, io_out, io_oeb;
     fpga #(
-        .BUS_WIDTH(16)
+        .BUS_WIDTH(64)
     ) FPGA_INST (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
