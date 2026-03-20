@@ -196,15 +196,13 @@
     ],
     "//": "set to false only when debugging",
     "PDN_CHECK_NODES": false,
-    "FP_PDN_CHECK_NODES": false,
     "ERROR_ON_PDN_VIOLATIONS": true,
 
     "//": "Classic flow modifications",
     "meta": {
         "flow": "Classic",
         "substituting_steps": {
-        "OpenROAD.IRDropReport": null,
-        "Netgen.LVS": null
+        "OpenROAD.IRDropReport": null
         }
     },
     
