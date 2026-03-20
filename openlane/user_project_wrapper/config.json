@@ -31,6 +31,7 @@
         "dir::../../verilog/rtl/team_projects/team_15/team_15.sv",
         "dir::../../verilog/rtl/team_projects/team_15/src/fpga.sv",
         "dir::../../verilog/rtl/team_projects/team_15/src/cell4.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/cell16.sv",
 
         "dir::../../verilog/rtl/team_projects/team_01/team_01_WB.v",
         "dir::../../verilog/rtl/team_projects/team_01/team_01_Wrapper.sv",  
@@ -53,22 +54,89 @@
         "mprj.team_01_Wrapper.team_01_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
         "mprj.team_04_Wrapper.team_04_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
         "mprj.team_03_Wrapper.team_03_WB.instance_to_wrap vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell0 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell1 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell2 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell3 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell0 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell1 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell2 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell3 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell0 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell1 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell2 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell3 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell0 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell1 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell2 vccd1 vssd1 vccd1 vssd1",
-        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell3 vccd1 vssd1 vccd1 vssd1"
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell0.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell0.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell0.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell0.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell1.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell1.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell1.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell1.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell2.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell2.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell2.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell2.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell3.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell3.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell3.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell0.cell3.cell3 vccd1 vssd1 vccd1 vssd1",
+
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell0.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell0.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell0.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell0.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell1.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell1.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell1.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell1.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell2.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell2.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell2.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell2.cell3 vccd1 vssd1 vccd1 vssd1",
+        
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell3.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell3.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell3.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell1.cell3.cell3 vccd1 vssd1 vccd1 vssd1",
+
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell0.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell0.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell0.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell0.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell1.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell1.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell1.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell1.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell2.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell2.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell2.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell2.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell3.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell3.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell3.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell2.cell3.cell3 vccd1 vssd1 vccd1 vssd1",
+
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell0.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell0.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell0.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell0.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell1.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell1.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell1.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell1.cell3 vccd1 vssd1 vccd1 vssd1",
+
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell2.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell2.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell2.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell2.cell3 vccd1 vssd1 vccd1 vssd1",
+        
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell3.cell0 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell3.cell1 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell3.cell2 vccd1 vssd1 vccd1 vssd1",
+        "mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.FPGA_INST.cell3.cell3.cell3 vccd1 vssd1 vccd1 vssd1"
     ],
     "MACRO_PLACEMENT_CFG": "dir::macro.cfg",
     "VERILOG_FILES_BLACKBOX": [
@@ -126,12 +194,25 @@
         "team_03", "dir::../../spef/multicorner/team_03.min.spef", "dir::../../spef/multicorner/team_03.nom.spef", "dir::../../spef/multicorner/team_03.max.spef",
         "fpgacell", "dir::../../spef/multicorner/fpgacell.min.spef", "dir::../../spef/multicorner/fpgacell.nom.spef", "dir::../../spef/multicorner/fpgacell.max.spef"
     ],
+    "//": "set to false only when debugging",
+    "PDN_CHECK_NODES": false,
+    "FP_PDN_CHECK_NODES": false,
+    "ERROR_ON_PDN_VIOLATIONS": true,
+
+    "//": "Classic flow modifications",
+    "meta": {
+        "flow": "Classic",
+        "substituting_steps": {
+        "OpenROAD.IRDropReport": null,
+        "Netgen.LVS": null
+        }
+    },
+    
     "BASE_SDC_FILE": "dir::base_user_project_wrapper.sdc",
     "IO_SYNC": 0,
     "MAX_TRANSITION_CONSTRAINT": 1.5,
     "RUN_LINTER": 0,
     "QUIT_ON_SYNTH_CHECKS": 0,
-    "FP_PDN_CHECK_NODES": 1,
     "RUN_MAGIC_DRC": 0,
     "MAGIC_DRC_USE_GDS": 0,
     "QUIT_ON_MAGIC_DRC": 0,

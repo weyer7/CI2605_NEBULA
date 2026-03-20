@@ -1,7 +1,7 @@
 `default_nettype none
 module fpga #(
   parameter
-    BUS_WIDTH = 32
+    BUS_WIDTH = 64
 )(
   `ifdef USE_POWER_PINS
       inout vccd1,	// User area 1 1.8V supply
@@ -89,7 +89,7 @@ module fpga #(
   assign io_east_out = {east1_out, east0_out};
   assign io_west_out = {west1_out, west0_out};
 
-  cell4 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell0 
+  cell16 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell0 
   (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
@@ -108,7 +108,7 @@ module fpga #(
     .SBwest_in(io_west_in[BUS_WIDTH - 1:0]), .SBwest_out(west0_out) //top level IO
   );
 
-  cell4 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell1
+  cell16 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell1
   (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
@@ -127,7 +127,7 @@ module fpga #(
     .SBwest_in(bus0_1), .SBwest_out(bus1_0)
   );
 
-  cell4 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell2
+  cell16 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell2
   (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
@@ -146,7 +146,7 @@ module fpga #(
     .SBwest_in(io_west_in[BUS_WIDTH * 2 - 1:BUS_WIDTH]), .SBwest_out(west1_out) //top level IO
   );
 
-  cell4 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell3
+  cell16 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell3
   (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
@@ -168,6 +168,7 @@ module fpga #(
   //gpio OEB shift register
   logic [BUS_WIDTH * 2 * 4 - 1 :0] oeb_d, oeb_q;
   assign oeb_q = {io_north_oeb, io_east_oeb, io_south_oeb, io_west_oeb};
+  //assign {io_north_oeb, io_east_oeb, io_south_oeb, io_west_oeb} = oeb_q;
   always_ff @(posedge clk, negedge nrst) begin
     if (!nrst) begin
       oeb_q <= '0;
