@@ -46,7 +46,7 @@ module team_05 (
     // You can also have input registers controlled by the Caravel Harness's on chip processor
 );
 
-    top SYNTH_INST (
+    t05_top SYNTH_INST (
         .keypad_i(gpio_in[13:0]),
         .clk(clk), .n_rst(nrst),
 

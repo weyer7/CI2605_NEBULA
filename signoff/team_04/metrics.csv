@@ -1,7 +1,7 @@
 Metric,Value
 design__lint_error__count,0
 design__lint_timing_construct__count,0
-design__lint_warning__count,455
+design__lint_warning__count,454
 design__inferred_latch__count,0
 design__instance__count,1422
 design__instance__area,10645.2
@@ -266,7 +266,7 @@ design_powergrid__voltage__worst__net:vccd1__corner:nom_tt_025C_1v80,1.7996
 design_powergrid__drop__average__net:vccd1__corner:nom_tt_025C_1v80,1.79992
 design_powergrid__drop__worst__net:vccd1__corner:nom_tt_025C_1v80,0.000399199
 design_powergrid__voltage__worst__net:vssd1__corner:nom_tt_025C_1v80,0.000490269
-design_powergrid__drop__average__net:vssd1__corner:nom_tt_025C_1v80,0.0000682015
+design_powergrid__drop__average__net:vssd1__corner:nom_tt_025C_1v80,0.0000680992
 design_powergrid__drop__worst__net:vssd1__corner:nom_tt_025C_1v80,0.000490269
 design_powergrid__voltage__worst,0.000490269
 design_powergrid__voltage__worst__net:vccd1,1.7996

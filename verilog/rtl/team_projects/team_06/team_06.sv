@@ -46,7 +46,7 @@ module team_06 (
     // You can also have input registers controlled by the Caravel Harness's on chip processor
 );
 
-    calculator_top CALC_INST (
+    t06_calculator_top CALC_INST (
         .clk(clk),
         .nRST(nrst),
         .RowIn(gpio_in[3:0]),  // from keypad rows

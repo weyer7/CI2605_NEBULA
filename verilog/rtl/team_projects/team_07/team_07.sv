@@ -46,7 +46,7 @@ module team_07 (
     // You can also have input registers controlled by the Caravel Harness's on chip processor
 );
 
-    matrix_mult MATMULT_INST(
+    t07_matrix_mult MATMULT_INST(
         .clk(clk), .n_rst(nrst),
         .confirmation(gpio_in[0]),
         .serial_in(gpio_in[1]),

@@ -46,7 +46,7 @@ module team_03 (
     // You can also have input registers controlled by the Caravel Harness's on chip processor
 );
 
-    pid_top PID_INST (
+    t03_pid_top PID_INST (
         .clk(clk), .n_rst(nrst),
         //MCU stuff
         .ctrl(gpio_in[1:0]),

@@ -45,7 +45,7 @@ module team_01 (
 
     // You can also have input registers controlled by the Caravel Harness's on chip processor
 );
-  intro_2_rng TOP(
+  t01_intro_2_rng TOP(
     .clk(clk),
     .n_rst(nrst),
     .ui_in(gpio_in[7:0]),

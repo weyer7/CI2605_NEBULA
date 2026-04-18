@@ -46,7 +46,7 @@ module team_02 (
     // You can also have input registers controlled by the Caravel Harness's on chip processor
 );
 
-    matrix_multiplier MATMULT_INST (
+    t02_matrix_multiplier MATMULT_INST (
         // I/O ports
         .hz100(clk),
         .spi_clk(gpio_in[0]),

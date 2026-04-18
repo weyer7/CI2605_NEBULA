@@ -1,0 +1,113 @@
+{
+  "project": {
+    "name": "CI2605_NEBULA",
+    "type": "digital",
+    "user": "alexander-weyer",
+    "version": "1",
+    "user_project_wrapper_hash": "",
+    "submission_state": "Draft",
+    "platform_project_id": "cd237bc3-05e6-4d44-b0b7-9f176d2906dd",
+    "gpio_config": {
+      "5": "13'h1800",
+      "6": "13'h1800",
+      "7": "13'h1800",
+      "8": "13'h1800",
+      "9": "13'h1800",
+      "10": "13'h1800",
+      "11": "13'h1800",
+      "12": "13'h1800",
+      "13": "13'h1800",
+      "14": "13'h1800",
+      "15": "13'h1800",
+      "16": "13'h1800",
+      "17": "13'h1800",
+      "18": "13'h1800",
+      "19": "13'h1800",
+      "20": "13'h1800",
+      "21": "13'h1800",
+      "22": "13'h1800",
+      "23": "13'h1800",
+      "24": "13'h1800",
+      "25": "13'h1800",
+      "26": "13'h1800",
+      "27": "13'h1800",
+      "28": "13'h1800",
+      "29": "13'h1800",
+      "30": "13'h1800",
+      "31": "13'h1800",
+      "32": "13'h1800",
+      "33": "13'h1800",
+      "34": "13'h1800",
+      "35": "13'h1800",
+      "36": "13'h1800",
+      "37": "13'h1800"
+    }
+  },
+  "precheck": {
+    "version": "1.1.0",
+    "timestamp": "2026-04-18T17:18:41.346264+00:00",
+    "pdk": "sky130A",
+    "passed": false,
+    "checks": {
+      "topcell_check": {
+        "status": "pass",
+        "duration_s": 9.35
+      },
+      "gpio_defines": {
+        "status": "pass",
+        "duration_s": 3.14
+      },
+      "xor": {
+        "status": "pass",
+        "duration_s": 101.16
+      },
+      "klayout_feol": {
+        "status": "pass",
+        "duration_s": 1448.63
+      },
+      "klayout_beol": {
+        "status": "pass",
+        "duration_s": 2407.28
+      },
+      "klayout_offgrid": {
+        "status": "pass",
+        "duration_s": 695.15
+      },
+      "klayout_met_min_ca_density": {
+        "status": "pass",
+        "duration_s": 188.96
+      },
+      "klayout_pin_label_purposes_overlapping_drawing": {
+        "status": "pass",
+        "duration_s": 194.01
+      },
+      "klayout_zeroarea": {
+        "status": "pass",
+        "duration_s": 43.04
+      },
+      "spike_check": {
+        "status": "pass",
+        "duration_s": 39.65
+      },
+      "illegal_cellname_check": {
+        "status": "pass",
+        "duration_s": 14.47
+      },
+      "lvs": {
+        "status": "fail",
+        "duration_s": 2064.46,
+        "details": "LVS FAILED (stat=1), see /home/weyer7/Purdue/IntroII/CI2605_NEBULA/precheck_results/18_APR_2026___15_17_50/logs/LVS_check.log"
+      },
+      "oeb": {
+        "status": "pass",
+        "duration_s": 37.94
+      },
+      "magic_drc": {
+        "status": "skip",
+        "duration_s": 0,
+        "reason": "optional (use --magic-drc to include)"
+      }
+    },
+    "input_file_hash": "50350fd8102a50013cf55c749bf7a8526b9d93a7"
+  }
+}
