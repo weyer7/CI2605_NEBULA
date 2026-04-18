@@ -4,13 +4,13 @@
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/wb_wrapper.vh",
         "dir::../../verilog/rtl/team_projects/team_15/team_15.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/CB.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/fpga.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/fpgacell.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/io.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/LE.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/LEI.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/SB.sv"
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_CB.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_fpga.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_fpgacell.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_io.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_LE.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_LEI.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_SB.sv"
     ],
     "CLOCK_PERIOD": 1000,
     "CLOCK_PORT": "clk",
