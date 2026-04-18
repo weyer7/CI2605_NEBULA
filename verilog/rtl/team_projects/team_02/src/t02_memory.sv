@@ -1,5 +1,5 @@
 
-module memory (
+module t02_memory (
     input logic clk, 
     input logic [1:0] addr, //need to generalize for non 2x2
     input logic rst,

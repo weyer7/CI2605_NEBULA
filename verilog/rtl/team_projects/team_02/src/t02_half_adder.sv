@@ -1,6 +1,6 @@
 
 
-module half_adder(
+module t02_half_adder(
 	input logic a, 
 	input logic b, 
 	output logic s0, 

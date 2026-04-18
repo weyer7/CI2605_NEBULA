@@ -1,4 +1,4 @@
-module keypad(
+module t01_keypad(
   input logic clk, n_rst,
   input logic [3:0] state,
   input logic [3:0] keypad_row_async,
@@ -8,12 +8,12 @@ module keypad(
   logic clk_psc;
   logic [3:0] keypad_row;
   logic [3:0] unused_count;
-  ffsync2 sync_r0(.clk(clk), .n_rst(n_rst),.async_in(keypad_row_async[0]),.sync(keypad_row[0]));
-  ffsync2 sync_r1(.clk(clk),.n_rst(n_rst),.async_in(keypad_row_async[1]),.sync(keypad_row[1]));
-  ffsync2 sync_r2(.clk(clk),.n_rst(n_rst),.async_in(keypad_row_async[2]),.sync(keypad_row[2]));
-  ffsync2 sync_r3(.clk(clk),.n_rst(n_rst),.async_in(keypad_row_async[3]),.sync(keypad_row[3]));
+  t01_ffsync2 sync_r0(.clk(clk), .n_rst(n_rst),.async_in(keypad_row_async[0]),.sync(keypad_row[0]));
+  t01_ffsync2 sync_r1(.clk(clk),.n_rst(n_rst),.async_in(keypad_row_async[1]),.sync(keypad_row[1]));
+  t01_ffsync2 sync_r2(.clk(clk),.n_rst(n_rst),.async_in(keypad_row_async[2]),.sync(keypad_row[2]));
+  t01_ffsync2 sync_r3(.clk(clk),.n_rst(n_rst),.async_in(keypad_row_async[3]),.sync(keypad_row[3]));
 
-  example_counter psc(
+  t01_example_counter psc(
     .clk(clk), .n_rst(n_rst),
     .count_enable(1'b1),
     .rollover_val(4'b1000),

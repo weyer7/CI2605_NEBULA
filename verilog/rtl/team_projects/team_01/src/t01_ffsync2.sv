@@ -1,4 +1,4 @@
-module ffsync2 (
+module t01_ffsync2 (
   input logic async_in,
   input logic clk, n_rst,
   output logic sync

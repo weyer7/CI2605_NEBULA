@@ -1,6 +1,6 @@
 
 
-module partial_products(
+module t02_partial_products(
     input logic [7:0] A,
     input logic [7:0] B,
     output logic [63:0] P

@@ -1,4 +1,4 @@
-module top_rng #(
+module t01_top_rng #(
     parameter FPGA_USED = 0
 ) (
     // I/O ports
@@ -27,7 +27,7 @@ module top_rng #(
 
 
     
-    keypad k1(
+    t01_keypad k1(
         .clk(clk), .n_rst(n_rst),
         .state(state[3:0]),
         .keypad_row_async(keypad_row_async),
@@ -35,7 +35,7 @@ module top_rng #(
         ,.keypad_col(keypad_col)
     );
 
-    lookuptable lut1 (
+    t01_lookuptable lut1 (
         .clk(clk), .n_rst(n_rst),
         .start_generation(update_state),
         .mixer(mixing),
@@ -44,7 +44,7 @@ module top_rng #(
         .next_state_ready(state_ready)
     );
 
-    example_counter #(.SIZE(9)) ecstate(
+    t01_example_counter #(.SIZE(9)) ecstate(
         .clk(clk), .n_rst(n_rst),
         .rollover_val(500),
         .rollover_flag(update_state),
@@ -53,7 +53,7 @@ module top_rng #(
         .count_out(ecstate_count_out_ignored)
     );
 
-    ssout display (
+    t01_ssout display (
         .clk(clk), .n_rst(n_rst),
         .state(state),
         .ss_enable(ssel),

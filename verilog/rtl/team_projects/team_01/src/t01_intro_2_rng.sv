@@ -1,6 +1,6 @@
 `default_nettype none
 
-module intro_2_rng (
+module t01_intro_2_rng (
   // I/O ports
   input logic clk, n_rst,
 
@@ -21,7 +21,7 @@ module intro_2_rng (
               ss1_unused,
               ss0_unused;
 
-    top_rng #(.FPGA_USED(0)) top_rng_inst (
+    t01_top_rng #(.FPGA_USED(0)) top_rng_inst (
         .clk(clk), .n_rst(n_rst),
         .ui_in(ui_in),
         .uo_out(uo_out),

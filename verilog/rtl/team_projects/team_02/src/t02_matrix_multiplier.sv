@@ -1,6 +1,6 @@
 
 `default_nettype none
-module matrix_multiplier(
+module t02_matrix_multiplier(
     // I/O ports
     input logic hz100,
     input logic spi_clk,
@@ -47,7 +47,7 @@ logic trash0, trash1, trash2;
 logic [7:0] trash3;
 logic [17:0] trash4;
 
-matmult matmult_inst (
+t02_matmult matmult_inst (
     .sys_clk(hz100),
     .spi_clk(~spi_clk),
     .cs(~cs),

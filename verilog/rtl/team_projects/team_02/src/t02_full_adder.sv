@@ -1,6 +1,6 @@
 
 
-module full_adder(
+module t02_full_adder(
 	input logic a, 
 	input logic b, 
 	input logic cin, 

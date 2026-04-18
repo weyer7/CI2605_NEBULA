@@ -1,4 +1,4 @@
-module lookuptable(
+module t01_lookuptable(
   input logic clk, n_rst, start_generation,
   input logic [31:0]mixer,
   input logic [31:0]state,
@@ -6,7 +6,7 @@ module lookuptable(
   output logic [31:0]next_state
 );
   logic [5:0] unused_count;
-  example_counter #(.SIZE(6)) ecstate(.clk(clk),.n_rst(n_rst),.rollover_val(37), .rollover_flag(next_state_ready),.count_enable(1),.clear(!started),
+  t01_example_counter #(.SIZE(6)) ecstate(.clk(clk),.n_rst(n_rst),.rollover_val(37), .rollover_flag(next_state_ready),.count_enable(1),.clear(!started),
   /* verilator lint_off PINMISSING */
   .count_out(unused_count)
   /* verilator lint_on PINMISSING */);

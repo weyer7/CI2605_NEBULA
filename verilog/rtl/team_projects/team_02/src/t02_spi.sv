@@ -1,5 +1,5 @@
 
-module spi(
+module t02_spi(
     input logic sys_clk,
     input logic rst,
     input logic [17:0] tx_data,

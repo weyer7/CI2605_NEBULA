@@ -4,7 +4,7 @@
 // Author:      Miguel Isrrael Teran
 // Description: Example Counter
 
-module example_counter # (
+module t01_example_counter # (
     parameter SIZE = 4
 )(
     input logic clk, n_rst,

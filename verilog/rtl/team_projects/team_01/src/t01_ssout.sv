@@ -1,5 +1,5 @@
 
-module ssout(
+module t01_ssout(
   input logic clk, n_rst,
   input logic [31:0] state,
   output logic [2:0] ss_enable,
@@ -18,7 +18,7 @@ module ssout(
     end
   endgenerate
 
-  example_counter psc(
+  t01_example_counter psc(
     .clk(clk), .n_rst(n_rst),
     .rollover_val(1),
     .clear(0),
@@ -26,7 +26,7 @@ module ssout(
     .rollover_flag(rollover_flag),
     .count_enable(1'b1)
   );
-  ssdec ssd(.in(current_data),.enable(1),.out(ss_out[6:0]));
+  t01_ssdec ssd(.in(current_data),.enable(1),.out(ss_out[6:0]));
   
   // unused 
   assign ss_out[7] = 1'b0;

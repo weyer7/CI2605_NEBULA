@@ -1,6 +1,6 @@
 
 
-module alu (
+module t02_alu (
 	input logic clk,
 	input logic rst,
 	input logic start,
@@ -25,20 +25,20 @@ module alu (
 	state_t state;
 
 	// instantiate two combinational multipliers
-	dadda mult_inst1 (
+	t02_dadda mult_inst1 (
 		.a(a0_reg),
 		.b(b0_reg),
 		.out(mult_out_1)
 	);
 
-	dadda mult_inst2 (
+	t02_dadda mult_inst2 (
 		.a(a1_reg),
 		.b(b1_reg),
 		.out(mult_out_2)
 	);
 
 	// adder for the two multiplication results
-	adder17 adder_inst (
+	t02_adder17 adder_inst (
 		.A(res1),
 		.B(res2),
 		.S(o)

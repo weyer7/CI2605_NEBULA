@@ -2,7 +2,7 @@
 `default_nettype none
 // Empty top module
 
-module matmult (
+module t02_matmult (
     //ADD TESTBENCHING IO HERE
 
     input logic sys_clk,
@@ -52,7 +52,7 @@ module matmult (
     logic done;
     logic SPI_rst;
     
-    memory mem_inst (
+    t02_memory mem_inst (
         .clk(sys_clk),
         .addr(addr),
         .rst(rst),
@@ -63,7 +63,7 @@ module matmult (
     );
 
     
-    alu alu_inst (
+    t02_alu alu_inst (
         .clk(sys_clk),
         .rst(rst),
         .start(start),
@@ -76,7 +76,7 @@ module matmult (
     );
 
     
-    fsm fsm_inst (
+    t02_fsm fsm_inst (
         .clk(sys_clk),
         .rst(rst),
         .sel(sel),
@@ -104,7 +104,7 @@ module matmult (
         .result(result)
     );
 
-    spi spi_inst (
+    t02_spi spi_inst (
         .spi_clk(spi_clk),
         .rst(SPI_rst),
         .cs(cs),

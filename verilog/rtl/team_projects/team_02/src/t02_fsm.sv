@@ -1,5 +1,5 @@
 
-module fsm (
+module t02_fsm (
     input  logic clk,
     input  logic rst,
 
