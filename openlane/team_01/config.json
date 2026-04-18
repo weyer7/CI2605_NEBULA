@@ -4,15 +4,15 @@
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/wb_wrapper.vh",
         "dir::../../verilog/rtl/team_projects/team_01/team_01.sv",
-        "dir::../../verilog/rtl/team_projects/team_01/src/example_counter.sv",
-        "dir::../../verilog/rtl/team_projects/team_01/src/ffsync2.sv",
-        "dir::../../verilog/rtl/team_projects/team_01/src/intro_2_rng.sv",
-        "dir::../../verilog/rtl/team_projects/team_01/src/keypad.sv",
-        "dir::../../verilog/rtl/team_projects/team_01/src/lookuptable.sv",
-        "dir::../../verilog/rtl/team_projects/team_01/src/project.v",
-        "dir::../../verilog/rtl/team_projects/team_01/src/ssdec.sv",
-        "dir::../../verilog/rtl/team_projects/team_01/src/ssout.sv",
-        "dir::../../verilog/rtl/team_projects/team_01/src/top_rng.sv"
+        "dir::../../verilog/rtl/team_projects/team_01/src/t01_example_counter.sv",
+        "dir::../../verilog/rtl/team_projects/team_01/src/t01_ffsync2.sv",
+        "dir::../../verilog/rtl/team_projects/team_01/src/t01_intro_2_rng.sv",
+        "dir::../../verilog/rtl/team_projects/team_01/src/t01_keypad.sv",
+        "dir::../../verilog/rtl/team_projects/team_01/src/t01_lookuptable.sv",
+        "dir::../../verilog/rtl/team_projects/team_01/src/t01_project.v",
+        "dir::../../verilog/rtl/team_projects/team_01/src/t01_ssdec.sv",
+        "dir::../../verilog/rtl/team_projects/team_01/src/t01_ssout.sv",
+        "dir::../../verilog/rtl/team_projects/team_01/src/t01_top_rng.sv"
 
 
     ],
