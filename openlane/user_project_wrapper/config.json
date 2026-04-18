@@ -29,9 +29,9 @@
         "dir::../../verilog/rtl/team_projects/team_15/team_15_WB.v",
         "dir::../../verilog/rtl/team_projects/team_15/team_15_Wrapper.sv",
         "dir::../../verilog/rtl/team_projects/team_15/team_15.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/fpga.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/cell4.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/cell16.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_fpga.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_cell4.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_cell16.sv",
 
         "dir::../../verilog/rtl/team_projects/team_01/team_01_WB.v",
         "dir::../../verilog/rtl/team_projects/team_01/team_01_Wrapper.sv",  
