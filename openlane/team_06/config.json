@@ -4,13 +4,13 @@
     "VERILOG_FILES": [
         "dir::../../verilog/rtl/wb_wrapper.vh",
         "dir::../../verilog/rtl/team_projects/team_06/team_06.sv",
-        "dir::../../verilog/rtl/team_projects/team_06/src/addition.sv",
-        "dir::../../verilog/rtl/team_projects/team_06/src/calculator_top.sv",
-        "dir::../../verilog/rtl/team_projects/team_06/src/gencon_defs.sv",
-        "dir::../../verilog/rtl/team_projects/team_06/src/gencon.sv",
-        "dir::../../verilog/rtl/team_projects/team_06/src/input_control.sv",
-        "dir::../../verilog/rtl/team_projects/team_06/src/multiply.sv",
-        "dir::../../verilog/rtl/team_projects/team_06/src/wrapper.sv"
+        "dir::../../verilog/rtl/team_projects/team_06/src/t06_addition.sv",
+        "dir::../../verilog/rtl/team_projects/team_06/src/t06_calculator_top.sv",
+        "dir::../../verilog/rtl/team_projects/team_06/src/t06_gencon_defs.sv",
+        "dir::../../verilog/rtl/team_projects/team_06/src/t06_gencon.sv",
+        "dir::../../verilog/rtl/team_projects/team_06/src/t06_input_control.sv",
+        "dir::../../verilog/rtl/team_projects/team_06/src/t06_multiply.sv",
+        "dir::../../verilog/rtl/team_projects/team_06/src/t06_wrapper.sv"
     ],
     "CLOCK_PERIOD": 25,
     "CLOCK_PORT": "clk",
