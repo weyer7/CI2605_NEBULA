@@ -46,8 +46,8 @@ module team_15 (
     // You can also have input registers controlled by the Caravel Harness's on chip processor
 );
     logic [31:0] io_in, io_out, io_oeb;
-    fpga #(
-        .BUS_WIDTH(64)
+    t15_fpga #(
+        .BUS_WIDTH(32)
     ) FPGA_INST (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),

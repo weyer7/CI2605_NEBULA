@@ -24,6 +24,11 @@
 
 // Change this to 300X0000 where X is your team number
 #define reg_team_00_EN (*(volatile uint32_t*)0x30000000)
+#define reg_team_00_PRESCALER (*(volatile uint32_t*) 0x30000004)
+#define reg_team_00_IM (*(volatile uint32_t*)        0x3000FF00)
+#define reg_team_00_MIS (*(volatile uint32_t*)       0x3000FF04)
+#define reg_team_00_RIS (*(volatile uint32_t*)       0x3000FF08)
+#define reg_team_00_IC (*(volatile uint32_t*)        0x3000FF0C)
 
 // GPIO Control
 #define reg_gpio_PIN_0TO7 (*(volatile uint32_t*)0x32000000)
@@ -36,7 +41,18 @@
 #define reg_la_sel (*(volatile uint32_t*)0x31000000)
 
 // SRAM address space
-#define sram_space (*(volatile uint32_t*)0x33000000)
+// #define sram_space (*(volatile uint32_t*)0x33000000)
+
+/*
+	Sample Team Project Test:
+		- Configures all IO pins as outputs
+		- Configures all IO and LA pins to be selected by sample project
+		- Enables sample project design through WB
+		- Enables design's output cycling through LA inputs
+		- Checks GPIO outputs consistently
+		- Stops output cycling through LA inputs
+		- "Acknowledges" interrupt, and enables cycling again
+*/
 
 void main()
 {
@@ -145,6 +161,9 @@ void main()
 	reg_gpio_PIN_24TO31 = 0x00000000;
 	reg_gpio_PIN_32TO37 = 0x000000;
 
+	// Configure LA output to be selected by sample project
+	reg_la_sel = 0x0;
+
 	// Load instructions to RAM - CPU teams: uncomment this!
 	// int num_instr = sizeof(instructions) / sizeof(instructions[0]);
 	// for (int i = 0; i < num_instr; i++) {
@@ -159,5 +178,39 @@ void main()
 	// Enable your design
 	reg_team_00_EN = 1;
 	
+	// Enable interrupt mask
+	reg_team_00_IM = 0x1;
+
+	// Set "prescaler" value to 1
+	reg_team_00_PRESCALER = 0x1;
+
+	// Configure LA[0] LA[1] as outputs from the cpu
+	reg_la0_oenb = reg_la0_iena = 0x00000003;
+
+	// Normal design operation
+	while (1) {
+		if (reg_team_00_MIS == 0x1) {  // if all outputs have been set high
+			reg_la0_data = 0x3;  // set "stop" high
+			reg_team_00_IC = 0x1;  // "acknowledge" interrupt
+		}
+		else if (reg_mprj_datah == 0) {
+			reg_la0_data = 0x1;  // Set "enable" high
+		}
+	}
+
 	// If using SRAM, you can add more reads and writes here
+
+	// Add some extra instructions because GL sims are buggy. This has to do with the instruction cache 
+	// trying to read from undefined memory in anticipation of having more instructions
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_32TO37 = 0x000000;
 }

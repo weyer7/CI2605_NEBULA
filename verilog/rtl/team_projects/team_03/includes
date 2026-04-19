@@ -2,3 +2,16 @@
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/team_03_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/team_03_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/team_03.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_add_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_dadda.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_digit2Display.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_example_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_fa.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_ha.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_k1_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_k2_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_k3_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_multi_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_pid_state_machine.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_pid_top.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_top_digit.sv

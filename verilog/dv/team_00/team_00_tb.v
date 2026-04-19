@@ -28,6 +28,7 @@ module team_00_tb;
 	wire gpio;
 	wire [37:0] mprj_io;
 	wire [33:0] check_bits;
+	reg [33:0] expected_io;
 	reg [37:0] mprj_io_in;
 
 	// Signals assignments
@@ -163,14 +164,36 @@ module team_00_tb;
 
 	// Main Test Bench Process
 	initial begin
+		wait(check_bits == 'b0);
+		$display("Monitor: NEBULA II-Sample Project Started");
+		$display("Correct GPIO output:");
 
-		// *******************************
-		// WRITE TESTBENCH HERE!!
-		// 
-		// Wait for design to be enabled
-		// before doing any checks
-		// *******************************
+		// First iteration of outputs
+		for (integer i = 0; i <= 33; i++) begin
+			if (i == 0) expected_io = 1;
+			else expected_io = expected_io << 1;
+			wait(check_bits == expected_io);
+			$display("Correct GPIO output:");
+		end
 		
+		// End of first iteration
+		wait(check_bits == 'b0);
+		$display("Correct GPIO output:");
+
+		// Second iteration of outputs
+		for (integer i = 0; i <= 33; i++) begin
+			if (i == 0) expected_io = 1;
+			else expected_io = expected_io << 1;
+			wait(check_bits == expected_io);
+			$display("Correct GPIO output:");
+		end
+
+		// End of second iteration
+		wait(check_bits == 'b0);
+		$display("Correct GPIO output:");
+
+		#300;  // wait some time before ending
+
 		$display("%c[1;32m",27);
 		`ifdef GL
 	    	$display("Monitor: NEBULA Team 00 (GL) Passed");

@@ -1,6 +1,6 @@
 `timescale 1ns / 10ps 
 
-module t03_multi_reg #() (
+module t03_multi_reg (
     input logic clk, n_rst,
     input logic [15:0] term1,
     input logic [15:0] term2,

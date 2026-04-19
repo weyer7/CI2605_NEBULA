@@ -2,3 +2,12 @@
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/team_04_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/team_04_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/team_04.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_intro_2_stopwatch.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_bcd_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_decoder.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_example_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_fsm.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_seg_scan.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_synch_edge_det.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_timer.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_top.sv

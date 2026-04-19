@@ -2,3 +2,6 @@
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/team_15_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/team_15_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/team_15.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/src/t15_fpga.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/src/t15_cell4.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/src/t15_cell16.sv

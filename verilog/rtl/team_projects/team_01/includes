@@ -2,3 +2,12 @@
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/team_01_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/team_01_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/team_01.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_example_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_ffsync2.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_intro_2_rng.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_keypad.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_lookuptable.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_project.v
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_ssdec.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_ssout.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_top_rng.sv

@@ -59,8 +59,9 @@ module t03_pid_state_machine(
                 next_state = CALC; //I'm guessing read completes in one cycle
             end
 
-            CALC: begin 
-                next_state = (error_flag) ? ERROR: WRITE;
+            CALC: begin
+                if (error_flag) next_state = ERROR;
+                else next_state = WRITE;
             end
 
             WRITE: begin

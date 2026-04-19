@@ -48,41 +48,113 @@
 -v $(USER_PROJECT_VERILOG)/rtl/sram/sram_WB_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/sram/sky130_sram_8kbyte_1r1w_32x2048_8.v
 
-# Team 05
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/team_05_WB.v
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/team_05_Wrapper.sv
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/team_05.sv
+# FPGA Cell Macro
+-v $(USER_PROJECT_VERILOG)/gl/fpgacell.v
+
 # Team 07
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_07/team_07_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_07/team_07_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_07/team_07.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_07/src/t07_matrix_mult.sv
+# Team 04
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/team_04_WB.v
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/team_04_Wrapper.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/team_04.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_intro_2_stopwatch.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_bcd_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_decoder.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_example_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_fsm.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_seg_scan.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_synch_edge_det.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_timer.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/src/t04_top.sv
+# Team 03
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/team_03_WB.v
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/team_03_Wrapper.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/team_03.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_add_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_dadda.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_digit2Display.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_example_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_fa.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_ha.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_k1_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_k2_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_k3_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_multi_reg.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_pid_state_machine.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_pid_top.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/src/t03_top_digit.sv
 # Team 02
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/team_02_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/team_02_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/team_02.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_adder16.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_adder17.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_alu.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_dadda.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_fsm.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_full_adder.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_half_adder.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_matmult.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_matrix_multiplier.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_memory.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_partial_products.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_rca4.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_reduce.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_spi.sv
+# Team 05
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/team_05_WB.v
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/team_05_Wrapper.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/team_05.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_clock_divider.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_example_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_flex_sr.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_frequency_LUT.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_FSM.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_keypad_encoder.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_oscillator.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_pwm.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_sequential_divider.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_top.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_waveshaper_wrap.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_waveshaper.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_wrapper.sv
+# Team 06
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/team_06_WB.v
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/team_06_Wrapper.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/team_06.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_addition.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_calculator_top.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_gencon_defs.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_gencon.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_input_control.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_multiply.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_wrapper.sv
+# Team 15
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/team_15_WB.v
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/team_15_Wrapper.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/team_15.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/src/t15_fpga.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/src/t15_cell4.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/src/t15_cell16.sv
 # Team 00
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_00/team_00_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_00/team_00_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_00/team_00.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_00/src/t00_decoder_for_GPIO.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_00/src/t00_flex_counter.sv
-# Team 06
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/team_06_WB.v
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/team_06_Wrapper.sv
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/team_06.sv
-# Team 15
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/team_15_WB.v
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/team_15_Wrapper.sv
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_15/team_15.sv
 # Team 01
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/team_01_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/team_01_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/team_01.sv
-# Team 04
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/team_04_WB.v
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/team_04_Wrapper.sv
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_04/team_04.sv
-# Team 03
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/team_03_WB.v
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/team_03_Wrapper.sv
--v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_03/team_03.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_example_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_ffsync2.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_intro_2_rng.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_keypad.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_lookuptable.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_project.v
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_ssdec.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_ssout.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_01/src/t01_top_rng.sv

@@ -49,7 +49,7 @@ module t15_cell4 #(
   assign CBeast_out = {east1_out, east0_out};
   assign SBwest_out = {west1_out, west0_out};
 
-  t15_fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell0 
+  fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell0 
   (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
@@ -68,7 +68,7 @@ module t15_cell4 #(
     .SBwest_in(SBwest_in[BUS_WIDTH - 1:0]), .SBwest_out(west0_out) //top level IO
   );
 
-  t15_fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell1
+  fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell1
   (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
@@ -87,7 +87,7 @@ module t15_cell4 #(
     .SBwest_in(bus0_1), .SBwest_out(bus1_0)
   );
 
-  t15_fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell2
+  fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell2
   (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
@@ -106,7 +106,7 @@ module t15_cell4 #(
     .SBwest_in(SBwest_in[BUS_WIDTH * 2 - 1:BUS_WIDTH]), .SBwest_out(west1_out) //top level IO
   );
 
-  t15_fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell3
+  fpgacell /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell3
   (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),

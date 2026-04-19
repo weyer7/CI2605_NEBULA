@@ -2,3 +2,16 @@
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/team_05_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/team_05_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/team_05.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_clock_divider.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_example_counter.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_flex_sr.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_frequency_LUT.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_FSM.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_keypad_encoder.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_oscillator.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_pwm.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_sequential_divider.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_top.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_waveshaper_wrap.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_waveshaper.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_05/src/t05_wrapper.sv

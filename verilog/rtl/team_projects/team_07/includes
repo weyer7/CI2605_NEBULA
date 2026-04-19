@@ -2,3 +2,4 @@
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_07/team_07_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_07/team_07_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_07/team_07.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_07/src/t07_matrix_mult.sv

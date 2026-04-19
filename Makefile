@@ -178,16 +178,16 @@ custom_run_verify =\
     export CARAVEL_VERILOG_PATH=$(TARGET_PATH)/caravel/verilog &&\
     export MCW_ROOT=$(MCW_ROOT) &&\
 	export GCC_PREFIX=riscv64-unknown-elf &&\
-	export GCC_PATH=/package/riscv-gnu-toolchain/bin &&\
+	export GCC_PATH=/bin &&\
 	export USER_PROJECT_VERILOG=$(PWD)/verilog &&\
     cd verilog/dv/$* && export SIM=${SIM} && make
 # If you're Aidan, use this:
 # export GCC_PREFIX=riscv32-unknown-elf &&\
 # export GCC_PATH=/opt/riscv32/bin &&\
 
-# If working on asicfab (for some reason), use this:
+# If working on eceprog, use this:
 # export GCC_PREFIX=riscv64-unknown-elf &&\
-# export GCC_PATH=/package/asicfab/riscv-gcc/13.2.0/bin &&\
+# export GCC_PATH=/package/riscv-gnu-toolchain/bin &&\
 
 .PHONY: verify
 verify: $(dv-targets-rtl)
@@ -659,7 +659,7 @@ vlint-%:
 # Useful for CPU teams so they can load RISC-V instructions into RAM
 assemble_%:
 	@export GCC_PREFIX=riscv64-unknown-elf &&\
-	export GCC_PATH=/package/riscv-gnu-toolchain/bin &&\
+	export GCC_PATH=/bin &&\
 	cd verilog/dv && make assy2hex_$*
 
 
@@ -760,5 +760,5 @@ init_team_%:
 nebula: bus-wrap-generate
 	@python3 ./scripts/nebula_generation.py
 	@python3 ./scripts/includes_generation.py
-	@python3 ./scripts/config_generation.py
+	# @python3 ./scripts/config_generation.py
 	

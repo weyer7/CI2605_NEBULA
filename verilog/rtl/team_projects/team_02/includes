@@ -2,3 +2,17 @@
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/team_02_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/team_02_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/team_02.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_adder16.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_adder17.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_alu.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_dadda.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_fsm.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_full_adder.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_half_adder.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_matmult.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_matrix_multiplier.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_memory.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_partial_products.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_rca4.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_reduce.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_02/src/t02_spi.sv

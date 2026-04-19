@@ -1,6 +1,6 @@
 `timescale 1ns / 10ps
 
-module t03_add_reg #() (
+module t03_add_reg (
     input logic clk, n_rst,
     input logic ready,
     input logic clear,

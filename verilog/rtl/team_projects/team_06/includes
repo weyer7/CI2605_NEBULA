@@ -2,3 +2,10 @@
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/team_06_WB.v
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/team_06_Wrapper.sv
 -v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/team_06.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_addition.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_calculator_top.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_gencon_defs.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_gencon.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_input_control.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_multiply.sv
+-v $(USER_PROJECT_VERILOG)/rtl/team_projects/team_06/src/t06_wrapper.sv
