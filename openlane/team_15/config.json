@@ -10,7 +10,9 @@
         "dir::../../verilog/rtl/team_projects/team_15/src/t15_io.sv",
         "dir::../../verilog/rtl/team_projects/team_15/src/t15_LE.sv",
         "dir::../../verilog/rtl/team_projects/team_15/src/t15_LEI.sv",
-        "dir::../../verilog/rtl/team_projects/team_15/src/t15_SB.sv"
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_SB.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_cell4.sv",
+        "dir::../../verilog/rtl/team_projects/team_15/src/t15_cell16.sv"
     ],
     "CLOCK_PERIOD": 1000,
     "CLOCK_PORT": "clk",
