@@ -5,10 +5,10 @@ Clock Skew (Setup)
 ======================= min_ss_100C_1v60 Corner ===================================
 
 Clock clk
-6.765448 source latency _3538_/CLK ^
--1.258863 target latency _3621_/CLK ^
+1.308831 source latency _3418_/CLK ^
+-1.255816 target latency _3335_/CLK ^
 0.250000 clock uncertainty
 0.000000 CRPR
 --------------
-5.756585 setup skew
+0.303015 setup skew
 
