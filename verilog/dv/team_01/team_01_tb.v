@@ -36,15 +36,15 @@ module team_01_tb;
 	assign clock_in = clock;
 
 	// External clock generation
+	// NOTE: The external clock is 10 MHz
 	always #50 clock <= (clock === 1'b0);
 	// Initialize the clock at 0
 	initial begin
 		clock = 0;
 	end
 
-	// NOTE: The external clock is 10 MHz, but the clock for the user 
-	// project will be configured to 40 MHz using the digital PLL.
-	// Hence, your design will be clocked at 40 MHz.
+	// Assign inputs
+	assign {mprj_io[11:5], mprj_io[0]} = {mprj_io_in[11:5], mprj_io_in[0]};
 
 	// STUDENTS: This block here is important, don't erase it! However, don't worry about trying to understand it
 	`ifdef ENABLE_SDF
@@ -163,13 +163,15 @@ module team_01_tb;
 
 	// Main Test Bench Process
 	initial begin
+		// Initialize inputs
+		{mprj_io_in[11:5], mprj_io_in[0]} = '0;
 
-		// *******************************
-		// WRITE TESTBENCH HERE!!
-		// 
-		// Wait for design to be enabled
-		// before doing any checks
-		// *******************************
+		// Wait for Design to be Enabled
+		wait(uut.chip_core.mprj.mprj.team_01_Wrapper.team_01_WB.instance_to_wrap.en == 1);
+		$display("\nTeam 01 Enabled!\n");
+
+		// Wait a few more cycles
+		repeat (1000) @(negedge clock); 
 		
 		$display("%c[1;32m",27);
 		`ifdef GL

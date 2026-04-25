@@ -47,7 +47,7 @@ module team_01 (
 );
   t01_intro_2_rng TOP(
     .clk(clk),
-    .n_rst(nrst),
+    .n_rst(en & nrst),
     .ui_in(gpio_in[7:0]),
     .uio_in(),
     .uio_out(gpio_out[15:8]),

@@ -86,7 +86,10 @@ module team_15 (
     assign {gpio_out[2:0], gpio_out[8:7]} = '0;
     assign io_in[24:0] = gpio_in[33:9];
     assign io_in[31:25] = '0;
-    assign gpio_oeb[33:9] = io_oeb[24:0];
-    assign gpio_oeb[8:0] = 9'h1F8;
+
+    // OEBs
+    assign gpio_oeb[33:9] = io_oeb[24:0];  // Configurable
+    assign gpio_oeb[6:3] = '0;  // Outputs
+    assign {gpio_oeb[8:7], gpio_oeb[2:0]} = '1;  // Inputs
 
 endmodule
