@@ -29,3 +29,5 @@
 /verilog/dv/team_*/team*.h
 /openlane/.venv/*
 /lvs/*/lvs_results
+.cf
+precheck_results
