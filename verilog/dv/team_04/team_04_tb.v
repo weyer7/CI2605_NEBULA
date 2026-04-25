@@ -167,14 +167,37 @@ module team_04_tb;
 
 		{mprj_io_in[7:5], mprj_io_in[0]} = '0;
 		
+		// mprj[0]: one
+		// mprj[5]: ten
+		// mprj[6]: pause
+		// mprj[7]: clear
+		
 
 		// Wait for Design to be Enabled
 		wait(uut.chip_core.mprj.mprj.team_04_Wrapper.team_04_WB.instance_to_wrap.en == 1);
 		$display("\nTeam 04 Enabled!\n");
 
 		// Wait a few more cycles
-		repeat (1000) @(negedge clock); 
+		repeat (50) @(negedge clock); 
 
+		@(negedge clock); 
+		mprj_io_in[5] = 1;
+		
+		@(negedge clock); 
+		@(negedge clock); 
+		@(negedge clock); 
+
+		mprj_io_in[5] = 0;
+
+		repeat (100) @(negedge clock); 
+		mprj_io_in[6] = 1;
+		@(negedge clock); 
+		@(negedge clock); 
+
+		mprj_io_in[6] = 0;
+
+
+		repeat (800) @(negedge clock); 
 
 		$display("%c[1;32m",27);
 		`ifdef GL
