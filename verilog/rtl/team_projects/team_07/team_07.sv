@@ -56,7 +56,12 @@ module team_07 (
         .tx_busy(gpio_out[18])
     );
 
-    assign {gpio_out[15:0], gpio_out[33:19]} = '0;
-    assign gpio_oeb = 34'h70000;
+    // Unused outputs
+    assign {gpio_out[33:19], gpio_out[15:0]} = '0;
+
+    // OEBs
+    assign gpio_oeb[18:16] = '0;  // Outputs
+    assign gpio_oeb[15:0] = '1;  // Inputs
+    assign gpio_oeb[33:19] = '1;  // Unused pins (set to inputs, doesn't really matter)
 
 endmodule

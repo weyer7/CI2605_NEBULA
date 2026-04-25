@@ -49,12 +49,17 @@ module team_01 (
     .clk(clk),
     .n_rst(nrst),
     .ui_in(gpio_in[7:0]),
-    .uio_in(gpio_in[15:8]),
+    .uio_in(),
     .uio_out(gpio_out[15:8]),
     .uo_out(gpio_out[23:16])
   );
 
-    assign gpio_oeb = '1; // all set to output
+    // Unused outputs
     assign {gpio_out[33:24], gpio_out[7:0]} = '0;
+    
+    // OEBs
+    assign gpio_oeb[23:8] = '0;  // Outputs
+    assign gpio_oeb[7:0] = '1;  // Inputs
+    assign gpio_oeb[33:24] = '1;  // Unused pins (set to inputs, doesn't really matter)
 
 endmodule

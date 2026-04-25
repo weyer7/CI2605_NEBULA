@@ -57,7 +57,12 @@ module team_04 (
         // add other input/output as necessary
     );
 
-    assign {gpio_out[3:0], gpio_out[33:16]} = '0;
-    assign gpio_oeb = 34'h0000FFF0;
+    // Unused outputs
+    assign {gpio_out[33:16], gpio_out[3:0]} = '0;
+
+    // OEBs
+    assign gpio_oeb[15:4] = '0;  // Outputs
+    assign gpio_oeb[3:0] = '1;  // Inputs
+    assign gpio_oeb[33:16] = '1;  // Unused pins (set to inputs, doesn't really matter)
 
 endmodule

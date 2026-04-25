@@ -56,7 +56,14 @@ module team_02 (
         .ready(gpio_out[4])
     );
 
+    // Unused outputs
     assign {gpio_out[33:5], gpio_out[2:0]} = '0;
-    assign gpio_oeb = 34'h18; //set pins 3 and 4 as output
+
+    // OEBs
+    assign gpio_oeb[4:3] = '0;  // Outputs
+    assign gpio_oeb[2:0] = '1;  // Inputs
+    assign gpio_oeb[33:5] = '1; // Unused pins (set to inputs, doesn't really matter)
+
+
 
 endmodule
