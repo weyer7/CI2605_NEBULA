@@ -41,6 +41,7 @@ module team_04_tb;
 	initial begin
 		clock = 0;
 	end
+	assign {mprj_io[7:5], mprj_io[0]} = {mprj_io_in[7:5], mprj_io_in[0]};
 
 	// NOTE: The external clock is 10 MHz, but the clock for the user 
 	// project will be configured to 40 MHz using the digital PLL.
@@ -164,13 +165,17 @@ module team_04_tb;
 	// Main Test Bench Process
 	initial begin
 
-		// *******************************
-		// WRITE TESTBENCH HERE!!
-		// 
-		// Wait for design to be enabled
-		// before doing any checks
-		// *******************************
+		{mprj_io_in[7:5], mprj_io_in[0]} = '0;
 		
+
+		// Wait for Design to be Enabled
+		wait(uut.chip_core.mprj.mprj.team_04_Wrapper.team_04_WB.instance_to_wrap.en == 1);
+		$display("\nTeam 04 Enabled!\n");
+
+		// Wait a few more cycles
+		repeat (1000) @(negedge clock); 
+
+
 		$display("%c[1;32m",27);
 		`ifdef GL
 	    	$display("Monitor: NEBULA Team 04 (GL) Passed");

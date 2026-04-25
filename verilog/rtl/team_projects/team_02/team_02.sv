@@ -50,6 +50,7 @@ module team_02 (
         // I/O ports
         .hz100(clk),
         .spi_clk(gpio_in[0]),
+        .nrst(en & nrst),
         .cs(gpio_in[1]),
         .mosi(gpio_in[2]),
         .miso(gpio_out[3]),

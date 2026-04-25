@@ -23,7 +23,7 @@
 // List of Wishbone Slave Addresses
 
 // Change this to 300X0000 where X is your team number
-#define reg_team_06_EN (*(volatile uint32_t*)0x30000000)
+#define reg_team_06_EN (*(volatile uint32_t*)0x30060000)
 
 // GPIO Control
 #define reg_gpio_PIN_0TO7 (*(volatile uint32_t*)0x32000000)
@@ -72,10 +72,10 @@ void main()
 	// all of the GPIO pins to be used for user functions.
 
 	// Configure IO[0] and IO[37:5] to outputs
-	reg_mprj_io_0 =  GPIO_MODE_USER_STD_OUTPUT;
-	reg_mprj_io_5 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_6 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_7 = GPIO_MODE_USER_STD_OUTPUT;
+	reg_mprj_io_0 =  GPIO_MODE_USER_STD_INPUT_NOPULL;
+	reg_mprj_io_5 = GPIO_MODE_USER_STD_INPUT_NOPULL;
+    reg_mprj_io_6 = GPIO_MODE_USER_STD_INPUT_NOPULL;
+    reg_mprj_io_7 = GPIO_MODE_USER_STD_INPUT_NOPULL;
     reg_mprj_io_8 = GPIO_MODE_USER_STD_OUTPUT;
     reg_mprj_io_9 = GPIO_MODE_USER_STD_OUTPUT;
     reg_mprj_io_10 = GPIO_MODE_USER_STD_OUTPUT;
@@ -101,11 +101,12 @@ void main()
     reg_mprj_io_30 = GPIO_MODE_USER_STD_OUTPUT;
     reg_mprj_io_31 = GPIO_MODE_USER_STD_OUTPUT;
     reg_mprj_io_32 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_33 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_34 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_35 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_36 = GPIO_MODE_USER_STD_OUTPUT;
-    reg_mprj_io_37 = GPIO_MODE_USER_STD_OUTPUT;
+    
+	// reg_mprj_io_33 = GPIO_MODE_USER_STD_OUTPUT;
+    // reg_mprj_io_34 = GPIO_MODE_USER_STD_OUTPUT;
+    // reg_mprj_io_35 = GPIO_MODE_USER_STD_OUTPUT;
+    // reg_mprj_io_36 = GPIO_MODE_USER_STD_OUTPUT;
+    // reg_mprj_io_37 = GPIO_MODE_USER_STD_OUTPUT;
 
 	// Now, apply configuration
 	reg_mprj_xfer = 1;
@@ -115,17 +116,17 @@ void main()
 	// PLL Configuration (Configure to 40 MHz)
 	// ****************************************
 
-	// Set PLL enable, no DCO mode
-    reg_hkspi_pll_ena = 0x1;
+	// // Set PLL enable, no DCO mode
+    // reg_hkspi_pll_ena = 0x1;
 
-	// Set both PLL output dividers to 4
-    reg_hkspi_pll_source = 0x24;
+	// // Set both PLL output dividers to 4
+    // reg_hkspi_pll_source = 0x24;
 
-	// Write 16 to feedback divider
-    reg_hkspi_pll_divider = 0x10;
+	// // Write 16 to feedback divider
+    // reg_hkspi_pll_divider = 0x10;
 
-	// Disable PLL bypass
-    reg_hkspi_pll_bypass = 0x0;
+	// // Disable PLL bypass
+    // reg_hkspi_pll_bypass = 0x0;
 
 	// Configure All LA probes as inputs to the cpu 
 	reg_la0_oenb = reg_la0_iena = 0x00000000;    // [31:0]
@@ -139,11 +140,11 @@ void main()
 	// Each nibble is used by the GPIO control unit to determine the which input to the GPIO
 	// controls the output.  This allows for multiple projects to interface with the outside world
 	// simultaneously if desired.
-	reg_gpio_PIN_0TO7 = 0x00000000;
-	reg_gpio_PIN_8TO15 = 0x00000000;
-	reg_gpio_PIN_16TO23 = 0x00000000;
-	reg_gpio_PIN_24TO31 = 0x00000000;
-	reg_gpio_PIN_32TO37 = 0x000000;
+	reg_gpio_PIN_0TO7 = 0x66666666;
+	reg_gpio_PIN_8TO15 = 0x66666666;
+	reg_gpio_PIN_16TO23 = 0x66666666;
+	reg_gpio_PIN_24TO31 = 0x66666666;
+	reg_gpio_PIN_32TO37 = 0x666666;
 
 	// Load instructions to RAM - CPU teams: uncomment this!
 	// int num_instr = sizeof(instructions) / sizeof(instructions[0]);
