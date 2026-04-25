@@ -27,7 +27,7 @@ module t02_memory (
     logic [17:0] matrixB3;
     assign result = matrixA0;
 
-    always_ff @(posedge clk) begin
+    always_ff @(posedge clk, posedge rst) begin
         if(rst) begin
             
             

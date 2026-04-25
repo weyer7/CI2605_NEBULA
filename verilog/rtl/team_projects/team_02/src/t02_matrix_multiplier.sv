@@ -4,6 +4,7 @@ module t02_matrix_multiplier(
     // I/O ports
     input logic hz100,
     input logic spi_clk,
+    input nrst,
     input logic cs,
     input logic mosi,
     output logic miso,
@@ -54,7 +55,7 @@ t02_matmult matmult_inst (
     .mosi(~mosi),
     .miso(miso),
     //.rst(pb[17]),
-    .rst(1'b0),
+    .rst(~nrst),
     //.ready(right[2]),
     .ready(trash2),
     //.calc_done(right[0]),
