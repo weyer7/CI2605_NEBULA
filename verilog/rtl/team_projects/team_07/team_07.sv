@@ -47,7 +47,7 @@ module team_07 (
 );
 
     t07_matrix_mult MATMULT_INST(
-        .clk(clk), .n_rst(nrst),
+        .clk(clk), .n_rst(en & nrst),
         .confirmation(gpio_in[0]),
         .serial_in(gpio_in[1]),
         .bit_period(gpio_in[15:2]),
