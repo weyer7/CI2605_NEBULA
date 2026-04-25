@@ -106,7 +106,7 @@ module t02_matmult (
 
     t02_spi spi_inst (
         .spi_clk(spi_clk),
-        .rst(SPI_rst),
+        .rst(rst),
         .cs(cs),
         .sys_clk(sys_clk),
         .load(load),
