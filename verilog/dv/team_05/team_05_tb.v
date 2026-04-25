@@ -36,15 +36,15 @@ module team_05_tb;
 	assign clock_in = clock;
 
 	// External clock generation
+	// NOTE: External clock frequency is 10 MHz
 	always #50 clock <= (clock === 1'b0);
 	// Initialize the clock at 0
 	initial begin
 		clock = 0;
 	end
 
-	// NOTE: The external clock is 10 MHz, but the clock for the user 
-	// project will be configured to 40 MHz using the digital PLL.
-	// Hence, your design will be clocked at 40 MHz.
+	// Assign inputs
+	assign {mprj_io[17:5], mprj_io[0]} = {mprj_io_in[17:5], mprj_io_in[0]};
 
 	// STUDENTS: This block here is important, don't erase it! However, don't worry about trying to understand it
 	`ifdef ENABLE_SDF
@@ -163,13 +163,76 @@ module team_05_tb;
 
 	// Main Test Bench Process
 	initial begin
+		// Initialize inputs
+		{mprj_io_in[17:5], mprj_io_in[0]} = '0;
 
-		// *******************************
-		// WRITE TESTBENCH HERE!!
-		// 
-		// Wait for design to be enabled
-		// before doing any checks
-		// *******************************
+		// Wait for Design to be Enabled
+		wait(uut.chip_core.mprj.mprj.team_05_Wrapper.team_05_WB.instance_to_wrap.en == 1);
+		$display("\nTeam 05 Enabled!\n");
+
+		// Wait a bit before starting testbench
+		repeat (100) @(negedge clock);
+
+		// Press Mode Pin Twice
+		mprj_io_in[17] = 1;
+		repeat (10) @(negedge clock);
+		mprj_io_in[17] = 0;
+		repeat (100) @(negedge clock);
+		mprj_io_in[17] = 1;
+		repeat (10) @(negedge clock);
+		mprj_io_in[17] = 0;
+		
+		// Press Input 12
+		mprj_io_in[16] = 1;
+		wait(mprj_io[18]);
+
+		// // Toggle Input 0
+		// mprj_io_in[0] = 1;
+		// repeat (100) @(negedge clock);
+		// mprj_io_in[0] = 0;
+
+		// // Toggle Input 1
+		// mprj_io_in[5] = 1;
+		// repeat (100) @(negedge clock);
+		// mprj_io_in[5] = 0;
+
+		// // Toggle Input 2
+		// mprj_io_in[6] = 1;
+		// repeat (100) @(negedge clock);
+		// mprj_io_in[6] = 0;
+
+		// // Toggle Input 3
+		// mprj_io_in[7] = 1;
+		// repeat (100) @(negedge clock);
+		// mprj_io_in[7] = 0;
+
+		// // Toggle Input 4
+		// mprj_io_in[8] = 1;
+		// repeat (100) @(negedge clock);
+		// mprj_io_in[8] = 0;
+
+		// // Toggle Input 5
+		// mprj_io_in[9] = 1;
+		// repeat (100) @(negedge clock);
+		// mprj_io_in[9] = 0;
+
+		// // Toggle Input 6
+		// mprj_io_in[10] = 1;
+		// repeat (100) @(negedge clock);
+		// mprj_io_in[10] = 0;
+
+		// // Toggle Input 7
+		// mprj_io_in[11] = 1;
+		// repeat (100) @(negedge clock);
+		// mprj_io_in[11] = 0;
+
+		// // Toggle Input 8
+		// mprj_io_in[12] = 1;
+		// repeat (100) @(negedge clock);
+		// mprj_io_in[12] = 0;
+
+		// Wait a bit before ending testbench
+		repeat (10000) @(negedge clock);
 		
 		$display("%c[1;32m",27);
 		`ifdef GL
