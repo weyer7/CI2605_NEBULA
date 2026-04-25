@@ -42,6 +42,9 @@ module team_15_tb;
 		clock = 0;
 	end
 
+	//assign inputs
+	assign {mprj_io[12:11], mprj_io[6:5], mprj_io[0]} = {mprj_io_in[12:11], mprj_io_in[6:5], mprj_io_in[0]};
+
 	// NOTE: The external clock is 10 MHz, but the clock for the user 
 	// project will be configured to 40 MHz using the digital PLL.
 	// Hence, your design will be clocked at 40 MHz.
@@ -163,13 +166,19 @@ module team_15_tb;
 
 	// Main Test Bench Process
 	initial begin
-
+		//initialize inputs
+		{mprj_io_in[12:11], mprj_io_in[6:5], mprj_io_in[0]} = '0;
+		//wait for design enable
+		wait(uut.chip_core.mprj.mprj.team_15_Wrapper.team_15_WB.instance_to_wrap.en == 1);
+		$display("\nTeam 15 Enabled!\n");
 		// *******************************
 		// WRITE TESTBENCH HERE!!
 		// 
 		// Wait for design to be enabled
 		// before doing any checks
 		// *******************************
+
+		repeat (10000) @(negedge clock); //replace with testbench
 		
 		$display("%c[1;32m",27);
 		`ifdef GL
