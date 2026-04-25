@@ -55,7 +55,11 @@ module team_03 (
         .busy(gpio_out[33])
     );
 
+    // Unused outputs
     assign gpio_out[17:0] = '0;
-    assign gpio_oeb = 34'h3FFFC0000;
+
+    // OEBs
+    assign gpio_oeb[33:18] = '0; // Outputs
+    assign gpio_oeb[17:0] = '1;  // Inputs
 
 endmodule

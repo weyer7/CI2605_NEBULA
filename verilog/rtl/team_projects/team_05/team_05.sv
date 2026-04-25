@@ -52,7 +52,13 @@ module team_05 (
 
         .pwm(gpio_out[14])
     );
-    assign {gpio_out[13:0], gpio_out[33:15]} = '0;
-    assign gpio_oeb = 34'h00004000;
+    
+    // Unusued outputs
+    assign {gpio_out[33:15], gpio_out[13:0]} = '0;
+
+    // OEBs
+    assign gpio_oeb[14] = '0;  // Outputs
+    assign gpio_oeb[13:0] = '1;  // Inputs
+    assign gpio_oeb[33:15] = '1;  // Unused pins (set to inputs, doesn't really matter)
 
 endmodule
