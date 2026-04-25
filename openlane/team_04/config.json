@@ -16,7 +16,7 @@
     ],
     "CLOCK_PERIOD": 25,
     "CLOCK_PORT": "clk",
-    "PL_TARGET_DENSITY": 0.55,
+    "PL_TARGET_DENSITY": 0.70,
     "RUN_HEURISTIC_DIODE_INSERTION": true,
     "VDD_NETS": "vccd1",
     "GND_NETS": "vssd1",
