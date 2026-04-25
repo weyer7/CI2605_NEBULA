@@ -47,7 +47,7 @@ module team_03 (
 );
 
     t03_pid_top PID_INST (
-        .clk(clk), .n_rst(nrst),
+        .clk(clk), .n_rst(en & nrst),
         //MCU stuff
         .ctrl(gpio_in[1:0]),
         .mcu_in(gpio_in[17:2]),
