@@ -48,7 +48,7 @@ module team_05 (
 
     t05_top SYNTH_INST (
         .keypad_i(gpio_in[13:0]),
-        .clk(clk), .n_rst(nrst),
+        .clk(clk), .n_rst(en & nrst),
 
         .pwm(gpio_out[14])
     );

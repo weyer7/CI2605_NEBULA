@@ -54,7 +54,7 @@ module team_15 (
         .vssd1(vssd1),
     `endif
         //CRAM signals
-        .clk(gpio_in[0]), .nrst(nrst), .config_en(gpio_in[1]),
+        .clk(gpio_in[0]), .nrst(en & nrst), .config_en(gpio_in[1]),
         .config_data_in(gpio_in[2]),
         .config_data_out(gpio_out[3]), .cfg_done(gpio_out[4]),
         .cfg_error(gpio_out[6:5]),

@@ -48,7 +48,7 @@ module team_04 (
 
     t04_intro_2_stopwatch STOPWATCH_INST (
         .BTN(gpio_in[3:0]),
-        .CLK_10MHZ(clk), .n_rst(nrst),
+        .CLK_10MHZ(clk), .n_rst(en & nrst),
         .D0_AN_0(gpio_out[4]),
         .D0_AN_1(gpio_out[5]),
         .D0_AN_2(gpio_out[6]),

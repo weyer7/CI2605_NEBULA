@@ -48,7 +48,7 @@ module team_06 (
 
     t06_calculator_top CALC_INST (
         .clk(clk),
-        .nRST(nrst),
+        .nRST(en & nrst),
         .RowIn(gpio_in[3:0]),  // from keypad rows
         .ColOut(gpio_out[7:4]),  // to keypad columns
         .display_output(gpio_out[23:8]),  // final calculation output
