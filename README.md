@@ -1,4 +1,5 @@
-# Caravel User Project
+# CI2605_NEBULA
+## Caravel User Project
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Run STARS Submission Checks](https://github.com/STARS-Design-Track-2025/nebula-iii/actions/workflows/stars_submission_checks.yml/badge.svg)](https://github.com/STARS-Design-Track-2025/nebula-iii/actions/workflows/stars_submission_checks.yml) [![UPRJ_CI](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/user_project_ci.yml) [![Caravel Build](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml/badge.svg)](https://github.com/efabless/caravel_project_example/actions/workflows/caravel_build.yml)
 
@@ -73,5 +74,3 @@ project_info:
 * `make gdsview_team_##_klayout` - This will open a visualizer of your design's GDS layout using KLayout.
 * `make sv2v_team_##` - Our open-source tools don't fully support SystemVerilog syntax and structures. `sv2v` is a great tool that allows you to convert your SystemVerilog code to Verilog code and make it compatible with all tools. If you run into a compilation error due to SystemVerilog syntax, feel free to use `sv2v`, but ask your PM if you have questions.
 * `make assemble_team_##` - Converts RISC-V assembly into a HEX memory file and creates a C header file. These can be used for RTL simulations or other sub-module tesbenches. You must create an assembly file called `team_##_cpu.asm` under `verilog/dv/team_##` before using the target.
-# CI2605_NEBULA
-# CI2605_NEBULA
