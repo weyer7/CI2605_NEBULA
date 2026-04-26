@@ -89,7 +89,7 @@ module t15_fpga #(
   assign io_east_out = {east1_out, east0_out};
   assign io_west_out = {west1_out, west0_out};
 
-  t15_cell16 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell0 
+  t15_cell4 /*#(.BUS_WIDTH(BUS_WIDTH))*/ cell0 
   (
     `ifdef USE_POWER_PINS
         .vccd1(vccd1),
