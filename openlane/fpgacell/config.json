@@ -14,7 +14,7 @@
     "CLOCK_PORT": "clk",
     "//": "FP_CORE_UTIL not used with FP_SIZING absolute",
     "FP_CORE_UTIL": 20,
-    "PL_TARGET_DENSITY": 0.8265,
+    "PL_TARGET_DENSITY": 0.79,
     "RUN_HEURISTIC_DIODE_INSERTION": false,
     "ROUTING_CORES": 20,
     "DRT_THREADS": 20,
