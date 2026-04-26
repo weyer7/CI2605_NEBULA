@@ -5,10 +5,10 @@ Clock Skew (Hold)
 ======================= min_ss_100C_1v60 Corner ===================================
 
 Clock clk
-1.377701 source latency _479_/CLK ^
--0.703145 target latency _436_/CLK ^
+0.694858 source latency _471_/CLK ^
+-0.704693 target latency _456_/CLK ^
 -0.250000 clock uncertainty
 0.000000 CRPR
 --------------
-0.424556 hold skew
+-0.259835 hold skew
 

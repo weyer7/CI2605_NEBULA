@@ -4,142 +4,141 @@ report_checks -unconstrained
 ===========================================================================
 ======================= nom_tt_025C_1v80 Corner ===================================
 
-Startpoint: _3506_ (rising edge-triggered flip-flop clocked by clk)
-Endpoint: _3200_ (recovery check against rising-edge clock clk)
+Startpoint: en (input port clocked by clk)
+Endpoint: _3335_ (recovery check against rising-edge clock clk)
 Path Group: asynchronous
 Path Type: max
 
 Fanout         Cap        Slew       Delay        Time   Description
 ---------------------------------------------------------------------------------------------
                                   0.000000    0.000000   clock clk (rise edge)
-                                  0.000000    0.000000   clock source latency
-     2    0.037050    0.171324    0.120210    0.120210 ^ clk (in)
-                                                         clk (net)
-                      0.171428    0.000000    0.120210 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
-     9    0.090935    0.108155    0.221422    0.341632 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
-                                                         clknet_0_clk (net)
-                      0.108312    0.003642    0.345274 ^ clkbuf_2_1__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
-    27    0.136378    0.149263    0.232812    0.578085 ^ clkbuf_2_1__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
-                                                         clknet_2_1__leaf_clk (net)
-                      0.149570    0.004807    0.582892 ^ clkbuf_leaf_17_clk/A (sky130_fd_sc_hd__clkbuf_8)
-     9    0.043577    0.088058    0.197985    0.780877 ^ clkbuf_leaf_17_clk/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_leaf_17_clk (net)
-                      0.088068    0.000980    0.781857 ^ _3506_/CLK (sky130_fd_sc_hd__dfxtp_1)
-     1    0.003537    0.046612    0.320788    1.102645 ^ _3506_/Q (sky130_fd_sc_hd__dfxtp_1)
-                                                         MATMULT_INST.matmult_inst.addr[0] (net)
-                      0.046612    0.000111    1.102756 ^ fanout154/A (sky130_fd_sc_hd__clkbuf_2)
-    11    0.047926    0.259974    0.254317    1.357073 ^ fanout154/X (sky130_fd_sc_hd__clkbuf_2)
-                                                         net154 (net)
-                      0.259977    0.000776    1.357849 ^ fanout149/A (sky130_fd_sc_hd__clkbuf_2)
-    11    0.047680    0.259698    0.317979    1.675828 ^ fanout149/X (sky130_fd_sc_hd__clkbuf_2)
-                                                         net149 (net)
-                      0.259699    0.000554    1.676382 ^ fanout148/A (sky130_fd_sc_hd__buf_2)
-    21    0.054056    0.263911    0.328378    2.004761 ^ fanout148/X (sky130_fd_sc_hd__buf_2)
-                                                         net148 (net)
-                      0.263914    0.001340    2.006100 ^ _1618_/A (sky130_fd_sc_hd__and2_2)
-     7    0.032221    0.172978    0.303442    2.309542 ^ _1618_/X (sky130_fd_sc_hd__and2_2)
-                                                         _0548_ (net)
-                      0.172978    0.000660    2.310202 ^ _1830_/A (sky130_fd_sc_hd__or3b_2)
-     7    0.029643    0.173813    0.249931    2.560133 ^ _1830_/X (sky130_fd_sc_hd__or3b_2)
-                                                         _0734_ (net)
-                      0.173825    0.001571    2.561704 ^ fanout57/A (sky130_fd_sc_hd__dlymetal6s2s_1)
-     7    0.022599    0.239430    0.262729    2.824432 ^ fanout57/X (sky130_fd_sc_hd__dlymetal6s2s_1)
-                                                         net57 (net)
-                      0.239430    0.000296    2.824728 ^ fanout56/A (sky130_fd_sc_hd__clkbuf_2)
-     9    0.027845    0.156405    0.242391    3.067120 ^ fanout56/X (sky130_fd_sc_hd__clkbuf_2)
-                                                         net56 (net)
-                      0.156408    0.000985    3.068105 ^ fanout55/A (sky130_fd_sc_hd__clkbuf_2)
-    10    0.029339    0.163631    0.226069    3.294174 ^ fanout55/X (sky130_fd_sc_hd__clkbuf_2)
-                                                         net55 (net)
-                      0.163632    0.000797    3.294971 ^ _3119_/A (sky130_fd_sc_hd__and3_1)
-     1    0.004053    0.061817    0.180031    3.475002 ^ _3119_/X (sky130_fd_sc_hd__and3_1)
-                                                         _0023_ (net)
-                      0.061817    0.000082    3.475084 ^ _3200_/RESET_B (sky130_fd_sc_hd__dfrtp_4)
-                                              3.475084   data arrival time
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  5.000000    5.000000 ^ input external delay
+     2    0.004902    0.028865    0.017528    5.017528 ^ en (in)
+                                                         en (net)
+                      0.028865    0.000000    5.017528 ^ input1/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+     2    0.004985    0.063937    0.252727    5.270255 ^ input1/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net1 (net)
+                      0.063937    0.000109    5.270364 ^ _1575_/B (sky130_fd_sc_hd__and2_2)
+     1    0.004116    0.042883    0.140009    5.410373 ^ _1575_/X (sky130_fd_sc_hd__and2_2)
+                                                         MATMULT_INST.nrst (net)
+                      0.042883    0.000128    5.410501 ^ fanout291/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+    11    0.053854    0.537086    0.590579    6.001080 ^ fanout291/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net291 (net)
+                      0.537138    0.004432    6.005513 ^ fanout290/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+    13    0.057960    0.577597    0.721604    6.727117 ^ fanout290/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net290 (net)
+                      0.577600    0.002411    6.729527 ^ fanout289/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+    11    0.045086    0.452285    0.637871    7.367398 ^ fanout289/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net289 (net)
+                      0.452285    0.000772    7.368170 ^ fanout279/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+    11    0.045573    0.456484    0.625196    7.993366 ^ fanout279/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net279 (net)
+                      0.456484    0.001284    7.994650 ^ fanout277/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+     3    0.012588    0.135920    0.400594    8.395245 ^ fanout277/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net277 (net)
+                      0.135920    0.000338    8.395582 ^ fanout275/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+     5    0.021569    0.222835    0.402418    8.798000 ^ fanout275/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net275 (net)
+                      0.222835    0.000573    8.798573 ^ load_slew276/A (sky130_fd_sc_hd__buf_2)
+     6    0.031235    0.156802    0.243443    9.042015 ^ load_slew276/X (sky130_fd_sc_hd__buf_2)
+                                                         net276 (net)
+                      0.156812    0.001354    9.043370 ^ _3335_/RESET_B (sky130_fd_sc_hd__dfrtp_2)
+                                              9.043370   data arrival time
 
                                  25.000000   25.000000   clock clk (rise edge)
                                   0.000000   25.000000   clock source latency
-     2    0.037050    0.171324    0.120210   25.120209 ^ clk (in)
+     2    0.043687    0.201003    0.140957   25.140957 ^ clk (in)
                                                          clk (net)
-                      0.171428    0.000000   25.120209 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
-     9    0.090935    0.108155    0.221423   25.341631 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                      0.201078    0.000000   25.140957 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+    17    0.140869    0.154197    0.264018   25.404974 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
                                                          clknet_0_clk (net)
-                      0.108296    0.003473   25.345104 ^ clkbuf_2_3__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
-    21    0.118064    0.131201    0.220917   25.566021 ^ clkbuf_2_3__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
-                                                         clknet_2_3__leaf_clk (net)
-                      0.131408    0.003549   25.569571 ^ clkbuf_leaf_23_clk/A (sky130_fd_sc_hd__clkbuf_8)
-     9    0.036648    0.076795    0.183908   25.753479 ^ clkbuf_leaf_23_clk/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_leaf_23_clk (net)
-                      0.076800    0.000705   25.754183 ^ _3200_/CLK (sky130_fd_sc_hd__dfrtp_4)
-                                 -0.250000   25.504185   clock uncertainty
-                                  0.000000   25.504185   clock reconvergence pessimism
-                                  0.221591   25.725777   library recovery time
-                                             25.725777   data required time
+                      0.154782    0.007624   25.412600 ^ clkbuf_3_7__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
+     6    0.043035    0.063129    0.181995   25.594593 ^ clkbuf_3_7__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_3_7__leaf_clk (net)
+                      0.063157    0.001192   25.595785 ^ clkbuf_leaf_20_clk/A (sky130_fd_sc_hd__clkbuf_8)
+    10    0.030696    0.067294    0.151930   25.747715 ^ clkbuf_leaf_20_clk/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_leaf_20_clk (net)
+                      0.067294    0.000316   25.748032 ^ _3335_/CLK (sky130_fd_sc_hd__dfrtp_2)
+                                 -0.250000   25.498034   clock uncertainty
+                                  0.000000   25.498034   clock reconvergence pessimism
+                                  0.192789   25.690823   library recovery time
+                                             25.690823   data required time
 ---------------------------------------------------------------------------------------------
-                                             25.725777   data required time
-                                             -3.475084   data arrival time
+                                             25.690823   data required time
+                                             -9.043370   data arrival time
 ---------------------------------------------------------------------------------------------
-                                             22.250692   slack (MET)
+                                             16.647451   slack (MET)
 
 
-Startpoint: _3644_ (rising edge-triggered flip-flop clocked by clk)
-Endpoint: gpio_out[4] (output port clocked by clk)
+Startpoint: en (input port clocked by clk)
+Endpoint: _3066_ (rising edge-triggered flip-flop clocked by clk)
 Path Group: clk
 Path Type: max
 
 Fanout         Cap        Slew       Delay        Time   Description
 ---------------------------------------------------------------------------------------------
                                   0.000000    0.000000   clock clk (rise edge)
-                                  0.000000    0.000000   clock source latency
-     2    0.037050    0.171324    0.120210    0.120210 ^ clk (in)
-                                                         clk (net)
-                      0.171428    0.000000    0.120210 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
-     9    0.090935    0.108155    0.221422    0.341632 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
-                                                         clknet_0_clk (net)
-                      0.108313    0.003653    0.345285 ^ clkbuf_2_2__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
-    17    0.106829    0.120530    0.213287    0.558572 ^ clkbuf_2_2__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
-                                                         clknet_2_2__leaf_clk (net)
-                      0.120774    0.003732    0.562303 ^ clkbuf_leaf_33_clk/A (sky130_fd_sc_hd__clkbuf_8)
-    16    0.047141    0.093332    0.193161    0.755464 ^ clkbuf_leaf_33_clk/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_leaf_33_clk (net)
-                      0.093338    0.000856    0.756320 ^ _3644_/CLK (sky130_fd_sc_hd__dfxtp_1)
-     5    0.010844    0.059538    0.340992    1.097312 v _3644_/Q (sky130_fd_sc_hd__dfxtp_1)
-                                                         MATMULT_INST.matmult_inst.fsm_inst.state[2] (net)
-                      0.059538    0.000229    1.097542 v fanout133/A (sky130_fd_sc_hd__buf_2)
-    10    0.035933    0.092893    0.189209    1.286750 v fanout133/X (sky130_fd_sc_hd__buf_2)
-                                                         net133 (net)
-                      0.092908    0.001158    1.287909 v _1609_/B (sky130_fd_sc_hd__nor2_1)
-     4    0.014017    0.262158    0.237523    1.525432 ^ _1609_/Y (sky130_fd_sc_hd__nor2_1)
-                                                         _0540_ (net)
-                      0.262158    0.000364    1.525796 ^ _1610_/B (sky130_fd_sc_hd__nand2_2)
-     6    0.019096    0.103541    0.143817    1.669614 v _1610_/Y (sky130_fd_sc_hd__nand2_2)
-                                                         _0541_ (net)
-                      0.103541    0.000239    1.669853 v _1612_/B (sky130_fd_sc_hd__nor2_2)
-     7    0.030613    0.340567    0.299868    1.969721 ^ _1612_/Y (sky130_fd_sc_hd__nor2_2)
-                                                         _0543_ (net)
-                      0.340578    0.001595    1.971315 ^ _1869_/B (sky130_fd_sc_hd__and3_1)
-     3    0.023708    0.236855    0.356154    2.327469 ^ _1869_/X (sky130_fd_sc_hd__and3_1)
-                                                         MATMULT_INST.matmult_inst.fsm_inst.transaction_ready (net)
-                      0.236855    0.000963    2.328432 ^ _3717_/A (sky130_fd_sc_hd__clkbuf_1)
-     1    0.002518    0.043250    0.115637    2.444069 ^ _3717_/X (sky130_fd_sc_hd__clkbuf_1)
-                                                         net5 (net)
-                      0.043250    0.000073    2.444142 ^ output5/A (sky130_fd_sc_hd__buf_2)
-     1    0.034115    0.169454    0.196760    2.640902 ^ output5/X (sky130_fd_sc_hd__buf_2)
-                                                         gpio_out[4] (net)
-                      0.169455    0.000706    2.641608 ^ gpio_out[4] (out)
-                                              2.641608   data arrival time
+                                  0.000000    0.000000   clock network delay (propagated)
+                                  5.000000    5.000000 ^ input external delay
+     2    0.004902    0.028865    0.017528    5.017528 ^ en (in)
+                                                         en (net)
+                      0.028865    0.000000    5.017528 ^ input1/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+     2    0.004985    0.063937    0.252727    5.270255 ^ input1/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net1 (net)
+                      0.063937    0.000109    5.270364 ^ _1575_/B (sky130_fd_sc_hd__and2_2)
+     1    0.004116    0.042883    0.140009    5.410373 ^ _1575_/X (sky130_fd_sc_hd__and2_2)
+                                                         MATMULT_INST.nrst (net)
+                      0.042883    0.000128    5.410501 ^ fanout291/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+    11    0.053854    0.537086    0.590579    6.001080 ^ fanout291/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net291 (net)
+                      0.537087    0.000812    6.001893 ^ fanout214/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+    11    0.044083    0.442275    0.626014    6.627907 ^ fanout214/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net214 (net)
+                      0.442275    0.000572    6.628479 ^ fanout203/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+     5    0.032161    0.325692    0.532085    7.160564 ^ fanout203/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net203 (net)
+                      0.325692    0.000434    7.160998 ^ _1775_/B (sky130_fd_sc_hd__nand2_2)
+     1    0.003125    0.057272    0.078749    7.239747 v _1775_/Y (sky130_fd_sc_hd__nand2_2)
+                                                         _0609_ (net)
+                      0.057272    0.000096    7.239843 v fanout98/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+    17    0.051034    0.375479    0.506252    7.746095 v fanout98/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net98 (net)
+                      0.375479    0.000525    7.746620 v fanout97/A (sky130_fd_sc_hd__clkdlybuf4s25_1)
+    21    0.058225    0.427291    0.645961    8.392580 v fanout97/X (sky130_fd_sc_hd__clkdlybuf4s25_1)
+                                                         net97 (net)
+                      0.427345    0.004873    8.397453 v _2070_/B (sky130_fd_sc_hd__or3b_2)
+     1    0.002978    0.075787    0.571769    8.969223 v _2070_/X (sky130_fd_sc_hd__or3b_2)
+                                                         _0892_ (net)
+                      0.075787    0.000088    8.969311 v _2071_/B1 (sky130_fd_sc_hd__o21a_2)
+     1    0.002604    0.033623    0.122172    9.091483 v _2071_/X (sky130_fd_sc_hd__o21a_2)
+                                                         _0124_ (net)
+                      0.033623    0.000077    9.091560 v _3066_/D (sky130_fd_sc_hd__dfxtp_2)
+                                              9.091560   data arrival time
 
                                  25.000000   25.000000   clock clk (rise edge)
-                                  0.000000   25.000000   clock network delay (propagated)
-                                 -0.250000   24.750000   clock uncertainty
-                                  0.000000   24.750000   clock reconvergence pessimism
-                                 -5.000000   19.750000   output external delay
-                                             19.750000   data required time
+                                  0.000000   25.000000   clock source latency
+     2    0.043687    0.201003    0.140957   25.140957 ^ clk (in)
+                                                         clk (net)
+                      0.201078    0.000000   25.140957 ^ clkbuf_0_clk/A (sky130_fd_sc_hd__clkbuf_16)
+    17    0.140869    0.154197    0.264018   25.404974 ^ clkbuf_0_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_0_clk (net)
+                      0.154567    0.006109   25.411083 ^ clkbuf_3_0__f_clk/A (sky130_fd_sc_hd__clkbuf_16)
+    13    0.056286    0.075125    0.191928   25.603012 ^ clkbuf_3_0__f_clk/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         clknet_3_0__leaf_clk (net)
+                      0.075168    0.001616   25.604628 ^ clkbuf_leaf_41_clk/A (sky130_fd_sc_hd__clkbuf_8)
+    10    0.037771    0.078327    0.164833   25.769463 ^ clkbuf_leaf_41_clk/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_leaf_41_clk (net)
+                      0.078339    0.000977   25.770439 ^ _3066_/CLK (sky130_fd_sc_hd__dfxtp_2)
+                                 -0.250000   25.520439   clock uncertainty
+                                  0.000000   25.520439   clock reconvergence pessimism
+                                 -0.100138   25.420303   library setup time
+                                             25.420303   data required time
 ---------------------------------------------------------------------------------------------
-                                             19.750000   data required time
-                                             -2.641608   data arrival time
+                                             25.420303   data required time
+                                             -9.091560   data arrival time
 ---------------------------------------------------------------------------------------------
-                                             17.108391   slack (MET)
+                                             16.328741   slack (MET)
 
 
 
@@ -157,138 +156,1058 @@ No paths found.
 ============================================================================
 ======================= nom_tt_025C_1v80 Corner ===================================
 
+max slew
+
+Pin                                        Limit        Slew       Slack
+------------------------------------------------------------------------
+_2702_/S                                0.750000    1.072073   -0.322073 (VIOLATED)
+ANTENNA__2702__S/DIODE                  0.750000    1.072072   -0.322072 (VIOLATED)
+_2701_/S                                0.750000    1.072057   -0.322057 (VIOLATED)
+ANTENNA__2701__S/DIODE                  0.750000    1.072049   -0.322049 (VIOLATED)
+_2703_/S                                0.750000    1.072040   -0.322041 (VIOLATED)
+ANTENNA__2703__S/DIODE                  0.750000    1.072031   -0.322031 (VIOLATED)
+_2691_/S                                0.750000    1.071972   -0.321972 (VIOLATED)
+ANTENNA__2691__S/DIODE                  0.750000    1.071959   -0.321959 (VIOLATED)
+ANTENNA__2693__S/DIODE                  0.750000    1.071933   -0.321933 (VIOLATED)
+_2693_/S                                0.750000    1.071932   -0.321932 (VIOLATED)
+ANTENNA__2692__S/DIODE                  0.750000    1.071899   -0.321899 (VIOLATED)
+_2692_/S                                0.750000    1.071893   -0.321893 (VIOLATED)
+_2704_/S                                0.750000    1.071892   -0.321893 (VIOLATED)
+ANTENNA__2704__S/DIODE                  0.750000    1.071892   -0.321892 (VIOLATED)
+_2699_/S                                0.750000    1.071889   -0.321889 (VIOLATED)
+ANTENNA__2699__S/DIODE                  0.750000    1.071888   -0.321888 (VIOLATED)
+_2698_/S                                0.750000    1.071885   -0.321885 (VIOLATED)
+ANTENNA__2698__S/DIODE                  0.750000    1.071879   -0.321879 (VIOLATED)
+_2687_/S                                0.750000    1.071842   -0.321842 (VIOLATED)
+ANTENNA__2687__S/DIODE                  0.750000    1.071826   -0.321826 (VIOLATED)
+ANTENNA_fanout27_X/DIODE                0.750000    1.071819   -0.321819 (VIOLATED)
+fanout27/X                              0.750000    1.071819   -0.321819 (VIOLATED)
+_2683_/S                                0.750000    1.066482   -0.316482 (VIOLATED)
+ANTENNA__2683__S/DIODE                  0.750000    1.066479   -0.316480 (VIOLATED)
+_2682_/S                                0.750000    1.066473   -0.316473 (VIOLATED)
+ANTENNA__2682__S/DIODE                  0.750000    1.066462   -0.316462 (VIOLATED)
+_2684_/S                                0.750000    1.066440   -0.316440 (VIOLATED)
+ANTENNA__2684__S/DIODE                  0.750000    1.066436   -0.316436 (VIOLATED)
+_2672_/S                                0.750000    1.066422   -0.316422 (VIOLATED)
+ANTENNA__2672__S/DIODE                  0.750000    1.066419   -0.316419 (VIOLATED)
+_2674_/S                                0.750000    1.066409   -0.316409 (VIOLATED)
+ANTENNA__2674__S/DIODE                  0.750000    1.066397   -0.316397 (VIOLATED)
+_2673_/S                                0.750000    1.066333   -0.316333 (VIOLATED)
+_2685_/S                                0.750000    1.066328   -0.316328 (VIOLATED)
+ANTENNA__2685__S/DIODE                  0.750000    1.066326   -0.316326 (VIOLATED)
+ANTENNA__2680__S/DIODE                  0.750000    1.066318   -0.316318 (VIOLATED)
+_2679_/S                                0.750000    1.066316   -0.316316 (VIOLATED)
+_2680_/S                                0.750000    1.066316   -0.316316 (VIOLATED)
+ANTENNA__2679__S/DIODE                  0.750000    1.066313   -0.316313 (VIOLATED)
+ANTENNA__2673__S/DIODE                  0.750000    1.066310   -0.316310 (VIOLATED)
+ANTENNA_fanout29_X/DIODE                0.750000    1.066120   -0.316120 (VIOLATED)
+ANTENNA__2668__S/DIODE                  0.750000    1.066111   -0.316111 (VIOLATED)
+_2668_/S                                0.750000    1.066104   -0.316104 (VIOLATED)
+fanout29/X                              0.750000    1.066098   -0.316098 (VIOLATED)
+_2739_/S                                0.750000    1.045163   -0.295163 (VIOLATED)
+ANTENNA__2739__S/DIODE                  0.750000    1.045162   -0.295162 (VIOLATED)
+ANTENNA__2740__S/DIODE                  0.750000    1.045157   -0.295157 (VIOLATED)
+_2740_/S                                0.750000    1.045155   -0.295155 (VIOLATED)
+_2741_/S                                0.750000    1.045152   -0.295152 (VIOLATED)
+ANTENNA__2741__S/DIODE                  0.750000    1.045151   -0.295151 (VIOLATED)
+ANTENNA__2729__S/DIODE                  0.750000    1.045143   -0.295143 (VIOLATED)
+_2729_/S                                0.750000    1.045141   -0.295141 (VIOLATED)
+ANTENNA__2742__S/DIODE                  0.750000    1.045138   -0.295138 (VIOLATED)
+_2742_/S                                0.750000    1.045131   -0.295131 (VIOLATED)
+_2731_/S                                0.750000    1.045130   -0.295130 (VIOLATED)
+ANTENNA__2731__S/DIODE                  0.750000    1.045122   -0.295122 (VIOLATED)
+ANTENNA__2736__S/DIODE                  0.750000    1.045095   -0.295095 (VIOLATED)
+_2736_/S                                0.750000    1.045073   -0.295073 (VIOLATED)
+_2730_/S                                0.750000    1.045068   -0.295068 (VIOLATED)
+ANTENNA__2730__S/DIODE                  0.750000    1.045056   -0.295056 (VIOLATED)
+_2725_/S                                0.750000    1.044915   -0.294915 (VIOLATED)
+ANTENNA__2725__S/DIODE                  0.750000    1.044889   -0.294889 (VIOLATED)
+_2726_/S                                0.750000    1.044854   -0.294854 (VIOLATED)
+ANTENNA_fanout23_X/DIODE                0.750000    1.044852   -0.294852 (VIOLATED)
+ANTENNA__2726__S/DIODE                  0.750000    1.044849   -0.294849 (VIOLATED)
+fanout23/X                              0.750000    1.044849   -0.294849 (VIOLATED)
+_2664_/S                                0.750000    1.044783   -0.294783 (VIOLATED)
+ANTENNA__2664__S/DIODE                  0.750000    1.044780   -0.294780 (VIOLATED)
+_2663_/S                                0.750000    1.044765   -0.294765 (VIOLATED)
+ANTENNA__2663__S/DIODE                  0.750000    1.044754   -0.294754 (VIOLATED)
+_2665_/S                                0.750000    1.044732   -0.294732 (VIOLATED)
+ANTENNA__2665__S/DIODE                  0.750000    1.044717   -0.294717 (VIOLATED)
+_2653_/S                                0.750000    1.044660   -0.294660 (VIOLATED)
+ANTENNA__2653__S/DIODE                  0.750000    1.044657   -0.294658 (VIOLATED)
+_2655_/S                                0.750000    1.044640   -0.294640 (VIOLATED)
+ANTENNA__2655__S/DIODE                  0.750000    1.044623   -0.294623 (VIOLATED)
+_2666_/S                                0.750000    1.044613   -0.294613 (VIOLATED)
+ANTENNA__2666__S/DIODE                  0.750000    1.044612   -0.294612 (VIOLATED)
+_2661_/S                                0.750000    1.044601   -0.294601 (VIOLATED)
+ANTENNA__2661__S/DIODE                  0.750000    1.044598   -0.294598 (VIOLATED)
+ANTENNA__2660__S/DIODE                  0.750000    1.044582   -0.294582 (VIOLATED)
+_2660_/S                                0.750000    1.044579   -0.294579 (VIOLATED)
+_2654_/S                                0.750000    1.044540   -0.294540 (VIOLATED)
+ANTENNA__2654__S/DIODE                  0.750000    1.044537   -0.294537 (VIOLATED)
+_2649_/S                                0.750000    1.044375   -0.294375 (VIOLATED)
+ANTENNA__2649__S/DIODE                  0.750000    1.044362   -0.294362 (VIOLATED)
+ANTENNA_fanout31_X/DIODE                0.750000    1.044347   -0.294347 (VIOLATED)
+fanout31/X                              0.750000    1.044343   -0.294343 (VIOLATED)
+_2767_/S                                0.750000    1.023361   -0.273361 (VIOLATED)
+_2777_/S                                0.750000    1.023360   -0.273360 (VIOLATED)
+ANTENNA__2767__S/DIODE                  0.750000    1.023359   -0.273359 (VIOLATED)
+ANTENNA__2777__S/DIODE                  0.750000    1.023358   -0.273358 (VIOLATED)
+_2778_/S                                0.750000    1.023355   -0.273355 (VIOLATED)
+ANTENNA__2778__S/DIODE                  0.750000    1.023353   -0.273353 (VIOLATED)
+_2779_/S                                0.750000    1.023352   -0.273352 (VIOLATED)
+ANTENNA__2779__S/DIODE                  0.750000    1.023352   -0.273352 (VIOLATED)
+ANTENNA__2769__S/DIODE                  0.750000    1.023332   -0.273332 (VIOLATED)
+ANTENNA__2780__S/DIODE                  0.750000    1.023318   -0.273318 (VIOLATED)
+_2769_/S                                0.750000    1.023317   -0.273317 (VIOLATED)
+_2780_/S                                0.750000    1.023312   -0.273312 (VIOLATED)
+_2774_/S                                0.750000    1.023293   -0.273293 (VIOLATED)
+ANTENNA__2774__S/DIODE                  0.750000    1.023291   -0.273291 (VIOLATED)
+_2768_/S                                0.750000    1.023191   -0.273191 (VIOLATED)
+ANTENNA__2768__S/DIODE                  0.750000    1.023184   -0.273184 (VIOLATED)
+_2763_/S                                0.750000    1.022949   -0.272949 (VIOLATED)
+ANTENNA__2763__S/DIODE                  0.750000    1.022916   -0.272916 (VIOLATED)
+_2764_/S                                0.750000    1.022777   -0.272777 (VIOLATED)
+ANTENNA__2764__S/DIODE                  0.750000    1.022747   -0.272747 (VIOLATED)
+ANTENNA_fanout19_X/DIODE                0.750000    1.022727   -0.272727 (VIOLATED)
+fanout19/X                              0.750000    1.022725   -0.272726 (VIOLATED)
+_2835_/S                                0.750000    1.013227   -0.263227 (VIOLATED)
+ANTENNA__2835__S/DIODE                  0.750000    1.013226   -0.263226 (VIOLATED)
+_2834_/S                                0.750000    1.013223   -0.263223 (VIOLATED)
+ANTENNA__2834__S/DIODE                  0.750000    1.013222   -0.263222 (VIOLATED)
+_2826_/S                                0.750000    1.013218   -0.263218 (VIOLATED)
+ANTENNA__2826__S/DIODE                  0.750000    1.013217   -0.263217 (VIOLATED)
+ANTENNA__2836__S/DIODE                  0.750000    1.013217   -0.263217 (VIOLATED)
+ANTENNA__2824__S/DIODE                  0.750000    1.013216   -0.263216 (VIOLATED)
+_2824_/S                                0.750000    1.013216   -0.263216 (VIOLATED)
+_2836_/S                                0.750000    1.013215   -0.263215 (VIOLATED)
+_2825_/S                                0.750000    1.013211   -0.263212 (VIOLATED)
+ANTENNA__2825__S/DIODE                  0.750000    1.013211   -0.263211 (VIOLATED)
+_2837_/S                                0.750000    1.013209   -0.263209 (VIOLATED)
+ANTENNA__2837__S/DIODE                  0.750000    1.013209   -0.263209 (VIOLATED)
+_2823_/S                                0.750000    1.013209   -0.263209 (VIOLATED)
+ANTENNA__2823__S/DIODE                  0.750000    1.013208   -0.263208 (VIOLATED)
+_2832_/S                                0.750000    1.013207   -0.263207 (VIOLATED)
+ANTENNA__2832__S/DIODE                  0.750000    1.013206   -0.263206 (VIOLATED)
+ANTENNA_fanout13_X/DIODE                0.750000    1.013205   -0.263205 (VIOLATED)
+ANTENNA__2831__S/DIODE                  0.750000    1.013204   -0.263204 (VIOLATED)
+_2831_/S                                0.750000    1.013203   -0.263203 (VIOLATED)
+fanout13/X                              0.750000    1.013200   -0.263200 (VIOLATED)
+_2758_/S                                0.750000    1.009856   -0.259856 (VIOLATED)
+ANTENNA__2759__S/DIODE                  0.750000    1.009853   -0.259853 (VIOLATED)
+_2759_/S                                0.750000    1.009853   -0.259853 (VIOLATED)
+ANTENNA__2758__S/DIODE                  0.750000    1.009852   -0.259852 (VIOLATED)
+ANTENNA__2761__S/DIODE                  0.750000    1.009811   -0.259811 (VIOLATED)
+_2761_/S                                0.750000    1.009792   -0.259792 (VIOLATED)
+_2748_/S                                0.750000    1.009787   -0.259787 (VIOLATED)
+_2760_/S                                0.750000    1.009786   -0.259786 (VIOLATED)
+ANTENNA__2748__S/DIODE                  0.750000    1.009785   -0.259785 (VIOLATED)
+ANTENNA__2760__S/DIODE                  0.750000    1.009785   -0.259785 (VIOLATED)
+ANTENNA__2750__S/DIODE                  0.750000    1.009771   -0.259771 (VIOLATED)
+_2750_/S                                0.750000    1.009762   -0.259762 (VIOLATED)
+ANTENNA__2755__S/DIODE                  0.750000    1.009744   -0.259744 (VIOLATED)
+_2755_/S                                0.750000    1.009742   -0.259742 (VIOLATED)
+_2749_/S                                0.750000    1.009697   -0.259697 (VIOLATED)
+ANTENNA__2749__S/DIODE                  0.750000    1.009645   -0.259645 (VIOLATED)
+ANTENNA__2744__S/DIODE                  0.750000    1.009437   -0.259437 (VIOLATED)
+_2744_/S                                0.750000    1.009425   -0.259425 (VIOLATED)
+_2745_/S                                0.750000    1.009391   -0.259391 (VIOLATED)
+ANTENNA__2745__S/DIODE                  0.750000    1.009381   -0.259381 (VIOLATED)
+ANTENNA_fanout21_X/DIODE                0.750000    1.009373   -0.259373 (VIOLATED)
+fanout21/X                              0.750000    1.009373   -0.259373 (VIOLATED)
+_2815_/S                                0.750000    1.007529   -0.257530 (VIOLATED)
+ANTENNA__2815__S/DIODE                  0.750000    1.007528   -0.257528 (VIOLATED)
+_2817_/S                                0.750000    1.007525   -0.257525 (VIOLATED)
+ANTENNA__2817__S/DIODE                  0.750000    1.007521   -0.257521 (VIOLATED)
+_2807_/S                                0.750000    1.007514   -0.257514 (VIOLATED)
+ANTENNA__2807__S/DIODE                  0.750000    1.007505   -0.257505 (VIOLATED)
+ANTENNA__2805__S/DIODE                  0.750000    1.007495   -0.257495 (VIOLATED)
+_2805_/S                                0.750000    1.007492   -0.257492 (VIOLATED)
+ANTENNA__2806__S/DIODE                  0.750000    1.007478   -0.257478 (VIOLATED)
+_2804_/S                                0.750000    1.007477   -0.257477 (VIOLATED)
+ANTENNA__2804__S/DIODE                  0.750000    1.007475   -0.257475 (VIOLATED)
+_2806_/S                                0.750000    1.007470   -0.257470 (VIOLATED)
+ANTENNA__2816__S/DIODE                  0.750000    1.007470   -0.257470 (VIOLATED)
+_2816_/S                                0.750000    1.007470   -0.257470 (VIOLATED)
+_2818_/S                                0.750000    1.007465   -0.257465 (VIOLATED)
+ANTENNA__2818__S/DIODE                  0.750000    1.007462   -0.257462 (VIOLATED)
+_2813_/S                                0.750000    1.007455   -0.257455 (VIOLATED)
+_2812_/S                                0.750000    1.007453   -0.257453 (VIOLATED)
+ANTENNA__2813__S/DIODE                  0.750000    1.007452   -0.257452 (VIOLATED)
+ANTENNA__2812__S/DIODE                  0.750000    1.007447   -0.257448 (VIOLATED)
+ANTENNA_fanout15_X/DIODE                0.750000    1.007442   -0.257442 (VIOLATED)
+fanout15/X                              0.750000    1.007440   -0.257440 (VIOLATED)
+_2854_/S                                0.750000    1.002364   -0.252364 (VIOLATED)
+ANTENNA__2854__S/DIODE                  0.750000    1.002363   -0.252363 (VIOLATED)
+_2845_/S                                0.750000    1.002359   -0.252359 (VIOLATED)
+ANTENNA__2845__S/DIODE                  0.750000    1.002359   -0.252359 (VIOLATED)
+_2843_/S                                0.750000    1.002358   -0.252358 (VIOLATED)
+ANTENNA__2843__S/DIODE                  0.750000    1.002355   -0.252355 (VIOLATED)
+_2853_/S                                0.750000    1.002355   -0.252355 (VIOLATED)
+ANTENNA__2853__S/DIODE                  0.750000    1.002354   -0.252354 (VIOLATED)
+_2855_/S                                0.750000    1.002347   -0.252347 (VIOLATED)
+ANTENNA__2855__S/DIODE                  0.750000    1.002346   -0.252346 (VIOLATED)
+ANTENNA__2850__S/DIODE                  0.750000    1.002327   -0.252327 (VIOLATED)
+_2856_/S                                0.750000    1.002327   -0.252327 (VIOLATED)
+ANTENNA__2856__S/DIODE                  0.750000    1.002326   -0.252326 (VIOLATED)
+_2851_/S                                0.750000    1.002324   -0.252324 (VIOLATED)
+ANTENNA__2851__S/DIODE                  0.750000    1.002324   -0.252324 (VIOLATED)
+_2844_/S                                0.750000    1.002324   -0.252324 (VIOLATED)
+ANTENNA__2844__S/DIODE                  0.750000    1.002324   -0.252324 (VIOLATED)
+_2842_/S                                0.750000    1.002324   -0.252324 (VIOLATED)
+ANTENNA__2842__S/DIODE                  0.750000    1.002323   -0.252323 (VIOLATED)
+_2850_/S                                0.750000    1.002322   -0.252322 (VIOLATED)
+ANTENNA_fanout11_X/DIODE                0.750000    1.002321   -0.252321 (VIOLATED)
+fanout11/X                              0.750000    1.002318   -0.252318 (VIOLATED)
+_2973_/A1                               0.750000    0.981930   -0.231930 (VIOLATED)
+ANTENNA__2973__A1/DIODE                 0.750000    0.981929   -0.231929 (VIOLATED)
+_2946_/A1                               0.750000    0.981924   -0.231924 (VIOLATED)
+ANTENNA__2946__A1/DIODE                 0.750000    0.981920   -0.231920 (VIOLATED)
+_2935_/A1                               0.750000    0.981916   -0.231916 (VIOLATED)
+ANTENNA__2935__A1/DIODE                 0.750000    0.981913   -0.231913 (VIOLATED)
+_2918_/A1                               0.750000    0.981887   -0.231888 (VIOLATED)
+ANTENNA__2918__A1/DIODE                 0.750000    0.981887   -0.231887 (VIOLATED)
+ANTENNA__2906__A1/DIODE                 0.750000    0.981874   -0.231874 (VIOLATED)
+_2962_/B2                               0.750000    0.981864   -0.231864 (VIOLATED)
+ANTENNA__2962__B2/DIODE                 0.750000    0.981860   -0.231860 (VIOLATED)
+_2500_/B2                               0.750000    0.981860   -0.231860 (VIOLATED)
+ANTENNA__2500__B2/DIODE                 0.750000    0.981856   -0.231856 (VIOLATED)
+_2906_/A1                               0.750000    0.981853   -0.231853 (VIOLATED)
+ANTENNA__2521__B2/DIODE                 0.750000    0.981836   -0.231836 (VIOLATED)
+_2521_/B2                               0.750000    0.981827   -0.231827 (VIOLATED)
+_2508_/B2                               0.750000    0.981787   -0.231787 (VIOLATED)
+ANTENNA__2508__B2/DIODE                 0.750000    0.981783   -0.231783 (VIOLATED)
+ANTENNA_fanout121_A/DIODE               0.750000    0.981537   -0.231537 (VIOLATED)
+fanout121/A                             0.750000    0.981533   -0.231533 (VIOLATED)
+ANTENNA_fanout122_X/DIODE               0.750000    0.981529   -0.231529 (VIOLATED)
+fanout122/X                             0.750000    0.981528   -0.231528 (VIOLATED)
+_2696_/S                                0.750000    0.944051   -0.194051 (VIOLATED)
+ANTENNA__2696__S/DIODE                  0.750000    0.944050   -0.194050 (VIOLATED)
+_2697_/S                                0.750000    0.944048   -0.194048 (VIOLATED)
+ANTENNA__2697__S/DIODE                  0.750000    0.944048   -0.194048 (VIOLATED)
+ANTENNA__2700__S/DIODE                  0.750000    0.944031   -0.194031 (VIOLATED)
+_2700_/S                                0.750000    0.944030   -0.194030 (VIOLATED)
+_2695_/S                                0.750000    0.944024   -0.194024 (VIOLATED)
+ANTENNA__2695__S/DIODE                  0.750000    0.944016   -0.194016 (VIOLATED)
+ANTENNA__2690__S/DIODE                  0.750000    0.944012   -0.194012 (VIOLATED)
+_2690_/S                                0.750000    0.944012   -0.194012 (VIOLATED)
+_2694_/S                                0.750000    0.944010   -0.194010 (VIOLATED)
+ANTENNA__2694__S/DIODE                  0.750000    0.944008   -0.194008 (VIOLATED)
+_2688_/S                                0.750000    0.944005   -0.194005 (VIOLATED)
+ANTENNA__2688__S/DIODE                  0.750000    0.944004   -0.194004 (VIOLATED)
+ANTENNA_fanout28_X/DIODE                0.750000    0.944004   -0.194004 (VIOLATED)
+_2689_/S                                0.750000    0.944003   -0.194003 (VIOLATED)
+ANTENNA__2689__S/DIODE                  0.750000    0.944003   -0.194003 (VIOLATED)
+fanout28/X                              0.750000    0.943997   -0.193997 (VIOLATED)
+_2734_/S                                0.750000    0.909381   -0.159381 (VIOLATED)
+ANTENNA__2734__S/DIODE                  0.750000    0.909380   -0.159380 (VIOLATED)
+_2735_/S                                0.750000    0.909376   -0.159376 (VIOLATED)
+ANTENNA__2735__S/DIODE                  0.750000    0.909375   -0.159375 (VIOLATED)
+ANTENNA__2738__S/DIODE                  0.750000    0.909374   -0.159374 (VIOLATED)
+_2738_/S                                0.750000    0.909371   -0.159371 (VIOLATED)
+_2732_/S                                0.750000    0.909369   -0.159369 (VIOLATED)
+_2737_/S                                0.750000    0.909368   -0.159368 (VIOLATED)
+ANTENNA__2737__S/DIODE                  0.750000    0.909368   -0.159368 (VIOLATED)
+ANTENNA__2732__S/DIODE                  0.750000    0.909367   -0.159367 (VIOLATED)
+_2728_/S                                0.750000    0.909364   -0.159364 (VIOLATED)
+_2733_/S                                0.750000    0.909363   -0.159363 (VIOLATED)
+ANTENNA__2728__S/DIODE                  0.750000    0.909362   -0.159362 (VIOLATED)
+ANTENNA__2733__S/DIODE                  0.750000    0.909358   -0.159358 (VIOLATED)
+_2727_/S                                0.750000    0.909350   -0.159350 (VIOLATED)
+ANTENNA__2727__S/DIODE                  0.750000    0.909349   -0.159349 (VIOLATED)
+ANTENNA_fanout24_X/DIODE                0.750000    0.909345   -0.159345 (VIOLATED)
+fanout24/X                              0.750000    0.909343   -0.159343 (VIOLATED)
+_2658_/S                                0.750000    0.895646   -0.145646 (VIOLATED)
+ANTENNA__2658__S/DIODE                  0.750000    0.895644   -0.145644 (VIOLATED)
+_2652_/S                                0.750000    0.895640   -0.145640 (VIOLATED)
+ANTENNA__2652__S/DIODE                  0.750000    0.895639   -0.145639 (VIOLATED)
+ANTENNA__2659__S/DIODE                  0.750000    0.895637   -0.145637 (VIOLATED)
+_2659_/S                                0.750000    0.895634   -0.145634 (VIOLATED)
+_2656_/S                                0.750000    0.895632   -0.145632 (VIOLATED)
+ANTENNA__2656__S/DIODE                  0.750000    0.895630   -0.145630 (VIOLATED)
+_2662_/S                                0.750000    0.895621   -0.145621 (VIOLATED)
+ANTENNA__2662__S/DIODE                  0.750000    0.895619   -0.145619 (VIOLATED)
+_2657_/S                                0.750000    0.895615   -0.145615 (VIOLATED)
+ANTENNA__2657__S/DIODE                  0.750000    0.895615   -0.145615 (VIOLATED)
+_2651_/S                                0.750000    0.895611   -0.145611 (VIOLATED)
+ANTENNA__2651__S/DIODE                  0.750000    0.895608   -0.145609 (VIOLATED)
+ANTENNA__2650__S/DIODE                  0.750000    0.895606   -0.145606 (VIOLATED)
+_2650_/S                                0.750000    0.895601   -0.145601 (VIOLATED)
+ANTENNA_fanout32_X/DIODE                0.750000    0.895580   -0.145580 (VIOLATED)
+fanout32/X                              0.750000    0.895572   -0.145572 (VIOLATED)
+_2846_/S                                0.750000    0.874220   -0.124220 (VIOLATED)
+ANTENNA__2846__S/DIODE                  0.750000    0.874218   -0.124218 (VIOLATED)
+ANTENNA__2848__S/DIODE                  0.750000    0.874211   -0.124211 (VIOLATED)
+_2848_/S                                0.750000    0.874208   -0.124208 (VIOLATED)
+_2849_/S                                0.750000    0.874202   -0.124202 (VIOLATED)
+ANTENNA__2849__S/DIODE                  0.750000    0.874202   -0.124202 (VIOLATED)
+_2852_/S                                0.750000    0.874190   -0.124190 (VIOLATED)
+ANTENNA__2852__S/DIODE                  0.750000    0.874185   -0.124185 (VIOLATED)
+ANTENNA__2847__S/DIODE                  0.750000    0.874178   -0.124179 (VIOLATED)
+ANTENNA__2840__S/DIODE                  0.750000    0.874178   -0.124178 (VIOLATED)
+_2847_/S                                0.750000    0.874175   -0.124175 (VIOLATED)
+_2840_/S                                0.750000    0.874160   -0.124160 (VIOLATED)
+_2839_/S                                0.750000    0.874158   -0.124158 (VIOLATED)
+ANTENNA__2839__S/DIODE                  0.750000    0.874156   -0.124157 (VIOLATED)
+ANTENNA__2841__S/DIODE                  0.750000    0.874150   -0.124150 (VIOLATED)
+_2841_/S                                0.750000    0.874149   -0.124149 (VIOLATED)
+ANTENNA_fanout12_X/DIODE                0.750000    0.874131   -0.124131 (VIOLATED)
+fanout12/X                              0.750000    0.874130   -0.124130 (VIOLATED)
+_2712_/S                                0.750000    0.871065   -0.121065 (VIOLATED)
+_2710_/S                                0.750000    0.871065   -0.121065 (VIOLATED)
+ANTENNA__2710__S/DIODE                  0.750000    0.871064   -0.121064 (VIOLATED)
+ANTENNA__2712__S/DIODE                  0.750000    0.871062   -0.121062 (VIOLATED)
+_2711_/S                                0.750000    0.871056   -0.121056 (VIOLATED)
+ANTENNA__2711__S/DIODE                  0.750000    0.871053   -0.121053 (VIOLATED)
+_2720_/S                                0.750000    0.871032   -0.121032 (VIOLATED)
+_2721_/S                                0.750000    0.871031   -0.121031 (VIOLATED)
+ANTENNA__2720__S/DIODE                  0.750000    0.871030   -0.121030 (VIOLATED)
+ANTENNA__2721__S/DIODE                  0.750000    0.871029   -0.121029 (VIOLATED)
+ANTENNA__2722__S/DIODE                  0.750000    0.871025   -0.121025 (VIOLATED)
+_2723_/S                                0.750000    0.871023   -0.121023 (VIOLATED)
+ANTENNA__2723__S/DIODE                  0.750000    0.871021   -0.121021 (VIOLATED)
+_2722_/S                                0.750000    0.870998   -0.120998 (VIOLATED)
+ANTENNA__2717__S/DIODE                  0.750000    0.870962   -0.120962 (VIOLATED)
+_2717_/S                                0.750000    0.870948   -0.120948 (VIOLATED)
+ANTENNA__2718__S/DIODE                  0.750000    0.870914   -0.120914 (VIOLATED)
+_2718_/S                                0.750000    0.870897   -0.120897 (VIOLATED)
+ANTENNA__2706__S/DIODE                  0.750000    0.870851   -0.120851 (VIOLATED)
+_2706_/S                                0.750000    0.870851   -0.120851 (VIOLATED)
+ANTENNA_fanout25_X/DIODE                0.750000    0.870849   -0.120849 (VIOLATED)
+fanout25/X                              0.750000    0.870849   -0.120849 (VIOLATED)
+ANTENNA__2860__S/DIODE                  0.750000    0.869300   -0.119300 (VIOLATED)
+_2860_/S                                0.750000    0.869299   -0.119299 (VIOLATED)
+_2857_/S                                0.750000    0.869293   -0.119293 (VIOLATED)
+_2859_/S                                0.750000    0.869292   -0.119292 (VIOLATED)
+ANTENNA__2859__S/DIODE                  0.750000    0.869292   -0.119292 (VIOLATED)
+ANTENNA__2857__S/DIODE                  0.750000    0.869290   -0.119290 (VIOLATED)
+_2858_/S                                0.750000    0.869283   -0.119283 (VIOLATED)
+ANTENNA__2858__S/DIODE                  0.750000    0.869283   -0.119283 (VIOLATED)
+_3437_/D                                0.750000    0.869272   -0.119272 (VIOLATED)
+ANTENNA__3437__D/DIODE                  0.750000    0.869271   -0.119271 (VIOLATED)
+_2886_/A2                               0.750000    0.869267   -0.119267 (VIOLATED)
+ANTENNA__2886__A2/DIODE                 0.750000    0.869267   -0.119267 (VIOLATED)
+_2897_/A2                               0.750000    0.869265   -0.119265 (VIOLATED)
+ANTENNA__2897__A2/DIODE                 0.750000    0.869264   -0.119264 (VIOLATED)
+_2930_/A2                               0.750000    0.869262   -0.119262 (VIOLATED)
+ANTENNA__2930__A2/DIODE                 0.750000    0.869262   -0.119262 (VIOLATED)
+ANTENNA__2875__A2/DIODE                 0.750000    0.869261   -0.119261 (VIOLATED)
+_2875_/A2                               0.750000    0.869261   -0.119261 (VIOLATED)
+ANTENNA_fanout36_X/DIODE                0.750000    0.869258   -0.119258 (VIOLATED)
+fanout36/X                              0.750000    0.869257   -0.119257 (VIOLATED)
+_2677_/S                                0.750000    0.867289   -0.117289 (VIOLATED)
+ANTENNA__2677__S/DIODE                  0.750000    0.867289   -0.117289 (VIOLATED)
+_2678_/S                                0.750000    0.867284   -0.117284 (VIOLATED)
+ANTENNA__2678__S/DIODE                  0.750000    0.867281   -0.117281 (VIOLATED)
+_2681_/S                                0.750000    0.867273   -0.117273 (VIOLATED)
+ANTENNA__2681__S/DIODE                  0.750000    0.867271   -0.117271 (VIOLATED)
+_2676_/S                                0.750000    0.867259   -0.117259 (VIOLATED)
+ANTENNA__2676__S/DIODE                  0.750000    0.867257   -0.117257 (VIOLATED)
+ANTENNA__2669__S/DIODE                  0.750000    0.867255   -0.117255 (VIOLATED)
+_2669_/S                                0.750000    0.867251   -0.117251 (VIOLATED)
+_2671_/S                                0.750000    0.867248   -0.117248 (VIOLATED)
+ANTENNA__2671__S/DIODE                  0.750000    0.867247   -0.117247 (VIOLATED)
+ANTENNA__2675__S/DIODE                  0.750000    0.867244   -0.117244 (VIOLATED)
+_2675_/S                                0.750000    0.867244   -0.117244 (VIOLATED)
+ANTENNA__2670__S/DIODE                  0.750000    0.867243   -0.117243 (VIOLATED)
+ANTENNA_fanout30_X/DIODE                0.750000    0.867242   -0.117242 (VIOLATED)
+_2670_/S                                0.750000    0.867240   -0.117240 (VIOLATED)
+fanout30/X                              0.750000    0.867237   -0.117237 (VIOLATED)
+_2885_/B2                               0.750000    0.854803   -0.104803 (VIOLATED)
+ANTENNA__2885__B2/DIODE                 0.750000    0.854802   -0.104802 (VIOLATED)
+_2895_/A1                               0.750000    0.854798   -0.104798 (VIOLATED)
+ANTENNA__2895__A1/DIODE                 0.750000    0.854798   -0.104798 (VIOLATED)
+_2874_/A1                               0.750000    0.854788   -0.104788 (VIOLATED)
+ANTENNA__2874__A1/DIODE                 0.750000    0.854787   -0.104787 (VIOLATED)
+_2488_/A1                               0.750000    0.854771   -0.104771 (VIOLATED)
+ANTENNA__2488__A1/DIODE                 0.750000    0.854769   -0.104769 (VIOLATED)
+_2538_/B2                               0.750000    0.854765   -0.104765 (VIOLATED)
+ANTENNA__2538__B2/DIODE                 0.750000    0.854759   -0.104759 (VIOLATED)
+_2463_/B2                               0.750000    0.854758   -0.104758 (VIOLATED)
+ANTENNA__2463__B2/DIODE                 0.750000    0.854751   -0.104751 (VIOLATED)
+ANTENNA__2446__A1/DIODE                 0.750000    0.854701   -0.104701 (VIOLATED)
+_2446_/A1                               0.750000    0.854696   -0.104696 (VIOLATED)
+_2445_/S                                0.750000    0.854674   -0.104674 (VIOLATED)
+ANTENNA__2445__S/DIODE                  0.750000    0.854670   -0.104670 (VIOLATED)
+_2475_/B2                               0.750000    0.854652   -0.104652 (VIOLATED)
+ANTENNA__2475__B2/DIODE                 0.750000    0.854639   -0.104639 (VIOLATED)
+ANTENNA_fanout121_X/DIODE               0.750000    0.854591   -0.104591 (VIOLATED)
+ANTENNA__1631__A1/DIODE                 0.750000    0.854584   -0.104584 (VIOLATED)
+_1631_/A1                               0.750000    0.854579   -0.104579 (VIOLATED)
+fanout121/X                             0.750000    0.854578   -0.104578 (VIOLATED)
+_2811_/S                                0.750000    0.848828   -0.098828 (VIOLATED)
+ANTENNA__2811__S/DIODE                  0.750000    0.848827   -0.098827 (VIOLATED)
+ANTENNA__2814__S/DIODE                  0.750000    0.848821   -0.098821 (VIOLATED)
+_2814_/S                                0.750000    0.848821   -0.098821 (VIOLATED)
+_2809_/S                                0.750000    0.848817   -0.098817 (VIOLATED)
+ANTENNA__2809__S/DIODE                  0.750000    0.848816   -0.098816 (VIOLATED)
+ANTENNA__2802__S/DIODE                  0.750000    0.848807   -0.098807 (VIOLATED)
+_2801_/S                                0.750000    0.848803   -0.098803 (VIOLATED)
+_2810_/S                                0.750000    0.848803   -0.098803 (VIOLATED)
+ANTENNA__2801__S/DIODE                  0.750000    0.848803   -0.098803 (VIOLATED)
+ANTENNA__2810__S/DIODE                  0.750000    0.848802   -0.098802 (VIOLATED)
+_2808_/S                                0.750000    0.848801   -0.098801 (VIOLATED)
+ANTENNA__2808__S/DIODE                  0.750000    0.848801   -0.098801 (VIOLATED)
+_2803_/S                                0.750000    0.848800   -0.098800 (VIOLATED)
+_2802_/S                                0.750000    0.848800   -0.098800 (VIOLATED)
+ANTENNA__2803__S/DIODE                  0.750000    0.848799   -0.098799 (VIOLATED)
+ANTENNA_fanout16_X/DIODE                0.750000    0.848798   -0.098798 (VIOLATED)
+fanout16/X                              0.750000    0.848794   -0.098794 (VIOLATED)
+_2951_/A1                               0.750000    0.837694   -0.087694 (VIOLATED)
+ANTENNA__2951__A1/DIODE                 0.750000    0.837692   -0.087692 (VIOLATED)
+ANTENNA__2972__B2/DIODE                 0.750000    0.837688   -0.087688 (VIOLATED)
+_2972_/B2                               0.750000    0.837687   -0.087687 (VIOLATED)
+ANTENNA__2966__B2/DIODE                 0.750000    0.837657   -0.087657 (VIOLATED)
+_2966_/B2                               0.750000    0.837657   -0.087657 (VIOLATED)
+ANTENNA_fanout117_A/DIODE               0.750000    0.837565   -0.087565 (VIOLATED)
+fanout117/A                             0.750000    0.837562   -0.087562 (VIOLATED)
+_2928_/B2                               0.750000    0.837493   -0.087493 (VIOLATED)
+ANTENNA__2928__B2/DIODE                 0.750000    0.837492   -0.087492 (VIOLATED)
+fanout119/A                             0.750000    0.837441   -0.087441 (VIOLATED)
+ANTENNA_fanout119_A/DIODE               0.750000    0.837434   -0.087434 (VIOLATED)
+ANTENNA_fanout120_X/DIODE               0.750000    0.837434   -0.087434 (VIOLATED)
+fanout120/X                             0.750000    0.837434   -0.087434 (VIOLATED)
+_2973_/C1                               0.750000    0.834687   -0.084687 (VIOLATED)
+ANTENNA__2973__C1/DIODE                 0.750000    0.834685   -0.084685 (VIOLATED)
+_2946_/C1                               0.750000    0.834683   -0.084683 (VIOLATED)
+ANTENNA__2946__C1/DIODE                 0.750000    0.834674   -0.084674 (VIOLATED)
+ANTENNA__2940__C1/DIODE                 0.750000    0.834656   -0.084656 (VIOLATED)
+_2940_/C1                               0.750000    0.834650   -0.084650 (VIOLATED)
+_2961_/C1                               0.750000    0.834640   -0.084640 (VIOLATED)
+ANTENNA__2961__C1/DIODE                 0.750000    0.834638   -0.084638 (VIOLATED)
+ANTENNA__2906__C1/DIODE                 0.750000    0.834604   -0.084604 (VIOLATED)
+_2906_/C1                               0.750000    0.834577   -0.084577 (VIOLATED)
+ANTENNA__2918__C1/DIODE                 0.750000    0.834549   -0.084549 (VIOLATED)
+_2918_/C1                               0.750000    0.834531   -0.084531 (VIOLATED)
+_2884_/C1                               0.750000    0.834487   -0.084487 (VIOLATED)
+ANTENNA__2884__C1/DIODE                 0.750000    0.834487   -0.084487 (VIOLATED)
+_2896_/C1                               0.750000    0.834465   -0.084465 (VIOLATED)
+ANTENNA__2896__C1/DIODE                 0.750000    0.834465   -0.084465 (VIOLATED)
+ANTENNA__2869__C1/DIODE                 0.750000    0.834443   -0.084443 (VIOLATED)
+_2869_/C1                               0.750000    0.834433   -0.084433 (VIOLATED)
+_1585_/A                                0.750000    0.834431   -0.084431 (VIOLATED)
+ANTENNA__1585__A/DIODE                  0.750000    0.834431   -0.084431 (VIOLATED)
+ANTENNA_fanout60_X/DIODE                0.750000    0.834427   -0.084427 (VIOLATED)
+fanout60/X                              0.750000    0.834424   -0.084424 (VIOLATED)
+ANTENNA__2972__A1/DIODE                 0.750000    0.812361   -0.062361 (VIOLATED)
+_2972_/A1                               0.750000    0.812361   -0.062361 (VIOLATED)
+ANTENNA__2896__A1/DIODE                 0.750000    0.812350   -0.062350 (VIOLATED)
+_2896_/A1                               0.750000    0.812349   -0.062350 (VIOLATED)
+ANTENNA__2922__A2/DIODE                 0.750000    0.812348   -0.062348 (VIOLATED)
+_2922_/A2                               0.750000    0.812348   -0.062348 (VIOLATED)
+_2928_/A1                               0.750000    0.812344   -0.062344 (VIOLATED)
+ANTENNA__2928__A1/DIODE                 0.750000    0.812344   -0.062344 (VIOLATED)
+fanout112/A                             0.750000    0.812341   -0.062341 (VIOLATED)
+ANTENNA_fanout112_A/DIODE               0.750000    0.812340   -0.062340 (VIOLATED)
+ANTENNA_fanout114_A/DIODE               0.750000    0.812334   -0.062334 (VIOLATED)
+ANTENNA_fanout115_X/DIODE               0.750000    0.812334   -0.062334 (VIOLATED)
+fanout114/A                             0.750000    0.812332   -0.062332 (VIOLATED)
+fanout115/X                             0.750000    0.812332   -0.062332 (VIOLATED)
+_2348_/A1                               0.750000    0.812258   -0.062258 (VIOLATED)
+_2347_/A                                0.750000    0.812258   -0.062258 (VIOLATED)
+ANTENNA__2348__A1/DIODE                 0.750000    0.812258   -0.062258 (VIOLATED)
+ANTENNA__2347__A/DIODE                  0.750000    0.812257   -0.062257 (VIOLATED)
+_2322_/A                                0.750000    0.812253   -0.062253 (VIOLATED)
+ANTENNA__2322__A/DIODE                  0.750000    0.812250   -0.062250 (VIOLATED)
+_2359_/A1                               0.750000    0.812247   -0.062247 (VIOLATED)
+ANTENNA__2359__A1/DIODE                 0.750000    0.812244   -0.062244 (VIOLATED)
+_2315_/A1                               0.750000    0.812237   -0.062237 (VIOLATED)
+ANTENNA__2315__A1/DIODE                 0.750000    0.812225   -0.062225 (VIOLATED)
+ANTENNA__2317__A1/DIODE                 0.750000    0.812202   -0.062202 (VIOLATED)
+_2281_/A                                0.750000    0.812201   -0.062201 (VIOLATED)
+ANTENNA__2281__A/DIODE                  0.750000    0.812200   -0.062200 (VIOLATED)
+_2317_/A1                               0.750000    0.812199   -0.062199 (VIOLATED)
+_2154_/C                                0.750000    0.812198   -0.062198 (VIOLATED)
+ANTENNA__2154__C/DIODE                  0.750000    0.812195   -0.062195 (VIOLATED)
+_2131_/B                                0.750000    0.812189   -0.062189 (VIOLATED)
+ANTENNA__2131__B/DIODE                  0.750000    0.812186   -0.062186 (VIOLATED)
+ANTENNA__1754__A0/DIODE                 0.750000    0.812170   -0.062170 (VIOLATED)
+_1754_/A0                               0.750000    0.812166   -0.062166 (VIOLATED)
+ANTENNA_fanout176_X/DIODE               0.750000    0.812156   -0.062156 (VIOLATED)
+fanout176/X                             0.750000    0.812151   -0.062151 (VIOLATED)
+_2757_/S                                0.750000    0.810357   -0.060357 (VIOLATED)
+ANTENNA__2757__S/DIODE                  0.750000    0.810355   -0.060355 (VIOLATED)
+_2752_/S                                0.750000    0.810353   -0.060353 (VIOLATED)
+ANTENNA__2752__S/DIODE                  0.750000    0.810351   -0.060351 (VIOLATED)
+_2754_/S                                0.750000    0.810344   -0.060344 (VIOLATED)
+_2753_/S                                0.750000    0.810344   -0.060344 (VIOLATED)
+ANTENNA__2753__S/DIODE                  0.750000    0.810342   -0.060343 (VIOLATED)
+ANTENNA__2754__S/DIODE                  0.750000    0.810339   -0.060339 (VIOLATED)
+_2756_/S                                0.750000    0.810311   -0.060311 (VIOLATED)
+ANTENNA__2756__S/DIODE                  0.750000    0.810310   -0.060310 (VIOLATED)
+_2751_/S                                0.750000    0.810301   -0.060301 (VIOLATED)
+ANTENNA__2751__S/DIODE                  0.750000    0.810285   -0.060285 (VIOLATED)
+_2747_/S                                0.750000    0.810265   -0.060265 (VIOLATED)
+ANTENNA__2747__S/DIODE                  0.750000    0.810265   -0.060265 (VIOLATED)
+_2746_/S                                0.750000    0.810249   -0.060249 (VIOLATED)
+ANTENNA__2746__S/DIODE                  0.750000    0.810245   -0.060245 (VIOLATED)
+ANTENNA_fanout22_X/DIODE                0.750000    0.810243   -0.060243 (VIOLATED)
+fanout22/X                              0.750000    0.810243   -0.060243 (VIOLATED)
+_2827_/S                                0.750000    0.804783   -0.054783 (VIOLATED)
+ANTENNA__2827__S/DIODE                  0.750000    0.804782   -0.054782 (VIOLATED)
+ANTENNA__2829__S/DIODE                  0.750000    0.804770   -0.054770 (VIOLATED)
+_2829_/S                                0.750000    0.804767   -0.054767 (VIOLATED)
+_2830_/S                                0.750000    0.804751   -0.054751 (VIOLATED)
+ANTENNA__2830__S/DIODE                  0.750000    0.804750   -0.054750 (VIOLATED)
+ANTENNA__2828__S/DIODE                  0.750000    0.804723   -0.054723 (VIOLATED)
+_2833_/S                                0.750000    0.804723   -0.054723 (VIOLATED)
+ANTENNA__2833__S/DIODE                  0.750000    0.804721   -0.054722 (VIOLATED)
+_2828_/S                                0.750000    0.804721   -0.054721 (VIOLATED)
+ANTENNA__2821__S/DIODE                  0.750000    0.804701   -0.054701 (VIOLATED)
+_2821_/S                                0.750000    0.804694   -0.054694 (VIOLATED)
+_2820_/S                                0.750000    0.804693   -0.054693 (VIOLATED)
+ANTENNA__2820__S/DIODE                  0.750000    0.804693   -0.054693 (VIOLATED)
+_2822_/S                                0.750000    0.804692   -0.054692 (VIOLATED)
+ANTENNA_fanout14_X/DIODE                0.750000    0.804689   -0.054689 (VIOLATED)
+ANTENNA__2822__S/DIODE                  0.750000    0.804689   -0.054689 (VIOLATED)
+fanout14/X                              0.750000    0.804687   -0.054687 (VIOLATED)
+ANTENNA__2895__B2/DIODE                 0.750000    0.803770   -0.053770 (VIOLATED)
+_2895_/B2                               0.750000    0.803770   -0.053770 (VIOLATED)
+_2922_/B2                               0.750000    0.803760   -0.053760 (VIOLATED)
+ANTENNA__2922__B2/DIODE                 0.750000    0.803759   -0.053759 (VIOLATED)
+_2887_/B2                               0.750000    0.803759   -0.053759 (VIOLATED)
+_2874_/B2                               0.750000    0.803758   -0.053758 (VIOLATED)
+ANTENNA__2887__B2/DIODE                 0.750000    0.803758   -0.053758 (VIOLATED)
+ANTENNA__2874__B2/DIODE                 0.750000    0.803758   -0.053758 (VIOLATED)
+_2457_/B2                               0.750000    0.803747   -0.053747 (VIOLATED)
+_2865_/B2                               0.750000    0.803745   -0.053745 (VIOLATED)
+ANTENNA__2457__B2/DIODE                 0.750000    0.803739   -0.053739 (VIOLATED)
+ANTENNA__2865__B2/DIODE                 0.750000    0.803738   -0.053738 (VIOLATED)
+ANTENNA__2838__A/DIODE                  0.750000    0.803686   -0.053687 (VIOLATED)
+ANTENNA__2819__A/DIODE                  0.750000    0.803662   -0.053662 (VIOLATED)
+_2819_/A                                0.750000    0.803662   -0.053662 (VIOLATED)
+_2838_/A                                0.750000    0.803652   -0.053652 (VIOLATED)
+_2462_/A1                               0.750000    0.803628   -0.053628 (VIOLATED)
+ANTENNA__2462__A1/DIODE                 0.750000    0.803626   -0.053626 (VIOLATED)
+ANTENNA_fanout118_A/DIODE               0.750000    0.803611   -0.053611 (VIOLATED)
+ANTENNA_fanout119_X/DIODE               0.750000    0.803610   -0.053610 (VIOLATED)
+fanout118/A                             0.750000    0.803608   -0.053608 (VIOLATED)
+fanout119/X                             0.750000    0.803607   -0.053607 (VIOLATED)
+_2861_/S                                0.750000    0.798102   -0.048102 (VIOLATED)
+_2862_/S                                0.750000    0.798101   -0.048101 (VIOLATED)
+ANTENNA__2862__S/DIODE                  0.750000    0.798099   -0.048099 (VIOLATED)
+ANTENNA__2861__S/DIODE                  0.750000    0.798098   -0.048098 (VIOLATED)
+_2941_/A2                               0.750000    0.798097   -0.048097 (VIOLATED)
+ANTENNA__2941__A2/DIODE                 0.750000    0.798097   -0.048097 (VIOLATED)
+_2963_/A2                               0.750000    0.798096   -0.048096 (VIOLATED)
+_2863_/S                                0.750000    0.798096   -0.048096 (VIOLATED)
+ANTENNA__2963__A2/DIODE                 0.750000    0.798094   -0.048094 (VIOLATED)
+ANTENNA__2863__S/DIODE                  0.750000    0.798093   -0.048093 (VIOLATED)
+_2952_/A2                               0.750000    0.798089   -0.048089 (VIOLATED)
+ANTENNA__2952__A2/DIODE                 0.750000    0.798089   -0.048089 (VIOLATED)
+_2864_/S                                0.750000    0.798088   -0.048088 (VIOLATED)
+ANTENNA__2864__S/DIODE                  0.750000    0.798087   -0.048087 (VIOLATED)
+_2974_/A2                               0.750000    0.798082   -0.048082 (VIOLATED)
+ANTENNA__2974__A2/DIODE                 0.750000    0.798082   -0.048082 (VIOLATED)
+_2908_/A2                               0.750000    0.798081   -0.048081 (VIOLATED)
+ANTENNA__2908__A2/DIODE                 0.750000    0.798076   -0.048076 (VIOLATED)
+ANTENNA__2919__A2/DIODE                 0.750000    0.798073   -0.048073 (VIOLATED)
+ANTENNA_fanout35_X/DIODE                0.750000    0.798073   -0.048073 (VIOLATED)
+_2919_/A2                               0.750000    0.798072   -0.048072 (VIOLATED)
+fanout35/X                              0.750000    0.798071   -0.048071 (VIOLATED)
+ANTENNA__2483__B/DIODE                  0.750000    0.789918   -0.039918 (VIOLATED)
+ANTENNA__2533__B/DIODE                  0.750000    0.789917   -0.039917 (VIOLATED)
+_2483_/B                                0.750000    0.789917   -0.039917 (VIOLATED)
+_2533_/B                                0.750000    0.789917   -0.039917 (VIOLATED)
+_2439_/B                                0.750000    0.789699   -0.039699 (VIOLATED)
+ANTENNA__2439__B/DIODE                  0.750000    0.789698   -0.039698 (VIOLATED)
+_2481_/B                                0.750000    0.789698   -0.039698 (VIOLATED)
+ANTENNA__2481__B/DIODE                  0.750000    0.789696   -0.039696 (VIOLATED)
+_2447_/B                                0.750000    0.789693   -0.039693 (VIOLATED)
+ANTENNA__2447__B/DIODE                  0.750000    0.789692   -0.039692 (VIOLATED)
+ANTENNA__1564__B/DIODE                  0.750000    0.789692   -0.039692 (VIOLATED)
+ANTENNA__2429__B2/DIODE                 0.750000    0.789692   -0.039692 (VIOLATED)
+ANTENNA__2435__A0/DIODE                 0.750000    0.789692   -0.039692 (VIOLATED)
+ANTENNA__2438__B/DIODE                  0.750000    0.789692   -0.039692 (VIOLATED)
+ANTENNA__2440__B/DIODE                  0.750000    0.789692   -0.039692 (VIOLATED)
+ANTENNA_fanout129_X/DIODE               0.750000    0.789692   -0.039692 (VIOLATED)
+_1564_/B                                0.750000    0.789692   -0.039692 (VIOLATED)
+_2429_/B2                               0.750000    0.789692   -0.039692 (VIOLATED)
+_2435_/A0                               0.750000    0.789692   -0.039692 (VIOLATED)
+_2438_/B                                0.750000    0.789692   -0.039692 (VIOLATED)
+_2440_/B                                0.750000    0.789692   -0.039692 (VIOLATED)
+fanout129/X                             0.750000    0.789692   -0.039692 (VIOLATED)
+_2799_/S                                0.750000    0.784949   -0.034949 (VIOLATED)
+ANTENNA__2799__S/DIODE                  0.750000    0.784949   -0.034949 (VIOLATED)
+ANTENNA_fanout17_A/DIODE                0.750000    0.784939   -0.034939 (VIOLATED)
+fanout17/A                              0.750000    0.784930   -0.034930 (VIOLATED)
+_2789_/S                                0.750000    0.784907   -0.034907 (VIOLATED)
+ANTENNA__2789__S/DIODE                  0.750000    0.784907   -0.034907 (VIOLATED)
+ANTENNA__2782__S/DIODE                  0.750000    0.784896   -0.034896 (VIOLATED)
+_2792_/S                                0.750000    0.784893   -0.034893 (VIOLATED)
+_2790_/S                                0.750000    0.784892   -0.034892 (VIOLATED)
+ANTENNA__2790__S/DIODE                  0.750000    0.784892   -0.034892 (VIOLATED)
+_2795_/S                                0.750000    0.784892   -0.034892 (VIOLATED)
+ANTENNA__2792__S/DIODE                  0.750000    0.784892   -0.034892 (VIOLATED)
+_2782_/S                                0.750000    0.784891   -0.034892 (VIOLATED)
+ANTENNA__2795__S/DIODE                  0.750000    0.784891   -0.034891 (VIOLATED)
+_2783_/S                                0.750000    0.784891   -0.034891 (VIOLATED)
+ANTENNA__2783__S/DIODE                  0.750000    0.784889   -0.034889 (VIOLATED)
+ANTENNA__2784__S/DIODE                  0.750000    0.784886   -0.034886 (VIOLATED)
+ANTENNA_fanout18_X/DIODE                0.750000    0.784886   -0.034886 (VIOLATED)
+_2784_/S                                0.750000    0.784886   -0.034886 (VIOLATED)
+fanout18/X                              0.750000    0.784886   -0.034886 (VIOLATED)
+ANTENNA__2537__B2/DIODE                 0.750000    0.783356   -0.033356 (VIOLATED)
+_2537_/B2                               0.750000    0.783355   -0.033355 (VIOLATED)
+_2474_/A1                               0.750000    0.783353   -0.033353 (VIOLATED)
+_2532_/A1                               0.750000    0.783352   -0.033352 (VIOLATED)
+ANTENNA__2474__A1/DIODE                 0.750000    0.783351   -0.033351 (VIOLATED)
+ANTENNA__2444__A/DIODE                  0.750000    0.783350   -0.033350 (VIOLATED)
+ANTENNA__2532__A1/DIODE                 0.750000    0.783348   -0.033348 (VIOLATED)
+ANTENNA__2611__A/DIODE                  0.750000    0.783347   -0.033347 (VIOLATED)
+_2442_/A1                               0.750000    0.783345   -0.033345 (VIOLATED)
+ANTENNA__2442__A1/DIODE                 0.750000    0.783344   -0.033344 (VIOLATED)
+_2444_/A                                0.750000    0.783343   -0.033343 (VIOLATED)
+_2611_/A                                0.750000    0.783340   -0.033340 (VIOLATED)
+ANTENNA__2469__A1/DIODE                 0.750000    0.783325   -0.033325 (VIOLATED)
+_2469_/A1                               0.750000    0.783315   -0.033315 (VIOLATED)
+ANTENNA__2487__B2/DIODE                 0.750000    0.783289   -0.033289 (VIOLATED)
+_2487_/B2                               0.750000    0.783289   -0.033289 (VIOLATED)
+ANTENNA__2451__A1/DIODE                 0.750000    0.783289   -0.033289 (VIOLATED)
+_2451_/A1                               0.750000    0.783287   -0.033287 (VIOLATED)
+_1537_/A_N                              0.750000    0.783172   -0.033172 (VIOLATED)
+ANTENNA__1537__A_N/DIODE                0.750000    0.783170   -0.033170 (VIOLATED)
+_1538_/S                                0.750000    0.783169   -0.033169 (VIOLATED)
+ANTENNA__1538__S/DIODE                  0.750000    0.783165   -0.033165 (VIOLATED)
+_1539_/S                                0.750000    0.783154   -0.033154 (VIOLATED)
+ANTENNA__1539__S/DIODE                  0.750000    0.783148   -0.033148 (VIOLATED)
+_1540_/S                                0.750000    0.783146   -0.033146 (VIOLATED)
+ANTENNA__1540__S/DIODE                  0.750000    0.783143   -0.033143 (VIOLATED)
+_1542_/S                                0.750000    0.783127   -0.033128 (VIOLATED)
+ANTENNA__1542__S/DIODE                  0.750000    0.783125   -0.033125 (VIOLATED)
+_1541_/S                                0.750000    0.783124   -0.033124 (VIOLATED)
+ANTENNA__1541__S/DIODE                  0.750000    0.783123   -0.033123 (VIOLATED)
+_1543_/S                                0.750000    0.783112   -0.033112 (VIOLATED)
+ANTENNA__1543__S/DIODE                  0.750000    0.783094   -0.033094 (VIOLATED)
+_1544_/S                                0.750000    0.783050   -0.033050 (VIOLATED)
+ANTENNA__1544__S/DIODE                  0.750000    0.783046   -0.033047 (VIOLATED)
+ANTENNA__1604__B1/DIODE                 0.750000    0.783039   -0.033039 (VIOLATED)
+ANTENNA_fanout113_X/DIODE               0.750000    0.783039   -0.033039 (VIOLATED)
+_1604_/B1                               0.750000    0.783039   -0.033039 (VIOLATED)
+fanout113/X                             0.750000    0.783039   -0.033039 (VIOLATED)
+_1545_/S                                0.750000    0.782984   -0.032984 (VIOLATED)
+ANTENNA__1545__S/DIODE                  0.750000    0.782975   -0.032975 (VIOLATED)
+_1546_/S                                0.750000    0.782969   -0.032969 (VIOLATED)
+ANTENNA__1546__S/DIODE                  0.750000    0.782969   -0.032969 (VIOLATED)
+ANTENNA_fanout107_X/DIODE               0.750000    0.782968   -0.032968 (VIOLATED)
+fanout107/X                             0.750000    0.782966   -0.032966 (VIOLATED)
+_2943_/A2                               0.750000    0.780077   -0.030077 (VIOLATED)
+_2508_/A2                               0.750000    0.780077   -0.030077 (VIOLATED)
+_2967_/A2                               0.750000    0.780077   -0.030077 (VIOLATED)
+ANTENNA__2943__A2/DIODE                 0.750000    0.780074   -0.030074 (VIOLATED)
+ANTENNA__2508__A2/DIODE                 0.750000    0.780071   -0.030072 (VIOLATED)
+ANTENNA__2967__A2/DIODE                 0.750000    0.780070   -0.030071 (VIOLATED)
+_2937_/A2                               0.750000    0.780068   -0.030068 (VIOLATED)
+_2495_/A2                               0.750000    0.780067   -0.030067 (VIOLATED)
+ANTENNA__2937__A2/DIODE                 0.750000    0.780065   -0.030065 (VIOLATED)
+ANTENNA__2495__A2/DIODE                 0.750000    0.780065   -0.030065 (VIOLATED)
+_2521_/A2                               0.750000    0.780056   -0.030056 (VIOLATED)
+ANTENNA__2521__A2/DIODE                 0.750000    0.780043   -0.030043 (VIOLATED)
+ANTENNA__2954__A2/DIODE                 0.750000    0.780036   -0.030036 (VIOLATED)
+_2954_/A2                               0.750000    0.780025   -0.030025 (VIOLATED)
+_2787_/S                                0.750000    0.780011   -0.030011 (VIOLATED)
+ANTENNA__2787__S/DIODE                  0.750000    0.780011   -0.030011 (VIOLATED)
+_2786_/S                                0.750000    0.780010   -0.030010 (VIOLATED)
+_2788_/S                                0.750000    0.780010   -0.030010 (VIOLATED)
+ANTENNA__2786__S/DIODE                  0.750000    0.780008   -0.030008 (VIOLATED)
+_2797_/S                                0.750000    0.780004   -0.030004 (VIOLATED)
+ANTENNA__2797__S/DIODE                  0.750000    0.780003   -0.030003 (VIOLATED)
+ANTENNA__2788__S/DIODE                  0.750000    0.780003   -0.030003 (VIOLATED)
+_2796_/S                                0.750000    0.780003   -0.030003 (VIOLATED)
+ANTENNA__2796__S/DIODE                  0.750000    0.780001   -0.030001 (VIOLATED)
+_2798_/S                                0.750000    0.780001   -0.030001 (VIOLATED)
+ANTENNA__2798__S/DIODE                  0.750000    0.779998   -0.029998 (VIOLATED)
+_2793_/S                                0.750000    0.779997   -0.029997 (VIOLATED)
+ANTENNA__2785__S/DIODE                  0.750000    0.779997   -0.029997 (VIOLATED)
+ANTENNA__2791__S/DIODE                  0.750000    0.779997   -0.029997 (VIOLATED)
+ANTENNA__2793__S/DIODE                  0.750000    0.779997   -0.029997 (VIOLATED)
+ANTENNA__2794__S/DIODE                  0.750000    0.779997   -0.029997 (VIOLATED)
+ANTENNA_fanout17_X/DIODE                0.750000    0.779997   -0.029997 (VIOLATED)
+_2785_/S                                0.750000    0.779997   -0.029997 (VIOLATED)
+_2791_/S                                0.750000    0.779997   -0.029997 (VIOLATED)
+_2794_/S                                0.750000    0.779997   -0.029997 (VIOLATED)
+fanout17/X                              0.750000    0.779997   -0.029997 (VIOLATED)
+ANTENNA__2899__A2/DIODE                 0.750000    0.779988   -0.029988 (VIOLATED)
+_2899_/A2                               0.750000    0.779954   -0.029954 (VIOLATED)
+_2910_/A2                               0.750000    0.779893   -0.029893 (VIOLATED)
+ANTENNA__2910__A2/DIODE                 0.750000    0.779882   -0.029882 (VIOLATED)
+_2446_/B1                               0.750000    0.779816   -0.029816 (VIOLATED)
+ANTENNA__2446__B1/DIODE                 0.750000    0.779815   -0.029816 (VIOLATED)
+ANTENNA_fanout63_X/DIODE                0.750000    0.779815   -0.029815 (VIOLATED)
+fanout63/X                              0.750000    0.779811   -0.029811 (VIOLATED)
+_2643_/S                                0.750000    0.777532   -0.027532 (VIOLATED)
+ANTENNA__2643__S/DIODE                  0.750000    0.777532   -0.027532 (VIOLATED)
+ANTENNA__2645__S/DIODE                  0.750000    0.777528   -0.027528 (VIOLATED)
+_2645_/S                                0.750000    0.777527   -0.027527 (VIOLATED)
+_2641_/S                                0.750000    0.777525   -0.027525 (VIOLATED)
+ANTENNA__2641__S/DIODE                  0.750000    0.777524   -0.027524 (VIOLATED)
+_2623_/S                                0.750000    0.777521   -0.027521 (VIOLATED)
+_2621_/S                                0.750000    0.777521   -0.027521 (VIOLATED)
+ANTENNA__2621__S/DIODE                  0.750000    0.777520   -0.027520 (VIOLATED)
+ANTENNA__2623__S/DIODE                  0.750000    0.777520   -0.027520 (VIOLATED)
+_2625_/S                                0.750000    0.777519   -0.027519 (VIOLATED)
+ANTENNA__2635__S/DIODE                  0.750000    0.777296   -0.027296 (VIOLATED)
+_2635_/S                                0.750000    0.777296   -0.027296 (VIOLATED)
+ANTENNA__2625__S/DIODE                  0.750000    0.777296   -0.027296 (VIOLATED)
+ANTENNA__2619__S/DIODE                  0.750000    0.777286   -0.027286 (VIOLATED)
+ANTENNA__2631__S/DIODE                  0.750000    0.777286   -0.027286 (VIOLATED)
+ANTENNA__2637__S/DIODE                  0.750000    0.777286   -0.027286 (VIOLATED)
+ANTENNA_fanout33_X/DIODE                0.750000    0.777286   -0.027286 (VIOLATED)
+_2619_/S                                0.750000    0.777286   -0.027286 (VIOLATED)
+_2631_/S                                0.750000    0.777286   -0.027286 (VIOLATED)
+_2637_/S                                0.750000    0.777286   -0.027286 (VIOLATED)
+fanout33/X                              0.750000    0.777286   -0.027286 (VIOLATED)
+ANTENNA__2530__B/DIODE                  0.750000    0.766972   -0.016972 (VIOLATED)
+_2530_/B                                0.750000    0.766972   -0.016972 (VIOLATED)
+_2535_/B                                0.750000    0.766966   -0.016966 (VIOLATED)
+ANTENNA__2535__B/DIODE                  0.750000    0.766966   -0.016966 (VIOLATED)
+ANTENNA__2893__B/DIODE                  0.750000    0.766960   -0.016960 (VIOLATED)
+_2893_/B                                0.750000    0.766959   -0.016960 (VIOLATED)
+_2882_/B                                0.750000    0.766957   -0.016957 (VIOLATED)
+ANTENNA__2891__B/DIODE                  0.750000    0.766956   -0.016956 (VIOLATED)
+ANTENNA__2882__B/DIODE                  0.750000    0.766956   -0.016956 (VIOLATED)
+_2891_/B                                0.750000    0.766955   -0.016955 (VIOLATED)
+ANTENNA__2889__B/DIODE                  0.750000    0.766955   -0.016955 (VIOLATED)
+_2889_/B                                0.750000    0.766954   -0.016954 (VIOLATED)
+_2926_/C                                0.750000    0.766922   -0.016922 (VIOLATED)
+ANTENNA__2926__C/DIODE                  0.750000    0.766921   -0.016921 (VIOLATED)
+ANTENNA__1563__B/DIODE                  0.750000    0.766859   -0.016859 (VIOLATED)
+_1563_/B                                0.750000    0.766859   -0.016859 (VIOLATED)
+ANTENNA__2455__B/DIODE                  0.750000    0.766858   -0.016859 (VIOLATED)
+_2458_/B                                0.750000    0.766853   -0.016853 (VIOLATED)
+ANTENNA__2458__B/DIODE                  0.750000    0.766852   -0.016852 (VIOLATED)
+_2455_/B                                0.750000    0.766848   -0.016848 (VIOLATED)
+ANTENNA_fanout130_X/DIODE               0.750000    0.766839   -0.016839 (VIOLATED)
+fanout130/X                             0.750000    0.766839   -0.016839 (VIOLATED)
+_1899_/B                                0.750000    0.761385   -0.011385 (VIOLATED)
+ANTENNA__1899__B/DIODE                  0.750000    0.761384   -0.011384 (VIOLATED)
+ANTENNA__1945__A2/DIODE                 0.750000    0.761377   -0.011377 (VIOLATED)
+_1945_/A2                               0.750000    0.761371   -0.011372 (VIOLATED)
+ANTENNA__1944__C/DIODE                  0.750000    0.761371   -0.011371 (VIOLATED)
+ANTENNA__1967__D/DIODE                  0.750000    0.761364   -0.011364 (VIOLATED)
+ANTENNA__1968__B1/DIODE                 0.750000    0.761359   -0.011359 (VIOLATED)
+_1967_/D                                0.750000    0.761353   -0.011354 (VIOLATED)
+_1944_/C                                0.750000    0.761346   -0.011346 (VIOLATED)
+_1968_/B1                               0.750000    0.761343   -0.011343 (VIOLATED)
+_2004_/B                                0.750000    0.761325   -0.011325 (VIOLATED)
+ANTENNA__2004__B/DIODE                  0.750000    0.761323   -0.011323 (VIOLATED)
+_1794_/C                                0.750000    0.761273   -0.011273 (VIOLATED)
+_1795_/A2                               0.750000    0.761271   -0.011271 (VIOLATED)
+ANTENNA__1795__A2/DIODE                 0.750000    0.761271   -0.011271 (VIOLATED)
+ANTENNA__1794__C/DIODE                  0.750000    0.761270   -0.011270 (VIOLATED)
+ANTENNA__1793__C/DIODE                  0.750000    0.761262   -0.011262 (VIOLATED)
+_1793_/C                                0.750000    0.761262   -0.011262 (VIOLATED)
+_1761_/A0                               0.750000    0.761262   -0.011262 (VIOLATED)
+ANTENNA__1761__A0/DIODE                 0.750000    0.761262   -0.011262 (VIOLATED)
+ANTENNA_fanout164_X/DIODE               0.750000    0.761257   -0.011257 (VIOLATED)
+fanout164/X                             0.750000    0.761257   -0.011257 (VIOLATED)
+_2885_/A1                               0.750000    0.758925   -0.008925 (VIOLATED)
+ANTENNA__2885__A1/DIODE                 0.750000    0.758924   -0.008924 (VIOLATED)
+_2887_/A1                               0.750000    0.758910   -0.008910 (VIOLATED)
+ANTENNA__2887__A1/DIODE                 0.750000    0.758908   -0.008908 (VIOLATED)
+_2457_/A1                               0.750000    0.758897   -0.008897 (VIOLATED)
+ANTENNA__2457__A1/DIODE                 0.750000    0.758895   -0.008895 (VIOLATED)
+_2865_/A1                               0.750000    0.758870   -0.008870 (VIOLATED)
+ANTENNA__2865__A1/DIODE                 0.750000    0.758861   -0.008861 (VIOLATED)
+_2869_/A1                               0.750000    0.758849   -0.008849 (VIOLATED)
+ANTENNA__2869__A1/DIODE                 0.750000    0.758828   -0.008828 (VIOLATED)
+ANTENNA__2462__B2/DIODE                 0.750000    0.758781   -0.008781 (VIOLATED)
+_2462_/B2                               0.750000    0.758780   -0.008780 (VIOLATED)
+ANTENNA__2648__A/DIODE                  0.750000    0.758774   -0.008774 (VIOLATED)
+ANTENNA__2686__A/DIODE                  0.750000    0.758765   -0.008765 (VIOLATED)
+_2686_/A                                0.750000    0.758755   -0.008755 (VIOLATED)
+_2667_/A                                0.750000    0.758738   -0.008738 (VIOLATED)
+_2648_/A                                0.750000    0.758737   -0.008737 (VIOLATED)
+ANTENNA__2667__A/DIODE                  0.750000    0.758703   -0.008703 (VIOLATED)
+ANTENNA_fanout113_A/DIODE               0.750000    0.758639   -0.008639 (VIOLATED)
+fanout113/A                             0.750000    0.758634   -0.008634 (VIOLATED)
+ANTENNA_fanout114_X/DIODE               0.750000    0.758634   -0.008634 (VIOLATED)
+fanout114/X                             0.750000    0.758633   -0.008633 (VIOLATED)
+_2647_/S                                0.750000    0.758392   -0.008393 (VIOLATED)
+ANTENNA__2647__S/DIODE                  0.750000    0.758392   -0.008392 (VIOLATED)
+ANTENNA_fanout33_A/DIODE                0.750000    0.758381   -0.008381 (VIOLATED)
+fanout33/A                              0.750000    0.758375   -0.008375 (VIOLATED)
+_2629_/S                                0.750000    0.758375   -0.008375 (VIOLATED)
+_2639_/S                                0.750000    0.758374   -0.008374 (VIOLATED)
+ANTENNA__2639__S/DIODE                  0.750000    0.758374   -0.008374 (VIOLATED)
+ANTENNA__2629__S/DIODE                  0.750000    0.758373   -0.008373 (VIOLATED)
+_2633_/S                                0.750000    0.758372   -0.008372 (VIOLATED)
+ANTENNA__2633__S/DIODE                  0.750000    0.758371   -0.008371 (VIOLATED)
+_2615_/S                                0.750000    0.758371   -0.008371 (VIOLATED)
+ANTENNA__2615__S/DIODE                  0.750000    0.758368   -0.008368 (VIOLATED)
+_2627_/S                                0.750000    0.758365   -0.008365 (VIOLATED)
+ANTENNA__2627__S/DIODE                  0.750000    0.758365   -0.008365 (VIOLATED)
+_2613_/S                                0.750000    0.758360   -0.008360 (VIOLATED)
+ANTENNA__2613__S/DIODE                  0.750000    0.758360   -0.008360 (VIOLATED)
+ANTENNA__2617__S/DIODE                  0.750000    0.758358   -0.008358 (VIOLATED)
+ANTENNA_fanout34_X/DIODE                0.750000    0.758358   -0.008358 (VIOLATED)
+_2617_/S                                0.750000    0.758358   -0.008358 (VIOLATED)
+fanout34/X                              0.750000    0.758358   -0.008358 (VIOLATED)
+_1897_/B                                0.750000    0.758025   -0.008025 (VIOLATED)
+ANTENNA__1897__B/DIODE                  0.750000    0.758024   -0.008024 (VIOLATED)
+ANTENNA__1898__B2/DIODE                 0.750000    0.758014   -0.008014 (VIOLATED)
+_1898_/B2                               0.750000    0.758011   -0.008011 (VIOLATED)
+_1938_/B                                0.750000    0.758007   -0.008007 (VIOLATED)
+ANTENNA__1938__B/DIODE                  0.750000    0.757995   -0.007995 (VIOLATED)
+ANTENNA__1967__C/DIODE                  0.750000    0.757989   -0.007989 (VIOLATED)
+ANTENNA__1968__A2/DIODE                 0.750000    0.757978   -0.007978 (VIOLATED)
+_1967_/C                                0.750000    0.757970   -0.007970 (VIOLATED)
+_1968_/A2                               0.750000    0.757961   -0.007961 (VIOLATED)
+ANTENNA__2005__D/DIODE                  0.750000    0.757925   -0.007925 (VIOLATED)
+_2005_/D                                0.750000    0.757919   -0.007919 (VIOLATED)
+_2006_/B1                               0.750000    0.757916   -0.007916 (VIOLATED)
+ANTENNA__2006__B1/DIODE                 0.750000    0.757916   -0.007916 (VIOLATED)
+_2027_/B1                               0.750000    0.757891   -0.007891 (VIOLATED)
+ANTENNA__2027__B1/DIODE                 0.750000    0.757885   -0.007885 (VIOLATED)
+_2029_/C                                0.750000    0.757874   -0.007874 (VIOLATED)
+ANTENNA__2029__C/DIODE                  0.750000    0.757873   -0.007873 (VIOLATED)
+_1762_/A0                               0.750000    0.757757   -0.007757 (VIOLATED)
+ANTENNA__1762__A0/DIODE                 0.750000    0.757753   -0.007753 (VIOLATED)
+ANTENNA_fanout162_X/DIODE               0.750000    0.757746   -0.007746 (VIOLATED)
+fanout162/X                             0.750000    0.757746   -0.007746 (VIOLATED)
+_2771_/S                                0.750000    0.754109   -0.004109 (VIOLATED)
+ANTENNA__2771__S/DIODE                  0.750000    0.754108   -0.004108 (VIOLATED)
+_2776_/S                                0.750000    0.754107   -0.004107 (VIOLATED)
+ANTENNA__2776__S/DIODE                  0.750000    0.754105   -0.004105 (VIOLATED)
+_2773_/S                                0.750000    0.754093   -0.004093 (VIOLATED)
+ANTENNA__2773__S/DIODE                  0.750000    0.754087   -0.004087 (VIOLATED)
+_2772_/S                                0.750000    0.754087   -0.004087 (VIOLATED)
+ANTENNA__2772__S/DIODE                  0.750000    0.754086   -0.004086 (VIOLATED)
+_2775_/S                                0.750000    0.754081   -0.004081 (VIOLATED)
+ANTENNA__2775__S/DIODE                  0.750000    0.754079   -0.004079 (VIOLATED)
+_2770_/S                                0.750000    0.754063   -0.004063 (VIOLATED)
+ANTENNA__2770__S/DIODE                  0.750000    0.754059   -0.004060 (VIOLATED)
+ANTENNA__2766__S/DIODE                  0.750000    0.754024   -0.004024 (VIOLATED)
+_2766_/S                                0.750000    0.754024   -0.004024 (VIOLATED)
+_2765_/S                                0.750000    0.754010   -0.004010 (VIOLATED)
+ANTENNA__2765__S/DIODE                  0.750000    0.754010   -0.004010 (VIOLATED)
+ANTENNA_fanout20_X/DIODE                0.750000    0.754009   -0.004009 (VIOLATED)
+fanout20/X                              0.750000    0.754009   -0.004009 (VIOLATED)
+_2612_/A2                               0.750000    0.753337   -0.003337 (VIOLATED)
+_2618_/A2                               0.750000    0.753337   -0.003337 (VIOLATED)
+ANTENNA__2612__A2/DIODE                 0.750000    0.753336   -0.003336 (VIOLATED)
+ANTENNA__2618__A2/DIODE                 0.750000    0.753334   -0.003334 (VIOLATED)
+_2620_/A2                               0.750000    0.753331   -0.003331 (VIOLATED)
+_2622_/A2                               0.750000    0.753331   -0.003331 (VIOLATED)
+_2624_/A2                               0.750000    0.753330   -0.003330 (VIOLATED)
+ANTENNA__2624__A2/DIODE                 0.750000    0.753330   -0.003330 (VIOLATED)
+ANTENNA__2620__A2/DIODE                 0.750000    0.753329   -0.003329 (VIOLATED)
+ANTENNA__2622__A2/DIODE                 0.750000    0.753327   -0.003327 (VIOLATED)
+_2626_/A2                               0.750000    0.753314   -0.003314 (VIOLATED)
+ANTENNA__2626__A2/DIODE                 0.750000    0.753314   -0.003314 (VIOLATED)
+_2610_/A                                0.750000    0.753286   -0.003286 (VIOLATED)
+ANTENNA__2610__A/DIODE                  0.750000    0.753279   -0.003279 (VIOLATED)
+ANTENNA__1631__B1/DIODE                 0.750000    0.753274   -0.003274 (VIOLATED)
+ANTENNA__1627__B/DIODE                  0.750000    0.753274   -0.003274 (VIOLATED)
+_1627_/B                                0.750000    0.753274   -0.003274 (VIOLATED)
+_1631_/B1                               0.750000    0.753274   -0.003274 (VIOLATED)
+ANTENNA__2614__A2/DIODE                 0.750000    0.753271   -0.003271 (VIOLATED)
+ANTENNA_fanout85_X/DIODE                0.750000    0.753271   -0.003271 (VIOLATED)
+_2614_/A2                               0.750000    0.753271   -0.003271 (VIOLATED)
+fanout85/X                              0.750000    0.753271   -0.003271 (VIOLATED)
+_2568_/A1                               0.750000    0.752301   -0.002301 (VIOLATED)
+ANTENNA__2568__A1/DIODE                 0.750000    0.752298   -0.002298 (VIOLATED)
+_2561_/A1                               0.750000    0.752297   -0.002297 (VIOLATED)
+ANTENNA__2561__A1/DIODE                 0.750000    0.752295   -0.002295 (VIOLATED)
+_2567_/A1                               0.750000    0.752294   -0.002294 (VIOLATED)
+ANTENNA__2567__A1/DIODE                 0.750000    0.752294   -0.002294 (VIOLATED)
+_2566_/A1                               0.750000    0.752284   -0.002284 (VIOLATED)
+ANTENNA__2566__A1/DIODE                 0.750000    0.752281   -0.002281 (VIOLATED)
+_2564_/A1                               0.750000    0.752263   -0.002263 (VIOLATED)
+ANTENNA__2564__A1/DIODE                 0.750000    0.752260   -0.002260 (VIOLATED)
+_2565_/A1                               0.750000    0.752251   -0.002251 (VIOLATED)
+ANTENNA__2565__A1/DIODE                 0.750000    0.752251   -0.002251 (VIOLATED)
+_2563_/A1                               0.750000    0.752226   -0.002226 (VIOLATED)
+ANTENNA__2563__A1/DIODE                 0.750000    0.752221   -0.002221 (VIOLATED)
+_2562_/A1                               0.750000    0.752200   -0.002200 (VIOLATED)
+ANTENNA__2562__A1/DIODE                 0.750000    0.752198   -0.002198 (VIOLATED)
+_2560_/A1                               0.750000    0.752187   -0.002188 (VIOLATED)
+ANTENNA__2560__A1/DIODE                 0.750000    0.752160   -0.002160 (VIOLATED)
+_1569_/D                                0.750000    0.752097   -0.002097 (VIOLATED)
+ANTENNA__1569__D/DIODE                  0.750000    0.752095   -0.002095 (VIOLATED)
+ANTENNA_fanout93_X/DIODE                0.750000    0.752094   -0.002094 (VIOLATED)
+fanout93/X                              0.750000    0.752092   -0.002092 (VIOLATED)
+_1936_/A                                0.750000    0.751128   -0.001128 (VIOLATED)
+ANTENNA__1936__A/DIODE                  0.750000    0.751122   -0.001122 (VIOLATED)
+_1937_/A1                               0.750000    0.751116   -0.001116 (VIOLATED)
+ANTENNA__1937__A1/DIODE                 0.750000    0.751111   -0.001111 (VIOLATED)
+ANTENNA__2036__C1/DIODE                 0.750000    0.751089   -0.001089 (VIOLATED)
+_2036_/C1                               0.750000    0.751084   -0.001084 (VIOLATED)
+fanout158/A                             0.750000    0.751078   -0.001078 (VIOLATED)
+ANTENNA_fanout158_A/DIODE               0.750000    0.751075   -0.001075 (VIOLATED)
+_2002_/B                                0.750000    0.751071   -0.001071 (VIOLATED)
+ANTENNA__2002__B/DIODE                  0.750000    0.751047   -0.001047 (VIOLATED)
+_1851_/B                                0.750000    0.750996   -0.000996 (VIOLATED)
+ANTENNA__1851__B/DIODE                  0.750000    0.750978   -0.000978 (VIOLATED)
+_1884_/D                                0.750000    0.750969   -0.000969 (VIOLATED)
+_1883_/B1                               0.750000    0.750964   -0.000964 (VIOLATED)
+_1853_/A2                               0.750000    0.750954   -0.000954 (VIOLATED)
+ANTENNA__1853__A2/DIODE                 0.750000    0.750954   -0.000954 (VIOLATED)
+ANTENNA__1884__D/DIODE                  0.750000    0.750951   -0.000951 (VIOLATED)
+ANTENNA__1883__B1/DIODE                 0.750000    0.750937   -0.000937 (VIOLATED)
+ANTENNA__1852__C/DIODE                  0.750000    0.750929   -0.000929 (VIOLATED)
+_1852_/C                                0.750000    0.750926   -0.000926 (VIOLATED)
+ANTENNA_fanout159_X/DIODE               0.750000    0.750923   -0.000923 (VIOLATED)
+fanout159/X                             0.750000    0.750923   -0.000923 (VIOLATED)
+
 max fanout
 
 Pin                                   Limit Fanout  Slack
 ---------------------------------------------------------
-clkbuf_2_1__f_clk/X                      10     27    -17 (VIOLATED)
-clkbuf_2_0__f_clk/X                      10     21    -11 (VIOLATED)
-clkbuf_2_3__f_clk/X                      10     21    -11 (VIOLATED)
-fanout10/X                               10     21    -11 (VIOLATED)
+fanout100/X                              10     21    -11 (VIOLATED)
 fanout103/X                              10     21    -11 (VIOLATED)
-fanout104/X                              10     21    -11 (VIOLATED)
-fanout108/X                              10     21    -11 (VIOLATED)
+fanout107/X                              10     21    -11 (VIOLATED)
+fanout11/X                               10     21    -11 (VIOLATED)
+fanout110/X                              10     21    -11 (VIOLATED)
+fanout111/X                              10     21    -11 (VIOLATED)
 fanout112/X                              10     21    -11 (VIOLATED)
+fanout113/X                              10     21    -11 (VIOLATED)
 fanout114/X                              10     21    -11 (VIOLATED)
-fanout12/X                               10     21    -11 (VIOLATED)
-fanout120/X                              10     21    -11 (VIOLATED)
+fanout116/X                              10     21    -11 (VIOLATED)
+fanout117/X                              10     21    -11 (VIOLATED)
+fanout118/X                              10     21    -11 (VIOLATED)
+fanout119/X                              10     21    -11 (VIOLATED)
 fanout121/X                              10     21    -11 (VIOLATED)
-fanout128/X                              10     21    -11 (VIOLATED)
+fanout122/X                              10     21    -11 (VIOLATED)
+fanout125/X                              10     21    -11 (VIOLATED)
+fanout127/X                              10     21    -11 (VIOLATED)
 fanout129/X                              10     21    -11 (VIOLATED)
-fanout14/X                               10     21    -11 (VIOLATED)
-fanout140/X                              10     21    -11 (VIOLATED)
-fanout143/X                              10     21    -11 (VIOLATED)
-fanout148/X                              10     21    -11 (VIOLATED)
-fanout150/X                              10     21    -11 (VIOLATED)
-fanout152/X                              10     21    -11 (VIOLATED)
-fanout16/X                               10     21    -11 (VIOLATED)
-fanout173/X                              10     21    -11 (VIOLATED)
+fanout13/X                               10     21    -11 (VIOLATED)
+fanout130/X                              10     21    -11 (VIOLATED)
+fanout134/X                              10     21    -11 (VIOLATED)
+fanout137/X                              10     21    -11 (VIOLATED)
+fanout138/X                              10     21    -11 (VIOLATED)
+fanout141/X                              10     21    -11 (VIOLATED)
+fanout145/X                              10     21    -11 (VIOLATED)
+fanout147/X                              10     21    -11 (VIOLATED)
+fanout149/X                              10     21    -11 (VIOLATED)
+fanout15/X                               10     21    -11 (VIOLATED)
+fanout151/X                              10     21    -11 (VIOLATED)
+fanout153/X                              10     21    -11 (VIOLATED)
+fanout155/X                              10     21    -11 (VIOLATED)
+fanout159/X                              10     21    -11 (VIOLATED)
+fanout162/X                              10     21    -11 (VIOLATED)
+fanout164/X                              10     21    -11 (VIOLATED)
+fanout166/X                              10     21    -11 (VIOLATED)
+fanout168/X                              10     21    -11 (VIOLATED)
+fanout17/X                               10     21    -11 (VIOLATED)
+fanout170/X                              10     21    -11 (VIOLATED)
+fanout171/X                              10     21    -11 (VIOLATED)
+fanout174/X                              10     21    -11 (VIOLATED)
 fanout176/X                              10     21    -11 (VIOLATED)
-fanout178/X                              10     21    -11 (VIOLATED)
-fanout18/X                               10     21    -11 (VIOLATED)
-fanout190/X                              10     21    -11 (VIOLATED)
-fanout20/X                               10     21    -11 (VIOLATED)
-fanout208/X                              10     21    -11 (VIOLATED)
-fanout210/X                              10     21    -11 (VIOLATED)
-fanout216/X                              10     21    -11 (VIOLATED)
-fanout217/X                              10     21    -11 (VIOLATED)
-fanout219/X                              10     21    -11 (VIOLATED)
-fanout22/X                               10     21    -11 (VIOLATED)
-fanout220/X                              10     21    -11 (VIOLATED)
-fanout222/X                              10     21    -11 (VIOLATED)
-fanout223/X                              10     21    -11 (VIOLATED)
-fanout24/X                               10     21    -11 (VIOLATED)
-fanout26/X                               10     21    -11 (VIOLATED)
-fanout28/X                               10     21    -11 (VIOLATED)
-fanout30/X                               10     21    -11 (VIOLATED)
-fanout34/X                               10     21    -11 (VIOLATED)
+fanout180/X                              10     21    -11 (VIOLATED)
+fanout182/X                              10     21    -11 (VIOLATED)
+fanout186/X                              10     21    -11 (VIOLATED)
+fanout19/X                               10     21    -11 (VIOLATED)
+fanout191/X                              10     21    -11 (VIOLATED)
+fanout193/X                              10     21    -11 (VIOLATED)
+fanout200/X                              10     21    -11 (VIOLATED)
+fanout21/X                               10     21    -11 (VIOLATED)
+fanout23/X                               10     21    -11 (VIOLATED)
+fanout25/X                               10     21    -11 (VIOLATED)
+fanout27/X                               10     21    -11 (VIOLATED)
+fanout29/X                               10     21    -11 (VIOLATED)
+fanout292/X                              10     21    -11 (VIOLATED)
+fanout31/X                               10     21    -11 (VIOLATED)
+fanout33/X                               10     21    -11 (VIOLATED)
 fanout35/X                               10     21    -11 (VIOLATED)
-fanout38/X                               10     21    -11 (VIOLATED)
-fanout39/X                               10     21    -11 (VIOLATED)
-fanout58/X                               10     21    -11 (VIOLATED)
+fanout60/X                               10     21    -11 (VIOLATED)
+fanout61/X                               10     21    -11 (VIOLATED)
+fanout62/X                               10     21    -11 (VIOLATED)
 fanout63/X                               10     21    -11 (VIOLATED)
-fanout67/X                               10     21    -11 (VIOLATED)
 fanout71/X                               10     21    -11 (VIOLATED)
-fanout74/X                               10     21    -11 (VIOLATED)
-fanout8/X                                10     21    -11 (VIOLATED)
+fanout76/X                               10     21    -11 (VIOLATED)
+fanout81/X                               10     21    -11 (VIOLATED)
 fanout82/X                               10     21    -11 (VIOLATED)
+fanout85/X                               10     21    -11 (VIOLATED)
 fanout87/X                               10     21    -11 (VIOLATED)
+fanout89/X                               10     21    -11 (VIOLATED)
+fanout91/X                               10     21    -11 (VIOLATED)
 fanout93/X                               10     21    -11 (VIOLATED)
+fanout94/X                               10     21    -11 (VIOLATED)
+fanout95/X                               10     21    -11 (VIOLATED)
 fanout97/X                               10     21    -11 (VIOLATED)
-_1614_/X                                 10     19     -9 (VIOLATED)
-_1849_/X                                 10     19     -9 (VIOLATED)
-fanout137/X                              10     19     -9 (VIOLATED)
-fanout21/X                               10     19     -9 (VIOLATED)
-fanout27/X                               10     19     -9 (VIOLATED)
-fanout64/X                               10     19     -9 (VIOLATED)
-fanout73/X                               10     19     -9 (VIOLATED)
-_2678_/Y                                 10     17     -7 (VIOLATED)
-_2696_/Y                                 10     17     -7 (VIOLATED)
-clkbuf_2_2__f_clk/X                      10     17     -7 (VIOLATED)
-clkbuf_leaf_0_clk/X                      10     17     -7 (VIOLATED)
-clkbuf_leaf_27_clk/X                     10     17     -7 (VIOLATED)
-clkbuf_leaf_34_clk/X                     10     17     -7 (VIOLATED)
-clkbuf_leaf_9_clk/X                      10     17     -7 (VIOLATED)
-fanout123/X                              10     17     -7 (VIOLATED)
-fanout13/X                               10     17     -7 (VIOLATED)
-fanout131/X                              10     17     -7 (VIOLATED)
-fanout15/X                               10     17     -7 (VIOLATED)
-fanout17/X                               10     17     -7 (VIOLATED)
-fanout19/X                               10     17     -7 (VIOLATED)
-fanout200/X                              10     17     -7 (VIOLATED)
-fanout203/X                              10     17     -7 (VIOLATED)
-fanout23/X                               10     17     -7 (VIOLATED)
-fanout25/X                               10     17     -7 (VIOLATED)
-fanout29/X                               10     17     -7 (VIOLATED)
-fanout31/X                               10     17     -7 (VIOLATED)
-fanout62/X                               10     17     -7 (VIOLATED)
-fanout9/X                                10     17     -7 (VIOLATED)
-clkbuf_leaf_20_clk/X                     10     16     -6 (VIOLATED)
-clkbuf_leaf_33_clk/X                     10     16     -6 (VIOLATED)
-clkbuf_leaf_3_clk/X                      10     16     -6 (VIOLATED)
-clkbuf_leaf_7_clk/X                      10     16     -6 (VIOLATED)
-clkbuf_leaf_8_clk/X                      10     16     -6 (VIOLATED)
-clkbuf_leaf_13_clk/X                     10     15     -5 (VIOLATED)
-clkbuf_leaf_15_clk/X                     10     15     -5 (VIOLATED)
-clkbuf_leaf_18_clk/X                     10     15     -5 (VIOLATED)
-clkbuf_leaf_24_clk/X                     10     15     -5 (VIOLATED)
-clkbuf_leaf_26_clk/X                     10     15     -5 (VIOLATED)
-fanout145/X                              10     15     -5 (VIOLATED)
-fanout218/X                              10     15     -5 (VIOLATED)
-fanout221/X                              10     15     -5 (VIOLATED)
-clkbuf_leaf_25_clk/X                     10     14     -4 (VIOLATED)
-_3579_/Q                                 10     13     -3 (VIOLATED)
-clkbuf_leaf_10_clk/X                     10     13     -3 (VIOLATED)
-clkbuf_leaf_16_clk/X                     10     13     -3 (VIOLATED)
-clkbuf_leaf_6_clk/X                      10     13     -3 (VIOLATED)
-fanout106/X                              10     13     -3 (VIOLATED)
-fanout107/X                              10     13     -3 (VIOLATED)
-fanout66/X                               10     13     -3 (VIOLATED)
-fanout96/X                               10     13     -3 (VIOLATED)
+wire66/X                                 10     21    -11 (VIOLATED)
+_1602_/X                                 10     19     -9 (VIOLATED)
+clkbuf_leaf_7_clk/X                      10     19     -9 (VIOLATED)
+fanout161/X                              10     19     -9 (VIOLATED)
+fanout18/X                               10     19     -9 (VIOLATED)
+fanout196/X                              10     19     -9 (VIOLATED)
+fanout34/X                               10     19     -9 (VIOLATED)
+fanout36/X                               10     19     -9 (VIOLATED)
+load_slew68/X                            10     19     -9 (VIOLATED)
+load_slew73/X                            10     19     -9 (VIOLATED)
+load_slew78/X                            10     19     -9 (VIOLATED)
+_1563_/X                                 10     17     -7 (VIOLATED)
+_2551_/X                                 10     17     -7 (VIOLATED)
+clkbuf_0_clk/X                           10     17     -7 (VIOLATED)
+fanout12/X                               10     17     -7 (VIOLATED)
+fanout14/X                               10     17     -7 (VIOLATED)
+fanout157/X                              10     17     -7 (VIOLATED)
+fanout16/X                               10     17     -7 (VIOLATED)
+fanout188/X                              10     17     -7 (VIOLATED)
+fanout190/X                              10     17     -7 (VIOLATED)
+fanout20/X                               10     17     -7 (VIOLATED)
+fanout22/X                               10     17     -7 (VIOLATED)
+fanout24/X                               10     17     -7 (VIOLATED)
+fanout26/X                               10     17     -7 (VIOLATED)
+fanout28/X                               10     17     -7 (VIOLATED)
+fanout30/X                               10     17     -7 (VIOLATED)
+fanout32/X                               10     17     -7 (VIOLATED)
+fanout64/X                               10     17     -7 (VIOLATED)
+fanout98/X                               10     17     -7 (VIOLATED)
+max_cap88/X                              10     17     -7 (VIOLATED)
+fanout132/X                              10     15     -5 (VIOLATED)
+fanout136/X                              10     15     -5 (VIOLATED)
+fanout228/X                              10     15     -5 (VIOLATED)
+fanout242/X                              10     15     -5 (VIOLATED)
+fanout251/X                              10     15     -5 (VIOLATED)
+fanout70/X                               10     15     -5 (VIOLATED)
+fanout80/X                               10     15     -5 (VIOLATED)
+clkbuf_3_0__f_clk/X                      10     13     -3 (VIOLATED)
+clkbuf_3_1__f_clk/X                      10     13     -3 (VIOLATED)
+clkbuf_3_2__f_clk/X                      10     13     -3 (VIOLATED)
+clkbuf_3_3__f_clk/X                      10     13     -3 (VIOLATED)
+clkbuf_3_4__f_clk/X                      10     13     -3 (VIOLATED)
+clkbuf_3_5__f_clk/X                      10     13     -3 (VIOLATED)
+clkbuf_3_6__f_clk/X                      10     13     -3 (VIOLATED)
+clkbuf_leaf_38_clk/X                     10     13     -3 (VIOLATED)
+fanout115/X                              10     13     -3 (VIOLATED)
+fanout120/X                              10     13     -3 (VIOLATED)
+fanout126/X                              10     13     -3 (VIOLATED)
+fanout128/X                              10     13     -3 (VIOLATED)
+fanout140/X                              10     13     -3 (VIOLATED)
+fanout223/X                              10     13     -3 (VIOLATED)
+fanout290/X                              10     13     -3 (VIOLATED)
+clkbuf_leaf_0_clk/X                      10     12     -2 (VIOLATED)
+clkbuf_leaf_10_clk/X                     10     12     -2 (VIOLATED)
+clkbuf_leaf_11_clk/X                     10     12     -2 (VIOLATED)
 clkbuf_leaf_12_clk/X                     10     12     -2 (VIOLATED)
-clkbuf_leaf_1_clk/X                      10     12     -2 (VIOLATED)
-clkbuf_leaf_28_clk/X                     10     12     -2 (VIOLATED)
-clkbuf_leaf_4_clk/X                      10     12     -2 (VIOLATED)
-clkbuf_leaf_5_clk/X                      10     12     -2 (VIOLATED)
-_1627_/X                                 10     11        (VIOLATED)
-clkbuf_leaf_11_clk/X                     10     11        (VIOLATED)
-clkbuf_leaf_14_clk/X                     10     11        (VIOLATED)
+clkbuf_leaf_2_clk/X                      10     12     -2 (VIOLATED)
+clkbuf_leaf_37_clk/X                     10     12     -2 (VIOLATED)
+clkbuf_leaf_9_clk/X                      10     12     -2 (VIOLATED)
+_3046_/Q                                 10     11        (VIOLATED)
+clkbuf_leaf_15_clk/X                     10     11        (VIOLATED)
 clkbuf_leaf_19_clk/X                     10     11        (VIOLATED)
-fanout111/X                              10     11        (VIOLATED)
-fanout149/X                              10     11        (VIOLATED)
-fanout154/X                              10     11        (VIOLATED)
-fanout228/X                              10     11        (VIOLATED)
-fanout86/X                               10     11        (VIOLATED)
-fanout98/X                               10     11        (VIOLATED)
-input2/X                                 10     11        (VIOLATED)
+clkbuf_leaf_24_clk/X                     10     11        (VIOLATED)
+clkbuf_leaf_26_clk/X                     10     11        (VIOLATED)
+clkbuf_leaf_31_clk/X                     10     11        (VIOLATED)
+clkbuf_leaf_32_clk/X                     10     11        (VIOLATED)
+clkbuf_leaf_33_clk/X                     10     11        (VIOLATED)
+clkbuf_leaf_34_clk/X                     10     11        (VIOLATED)
+clkbuf_leaf_4_clk/X                      10     11        (VIOLATED)
+clkbuf_leaf_5_clk/X                      10     11        (VIOLATED)
+fanout214/X                              10     11        (VIOLATED)
+fanout279/X                              10     11        (VIOLATED)
+fanout289/X                              10     11        (VIOLATED)
+fanout291/X                              10     11        (VIOLATED)
+fanout96/X                               10     11        (VIOLATED)
 
 
 
 ===========================================================================
 report_parasitic_annotation -report_unannotated
 ============================================================================
-Found 136 unannotated drivers.
- en
+Found 118 unannotated drivers.
  gpio_in[10]
  gpio_in[11]
  gpio_in[12]
@@ -320,115 +1239,98 @@ Found 136 unannotated drivers.
  gpio_in[7]
  gpio_in[8]
  gpio_in[9]
- nrst
- _3596__293/LO
- clkload0/Y
- clkload1/Y
- clkload10/Y
- clkload11/Y
+ _3470__331/LO
+ clkload0/X
+ clkload1/X
+ clkload10/X
+ clkload11/X
  clkload12/Y
- clkload13/X
+ clkload13/Y
  clkload14/X
- clkload15/Y
- clkload16/Y
+ clkload15/X
+ clkload16/X
  clkload17/Y
- clkload18/Y
- clkload19/Y
- clkload2/Y
- clkload20/Y
- clkload21/Y
- clkload22/Y
- clkload23/Y
- clkload24/Y
- clkload25/Y
- clkload26/Y
- clkload27/X
- clkload28/X
- clkload29/Y
+ clkload18/X
+ clkload19/X
+ clkload2/X
  clkload3/X
- clkload30/X
- clkload31/Y
- clkload32/Y
- clkload33/Y
- clkload34/X
- clkload35/X
- clkload4/Y
- clkload5/Y
+ clkload4/X
+ clkload5/X
  clkload6/X
- clkload7/Y
- clkload8/Y
+ clkload7/X
+ clkload8/X
  clkload9/Y
- team_02_229/HI
- team_02_230/HI
- team_02_231/HI
- team_02_232/HI
- team_02_233/HI
- team_02_234/HI
- team_02_235/HI
- team_02_236/HI
- team_02_237/HI
- team_02_238/HI
- team_02_239/HI
- team_02_240/HI
- team_02_241/HI
- team_02_242/HI
- team_02_243/HI
- team_02_244/HI
- team_02_245/HI
- team_02_246/HI
- team_02_247/HI
- team_02_248/HI
- team_02_249/HI
- team_02_250/HI
- team_02_251/HI
- team_02_252/HI
- team_02_253/HI
- team_02_254/HI
- team_02_255/HI
- team_02_256/HI
- team_02_257/HI
- team_02_258/HI
- team_02_259/HI
- team_02_260/HI
- team_02_261/HI
- team_02_262/HI
- team_02_263/HI
- team_02_264/HI
- team_02_265/HI
- team_02_266/HI
- team_02_267/HI
- team_02_268/HI
- team_02_269/HI
- team_02_270/HI
- team_02_271/HI
- team_02_272/HI
- team_02_273/HI
- team_02_274/HI
- team_02_275/HI
- team_02_276/HI
- team_02_277/HI
- team_02_278/HI
- team_02_279/HI
- team_02_280/HI
- team_02_281/HI
- team_02_282/HI
- team_02_283/HI
- team_02_284/HI
- team_02_285/HI
- team_02_286/HI
- team_02_287/HI
- team_02_288/HI
- team_02_289/HI
- team_02_290/HI
- team_02_291/HI
- team_02_292/HI
- team_02_294/LO
- team_02_295/LO
+ team_02/HI
+ team_02_298/HI
+ team_02_299/HI
+ team_02_300/HI
+ team_02_301/HI
+ team_02_302/HI
+ team_02_303/HI
+ team_02_304/HI
+ team_02_305/HI
+ team_02_306/HI
+ team_02_307/HI
+ team_02_308/HI
+ team_02_309/HI
+ team_02_310/HI
+ team_02_311/HI
+ team_02_312/HI
+ team_02_313/HI
+ team_02_314/HI
+ team_02_315/HI
+ team_02_316/HI
+ team_02_317/HI
+ team_02_318/HI
+ team_02_319/HI
+ team_02_320/HI
+ team_02_321/HI
+ team_02_322/HI
+ team_02_323/HI
+ team_02_324/HI
+ team_02_325/HI
+ team_02_326/HI
+ team_02_327/HI
+ team_02_328/HI
+ team_02_329/HI
+ team_02_330/HI
+ team_02_332/LO
+ team_02_333/LO
+ team_02_334/LO
+ team_02_335/LO
+ team_02_336/LO
+ team_02_337/LO
+ team_02_338/LO
+ team_02_339/LO
+ team_02_340/LO
+ team_02_341/LO
+ team_02_342/LO
+ team_02_343/LO
+ team_02_344/LO
+ team_02_345/LO
+ team_02_346/LO
+ team_02_347/LO
+ team_02_348/LO
+ team_02_349/LO
+ team_02_350/LO
+ team_02_351/LO
+ team_02_352/LO
+ team_02_353/LO
+ team_02_354/LO
+ team_02_355/LO
+ team_02_356/LO
+ team_02_357/LO
+ team_02_358/LO
+ team_02_359/LO
+ team_02_360/LO
+ team_02_361/LO
+ team_02_362/LO
+ team_02_363/LO
 Found 0 partially unannotated drivers.
 
 ===========================================================================
-max slew violation count 0
-max fanout violation count 120
+max slew violation count 888
+max fanout violation count 148
 max cap violation count 0
 ============================================================================
 
@@ -436,155 +1338,88 @@ max cap violation count 0
 check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
 ===========================================================================
 Warning: There are 38 unclocked register/latch pins.
-  _3528_/CLK
-  _3529_/CLK
-  _3530_/CLK
-  _3531_/CLK
-  _3533_/CLK
-  _3534_/CLK
-  _3535_/CLK
-  _3536_/CLK
-  _3537_/CLK
-  _3538_/CLK
-  _3539_/CLK
-  _3540_/CLK
-  _3542_/CLK
-  _3544_/CLK
-  _3545_/CLK
-  _3546_/CLK
-  _3547_/CLK
-  _3548_/CLK
-  _3549_/CLK
-  _3550_/CLK
-  _3580_/CLK
-  _3581_/CLK
-  _3582_/CLK
-  _3583_/CLK
-  _3584_/CLK
-  _3585_/CLK
-  _3586_/CLK
-  _3587_/CLK
-  _3588_/CLK
-  _3589_/CLK
-  _3590_/CLK
-  _3591_/CLK
-  _3592_/CLK
-  _3593_/CLK
-  _3594_/CLK
-  _3595_/CLK
-  _3596_/CLK
-  _3615_/CLK
-Warning: There are 113 unconstrained endpoints.
-  gpio_oeb[0]
-  gpio_oeb[10]
-  gpio_oeb[11]
-  gpio_oeb[12]
-  gpio_oeb[13]
-  gpio_oeb[14]
-  gpio_oeb[15]
-  gpio_oeb[16]
-  gpio_oeb[17]
-  gpio_oeb[18]
-  gpio_oeb[19]
-  gpio_oeb[1]
-  gpio_oeb[20]
-  gpio_oeb[21]
-  gpio_oeb[22]
-  gpio_oeb[23]
-  gpio_oeb[24]
-  gpio_oeb[25]
-  gpio_oeb[26]
-  gpio_oeb[27]
-  gpio_oeb[28]
-  gpio_oeb[29]
-  gpio_oeb[2]
-  gpio_oeb[30]
-  gpio_oeb[31]
-  gpio_oeb[32]
-  gpio_oeb[33]
-  gpio_oeb[3]
-  gpio_oeb[4]
-  gpio_oeb[5]
-  gpio_oeb[6]
-  gpio_oeb[7]
-  gpio_oeb[8]
-  gpio_oeb[9]
-  gpio_out[0]
-  gpio_out[10]
-  gpio_out[11]
-  gpio_out[12]
-  gpio_out[13]
-  gpio_out[14]
-  gpio_out[15]
-  gpio_out[16]
-  gpio_out[17]
-  gpio_out[18]
-  gpio_out[19]
-  gpio_out[1]
-  gpio_out[20]
-  gpio_out[21]
-  gpio_out[22]
-  gpio_out[23]
-  gpio_out[24]
-  gpio_out[25]
-  gpio_out[26]
-  gpio_out[27]
-  gpio_out[28]
-  gpio_out[29]
-  gpio_out[2]
-  gpio_out[30]
-  gpio_out[31]
-  gpio_out[32]
-  gpio_out[33]
-  gpio_out[5]
-  gpio_out[6]
-  gpio_out[7]
-  gpio_out[8]
-  gpio_out[9]
-  _3528_/D
-  _3529_/D
-  _3530_/D
-  _3531_/D
-  _3533_/D
-  _3534_/D
-  _3535_/D
-  _3536_/D
-  _3537_/D
-  _3538_/D
-  _3539_/D
-  _3540_/D
-  _3542_/D
-  _3544_/D
-  _3545_/D
-  _3546_/D
-  _3547_/D
-  _3548_/D
-  _3549_/D
-  _3550_/D
-  _3551_/D
-  _3580_/D
-  _3581_/D
-  _3582_/D
-  _3583_/D
-  _3584_/D
-  _3585_/D
-  _3586_/D
-  _3587_/D
-  _3588_/D
-  _3589_/D
-  _3590_/D
-  _3591_/D
-  _3592_/D
-  _3593_/D
-  _3594_/D
-  _3595_/D
-  _3596_/D
-  _3615_/D
-  _3616_/D
-  _3617_/D
-  _3618_/D
-  _3619_/D
-  _3620_/D
-  _3621_/D
-  _3622_/D
-  _3623_/D
+  _3361_/CLK
+  _3362_/CLK
+  _3363_/CLK
+  _3364_/CLK
+  _3365_/CLK
+  _3366_/CLK
+  _3367_/CLK
+  _3368_/CLK
+  _3369_/CLK
+  _3370_/CLK
+  _3371_/CLK
+  _3372_/CLK
+  _3373_/CLK
+  _3374_/CLK
+  _3375_/CLK
+  _3376_/CLK
+  _3377_/CLK
+  _3378_/CLK
+  _3379_/CLK
+  _3380_/CLK
+  _3454_/CLK
+  _3455_/CLK
+  _3456_/CLK
+  _3457_/CLK
+  _3458_/CLK
+  _3459_/CLK
+  _3460_/CLK
+  _3461_/CLK
+  _3462_/CLK
+  _3463_/CLK
+  _3464_/CLK
+  _3465_/CLK
+  _3466_/CLK
+  _3467_/CLK
+  _3468_/CLK
+  _3469_/CLK
+  _3470_/CLK
+  _3471_/CLK
+Warning: There are 46 unconstrained endpoints.
+  _3361_/D
+  _3362_/D
+  _3363_/D
+  _3364_/D
+  _3365_/D
+  _3366_/D
+  _3367_/D
+  _3368_/D
+  _3369_/D
+  _3370_/D
+  _3371_/D
+  _3372_/D
+  _3373_/D
+  _3374_/D
+  _3375_/D
+  _3376_/D
+  _3377_/D
+  _3378_/D
+  _3379_/D
+  _3380_/D
+  _3445_/D
+  _3446_/D
+  _3447_/D
+  _3448_/D
+  _3449_/D
+  _3450_/D
+  _3451_/D
+  _3452_/D
+  _3453_/D
+  _3454_/D
+  _3455_/D
+  _3456_/D
+  _3457_/D
+  _3458_/D
+  _3459_/D
+  _3460_/D
+  _3461_/D
+  _3462_/D
+  _3463_/D
+  _3464_/D
+  _3465_/D
+  _3466_/D
+  _3467_/D
+  _3468_/D
+  _3469_/D
+  _3471_/D
